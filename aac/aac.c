@@ -128,7 +128,6 @@ time_t login_time(char * username){
 		
 		if((entry->ut_type==USER_PROCESS) && same_username){
 			login_time = entry->ut_time;
-			//printf("login time: %d \n", ((long int)login_time));		
 			return login_time;
 		}
 	}
@@ -140,7 +139,18 @@ time_t login_time(char * username){
 * Returns 0 if not found
 */
 time_t logout_time(char * username){
-	return (time_t)0;
+	struct utmpx * entry; //= malloc(sizeof(struct utmp));
+	time_t logout_time ; //= malloc(sizeof(time_t)); 
+	while((entry=getutxent())!=NULL){
+		//check the username and entry type
+		int same_username = (strcmp(entry->ut_user,username)==0);
+		
+		if((entry->ut_type==DEAD_PROCESS) && same_username){
+			logout_time = entry->ut_time;
+			return logout_time;
+		}
+	}
+	return 0;
 }
 
 
