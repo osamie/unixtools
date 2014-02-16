@@ -60,7 +60,10 @@ int main(int argc, char * argv[]){
 */
 void dump_output(double connect_time,char * username){
 	if(connect_time >= 0){
-			printf("\t total \t%.2f\n",connect_time);		
+		/*convert seconds to decimal hours*/
+		connect_time = connect_time/3600; 
+
+		printf("\t total \t%.2f\n",connect_time);		
 	}else{
 		if(DEBUG){
 			printf("connect time:%.2f\n",connect_time);

@@ -68,7 +68,7 @@ void dump_output(double connect_time,char * username){
 		if(DEBUG){
 			printf("connect time:%.2f\n",connect_time);
 		}
-		printf("-ERROR: Could not determine connect time for the username,%s. \n",username);
+		printf("ERROR: Could not determine connect time for the username,%s. \n",username);
 		
 	}
 }
