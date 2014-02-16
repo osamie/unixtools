@@ -1,0 +1,60 @@
+.DS C
+.ft B
+Pointing to Buffers - A Dangerous Practice
+.ft R
+.DE
+.NH
+Introduction
+.sp 2p
+.LP
+The buffering library keeps an array of structs.
+The method that returns the 'next' item in the
+file actually returns a pointer to an element
+in this array.  Perhaps you want to store the
+info in a particular record.  Is it ok to
+save the pointer in a local variable?
+.NH
+No
+.sp 2p
+.LP
+If you copy the pointer from utmp_next() into
+a local variable, you have copy of the address
+of the struct, but not a copy of the data
+in the struct.
+
+Later in the program, the buffering code will
+read in another set of structs from the disk.
+The data in the struct to which your pointer
+refers will be something differnt from the
+record you wanted to record for later reference.
+See the diagram below:
+.sp 6p
+.PSPIC brian-buffers.eps 3i
+.NH
+What Is the Alternative?
+.sp 2p
+.LP
+Store the information in a local struct
+or in a struct you allocate dynamically.
+To do the first, you need an array of structs:
+.sp 4p
+.ft C
+.ps 9
+  struct utmp records[BIG_ENOUGH];	/* BIG_ENOUGH? ha! */
+  ...
+  recp = utmp_next();
+  ...
+  records[pos] = *recp;   /* struct copy */
+.ps 12
+.ft P
+.sp 4p
+And to do the second, you need malloc():
+.sp 4p
+.ft C
+.ps 9
+   struct utmp *new_rec = malloc(sizeof(struct utmp));
+   list_of_recs[pos] = new_rec;
+   *new_rec = *recp;     /* struct copy */
+.ps 12
+.ft P
+.sp 4p

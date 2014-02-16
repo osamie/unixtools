@@ -1,0 +1,32 @@
+.DS C
+\l'4i'
+.ft B
+Variables and Structs in C for aac
+.ft R
+.sp -5p
+\l'4i'
+.DE
+.NH
+Addresses vs Contents of Strings
+.sp 2p
+.LP
+In C, a string in a sequence of chars stored in 
+memory with a nul char ('\e0') at the end to
+indicate the end of the string.  The block
+of memory that contains that string has an address.
+
+In C, as in any other language, a string has contents
+and a string has a location.  In C, unlike some
+other languages, you can decide to work with the
+address or with the contents.  Understanding the
+difference is essential to effective use of the
+language.
+
+The diagram below shows how assigning an address
+instead of copying the contents can lead to odd,
+confusing results.
+.NH
+The Wrong Way to Keep a Copy of a String
+.sp 2p
+.LP
+.PSPIC aac-vars.eps 6i

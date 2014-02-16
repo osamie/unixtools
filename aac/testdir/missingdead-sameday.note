@@ -1,0 +1,13 @@
+
+This dataset is related to the missinglogouts dataset.  
+You can use dumputmp to see start and end of the session
+for the user here.  How does that session differ from 
+the sessions in missinglogouts?
+
+What does the manual say about missing logouts?  Why
+does the result differ from the output for the missinglogouts
+dataset?  
+
+Does this design choice make sense to you?  Can you think of
+why the output works the way it does?
+

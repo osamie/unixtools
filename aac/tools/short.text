@@ -1,0 +1,1094 @@
+matev	ttyp5	ttyp5	4429	7	USER_PROCESS	0	0	1013414423	roam179-50.student.harvard.edu
+	ttyp2	ttyp2	12900	8	DEAD_PROCESS	0	0	1013414627	
+	ttyq4	ttyq4	9317	8	DEAD_PROCESS	0	0	1013414644	
+tsu	ttyp2	ttyp2	13278	7	USER_PROCESS	0	0	1013414795	roam171-180.student.harvard.edu
+gelman	ttyp7	ttyp7	12434	7	USER_PROCESS	0	0	1013414901	roam169-148.student.harvard.edu
+gelman	ttyp7	ttyp7	12434	7	USER_PROCESS	0	0	1013414901	roam169-148.student.harvard.edu
+	ttyq2	ttyq2	3502	8	DEAD_PROCESS	0	0	1013414933	
+msimonet	ttype	ttype	13723	7	USER_PROCESS	0	2	1013415208	140.247.191.220
+ggarcia	ttyq0	ttyq0	6741	7	USER_PROCESS	0	0	1013415218	146-115-47-90.c3-0.sbo-ubr1.sbo-ubr.ma.cable.rcn.com
+	ttyp1	ttyp1	1196	8	DEAD_PROCESS	0	0	1013415243	
+	ttyq0	ttyq0	13222	8	DEAD_PROCESS	0	0	1013415254	
+	ttype	ttype	13723	8	DEAD_PROCESS	0	2	1013415305	
+	ttypb	ttypb	3195	8	DEAD_PROCESS	0	0	1013415467	
+	ttyq8	ttyq8	23250	8	DEAD_PROCESS	0	0	1013415552	
+christod	ttyp1	ttyp1	13171	7	USER_PROCESS	0	0	1013415659	roam175-146.student.harvard.edu
+dkuhl	ttypb	ttypb	14434	7	USER_PROCESS	0	0	1013415672	212.59.193.121
+	ttypb	ttypb	13541	8	DEAD_PROCESS	0	0	1013415676	
+	ttyp1	ttyp1	19786	8	DEAD_PROCESS	0	0	1013415753	
+	ttyp2	ttyp2	13002	8	DEAD_PROCESS	0	0	1013416659	
+pchoi	ttyp1	ttyp1	12409	7	USER_PROCESS	0	0	1013417270	roam185-62.student.harvard.edu
+	ttytb	ttytb	5177	8	DEAD_PROCESS	0	0	1013417627	
+arudolph	ttyp2	ttyp2	14946	7	USER_PROCESS	0	0	1013417716	roam143-56.student.harvard.edu
+arudolph	ttyp2	ttyp2	14946	7	USER_PROCESS	0	0	1013417717	roam143-56.student.harvard.edu
+	ttyp2	ttyp2	14236	8	DEAD_PROCESS	0	0	1013417787	
+	ttyp1	ttyp1	14645	8	DEAD_PROCESS	0	0	1013417843	
+ramehta	ttyp1	ttyp1	32658	7	USER_PROCESS	0	0	1013418118	roam147-150.student.harvard.edu
+ramehta	ttyp1	ttyp1	32658	7	USER_PROCESS	0	0	1013418119	roam147-150.student.harvard.edu
+wild	ttyp2	ttyp2	12896	7	USER_PROCESS	0	0	1013418202	roam68-29.fas.harvard.edu
+wild	ttyp2	ttyp2	12896	7	USER_PROCESS	0	0	1013418203	roam68-29.fas.harvard.edu
+	ttyp1	ttyp1	15474	8	DEAD_PROCESS	0	0	1013418471	
+jimenez2	ttyp1	ttyp1	15502	7	USER_PROCESS	0	0	1013418511	roam129-28.student.harvard.edu
+	ttyp1	ttyp1	15467	8	DEAD_PROCESS	0	0	1013418571	
+	ttyp2	ttyp2	15584	8	DEAD_PROCESS	0	0	1013418766	
+	ttyp9	ttyp9	8363	8	DEAD_PROCESS	0	0	1013418825	
+tbass	ttyp1	ttyp1	16217	7	USER_PROCESS	0	0	1013419184	roam159-151.student.harvard.edu
+tbass	ttyp1	ttyp1	16217	7	USER_PROCESS	0	0	1013419184	roam159-151.student.harvard.edu
+	ttyp1	ttyp1	12012	8	DEAD_PROCESS	0	0	1013419193	
+talbot	ttyp1	ttyp1	10327	7	USER_PROCESS	0	0	1013425644	h0050dac8bed6.ne.mediaone.net
+	ttyp1	ttyp1	605	8	DEAD_PROCESS	0	0	1013425848	
+jmziolk	ttyp1	ttyp1	14837	7	USER_PROCESS	0	0	1013426342	h00b0d0db1ac6.ne.mediaone.net
+	ttyp1	ttyp1	18017	8	DEAD_PROCESS	0	0	1013426390	
+ahchu	ttyp1	ttyp1	18472	7	USER_PROCESS	0	0	1013426640	advocate-3.fas.harvard.edu
+bphinds	ttyp2	ttyp2	18575	7	USER_PROCESS	0	0	1013426784	213.cambridge-11-12rs.ma.dial-access.att.net
+	ttys5	ttys5	26025	8	DEAD_PROCESS	0	0	1013426792	
+bphinds	ftp	ftpd16140	16140	7	USER_PROCESS	0	0	1013427141	213.cambridge-11-12rs.ma.dial-access.att.net
+	ttyp1	ttyp1	18726	8	DEAD_PROCESS	0	0	1013427583	
+posch	ttyp1	ttyp1	18622	7	USER_PROCESS	0	0	1013428244	h00045ad4db37.ne.mediaone.net
+posch	ttyp1	ttyp1	18622	7	USER_PROCESS	0	0	1013428244	h00045ad4db37.ne.mediaone.net
+	ttyp1	ttyp1	19531	8	DEAD_PROCESS	0	0	1013428276	
+	ftp	ftpd16140	16140	8	DEAD_PROCESS	0	0	1013428309	
+kimai	ttyp1	ttyp1	17213	7	USER_PROCESS	0	0	1013428320	who.fas.harvard.edu
+	ttyp1	ttyp1	15805	8	DEAD_PROCESS	0	0	1013428345	
+mlu	ttyp1	ttyp1	19542	7	USER_PROCESS	0	0	1013428548	roam187-151.student.harvard.edu
+mlu	ttyp1	ttyp1	19542	7	USER_PROCESS	0	0	1013428549	roam187-151.student.harvard.edu
+grad	ttyp9	ttyp9	15493	7	USER_PROCESS	0	0	1013428604	roam155-90.student.harvard.edu
+grad	ttyp9	ttyp9	15493	7	USER_PROCESS	0	0	1013428604	roam155-90.student.harvard.edu
+	ttyp9	ttyp9	4936	8	DEAD_PROCESS	0	0	1013428610	
+	ttyp2	ttyp2	16741	8	DEAD_PROCESS	0	0	1013428620	
+bphinds	ttyp2	ttyp2	19515	7	USER_PROCESS	0	0	1013428636	213.cambridge-11-12rs.ma.dial-access.att.net
+bphinds	ftp	ftpd16853	16853	7	USER_PROCESS	0	0	1013429216	213.cambridge-11-12rs.ma.dial-access.att.net
+antelo	ttyp9	ttyp9	19929	7	USER_PROCESS	0	0	1013429404	roam187-89.student.harvard.edu
+antelo	ttyp9	ttyp9	19929	7	USER_PROCESS	0	0	1013429404	roam187-89.student.harvard.edu
+	ttyrc	ttyrc	10007	8	DEAD_PROCESS	0	0	1013429407	
+	ttyue	ttyue	32027	8	DEAD_PROCESS	0	0	1013429445	
+kohlberg	ttypb	ttypb	20437	7	USER_PROCESS	0	0	1013429670	roam157-55.student.harvard.edu
+kohlberg	ttypb	ttypb	20437	7	USER_PROCESS	0	0	1013429670	roam157-55.student.harvard.edu
+	ttypb	ttypb	19581	8	DEAD_PROCESS	0	0	1013429756	
+knutsen	ttypb	ttypb	19925	7	USER_PROCESS	0	0	1013430444	roam155-180.student.harvard.edu
+knutsen	ttypb	ttypb	19925	7	USER_PROCESS	0	0	1013430444	roam155-180.student.harvard.edu
+info113	ftp	ftpd20945	20945	7	USER_PROCESS	0	0	1013430501	mori.harvard.edu.harvard.edu
+	ftp	ftpd20945	20945	8	DEAD_PROCESS	0	0	1013430590	
+khawkins	ttype	ttype	26154	7	USER_PROCESS	0	0	1013430773	roam141-177.student.harvard.edu
+khawkins	ttype	ttype	26154	7	USER_PROCESS	0	0	1013430773	roam141-177.student.harvard.edu
+	ttys2	ttys2	8865	8	DEAD_PROCESS	0	0	1013431090	
+janiak	ttyq0	ttyq0	21152	7	USER_PROCESS	0	0	1013431694	roam179-196.student.harvard.edu
+kkwok	ttyq2	ttyq2	20885	7	USER_PROCESS	0	0	1013432056	roam73-200.student.harvard.edu
+kkwok	ttyq2	ttyq2	20885	7	USER_PROCESS	0	0	1013432056	roam73-200.student.harvard.edu
+	ftp	ftpd16853	16853	8	DEAD_PROCESS	0	0	1013432072	
+bphinds	ftp	ftpd20598	20598	7	USER_PROCESS	0	0	1013432099	213.cambridge-11-12rs.ma.dial-access.att.net
+	ttyq0	ttyq0	21158	8	DEAD_PROCESS	0	0	1013432139	
+	ttype	ttype	21098	8	DEAD_PROCESS	0	0	1013432185	
+	ftp	ftpd20598	20598	8	DEAD_PROCESS	0	0	1013432230	
+akelly	ttyq0	ttyq0	21926	7	USER_PROCESS	0	0	1013432327	roam81-174.student.harvard.edu
+akelly	ttyq0	ttyq0	21926	7	USER_PROCESS	0	0	1013432327	roam81-174.student.harvard.edu
+	ttyq0	ttyq0	32404	8	DEAD_PROCESS	0	0	1013432337	
+cpetty	ttyq0	ttyq0	22077	7	USER_PROCESS	0	0	1013432337	sfp220-59.harvard.edu
+	ttyq0	ttyq0	32404	8	DEAD_PROCESS	0	0	1013432337	
+cpetty	ttyq0	ttyq0	22077	7	USER_PROCESS	0	0	1013432337	sfp220-59.harvard.edu
+ryamaguc	ttype	ttype	22215	7	USER_PROCESS	0	0	1013432416	roam169-110.student.harvard.edu
+bphinds	ftp	ftpd22161	22161	7	USER_PROCESS	0	0	1013432487	213.cambridge-11-12rs.ma.dial-access.att.net
+	ttype	ttype	21389	8	DEAD_PROCESS	0	0	1013432876	
+tbrady	ttype	ttype	17330	7	USER_PROCESS	0	0	1013432925	gateway-1.jhancock.com
+tbrady	ttyq4	ttyq4	18207	7	USER_PROCESS	0	0	1013432933	gateway-1.jhancock.com
+eoster	ttyq7	ttyq7	22273	7	USER_PROCESS	0	0	1013432961	roam163-79.student.harvard.edu
+ileshko	ttyq8	ttyq8	22471	7	USER_PROCESS	0	0	1013432973	burl-dhcp134-135.genuity.com
+	ttyq8	ttyq8	15921	8	DEAD_PROCESS	0	0	1013432983	
+eoster	ttyq8	ttyq8	22176	7	USER_PROCESS	0	0	1013433062	roam163-79.student.harvard.edu
+	ttyq8	ttyq8	22383	8	DEAD_PROCESS	0	0	1013433355	
+	ttyt2	ttyt2	19921	8	DEAD_PROCESS	0	0	1013433388	
+	ftp	ftpd22161	22161	8	DEAD_PROCESS	0	0	1013433405	
+ncoquill	ttyq8	ttyq8	22759	7	USER_PROCESS	0	0	1013433499	roam181-205.student.harvard.edu
+	ttyq8	ttyq8	21956	8	DEAD_PROCESS	0	0	1013433526	
+	ttyq7	ttyq7	22057	8	DEAD_PROCESS	0	0	1013433591	
+pellard	ttyq7	ttyq7	23522	7	USER_PROCESS	0	0	1013433596	roam143-106.student.harvard.edu
+pellard	ttyq7	ttyq7	23522	7	USER_PROCESS	0	0	1013433597	roam143-106.student.harvard.edu
+	ttyq7	ttyq7	19382	8	DEAD_PROCESS	0	0	1013433692	
+rotondo	ttyq7	ttyq7	21627	7	USER_PROCESS	0	0	1013433807	34.mupb.bstn.bstnmaco.dsl.att.net
+rotondo	ttyq7	ttyq7	21627	7	USER_PROCESS	0	0	1013433807	34.mupb.bstn.bstnmaco.dsl.att.net
+	ttyq7	ttyq7	9700	8	DEAD_PROCESS	0	0	1013433896	
+	ttyp2	ttyp2	19750	8	DEAD_PROCESS	0	0	1013434045	
+sdoshi	ttyp2	ttyp2	21993	7	USER_PROCESS	0	0	1013434164	whrb.student.harvard.edu
+sdoshi	ttyp2	ttyp2	21993	7	USER_PROCESS	0	0	1013434165	whrb.student.harvard.edu
+mlevy	ttyq7	ttyq7	23369	7	USER_PROCESS	0	0	1013434203	roam169-143.student.harvard.edu
+mlevy	ttyq7	ttyq7	23369	7	USER_PROCESS	0	0	1013434203	roam169-143.student.harvard.edu
+jporta	ttyq8	ttyq8	23428	7	USER_PROCESS	0	0	1013434247	roam87-39.student.harvard.edu
+jporta	ttyq8	ttyq8	23428	7	USER_PROCESS	0	0	1013434247	roam87-39.student.harvard.edu
+	ttyq7	ttyq7	23205	8	DEAD_PROCESS	0	0	1013434256	
+fxu	ttyq7	ttyq7	23182	7	USER_PROCESS	0	0	1013434275	roam149-166.student.harvard.edu
+fxu	ttyq7	ttyq7	23182	7	USER_PROCESS	0	0	1013434276	roam149-166.student.harvard.edu
+	ttyq8	ttyq8	21060	8	DEAD_PROCESS	0	0	1013434302	
+stella	ttyq8	ttyq8	20657	7	USER_PROCESS	0	0	1013434712	roam175-129.student.harvard.edu
+ccreiman	ttyqa	ttyqa	9132	7	USER_PROCESS	0	0	1013434829	140.247.126.188
+nazim	ttyqc	ttyqc	22821	7	USER_PROCESS	0	0	1013434933	pbh-labmac3.fas.harvard.edu
+nazim	ttyqc	ttyqc	22821	7	USER_PROCESS	0	0	1013434933	pbh-labmac3.fas.harvard.edu
+tbrady	ttyqd	ttyqd	22306	7	USER_PROCESS	0	0	1013434959	gateway-1.jhancock.com
+tarko	ttyqe	ttyqe	12690	7	USER_PROCESS	0	0	1013434981	ts010d27.cam-ma.concentric.net
+mkramer	ttyr1	ttyr1	23016	7	USER_PROCESS	0	0	1013435067	coolidge-17860.fas.harvard.edu
+	ttyp2	ttyp2	23186	8	DEAD_PROCESS	0	0	1013435082	
+mhwu	ttyr2	ttyr2	23745	7	USER_PROCESS	0	0	1013435122	roam161-76.student.harvard.edu
+mhwu	ttyr2	ttyr2	23745	7	USER_PROCESS	0	0	1013435123	roam161-76.student.harvard.edu
+isathitr	ttyp2	ttyp2	23355	7	USER_PROCESS	0	0	1013435132	ftiduser1.intdata.com
+	ttyr2	ttyr2	24164	8	DEAD_PROCESS	0	0	1013435155	
+	ttyq8	ttyq8	23587	8	DEAD_PROCESS	0	0	1013435162	
+hifip	ttyq8	ttyq8	23808	7	USER_PROCESS	0	0	1013435194	pbh-labmac3.fas.harvard.edu
+hifip	ttyq8	ttyq8	23808	7	USER_PROCESS	0	0	1013435194	pbh-labmac3.fas.harvard.edu
+jswong	ttyr2	ttyr2	23995	7	USER_PROCESS	0	0	1013435433	roam147-139.student.harvard.edu
+jswong	ttyr2	ttyr2	23995	7	USER_PROCESS	0	0	1013435433	roam147-139.student.harvard.edu
+miller4	ttyr3	ttyr3	24035	7	USER_PROCESS	0	0	1013435453	roam151-71.student.harvard.edu
+miller4	ttyr3	ttyr3	24035	7	USER_PROCESS	0	0	1013435453	roam151-71.student.harvard.edu
+jmziolk	ttyr5	ttyr5	24070	7	USER_PROCESS	0	0	1013435635	h00b0d0db1ac6.ne.mediaone.net
+matchett	ttyr7	ttyr7	16392	7	USER_PROCESS	0	0	1013435658	roam151-164.student.harvard.edu
+matchett	ttyr7	ttyr7	16392	7	USER_PROCESS	0	0	1013435658	roam151-164.student.harvard.edu
+	ttyr5	ttyr5	16749	8	DEAD_PROCESS	0	0	1013435678	
+	ttyqe	ttyqe	17794	8	DEAD_PROCESS	0	0	1013435696	
+	ttyq7	ttyq7	23254	8	DEAD_PROCESS	0	0	1013435751	
+rlthornt	ttyqe	ttyqe	19891	7	USER_PROCESS	0	0	1013435827	nas2-224.fas.harvard.edu
+desjard	ttyq7	ttyq7	18782	7	USER_PROCESS	0	0	1013435830	desjard-2.fas.harvard.edu
+bhughes	ttyr5	ttyr5	24824	7	USER_PROCESS	0	0	1013435833	216.75.138.98
+	ttyr5	ttyr5	24708	8	DEAD_PROCESS	0	0	1013435893	
+	ttyr7	ttyr7	22862	8	DEAD_PROCESS	0	0	1013435925	
+rlthornt	ftp	ftpd21201	21201	7	USER_PROCESS	0	0	1013436005	nas2-224.fas.harvard.edu
+demashk	ttyr5	ttyr5	24468	7	USER_PROCESS	0	0	1013436137	roam183-38.student.harvard.edu
+demashk	ttyr5	ttyr5	24468	7	USER_PROCESS	0	0	1013436137	roam183-38.student.harvard.edu
+lee42	ttyr7	ttyr7	20394	7	USER_PROCESS	0	0	1013436190	roam189-30.student.harvard.edu
+lee42	ttyr7	ttyr7	20394	7	USER_PROCESS	0	0	1013436190	roam189-30.student.harvard.edu
+lee33	ttyr8	ttyr8	24595	7	USER_PROCESS	0	0	1013436239	roam193-126.student.harvard.edu
+lee33	ttyr8	ttyr8	24595	7	USER_PROCESS	0	0	1013436239	roam193-126.student.harvard.edu
+	ttyr2	ttyr2	22873	8	DEAD_PROCESS	0	0	1013436274	
+	ttyq7	ttyq7	24350	8	DEAD_PROCESS	0	0	1013436300	
+suciu	ttyq7	ttyq7	24759	7	USER_PROCESS	0	0	1013436366	roam155-133.student.harvard.edu
+suciu	ttyq7	ttyq7	24759	7	USER_PROCESS	0	0	1013436366	roam155-133.student.harvard.edu
+	ttyq7	ttyq7	25235	8	DEAD_PROCESS	0	0	1013436401	
+	ttyp1	ttyp1	5681	8	DEAD_PROCESS	0	0	1013436428	
+wu17	ttyp1	ttyp1	18281	7	USER_PROCESS	0	0	1013436437	roam157-125.student.harvard.edu
+wu17	ttyp1	ttyp1	18281	7	USER_PROCESS	0	0	1013436437	roam157-125.student.harvard.edu
+smkim	ttyq7	ttyq7	24178	7	USER_PROCESS	0	0	1013436473	roam169-80.student.harvard.edu
+	ttyq7	ttyq7	25286	8	DEAD_PROCESS	0	0	1013436497	
+serban	ttyq7	ttyq7	25004	7	USER_PROCESS	0	0	1013436534	roam153-121.student.harvard.edu
+serban	ttyq7	ttyq7	25004	7	USER_PROCESS	0	0	1013436534	roam153-121.student.harvard.edu
+ekaxiras	ttyr2	ttyr2	32208	7	USER_PROCESS	0	0	1013436570	ppp74-098.ioannina.access.acn.gr
+ekaxiras	ttyr2	ttyr2	32208	7	USER_PROCESS	0	0	1013436571	ppp74-098.ioannina.access.acn.gr
+	ttyr7	ttyr7	24816	8	DEAD_PROCESS	0	0	1013436639	
+cmkent	ttyr7	ttyr7	6466	7	USER_PROCESS	0	0	1013436656	140.247.126.127
+	ttyp1	ttyp1	22395	8	DEAD_PROCESS	0	0	1013436695	
+	ftp	ftpd21201	21201	8	DEAD_PROCESS	0	0	1013436734	
+rlthornt	ftp	ftpd22657	22657	7	USER_PROCESS	0	0	1013436870	nas2-075.fas.harvard.edu
+mashah	ttyp1	ttyp1	25751	7	USER_PROCESS	0	0	1013436915	roam185-170.student.harvard.edu
+mashah	ttyp1	ttyp1	25751	7	USER_PROCESS	0	0	1013436915	roam185-170.student.harvard.edu
+ekaxiras	ttyrb	ttyrb	24568	7	USER_PROCESS	0	0	1013436917	is02.fas.harvard.edu
+rlthornt	ttyrc	ttyrc	25601	7	USER_PROCESS	0	0	1013436955	nas2-075.fas.harvard.edu
+petrillo	ttys0	ttys0	25742	7	USER_PROCESS	0	0	1013436982	net-19438.fas.harvard.edu
+ywu	ttyrf	ttyrf	25364	7	USER_PROCESS	0	0	1013436995	yingwu-2.fas.harvard.edu
+aparsons	ttys2	ttys2	25165	7	USER_PROCESS	0	0	1013437029	roam151-25.student.harvard.edu
+aparsons	ttys2	ttys2	25165	7	USER_PROCESS	0	0	1013437029	roam151-25.student.harvard.edu
+tselent	ttys4	ttys4	25166	7	USER_PROCESS	0	0	1013437088	roam163-40.student.harvard.edu
+tselent	ttys4	ttys4	25166	7	USER_PROCESS	0	0	1013437088	roam163-40.student.harvard.edu
+ekaxiras	ttys5	ttys5	17850	7	USER_PROCESS	0	0	1013437145	ppp74-098.ioannina.access.acn.gr
+ekaxiras	ttys5	ttys5	17850	7	USER_PROCESS	0	0	1013437146	ppp74-098.ioannina.access.acn.gr
+	ttyr7	ttyr7	25010	8	DEAD_PROCESS	0	0	1013437176	
+root	ttyr7	ttyr7	25470	7	USER_PROCESS	0	0	1013437256	admin-31.fas.harvard.edu
+	ttyr7	ttyr7	25271	8	DEAD_PROCESS	0	0	1013437353	
+	ttyqe	ttyqe	24872	8	DEAD_PROCESS	0	0	1013437373	
+lee42	ttyqe	ttyqe	25682	7	USER_PROCESS	0	0	1013437409	roam189-30.student.harvard.edu
+lee42	ttyqe	ttyqe	25682	7	USER_PROCESS	0	0	1013437409	roam189-30.student.harvard.edu
+weitz	ftp	ftpd25938	25938	7	USER_PROCESS	0	0	1013437501	146-115-64-7.c3-0.bkl-ubr2.sbo-bkl.ma.cable.rcn.com
+hchang	ttyr7	ttyr7	22240	7	USER_PROCESS	0	0	1013437572	roam129-43.student.harvard.edu
+hchang	ttyr7	ttyr7	22240	7	USER_PROCESS	0	0	1013437572	roam129-43.student.harvard.edu
+	ttyr5	ttyr5	23878	8	DEAD_PROCESS	0	0	1013437591	
+goldenh	ttyr5	ttyr5	23605	7	USER_PROCESS	0	0	1013437620	out1.pharma.com
+goldenh	ttyr5	ttyr5	23605	7	USER_PROCESS	0	0	1013437620	out1.pharma.com
+	ttyrb	ttyrb	25627	8	DEAD_PROCESS	0	0	1013437638	
+	ttyp1	ttyp1	25207	8	DEAD_PROCESS	0	0	1013437664	
+jporta	ttyp1	ttyp1	27294	7	USER_PROCESS	0	0	1013437677	roam87-39.student.harvard.edu
+jporta	ttyp1	ttyp1	27294	7	USER_PROCESS	0	0	1013437677	roam87-39.student.harvard.edu
+	ttyp1	ttyp1	25975	8	DEAD_PROCESS	0	0	1013437678	
+dove	ttyp1	ttyp1	26037	7	USER_PROCESS	0	0	1013437687	roam135-84.student.harvard.edu
+dove	ttyp1	ttyp1	26037	7	USER_PROCESS	0	0	1013437687	roam135-84.student.harvard.edu
+suciu	ttyrb	ttyrb	26522	7	USER_PROCESS	0	0	1013437768	roam155-133.student.harvard.edu
+suciu	ttyrb	ttyrb	26522	7	USER_PROCESS	0	0	1013437768	roam155-133.student.harvard.edu
+	ttys5	ttys5	25907	8	DEAD_PROCESS	0	0	1013437783	
+marinesc	ttys5	ttys5	26597	7	USER_PROCESS	0	0	1013437801	bluebox-215.mit.edu
+marinesc	ttys5	ttys5	26597	7	USER_PROCESS	0	0	1013437801	bluebox-215.mit.edu
+	ttyqe	ttyqe	19244	8	DEAD_PROCESS	0	0	1013437813	
+	ttyrc	ttyrc	25582	8	DEAD_PROCESS	0	0	1013437871	
+kwozniak	ftp	ftpd24536	24536	7	USER_PROCESS	0	0	1013437890	roam87-50.student.harvard.edu
+rriyo	ftp	ftpd21880	21880	7	USER_PROCESS	0	0	1013437891	pme7125.med.harvard.edu
+	ttyq9	ttyq9	22084	8	DEAD_PROCESS	0	0	1013437895	
+	ttyq1	ttyq1	27026	8	DEAD_PROCESS	0	0	1013437897	
+	ttyq6	ttyq6	27339	8	DEAD_PROCESS	0	0	1013437900	
+	ttys5	ttys5	22851	8	DEAD_PROCESS	0	0	1013437902	
+	ftp	ftpd24536	24536	8	DEAD_PROCESS	0	0	1013437916	
+mashah	ttyq1	ttyq1	24204	7	USER_PROCESS	0	0	1013437918	roam185-170.student.harvard.edu
+mashah	ttyq1	ttyq1	24204	7	USER_PROCESS	0	0	1013437918	roam185-170.student.harvard.edu
+stella	ttyq6	ttyq6	26832	7	USER_PROCESS	0	0	1013437923	roam175-129.student.harvard.edu
+	ttyq1	ttyq1	26762	8	DEAD_PROCESS	0	0	1013437930	
+srice	ttyq1	ttyq1	12841	7	USER_PROCESS	0	0	1013438030	dialup-63.214.94.51.dial1.boston1.level3.net
+srice	ttyq1	ttyq1	12841	7	USER_PROCESS	0	0	1013438030	dialup-63.214.94.51.dial1.boston1.level3.net
+knox	ttyq9	ttyq9	26605	7	USER_PROCESS	0	0	1013438089	roam153-58.student.harvard.edu
+knox	ttyq9	ttyq9	26605	7	USER_PROCESS	0	0	1013438090	roam153-58.student.harvard.edu
+	ttyrb	ttyrb	26212	8	DEAD_PROCESS	0	0	1013438092	
+ruidong	ttyqe	ttyqe	26688	7	USER_PROCESS	0	0	1013438128	roam67-182.student.harvard.edu
+ruidong	ttyqe	ttyqe	26688	7	USER_PROCESS	0	0	1013438128	roam67-182.student.harvard.edu
+	ttyq9	ttyq9	26751	8	DEAD_PROCESS	0	0	1013438161	
+	ftp	ftpd22657	22657	8	DEAD_PROCESS	0	0	1013438209	
+asu	ttyq9	ttyq9	25014	7	USER_PROCESS	0	0	1013438215	roam187-170.student.harvard.edu
+asu	ttyq9	ttyq9	25014	7	USER_PROCESS	0	0	1013438215	roam187-170.student.harvard.edu
+	ttyq6	ttyq6	24432	8	DEAD_PROCESS	0	0	1013438223	
+hchang	ttyq6	ttyq6	24241	7	USER_PROCESS	0	0	1013438239	roam129-43.student.harvard.edu
+hchang	ttyq6	ttyq6	24241	7	USER_PROCESS	0	0	1013438239	roam129-43.student.harvard.edu
+	ttyq6	ttyq6	14177	8	DEAD_PROCESS	0	0	1013438260	
+ngatia	ttyq6	ttyq6	25492	7	USER_PROCESS	0	0	1013438301	roam85-172.student.harvard.edu
+ngatia	ttyq6	ttyq6	25492	7	USER_PROCESS	0	0	1013438301	roam85-172.student.harvard.edu
+	ftp	ftpd21880	21880	8	DEAD_PROCESS	0	0	1013438307	
+	ttyq9	ttyq9	27204	8	DEAD_PROCESS	0	0	1013438319	
+jha2	ttyq9	ttyq9	27366	7	USER_PROCESS	0	0	1013438345	roam75-68.student.harvard.edu
+jha2	ttyq9	ttyq9	27366	7	USER_PROCESS	0	0	1013438345	roam75-68.student.harvard.edu
+jcable	ttyrb	ttyrb	6938	7	USER_PROCESS	0	0	1013438400	ELATIOR.jitf.rl.af.mil
+	ttyrb	ttyrb	27363	8	DEAD_PROCESS	0	0	1013438411	
+cable	ttyrb	ttyrb	27497	7	USER_PROCESS	0	0	1013438432	roam165-194.student.harvard.edu
+cable	ttyrb	ttyrb	27497	7	USER_PROCESS	0	0	1013438432	roam165-194.student.harvard.edu
+	ttyqe	ttyqe	27057	8	DEAD_PROCESS	0	0	1013438522	
+	ttyrb	ttyrb	27081	8	DEAD_PROCESS	0	0	1013438532	
+lee44	ttyrb	ttyrb	26963	7	USER_PROCESS	0	0	1013438597	roam165-127.student.harvard.edu
+lee44	ttyrb	ttyrb	26963	7	USER_PROCESS	0	0	1013438597	roam165-127.student.harvard.edu
+kretzsch	ttyqe	ttyqe	27118	7	USER_PROCESS	0	0	1013438609	h00045a254224.ne.mediaone.net
+	ttyqe	ttyqe	27774	8	DEAD_PROCESS	0	0	1013438613	
+	ttyrb	ttyrb	25848	8	DEAD_PROCESS	0	0	1013438717	
+lee44	ttyqe	ttyqe	27763	7	USER_PROCESS	0	0	1013438721	roam165-127.student.harvard.edu
+lee44	ttyqe	ttyqe	27763	7	USER_PROCESS	0	0	1013438721	roam165-127.student.harvard.edu
+bcohen	ttyrc	ttyrc	27124	7	USER_PROCESS	0	0	1013438728	dhcp-108-239.harvard.edu
+	ttyq6	ttyq6	27372	8	DEAD_PROCESS	0	0	1013438813	
+	ttyqe	ttyqe	27723	8	DEAD_PROCESS	0	0	1013438832	
+	ttys0	ttys0	25745	8	DEAD_PROCESS	0	0	1013438931	
+	ttyrc	ttyrc	27771	8	DEAD_PROCESS	0	0	1013438946	
+shiah	ttyq6	ttyq6	21589	7	USER_PROCESS	0	0	1013439174	roam175-76.student.harvard.edu
+shiah	ttyq6	ttyq6	21589	7	USER_PROCESS	0	0	1013439174	roam175-76.student.harvard.edu
+ksiqueir	ttyqe	ttyqe	28049	7	USER_PROCESS	0	0	1013439231	roam151-190.student.harvard.edu
+ksiqueir	ttyqe	ttyqe	28049	7	USER_PROCESS	0	0	1013439231	roam151-190.student.harvard.edu
+	ttyqe	ttyqe	27864	8	DEAD_PROCESS	0	0	1013439233	
+	ttyq6	ttyq6	27952	8	DEAD_PROCESS	0	0	1013439312	
+ksiqueir	ttyq6	ttyq6	26570	7	USER_PROCESS	0	0	1013439350	roam151-190.student.harvard.edu
+ksiqueir	ttyq6	ttyq6	26570	7	USER_PROCESS	0	0	1013439350	roam151-190.student.harvard.edu
+	ttyq6	ttyq6	27645	8	DEAD_PROCESS	0	0	1013439359	
+pkrishn	ttyq6	ttyq6	27758	7	USER_PROCESS	0	0	1013439378	sun-barr.Sun.COM
+	ttyq2	ttyq2	9259	8	DEAD_PROCESS	0	0	1013439392	
+ppathak	ttyq2	ttyq2	28261	7	USER_PROCESS	0	0	1013439508	roam142-116.fas.harvard.edu
+ppathak	ttyq2	ttyq2	28261	7	USER_PROCESS	0	0	1013439508	roam142-116.fas.harvard.edu
+	ttyq2	ttyq2	28460	8	DEAD_PROCESS	0	0	1013439559	
+lee71	ttyq2	ttyq2	26567	7	USER_PROCESS	0	0	1013439662	roam87-126.student.harvard.edu
+lee71	ttyq2	ttyq2	26567	7	USER_PROCESS	0	0	1013439663	roam87-126.student.harvard.edu
+	ttyq2	ttyq2	26908	8	DEAD_PROCESS	0	0	1013439695	
+ahoang	ttyq2	ttyq2	27619	7	USER_PROCESS	0	0	1013439848	h0060084163a5.ne.mediaone.net
+ahoang	ttyq2	ttyq2	27619	7	USER_PROCESS	0	0	1013439848	h0060084163a5.ne.mediaone.net
+dychen	ttyqe	ttyqe	28568	7	USER_PROCESS	0	0	1013439849	roam143-63.student.harvard.edu
+dychen	ttyqe	ttyqe	28568	7	USER_PROCESS	0	0	1013439849	roam143-63.student.harvard.edu
+agoldst	ttyrb	ttyrb	27981	7	USER_PROCESS	0	0	1013439856	roam163-126.student.harvard.edu
+agoldst	ttyrb	ttyrb	27981	7	USER_PROCESS	0	0	1013439856	roam163-126.student.harvard.edu
+	ttys4	ttys4	21632	8	DEAD_PROCESS	0	0	1013439996	
+jepson	ttyrc	ttyrc	25616	7	USER_PROCESS	0	0	1013440022	ewc5.student.harvard.edu
+jepson	ttyrc	ttyrc	25616	7	USER_PROCESS	0	0	1013440022	ewc5.student.harvard.edu
+hiestand	ttys0	ttys0	28791	7	USER_PROCESS	0	0	1013440082	roam163-64.student.harvard.edu
+hiestand	ttys0	ttys0	28791	7	USER_PROCESS	0	0	1013440082	roam163-64.student.harvard.edu
+	ttyrc	ttyrc	20836	8	DEAD_PROCESS	0	0	1013440102	
+	ttys0	ttys0	23857	8	DEAD_PROCESS	0	0	1013440110	
+hartnett	ttys0	ttys0	28649	7	USER_PROCESS	0	0	1013440115	roam189-43.student.harvard.edu
+hartnett	ttys0	ttys0	28649	7	USER_PROCESS	0	0	1013440115	roam189-43.student.harvard.edu
+alane	ttyrc	ttyrc	425	7	USER_PROCESS	0	0	1013440117	roam185-97.student.harvard.edu
+	ttys0	ttys0	7904	8	DEAD_PROCESS	0	0	1013440118	
+hifip	ttys0	ttys0	29069	7	USER_PROCESS	0	0	1013440154	holyoke-17816.fas.harvard.edu
+hifip	ttys0	ttys0	29069	7	USER_PROCESS	0	0	1013440154	holyoke-17816.fas.harvard.edu
+	ttyq8	ttyq8	22488	8	DEAD_PROCESS	0	0	1013440167	
+lib51	ftp	ftpd15189	15189	7	USER_PROCESS	0	0	1013440279	roam199-233.dce.harvard.edu
+	ftp	ftpd15189	15189	8	DEAD_PROCESS	0	0	1013440293	
+gribetz	ttyq8	ttyq8	14777	7	USER_PROCESS	0	0	1013440411	roam187-129.student.harvard.edu
+gribetz	ttyq8	ttyq8	14777	7	USER_PROCESS	0	0	1013440411	roam187-129.student.harvard.edu
+eisenb	ttys4	ttys4	20922	7	USER_PROCESS	0	0	1013440441	roam175-44.student.harvard.edu
+eisenb	ttys4	ttys4	20922	7	USER_PROCESS	0	0	1013440441	roam175-44.student.harvard.edu
+	ttyq2	ttyq2	28807	8	DEAD_PROCESS	0	0	1013440449	
+pedroza	ttyq2	ttyq2	29130	7	USER_PROCESS	0	0	1013440478	hustat.stat.harvard.edu
+jforman	ttys5	ttys5	29099	7	USER_PROCESS	0	2	1013440480	140.247.131.64
+	ttyq2	ttyq2	28967	8	DEAD_PROCESS	0	0	1013440480	
+	ttys4	ttys4	31533	8	DEAD_PROCESS	0	0	1013440500	
+	ttyq8	ttyq8	29089	8	DEAD_PROCESS	0	0	1013440520	
+	ttyr2	ttyr2	25203	8	DEAD_PROCESS	0	0	1013440586	
+lin7	ttyq2	ttyq2	27398	7	USER_PROCESS	0	0	1013440615	aca1f006.ipt.aol.com
+lin7	ttyq2	ttyq2	27398	7	USER_PROCESS	0	0	1013440615	aca1f006.ipt.aol.com
+tarko	ttyq8	ttyq8	27024	7	USER_PROCESS	0	0	1013440708	ts005d35.cam-ma.concentric.net
+rdavies	ttyr2	ttyr2	16575	7	USER_PROCESS	0	0	1013440752	roam75-208.student.harvard.edu
+rdavies	ttyr2	ttyr2	16575	7	USER_PROCESS	0	0	1013440752	roam75-208.student.harvard.edu
+guen	ttys4	ttys4	27018	7	USER_PROCESS	0	0	1013440753	roam187-133.student.harvard.edu
+guen	ttys4	ttys4	27018	7	USER_PROCESS	0	0	1013440753	roam187-133.student.harvard.edu
+rdavies	ttys6	ttys6	21837	7	USER_PROCESS	0	0	1013440755	roam75-208.student.harvard.edu
+rdavies	ttys6	ttys6	21837	7	USER_PROCESS	0	0	1013440755	roam75-208.student.harvard.edu
+	ttyq2	ttyq2	24285	8	DEAD_PROCESS	0	0	1013440763	
+rhamilt	ttyq2	ttyq2	28434	7	USER_PROCESS	0	0	1013440827	roam159-199.student.harvard.edu
+hartnett	ttys7	ttys7	25746	7	USER_PROCESS	0	0	1013440899	roam189-43.student.harvard.edu
+hartnett	ttys7	ttys7	25746	7	USER_PROCESS	0	0	1013440899	roam189-43.student.harvard.edu
+	ttys7	ttys7	22637	8	DEAD_PROCESS	0	0	1013440900	
+tselent	ttys7	ttys7	29635	7	USER_PROCESS	0	0	1013440931	roam163-40.student.harvard.edu
+tselent	ttys7	ttys7	29635	7	USER_PROCESS	0	0	1013440931	roam163-40.student.harvard.edu
+	ttyqa	ttyqa	23627	8	DEAD_PROCESS	0	0	1013440958	
+	ttyq8	ttyq8	29400	8	DEAD_PROCESS	0	0	1013440964	
+	ttys7	ttys7	29323	8	DEAD_PROCESS	0	0	1013441053	
+lpan	ttyq8	ttyq8	24654	7	USER_PROCESS	0	0	1013441087	ascential-bh.ascentialsoftware.com
+klyons	ttyqa	ttyqa	29939	7	USER_PROCESS	0	0	1013441102	roam157-221.student.harvard.edu
+wolk	ttys7	ttys7	29744	7	USER_PROCESS	0	0	1013441105	kirby.harvard.edu
+hunt	ttys8	ttys8	30186	7	USER_PROCESS	0	0	1013441106	net-36179.fas.harvard.edu
+hunt	ttys8	ttys8	30186	7	USER_PROCESS	0	0	1013441106	net-36179.fas.harvard.edu
+burrage	ttys9	ttys9	21011	7	USER_PROCESS	0	0	1013441141	roam129-103.student.harvard.edu
+burrage	ttys9	ttys9	21011	7	USER_PROCESS	0	0	1013441141	roam129-103.student.harvard.edu
+yamins	ftp	ftpd29447	29447	7	USER_PROCESS	0	0	1013441142	roam183-132.student.harvard.edu
+	ttyqa	ttyqa	29515	8	DEAD_PROCESS	0	0	1013441179	
+	ftp	ftpd29447	29447	8	DEAD_PROCESS	0	0	1013441181	
+blmiller	ttysa	ttysa	29549	7	USER_PROCESS	0	0	1013441181	roam131-145.student.harvard.edu
+	ttyq8	ttyq8	29164	8	DEAD_PROCESS	0	0	1013441228	
+desjard	ttyq8	ttyq8	30401	7	USER_PROCESS	0	0	1013441271	desjard-2.fas.harvard.edu
+	ttyrf	ttyrf	25836	8	DEAD_PROCESS	0	0	1013441338	
+	ttyq8	ttyq8	28936	8	DEAD_PROCESS	0	0	1013441341	
+schu	ttyq8	ttyq8	30443	7	USER_PROCESS	0	0	1013441365	pool-151-203-201-128.bos.east.verizon.net
+gfriedm	ttyqa	ttyqa	30474	7	USER_PROCESS	0	0	1013441367	roam155-201.student.harvard.edu
+	ttyqa	ttyqa	29478	8	DEAD_PROCESS	0	0	1013441371	
+kmastell	ttyqa	ttyqa	27705	7	USER_PROCESS	0	0	1013441400	paine-pspc2.fas.harvard.edu
+	ttyq8	ttyq8	27431	8	DEAD_PROCESS	0	0	1013441424	
+	ttyqa	ttyqa	25960	8	DEAD_PROCESS	0	0	1013441439	
+lamberti	ttyq8	ttyq8	30583	7	USER_PROCESS	0	0	1013441496	nas1-065.fas.harvard.edu
+antunes	ttyrf	ttyrf	17814	7	USER_PROCESS	0	0	1013441528	roam183-170.student.harvard.edu
+antunes	ttyrf	ttyrf	17814	7	USER_PROCESS	0	0	1013441528	roam183-170.student.harvard.edu
+carneval	ttyqa	ttyqa	30557	7	USER_PROCESS	0	0	1013441531	is06.fas.harvard.edu
+andychen	ttysc	ttysc	30183	7	USER_PROCESS	0	0	1013441566	pool-141-154-38-32.bos.east.verizon.net
+andychen	ttysc	ttysc	30183	7	USER_PROCESS	0	0	1013441567	pool-141-154-38-32.bos.east.verizon.net
+	ttyq8	ttyq8	28828	8	DEAD_PROCESS	0	0	1013441609	
+jpreston	ttyq8	ttyq8	28892	7	USER_PROCESS	0	0	1013441654	is01.fas.harvard.edu
+	ttyr7	ttyr7	24657	8	DEAD_PROCESS	0	0	1013441685	
+jetchev	ttyr7	ttyr7	4665	7	USER_PROCESS	0	0	1013441726	kodar.mit.edu
+jetchev	ttyr7	ttyr7	4665	7	USER_PROCESS	0	0	1013441726	kodar.mit.edu
+dubner	ftp	ftpd8641	8641	7	USER_PROCESS	0	0	1013441749	roam167-166.student.harvard.edu
+	ttyq8	ttyq8	29692	8	DEAD_PROCESS	0	0	1013441755	
+andychen	ttyq8	ttyq8	30580	7	USER_PROCESS	0	0	1013441794	pool-141-154-38-32.bos.east.verizon.net
+andychen	ttyq8	ttyq8	30580	7	USER_PROCESS	0	0	1013441794	pool-141-154-38-32.bos.east.verizon.net
+lhuang	ttyse	ttyse	29313	7	USER_PROCESS	0	0	1013441815	134.174.16.108
+lhuang	ttyse	ttyse	29313	7	USER_PROCESS	0	0	1013441815	134.174.16.108
+	ftp	ftpd8641	8641	8	DEAD_PROCESS	0	0	1013441836	
+	ttyr7	ttyr7	27888	8	DEAD_PROCESS	0	0	1013441850	
+dtsao	ttysf	ttysf	2215	7	USER_PROCESS	0	0	1013441868	wab58031.harvard.edu
+flevy	ttyr7	ttyr7	31010	7	USER_PROCESS	0	0	1013441871	140.247.126.57
+	ttyrf	ttyrf	30623	8	DEAD_PROCESS	0	0	1013441873	
+peller	ttyrf	ttyrf	31233	7	USER_PROCESS	0	0	1013441914	roam163-51.student.harvard.edu
+peller	ttyrf	ttyrf	31233	7	USER_PROCESS	0	0	1013441914	roam163-51.student.harvard.edu
+	ttyse	ttyse	29677	8	DEAD_PROCESS	0	0	1013441963	
+	ttyr7	ttyr7	30921	8	DEAD_PROCESS	0	0	1013441985	
+cs276r	ftp	ftpd8900	8900	7	USER_PROCESS	0	0	1013442141	hiccup.eecs.harvard.edu
+	ttyrf	ttyrf	18832	8	DEAD_PROCESS	0	0	1013442142	
+djeu	ttyr7	ttyr7	30370	7	USER_PROCESS	0	0	1013442179	roam171-195.student.harvard.edu
+djeu	ttyr7	ttyr7	30370	7	USER_PROCESS	0	0	1013442179	roam171-195.student.harvard.edu
+binkley	ttyrf	ttyrf	31161	7	USER_PROCESS	0	0	1013442205	roam131-194.student.harvard.edu
+nwalker	ttyse	ttyse	31908	7	USER_PROCESS	0	0	1013442267	roam165-34.student.harvard.edu
+roe	ttyt1	ttyt1	28115	7	USER_PROCESS	0	0	1013442295	roam185-48.student.harvard.edu
+	ttyse	ttyse	12623	8	DEAD_PROCESS	0	0	1013442321	
+ledlie	ttyse	ttyse	19050	7	USER_PROCESS	0	0	1013442329	roam193-133.student.harvard.edu
+ledlie	ttyse	ttyse	19050	7	USER_PROCESS	0	0	1013442329	roam193-133.student.harvard.edu
+cs276r	ttyt2	ttyt2	32146	7	USER_PROCESS	0	0	1013442344	hiccup.eecs.harvard.edu
+	ttyse	ttyse	25871	8	DEAD_PROCESS	0	0	1013442371	
+	ttyr7	ttyr7	31287	8	DEAD_PROCESS	0	0	1013442378	
+shamji	ttyse	ttyse	29633	7	USER_PROCESS	0	0	1013442507	slsmac29.harvard.edu
+shamji	ttyse	ttyse	29633	7	USER_PROCESS	0	0	1013442507	slsmac29.harvard.edu
+apoon	ttyr7	ttyr7	32450	7	USER_PROCESS	0	0	1013442510	roam163-200.student.harvard.edu
+	ttyr7	ttyr7	32495	8	DEAD_PROCESS	0	0	1013442540	
+ruidong	ttyr7	ttyr7	32452	7	USER_PROCESS	0	0	1013442544	hpair.student.harvard.edu
+ruidong	ttyr7	ttyr7	32452	7	USER_PROCESS	0	0	1013442544	hpair.student.harvard.edu
+dychen	ttyt3	ttyt3	24589	7	USER_PROCESS	0	0	1013442569	roam143-63.student.harvard.edu
+dychen	ttyt3	ttyt3	24589	7	USER_PROCESS	0	0	1013442569	roam143-63.student.harvard.edu
+	ttyse	ttyse	28241	8	DEAD_PROCESS	0	0	1013442582	
+kkwok	ttyse	ttyse	32659	7	USER_PROCESS	0	0	1013442612	roam73-200.student.harvard.edu
+kkwok	ttyse	ttyse	32659	7	USER_PROCESS	0	0	1013442612	roam73-200.student.harvard.edu
+	ttyse	ttyse	32520	8	DEAD_PROCESS	0	0	1013442651	
+dychen	ttyse	ttyse	90	7	USER_PROCESS	0	0	1013442694	roam143-63.student.harvard.edu
+dychen	ttyse	ttyse	90	7	USER_PROCESS	0	0	1013442694	roam143-63.student.harvard.edu
+dychen	ttyt4	ttyt4	5535	7	USER_PROCESS	0	0	1013442712	roam143-63.student.harvard.edu
+dychen	ttyt4	ttyt4	5535	7	USER_PROCESS	0	0	1013442712	roam143-63.student.harvard.edu
+	ttyq9	ttyq9	27374	8	DEAD_PROCESS	0	0	1013442798	
+knox	ttyt5	ttyt5	7462	7	USER_PROCESS	0	0	1013442817	roam153-58.student.harvard.edu
+knox	ttyt5	ttyt5	7462	7	USER_PROCESS	0	0	1013442817	roam153-58.student.harvard.edu
+lib51	ttyq9	ttyq9	27	7	USER_PROCESS	0	0	1013442820	roam199-233.dce.harvard.edu
+dfchen	ttyt7	ttyt7	237	7	USER_PROCESS	0	0	1013442853	roam147-198.student.harvard.edu
+	ttyp2	ttyp2	18880	8	DEAD_PROCESS	0	0	1013442915	
+atkinson	ttyp2	ttyp2	32665	7	USER_PROCESS	0	0	1013442982	roam189-116.student.harvard.edu
+atkinson	ttyp2	ttyp2	32665	7	USER_PROCESS	0	0	1013442982	roam189-116.student.harvard.edu
+mcgraw	ttyt9	ttyt9	32056	7	USER_PROCESS	0	0	1013443016	140.247.126.82
+rtang	ttyta	ttyta	31964	7	USER_PROCESS	0	0	1013443024	hustat.stat.harvard.edu
+	ttysf	ttysf	31077	8	DEAD_PROCESS	0	0	1013443079	
+greyson	ttysf	ttysf	409	7	USER_PROCESS	0	0	1013443094	roam153-211.student.harvard.edu
+greyson	ttysf	ttysf	409	7	USER_PROCESS	0	0	1013443094	roam153-211.student.harvard.edu
+jmontoy	ttytb	ttytb	766	7	USER_PROCESS	0	0	1013443168	roam173-59.student.harvard.edu
+jmontoy	ttytb	ttytb	766	7	USER_PROCESS	0	0	1013443168	roam173-59.student.harvard.edu
+	ttyq6	ttyq6	27585	8	DEAD_PROCESS	0	0	1013443169	
+	ttyrf	ttyrf	31443	8	DEAD_PROCESS	0	0	1013443171	
+	ttyt5	ttyt5	17309	8	DEAD_PROCESS	0	0	1013443188	
+	ftp	ftpd8900	8900	8	DEAD_PROCESS	0	0	1013443215	
+ranli	ttyq6	ttyq6	1113	7	USER_PROCESS	0	0	1013443220	roam83-106.student.harvard.edu
+ranli	ttyq6	ttyq6	1113	7	USER_PROCESS	0	0	1013443220	roam83-106.student.harvard.edu
+	ttyr8	ttyr8	29731	8	DEAD_PROCESS	0	0	1013443224	
+	ttyq6	ttyq6	14169	8	DEAD_PROCESS	0	0	1013443232	
+	ttyt9	ttyt9	15850	8	DEAD_PROCESS	0	0	1013443254	
+	ttyt7	ttyt7	29830	8	DEAD_PROCESS	0	0	1013443279	
+	ttytb	ttytb	29798	8	DEAD_PROCESS	0	0	1013443286	
+kamenica	ttyq6	ttyq6	31571	7	USER_PROCESS	0	0	1013443307	208-59-250-64.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+kamenica	ttyq6	ttyq6	31571	7	USER_PROCESS	0	0	1013443307	208-59-250-64.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+mlevy	ttyrf	ttyrf	218	7	USER_PROCESS	0	0	1013443392	roam169-143.student.harvard.edu
+mlevy	ttyrf	ttyrf	218	7	USER_PROCESS	0	0	1013443392	roam169-143.student.harvard.edu
+stiles	ttyr8	ttyr8	25728	7	USER_PROCESS	0	0	1013443394	199.221.118.105
+	ttyr8	ttyr8	28190	8	DEAD_PROCESS	0	0	1013443398	
+	ttyrf	ttyrf	31602	8	DEAD_PROCESS	0	0	1013443413	
+	ttyp2	ttyp2	30893	8	DEAD_PROCESS	0	0	1013443449	
+braithw	ttys5	ttys5	29099	7	USER_PROCESS	0	0	1013443500	
+deiner	ttyp2	ttyp2	1360	7	USER_PROCESS	0	0	1013443524	cmfgroup2.harvard.edu
+deiner	ttyp2	ttyp2	1360	7	USER_PROCESS	0	0	1013443524	cmfgroup2.harvard.edu
+cthanik	ttyr8	ttyr8	6910	7	USER_PROCESS	0	0	1013443571	dhcp-36-206.harvard.edu
+jolee	ttyrf	ttyrf	1458	7	USER_PROCESS	0	0	1013443675	net-37727.fas.harvard.edu
+tarthur	ttyt5	ttyt5	15355	7	USER_PROCESS	0	0	1013443680	roam131-54.student.harvard.edu
+tarthur	ttyt5	ttyt5	15355	7	USER_PROCESS	0	0	1013443681	roam131-54.student.harvard.edu
+	ttyrf	ttyrf	1539	8	DEAD_PROCESS	0	0	1013443714	
+mtfox	ttyrf	ttyrf	1758	7	USER_PROCESS	0	0	1013443751	net-24113.wjh.harvard.edu
+	ttyr7	ttyr7	32428	8	DEAD_PROCESS	0	0	1013443767	
+rgulraj	ttyr7	ttyr7	32717	7	USER_PROCESS	0	0	1013443799	roam153-159.student.harvard.edu
+rgulraj	ttyr7	ttyr7	32717	7	USER_PROCESS	0	0	1013443800	roam153-159.student.harvard.edu
+	ttyr7	ttyr7	797	8	DEAD_PROCESS	0	0	1013443844	
+dtsao	ttyr7	ttyr7	32287	7	USER_PROCESS	0	0	1013443863	wab58031.harvard.edu
+	ttyq6	ttyq6	880	8	DEAD_PROCESS	0	0	1013443907	
+rxu	ttyq6	ttyq6	1064	7	USER_PROCESS	0	0	1013443942	roam59-121.fas.harvard.edu
+rxu	ttyq6	ttyq6	1064	7	USER_PROCESS	0	0	1013443942	roam59-121.fas.harvard.edu
+fpapakon	ttyt7	ttyt7	25302	7	USER_PROCESS	0	0	1013443952	roam153-121.student.harvard.edu
+fpapakon	ttyt7	ttyt7	25302	7	USER_PROCESS	0	0	1013443952	roam153-121.student.harvard.edu
+goldenh	ttyt9	ttyt9	1908	7	USER_PROCESS	0	0	1013443965	out1.pharma.com
+goldenh	ttyt9	ttyt9	1908	7	USER_PROCESS	0	0	1013443965	out1.pharma.com
+jcogswel	ttytb	ttytb	329	7	USER_PROCESS	0	0	1013443969	pbh-24996.fas.harvard.edu
+jcogswel	ttytb	ttytb	329	7	USER_PROCESS	0	0	1013443969	pbh-24996.fas.harvard.edu
+	ttytb	ttytb	2026	8	DEAD_PROCESS	0	0	1013443989	
+	ttyt7	ttyt7	956	8	DEAD_PROCESS	0	0	1013443995	
+peller	ttyt7	ttyt7	1845	7	USER_PROCESS	0	0	1013444011	roam163-51.student.harvard.edu
+peller	ttyt7	ttyt7	1845	7	USER_PROCESS	0	0	1013444011	roam163-51.student.harvard.edu
+	ttyt9	ttyt9	31664	8	DEAD_PROCESS	0	0	1013444046	
+rodrig	ttytb	ttytb	1026	7	USER_PROCESS	0	0	1013444077	dhcp-26.arp.harvard.edu
+rodrig	ttytb	ttytb	1026	7	USER_PROCESS	0	0	1013444077	dhcp-26.arp.harvard.edu
+	ttyt7	ttyt7	2327	8	DEAD_PROCESS	0	0	1013444078	
+ncoquill	ttyt9	ttyt9	25549	7	USER_PROCESS	0	0	1013444083	net-24904.fas.harvard.edu
+	ttyt9	ttyt9	2193	8	DEAD_PROCESS	0	0	1013444120	
+hzou	ttyt7	ttyt7	2448	7	USER_PROCESS	0	0	1013444140	204.167.95.172
+cthanik	ftp	ftpd1171	1171	7	USER_PROCESS	0	0	1013444141	dhcp-36-206.harvard.edu
+	ttytb	ttytb	32359	8	DEAD_PROCESS	0	0	1013444171	
+	ttyp2	ttyp2	1432	8	DEAD_PROCESS	0	0	1013444284	
+	ttyt1	ttyt1	31675	8	DEAD_PROCESS	0	0	1013444289	
+roe	ttyp2	ttyp2	771	7	USER_PROCESS	0	0	1013444334	roam185-48.student.harvard.edu
+	ttyp2	ttyp2	8792	8	DEAD_PROCESS	0	0	1013444339	
+roe	ttyp2	ttyp2	2318	7	USER_PROCESS	0	0	1013444344	roam185-48.student.harvard.edu
+	ttyp2	ttyp2	2549	8	DEAD_PROCESS	0	0	1013444348	
+roe	ttyp2	ttyp2	2634	7	USER_PROCESS	0	0	1013444354	roam185-48.student.harvard.edu
+	ttyr3	ttyr3	24027	8	DEAD_PROCESS	0	0	1013444484	
+jmaxwell	ttyr3	ttyr3	2703	7	USER_PROCESS	0	0	1013444560	roam181-38.student.harvard.edu
+jmaxwell	ttyr3	ttyr3	2703	7	USER_PROCESS	0	0	1013444560	roam181-38.student.harvard.edu
+	ttyrf	ttyrf	7726	8	DEAD_PROCESS	0	0	1013444668	
+matev	ttyrf	ttyrf	940	7	USER_PROCESS	0	2	1013444695	140.247.179.50
+li2	ttyt1	ttyt1	31814	7	USER_PROCESS	0	0	1013444796	sprite.harvard.edu
+li2	ttyt1	ttyt1	31814	7	USER_PROCESS	0	0	1013444796	sprite.harvard.edu
+cs161	ttyt9	ttyt9	1378	7	USER_PROCESS	0	0	1013444850	is02.fas.harvard.edu
+lee42	ttytb	ttytb	2944	7	USER_PROCESS	0	0	1013444872	roam241-89.fas.harvard.edu
+lee42	ttytb	ttytb	2944	7	USER_PROCESS	0	0	1013444872	roam241-89.fas.harvard.edu
+vshih	ttytc	ttytc	29936	7	USER_PROCESS	0	0	1013444963	nas1-235.fas.harvard.edu
+vshih	ttytc	ttytc	29936	7	USER_PROCESS	0	0	1013444963	nas1-235.fas.harvard.edu
+banay	ttytd	ttytd	2147	7	USER_PROCESS	0	0	1013444963	roam181-96.student.harvard.edu
+banay	ttytd	ttytd	2147	7	USER_PROCESS	0	0	1013444963	roam181-96.student.harvard.edu
+	ttys2	ttys2	24068	8	DEAD_PROCESS	0	0	1013444987	
+	ttyrf	ttyrf	940	8	DEAD_PROCESS	0	2	1013445011	
+wang16	ttyrf	ttyrf	3200	7	USER_PROCESS	0	0	1013445028	roam161-48.student.harvard.edu
+wang16	ttyrf	ttyrf	3200	7	USER_PROCESS	0	0	1013445028	roam161-48.student.harvard.edu
+	ftp	ftpd1171	1171	8	DEAD_PROCESS	0	0	1013445057	
+	ttyr3	ttyr3	2493	8	DEAD_PROCESS	0	0	1013445071	
+	ttytb	ttytb	18205	8	DEAD_PROCESS	0	0	1013445073	
+abbriano	ttyr3	ttyr3	3024	7	USER_PROCESS	0	0	1013445114	roam73-139.student.harvard.edu
+abbriano	ttyr3	ttyr3	3024	7	USER_PROCESS	0	0	1013445114	roam73-139.student.harvard.edu
+	ttyr3	ttyr3	11997	8	DEAD_PROCESS	0	0	1013445196	
+kim4	ttyr3	ttyr3	22232	7	USER_PROCESS	0	0	1013445242	roam193-214.student.harvard.edu
+kim4	ttyr3	ttyr3	22232	7	USER_PROCESS	0	0	1013445242	roam193-214.student.harvard.edu
+tbrady	ttys2	ttys2	3686	7	USER_PROCESS	0	0	1013445273	gateway-1.jhancock.com
+techang	ttytb	ttytb	3438	7	USER_PROCESS	0	0	1013445297	roam157-171.student.harvard.edu
+tbrady	ttyte	ttyte	2963	7	USER_PROCESS	0	0	1013445334	gateway-1.jhancock.com
+rlim	ttyu0	ttyu0	3287	7	USER_PROCESS	0	0	1013445350	roam193-178.student.harvard.edu
+	ttyrf	ttyrf	30910	8	DEAD_PROCESS	0	0	1013445423	
+jporta	ttyrf	ttyrf	437	7	USER_PROCESS	0	0	1013445477	roam87-39.student.harvard.edu
+jporta	ttyrf	ttyrf	437	7	USER_PROCESS	0	0	1013445478	roam87-39.student.harvard.edu
+	ttyqa	ttyqa	30162	8	DEAD_PROCESS	0	0	1013445503	
+	ttys5	ttys5	29099	8	DEAD_PROCESS	0	0	1013445520	
+	ttyrf	ttyrf	4004	8	DEAD_PROCESS	0	0	1013445523	
+jforman	ttyrf	ttyrf	2688	7	USER_PROCESS	0	2	1013445524	140.247.131.64
+parno	ttys5	ttys5	23880	7	USER_PROCESS	0	0	1013445536	roam143-220.student.harvard.edu
+parno	ttyu1	ttyu1	25267	7	USER_PROCESS	0	0	1013445540	roam143-220.student.harvard.edu
+parno	ttyu1	ttyu1	25267	7	USER_PROCESS	0	0	1013445541	roam143-220.student.harvard.edu
+brunka	ttyqa	ttyqa	32611	7	USER_PROCESS	0	0	1013445606	roam151-166.student.harvard.edu
+brunka	ttyqa	ttyqa	32611	7	USER_PROCESS	0	0	1013445606	roam151-166.student.harvard.edu
+	ttyqa	ttyqa	216	8	DEAD_PROCESS	0	0	1013445639	
+	ttyr5	ttyr5	10947	8	DEAD_PROCESS	0	0	1013445692	
+	ttyte	ttyte	3651	8	DEAD_PROCESS	0	0	1013445794	
+	ttyq1	ttyq1	24650	8	DEAD_PROCESS	0	0	1013445806	
+	ttys2	ttys2	2054	8	DEAD_PROCESS	0	0	1013445806	
+gyoliver	ttyq1	ttyq1	4790	7	USER_PROCESS	0	0	1013445814	h00a0cc409e99.ne.mediaone.net
+gyoliver	ttyq1	ttyq1	4790	7	USER_PROCESS	0	0	1013445814	h00a0cc409e99.ne.mediaone.net
+ellard2	ttyqa	ttyqa	3806	7	USER_PROCESS	0	0	1013445847	ant.eecs.harvard.edu
+	ttytd	ttytd	1935	8	DEAD_PROCESS	0	0	1013445854	
+	ttyq1	ttyq1	1129	8	DEAD_PROCESS	0	0	1013445872	
+mzhao	ttyq1	ttyq1	29349	7	USER_PROCESS	0	0	1013445892	digilab2.hcl.harvard.edu
+ccreiman	ttyr5	ttyr5	4925	7	USER_PROCESS	0	0	1013445898	140.247.126.188
+	ttyr5	ttyr5	2324	8	DEAD_PROCESS	0	0	1013445925	
+ncheng	ttyr5	ttyr5	27834	7	USER_PROCESS	0	0	1013445963	roam163-198.student.harvard.edu
+	ttyp2	ttyp2	28399	8	DEAD_PROCESS	0	0	1013446000	
+dychen	ttyp2	ttyp2	5199	7	USER_PROCESS	0	0	1013446052	roam143-63.student.harvard.edu
+dychen	ttyp2	ttyp2	5199	7	USER_PROCESS	0	0	1013446052	roam143-63.student.harvard.edu
+	ttyq9	ttyq9	32189	8	DEAD_PROCESS	0	0	1013446083	
+	ttyt7	ttyt7	153	8	DEAD_PROCESS	0	0	1013446178	
+wing	ftp	ftpd4715	4715	7	USER_PROCESS	0	0	1013446289	mather-lab04.student.harvard.edu
+	ftp	ftpd4715	4715	8	DEAD_PROCESS	0	0	1013446299	
+	ttytc	ttytc	2512	8	DEAD_PROCESS	0	0	1013446352	
+hartnett	ttys2	ttys2	5262	7	USER_PROCESS	0	0	1013446365	roam189-43.student.harvard.edu
+hartnett	ttys2	ttys2	5262	7	USER_PROCESS	0	0	1013446365	roam189-43.student.harvard.edu
+	ttys2	ttys2	4928	8	DEAD_PROCESS	0	0	1013446367	
+mlevy	ttys2	ttys2	1708	7	USER_PROCESS	0	0	1013446507	roam169-143.student.harvard.edu
+mlevy	ttys2	ttys2	1708	7	USER_PROCESS	0	0	1013446507	roam169-143.student.harvard.edu
+dychen	ttytc	ttytc	14952	7	USER_PROCESS	0	0	1013446569	roam143-63.student.harvard.edu
+dychen	ttytc	ttytc	14952	7	USER_PROCESS	0	0	1013446569	roam143-63.student.harvard.edu
+	ttys2	ttys2	5453	8	DEAD_PROCESS	0	0	1013446648	
+shalpert	ttyt7	ttyt7	5504	7	USER_PROCESS	0	0	1013446653	128.103.152.57
+ccook	ttys2	ttys2	5700	7	USER_PROCESS	0	0	1013446679	roam173-180.student.harvard.edu
+ccook	ttys2	ttys2	5700	7	USER_PROCESS	0	0	1013446679	roam173-180.student.harvard.edu
+	ttyt7	ttyt7	2339	8	DEAD_PROCESS	0	0	1013446691	
+grad	ttytd	ttytd	6073	7	USER_PROCESS	0	0	1013446728	ws69148.med.harvard.edu
+grad	ttytd	ttytd	6073	7	USER_PROCESS	0	0	1013446728	ws69148.med.harvard.edu
+	ttytd	ttytd	993	8	DEAD_PROCESS	0	0	1013446729	
+jagreen	ttyt7	ttyt7	5792	7	USER_PROCESS	0	0	1013446732	roam147-132.student.harvard.edu
+poverlan	ttytd	ttytd	5662	7	USER_PROCESS	0	0	1013446806	nas2.fas.harvard.edu
+	ttyt7	ttyt7	2825	8	DEAD_PROCESS	0	0	1013446896	
+schedler	ttyt7	ttyt7	5524	7	USER_PROCESS	0	0	1013446922	hum16.math.harvard.edu
+dfarley	ttyte	ttyte	6294	7	USER_PROCESS	0	0	1013446927	roam153-139.student.harvard.edu
+dfarley	ttyte	ttyte	6294	7	USER_PROCESS	0	0	1013446928	roam153-139.student.harvard.edu
+	ttyu0	ttyu0	3274	8	DEAD_PROCESS	0	0	1013446930	
+elim	ttyu0	ttyu0	5633	7	USER_PROCESS	0	0	1013446978	net-19434.fas.harvard.edu
+rxu	ttyu2	ttyu2	6031	7	USER_PROCESS	0	0	1013447046	roam59-121.fas.harvard.edu
+rxu	ttyu2	ttyu2	6031	7	USER_PROCESS	0	0	1013447047	roam59-121.fas.harvard.edu
+	ttyu0	ttyu0	680	8	DEAD_PROCESS	0	0	1013447052	
+mlevy	ttyu0	ttyu0	6813	7	USER_PROCESS	0	0	1013447071	roam169-143.student.harvard.edu
+mlevy	ttyu0	ttyu0	6813	7	USER_PROCESS	0	0	1013447071	roam169-143.student.harvard.edu
+	ttyu0	ttyu0	1190	8	DEAD_PROCESS	0	0	1013447075	
+	ttyu2	ttyu2	6114	8	DEAD_PROCESS	0	0	1013447083	
+mzhao	ttyu0	ttyu0	3344	7	USER_PROCESS	0	0	1013447095	digilab2.hcl.harvard.edu
+	ttyq9	ttyq9	4937	8	DEAD_PROCESS	0	2	1013447134	
+tsang	ttyq9	ttyq9	5326	7	USER_PROCESS	0	0	1013447158	roam189-56.student.harvard.edu
+tsang	ttyq9	ttyq9	5326	7	USER_PROCESS	0	0	1013447158	roam189-56.student.harvard.edu
+	ttys2	ttys2	5789	8	DEAD_PROCESS	0	0	1013447165	
+	ttyt7	ttyt7	2989	8	DEAD_PROCESS	0	0	1013447181	
+mdmartin	ttys2	ttys2	31260	7	USER_PROCESS	0	0	1013447195	chemgs1.harvard.edu
+mdmartin	ttys2	ttys2	31260	7	USER_PROCESS	0	0	1013447195	chemgs1.harvard.edu
+	ttyte	ttyte	19753	8	DEAD_PROCESS	0	0	1013447201	
+	ttytd	ttytd	3998	8	DEAD_PROCESS	0	0	1013447209	
+	ttys2	ttys2	29148	8	DEAD_PROCESS	0	0	1013447212	
+	ttyr5	ttyr5	4905	8	DEAD_PROCESS	0	0	1013447240	
+grad	ttyr5	ttyr5	6801	7	USER_PROCESS	0	0	1013447275	ws69148.med.harvard.edu
+grad	ttyr5	ttyr5	6801	7	USER_PROCESS	0	0	1013447275	ws69148.med.harvard.edu
+	ttyr5	ttyr5	20481	8	DEAD_PROCESS	0	0	1013447276	
+jpchen	ttyr5	ttyr5	6992	7	USER_PROCESS	0	0	1013447284	roam131-203.student.harvard.edu
+jpchen	ttyr5	ttyr5	6992	7	USER_PROCESS	0	0	1013447284	roam131-203.student.harvard.edu
+	ttyq9	ttyq9	6290	8	DEAD_PROCESS	0	0	1013447290	
+	ttytb	ttytb	3498	8	DEAD_PROCESS	0	0	1013447299	
+mlevy	ttyq9	ttyq9	18607	7	USER_PROCESS	0	0	1013447324	roam169-143.student.harvard.edu
+mlevy	ttyq9	ttyq9	18607	7	USER_PROCESS	0	0	1013447324	roam169-143.student.harvard.edu
+cduan	ttys2	ttys2	6346	7	USER_PROCESS	0	0	1013447325	roam240-158.fas.harvard.edu
+cduan	ttys2	ttys2	6346	7	USER_PROCESS	0	0	1013447326	roam240-158.fas.harvard.edu
+	ttyq9	ttyq9	26616	8	DEAD_PROCESS	0	0	1013447327	
+	ttys0	ttys0	19332	8	DEAD_PROCESS	0	0	1013447365	
+jfollen	ttyq9	ttyq9	6754	7	USER_PROCESS	0	0	1013447376	ws70087.med.harvard.edu
+	ttyq9	ttyq9	7118	8	DEAD_PROCESS	0	0	1013447388	
+	ttys2	ttys2	5209	8	DEAD_PROCESS	0	0	1013447413	
+	ttyr7	ttyr7	1508	8	DEAD_PROCESS	0	0	1013447460	
+yyu	ttyq9	ttyq9	402	7	USER_PROCESS	0	0	1013447506	hustat.stat.harvard.edu
+pragone	ftp	ftpd16900	16900	7	USER_PROCESS	0	0	1013447515	h00102b0019a3.ne.mediaone.net
+	ttyq9	ttyq9	7236	8	DEAD_PROCESS	0	0	1013447571	
+amory	ttyr7	ttyr7	3296	7	USER_PROCESS	0	0	1013447574	140.247.126.72
+	ftp	ftpd16900	16900	8	DEAD_PROCESS	0	0	1013447613	
+	ttyr7	ttyr7	6116	8	DEAD_PROCESS	0	0	1013447615	
+srice	ttyr7	ttyr7	7539	7	USER_PROCESS	0	0	1013447685	dialup-63.214.117.44.dial1.boston1.level3.net
+srice	ttyr7	ttyr7	7539	7	USER_PROCESS	0	0	1013447685	dialup-63.214.117.44.dial1.boston1.level3.net
+qzhang	ttyq9	ttyq9	4979	7	USER_PROCESS	0	0	1013447948	roam189-48.student.harvard.edu
+qzhang	ttyq9	ttyq9	4979	7	USER_PROCESS	0	0	1013447949	roam189-48.student.harvard.edu
+knox	ttys0	ttys0	7514	7	USER_PROCESS	0	0	1013447957	roam153-58.student.harvard.edu
+knox	ttys0	ttys0	7514	7	USER_PROCESS	0	0	1013447957	roam153-58.student.harvard.edu
+fxu	ttys2	ttys2	31583	7	USER_PROCESS	0	0	1013447978	roam149-166.student.harvard.edu
+fxu	ttys2	ttys2	31583	7	USER_PROCESS	0	0	1013447978	roam149-166.student.harvard.edu
+ahoang	ttyt7	ttyt7	4033	7	USER_PROCESS	0	0	1013447997	63.86.74.15
+	ttys2	ttys2	7189	8	DEAD_PROCESS	0	0	1013448012	
+cs276r	ftp	ftpd7190	7190	7	USER_PROCESS	0	0	1013448035	hiccup.eecs.harvard.edu
+buchan	ftp	ftpd7645	7645	7	USER_PROCESS	0	0	1013448131	ACA8BF88.ipt.aol.com
+	ttys0	ttys0	4466	8	DEAD_PROCESS	0	0	1013448141	
+	ftp	ftpd7645	7645	8	DEAD_PROCESS	0	0	1013448155	
+tsquires	ttys0	ttys0	7815	7	USER_PROCESS	0	0	1013448158	net-35983.fas.harvard.edu
+	ttys0	ttys0	7789	8	DEAD_PROCESS	0	0	1013448160	
+	ttyqc	ttyqc	19488	8	DEAD_PROCESS	0	0	1013448176	
+buchan	ttyqc	ttyqc	7406	7	USER_PROCESS	0	0	1013448205	ACA8BF88.ipt.aol.com
+	ftp	ftpd7190	7190	8	DEAD_PROCESS	0	0	1013448217	
+	ttyt2	ttyt2	18295	8	DEAD_PROCESS	0	0	1013448219	
+	ttyu9	ttyu9	18147	8	DEAD_PROCESS	0	0	1013448252	
+acastro	ttys0	ttys0	7763	7	USER_PROCESS	0	0	1013448280	roam133-61.student.harvard.edu
+mhanlon	ttys2	ttys2	6121	7	USER_PROCESS	0	0	1013448329	roam193-88.student.harvard.edu
+msong	ttyt2	ttyt2	2584	7	USER_PROCESS	0	0	1013448416	nat-t241.nber.org
+mihelich	ttytb	ttytb	7608	7	USER_PROCESS	0	0	1013448488	swordfish.fishbowl.deas.harvard.edu
+mihelich	ttytb	ttytb	7608	7	USER_PROCESS	0	0	1013448488	swordfish.fishbowl.deas.harvard.edu
+pchoi	ttytd	ttytd	3661	7	USER_PROCESS	0	0	1013448655	roam185-62.student.harvard.edu
+	ttyr5	ttyr5	7059	8	DEAD_PROCESS	0	0	1013448745	
+lee37	ttyr5	ttyr5	7377	7	USER_PROCESS	0	0	1013448750	ws15.fas.harvard.edu
+zakrzews	ttyte	ttyte	8395	7	USER_PROCESS	0	0	1013448795	roam181-130.student.harvard.edu
+zakrzews	ttyte	ttyte	8395	7	USER_PROCESS	0	0	1013448795	roam181-130.student.harvard.edu
+	ttyt2	ttyt2	7994	8	DEAD_PROCESS	0	0	1013448795	
+	ttyte	ttyte	8275	8	DEAD_PROCESS	0	0	1013448798	
+eeguerra	ttyt2	ttyt2	8630	7	USER_PROCESS	0	0	1013448855	roam80-93.fas.harvard.edu
+	ttyu1	ttyu1	3319	8	DEAD_PROCESS	0	0	1013449009	
+	ttys5	ttys5	3745	8	DEAD_PROCESS	0	0	1013449018	
+parno	ttys5	ttys5	24642	7	USER_PROCESS	0	0	1013449108	roam143-220.student.harvard.edu
+dtsao	ttyte	ttyte	8655	7	USER_PROCESS	0	0	1013449112	wab58031.harvard.edu
+todd	ttyu1	ttyu1	9044	7	USER_PROCESS	0	0	1013449172	nas1-120.fas.harvard.edu
+todd	ttyu1	ttyu1	9044	7	USER_PROCESS	0	0	1013449172	nas1-120.fas.harvard.edu
+	ttytb	ttytb	31901	8	DEAD_PROCESS	0	0	1013449215	
+jmaxwell	ttytb	ttytb	8857	7	USER_PROCESS	0	0	1013449253	roam181-38.student.harvard.edu
+jmaxwell	ttytb	ttytb	8857	7	USER_PROCESS	0	0	1013449253	roam181-38.student.harvard.edu
+tsu	ttyu2	ttyu2	8608	7	USER_PROCESS	0	0	1013449256	roam171-70.student.harvard.edu
+	ttytb	ttytb	5121	8	DEAD_PROCESS	0	0	1013449292	
+	ttys5	ttys5	29659	8	DEAD_PROCESS	0	0	1013449293	
+	ttyte	ttyte	8620	8	DEAD_PROCESS	0	0	1013449309	
+	ttyr5	ttyr5	7136	8	DEAD_PROCESS	0	0	1013449310	
+	ttyu1	ttyu1	8776	8	DEAD_PROCESS	0	0	1013449322	
+	ttyqa	ttyqa	2271	8	DEAD_PROCESS	0	0	1013449387	
+	ttys8	ttys8	29760	8	DEAD_PROCESS	0	0	1013449437	
+schu	ttyqa	ttyqa	9341	7	USER_PROCESS	0	0	1013449519	pool-151-203-201-128.bos.east.verizon.net
+ferry	ttyr5	ttyr5	9081	7	USER_PROCESS	0	0	1013449582	roam147-164.student.harvard.edu
+ferry	ttyr5	ttyr5	9081	7	USER_PROCESS	0	0	1013449582	roam147-164.student.harvard.edu
+	ttyt2	ttyt2	8453	8	DEAD_PROCESS	0	0	1013449617	
+buchan	ttys5	ttys5	7928	7	USER_PROCESS	0	0	1013449715	AC94F3CF.ipt.aol.com
+hitczenk	ttys8	ttys8	28899	7	USER_PROCESS	0	0	1013449731	roam83-36.student.harvard.edu
+hitczenk	ttys8	ttys8	28899	7	USER_PROCESS	0	0	1013449731	roam83-36.student.harvard.edu
+mihelich	ttyt2	ttyt2	9462	7	USER_PROCESS	0	0	1013449742	swordfish.fishbowl.deas.harvard.edu
+mihelich	ttyt2	ttyt2	9462	7	USER_PROCESS	0	0	1013449742	swordfish.fishbowl.deas.harvard.edu
+charbon	ttytb	ttytb	9196	7	USER_PROCESS	0	0	1013449763	h0040f417cf85.ne.mediaone.net
+charbon	ttytb	ttytb	9196	7	USER_PROCESS	0	0	1013449763	h0040f417cf85.ne.mediaone.net
+kmastell	ttyu1	ttyu1	2564	7	USER_PROCESS	0	0	1013449809	paine-pspc2.fas.harvard.edu
+mitchel	ttyte	ttyte	9513	7	USER_PROCESS	0	0	1013449810	roam143-68.student.harvard.edu
+	ttysa	ttysa	13927	8	DEAD_PROCESS	0	0	1013449883	
+parno	ttysa	ttysa	8975	7	USER_PROCESS	0	0	1013449894	roam143-220.student.harvard.edu
+	ttyu1	ttyu1	393	8	DEAD_PROCESS	0	0	1013450000	
+	ttyqa	ttyqa	8018	8	DEAD_PROCESS	0	0	1013450012	
+	ttysa	ttysa	6972	8	DEAD_PROCESS	0	0	1013450036	
+andychen	ttyqa	ttyqa	4651	7	USER_PROCESS	0	0	1013450196	pool-141-154-38-32.bos.east.verizon.net
+andychen	ttyqa	ttyqa	4651	7	USER_PROCESS	0	0	1013450196	pool-141-154-38-32.bos.east.verizon.net
+nnpatel	ttysa	ttysa	9930	7	USER_PROCESS	0	0	1013450210	net-17167.fas.harvard.edu
+fpapakon	ttyu1	ttyu1	6580	7	USER_PROCESS	0	0	1013450236	roam153-121.student.harvard.edu
+fpapakon	ttyu1	ttyu1	6580	7	USER_PROCESS	0	0	1013450237	roam153-121.student.harvard.edu
+ehobbs	ttyu3	ttyu3	9429	7	USER_PROCESS	0	0	1013450340	65.193.115.66
+	ttys2	ttys2	27399	8	DEAD_PROCESS	0	0	1013450359	
+vshih	ttys2	ttys2	2916	7	USER_PROCESS	0	0	1013450374	nas1-208.fas.harvard.edu
+vshih	ttys2	ttys2	2916	7	USER_PROCESS	0	0	1013450374	nas1-208.fas.harvard.edu
+	ttyu1	ttyu1	9238	8	DEAD_PROCESS	0	0	1013450412	
+vdowney	ttyu1	ttyu1	10419	7	USER_PROCESS	0	0	1013450523	divin22-16695.fas.harvard.edu
+	ttyu1	ttyu1	10482	8	DEAD_PROCESS	0	0	1013450534	
+	ttyu3	ttyu3	6604	8	DEAD_PROCESS	0	0	1013450549	
+ccheever	ttyu1	ttyu1	2309	7	USER_PROCESS	0	0	1013450618	roam59-70.fas.harvard.edu
+ccheever	ttyu1	ttyu1	2309	7	USER_PROCESS	0	0	1013450618	roam59-70.fas.harvard.edu
+lpan	ttyu3	ttyu3	883	7	USER_PROCESS	0	0	1013450675	ascential-bh.ascentialsoftware.com
+schu	ttyu4	ttyu4	10075	7	USER_PROCESS	0	0	1013450705	pool-151-203-201-128.bos.east.verizon.net
+eddy	ttyu5	ttyu5	10870	7	USER_PROCESS	0	0	1013450746	cairn.eecs.harvard.edu
+eddy	ttyu6	ttyu6	10423	7	USER_PROCESS	0	0	1013450755	cairn.eecs.harvard.edu
+	ttyu4	ttyu4	10067	8	DEAD_PROCESS	0	0	1013450774	
+eddy	ttyu4	ttyu4	10108	7	USER_PROCESS	0	0	1013450775	cairn.eecs.harvard.edu
+morgenst	ttyu7	ttyu7	8102	7	USER_PROCESS	0	0	1013450845	net-19422.fas.harvard.edu
+wwu	ttyu9	ttyu9	32565	7	USER_PROCESS	0	0	1013450880	roam149-203.student.harvard.edu
+wwu	ttyu9	ttyu9	32565	7	USER_PROCESS	0	0	1013450880	roam149-203.student.harvard.edu
+	ttyu9	ttyu9	5875	8	DEAD_PROCESS	0	0	1013450911	
+wklee	ttyu9	ttyu9	25747	7	USER_PROCESS	0	0	1013450951	roam143-217.student.harvard.edu
+lee42	ttyua	ttyua	26128	7	USER_PROCESS	0	0	1013450953	roam241-89.fas.harvard.edu
+lee42	ttyua	ttyua	26128	7	USER_PROCESS	0	0	1013450953	roam241-89.fas.harvard.edu
+jmontoy	ttyub	ttyub	10777	7	USER_PROCESS	0	0	1013450978	roam173-59.student.harvard.edu
+jmontoy	ttyub	ttyub	10777	7	USER_PROCESS	0	0	1013450979	roam173-59.student.harvard.edu
+qzhang	ttyuc	ttyuc	3137	7	USER_PROCESS	0	0	1013450980	roam189-48.student.harvard.edu
+qzhang	ttyuc	ttyuc	3137	7	USER_PROCESS	0	0	1013450980	roam189-48.student.harvard.edu
+fontana	ttyud	ttyud	11141	7	USER_PROCESS	0	0	1013451006	h00104b964f63.ne.mediaone.net
+	ttyub	ttyub	7218	8	DEAD_PROCESS	0	0	1013451010	
+	ttyud	ttyud	11239	8	DEAD_PROCESS	0	0	1013451011	
+cs152	ttyub	ttyub	9058	7	USER_PROCESS	0	0	1013451038	is02.fas.harvard.edu
+cs152	ttyub	ttyub	9058	7	USER_PROCESS	0	0	1013451038	is02.fas.harvard.edu
+timaru	ttyud	ttyud	11939	7	USER_PROCESS	0	0	1013451060	techlab1-pc.deas.harvard.edu
+timaru	ttyud	ttyud	11939	7	USER_PROCESS	0	0	1013451060	techlab1-pc.deas.harvard.edu
+	ttyt2	ttyt2	8800	8	DEAD_PROCESS	0	0	1013451088	
+	ttyu1	ttyu1	10577	8	DEAD_PROCESS	0	0	1013451092	
+	ttyua	ttyua	10146	8	DEAD_PROCESS	0	0	1013451124	
+wild	ttyt2	ttyt2	11170	7	USER_PROCESS	0	0	1013451171	paine-18234.fas.harvard.edu
+ronz	ttyu1	ttyu1	31845	7	USER_PROCESS	0	0	1013451255	roam173-220.student.harvard.edu
+ronz	ttyu1	ttyu1	31845	7	USER_PROCESS	0	0	1013451255	roam173-220.student.harvard.edu
+wu17	ttyua	ttyua	10230	7	USER_PROCESS	0	0	1013451261	roam157-125.student.harvard.edu
+wu17	ttyua	ttyua	10230	7	USER_PROCESS	0	0	1013451261	roam157-125.student.harvard.edu
+vshih	ftp	ftpd7739	7739	7	USER_PROCESS	0	0	1013451323	nas1-208.fas.harvard.edu
+beckett	ttyue	ttyue	11567	7	USER_PROCESS	0	0	1013451324	roam157-147.student.harvard.edu
+beckett	ttyue	ttyue	11567	7	USER_PROCESS	0	0	1013451324	roam157-147.student.harvard.edu
+cperry	ttyuf	ttyuf	29251	7	USER_PROCESS	0	0	1013451327	net-42553.fas.harvard.edu
+cperry	ttyuf	ttyuf	29251	7	USER_PROCESS	0	0	1013451327	net-42553.fas.harvard.edu
+	ttyue	ttyue	11898	8	DEAD_PROCESS	0	0	1013451379	
+ivy-help	ttyue	ttyue	11433	7	USER_PROCESS	0	0	1013451475	is02.fas.harvard.edu
+	ttyue	ttyue	5392	8	DEAD_PROCESS	0	0	1013451479	
+misono	ttyue	ttyue	11858	7	USER_PROCESS	0	0	1013451551	roam189-139.student.harvard.edu
+	ttyt2	ttyt2	11670	8	DEAD_PROCESS	0	0	1013451607	
+ermurphy	ttyt2	ttyt2	11930	7	USER_PROCESS	0	0	1013451625	wjh-21946.wjh.harvard.edu
+ermurphy	ttyt2	ttyt2	11930	7	USER_PROCESS	0	0	1013451625	wjh-21946.wjh.harvard.edu
+	ttyt2	ttyt2	11125	8	DEAD_PROCESS	0	0	1013451721	
+ntan	ttyt2	ttyt2	12200	7	USER_PROCESS	0	0	1013451771	lrcpc46.fas.harvard.edu
+ntan	ttyt2	ttyt2	12200	7	USER_PROCESS	0	0	1013451771	lrcpc46.fas.harvard.edu
+sgilroy	ttyv0	ttyv0	12350	7	USER_PROCESS	0	0	1013451809	140.247.124.118
+kinen	ttyv1	ttyv1	11736	7	USER_PROCESS	0	0	1013451833	roam131-130.student.harvard.edu
+ajanis	ttyv3	ttyv3	12006	7	USER_PROCESS	0	0	1013451866	wjh-21946.wjh.harvard.edu
+ajanis	ttyv3	ttyv3	12006	7	USER_PROCESS	0	0	1013451866	wjh-21946.wjh.harvard.edu
+douglas2	ttyv2	ttyv2	12488	7	USER_PROCESS	0	0	1013451867	lamont-14596.fas.harvard.edu
+pedroza	ttyv4	ttyv4	12341	7	USER_PROCESS	0	0	1013451868	hustat.stat.harvard.edu
+	ttyv4	ttyv4	8399	8	DEAD_PROCESS	0	0	1013451871	
+	ttyv3	ttyv3	12448	8	DEAD_PROCESS	0	0	1013451880	
+	ttyta	ttyta	30805	8	DEAD_PROCESS	0	0	1013451896	
+tsquires	ttyv3	ttyv3	9792	7	USER_PROCESS	0	0	1013451904	stokes.harvard.edu
+fsteen	ttyta	ttyta	10876	7	USER_PROCESS	0	0	1013451910	140.247.124.125
+zahra	ttyv4	ttyv4	11434	7	USER_PROCESS	0	0	1013451910	roam177-63.student.harvard.edu
+zahra	ttyv4	ttyv4	11434	7	USER_PROCESS	0	0	1013451910	roam177-63.student.harvard.edu
+	ttyv2	ttyv2	3157	8	DEAD_PROCESS	0	0	1013451945	
+	ttyv3	ttyv3	11650	8	DEAD_PROCESS	0	0	1013451985	
+	ftp	ftpd7739	7739	8	DEAD_PROCESS	0	0	1013452005	
+	ttyv0	ttyv0	10348	8	DEAD_PROCESS	0	0	1013452028	
+	ttyuf	ttyuf	32355	8	DEAD_PROCESS	0	0	1013452080	
+	ttyt2	ttyt2	4448	8	DEAD_PROCESS	0	0	1013452094	
+cperry	ttyt2	ttyt2	17496	7	USER_PROCESS	0	0	1013452127	net-42553.fas.harvard.edu
+cperry	ttyt2	ttyt2	17496	7	USER_PROCESS	0	0	1013452127	net-42553.fas.harvard.edu
+	ttype	ttype	12101	8	DEAD_PROCESS	0	0	1013452133	
+zahra	ttype	ttype	12535	7	USER_PROCESS	0	0	1013452173	roam177-63.student.harvard.edu
+zahra	ttype	ttype	12535	7	USER_PROCESS	0	0	1013452173	roam177-63.student.harvard.edu
+	ttysa	ttysa	7965	8	DEAD_PROCESS	0	0	1013452206	
+areddy	ftp	ftpd12820	12820	7	USER_PROCESS	0	0	1013452222	cmb2-nip1.atg.com
+	ttyt2	ttyt2	12883	8	DEAD_PROCESS	0	0	1013452226	
+	ttyq6	ttyq6	626	8	DEAD_PROCESS	0	0	1013452240	
+	ftp	ftpd12820	12820	8	DEAD_PROCESS	0	0	1013452248	
+	ttys2	ttys2	10382	8	DEAD_PROCESS	0	0	1013452300	
+keiser	ttyq6	ttyq6	12331	7	USER_PROCESS	0	0	1013452304	140.247.125.196
+keiser	ttyq6	ttyq6	12331	7	USER_PROCESS	0	0	1013452304	140.247.125.196
+hradecky	ttys2	ttys2	9945	7	USER_PROCESS	0	0	1013452305	cateye.harvard.edu
+	ttyq6	ttyq6	12398	8	DEAD_PROCESS	0	0	1013452321	
+poukchan	ttyq6	ttyq6	13057	7	USER_PROCESS	0	0	1013452338	roam173-163.student.harvard.edu
+vaishnav	ttysa	ttysa	5310	7	USER_PROCESS	0	0	1013452403	tsunami.harvard.edu
+vaishnav	ttysa	ttysa	5310	7	USER_PROCESS	0	0	1013452404	tsunami.harvard.edu
+cthanik	ftp	ftpd13466	13466	7	USER_PROCESS	0	0	1013452448	dhcp-36-206.harvard.edu
+akelly	ttyt2	ttyt2	12451	7	USER_PROCESS	0	0	1013452475	roam81-174.student.harvard.edu
+akelly	ttyt2	ttyt2	12451	7	USER_PROCESS	0	0	1013452475	roam81-174.student.harvard.edu
+koshelev	ttyuf	ttyuf	13152	7	USER_PROCESS	0	0	1013452482	net-14161.fas.harvard.edu
+	ttyt2	ttyt2	12570	8	DEAD_PROCESS	0	0	1013452483	
+	ttyuf	ttyuf	27465	8	DEAD_PROCESS	0	0	1013452512	
+	ttys2	ttys2	12737	8	DEAD_PROCESS	0	0	1013452550	
+	ttyt9	ttyt9	2592	8	DEAD_PROCESS	0	0	1013452568	
+kkwok	ttys2	ttys2	3367	7	USER_PROCESS	0	0	1013452594	roam73-200.student.harvard.edu
+kkwok	ttys2	ttys2	3367	7	USER_PROCESS	0	0	1013452595	roam73-200.student.harvard.edu
+tbrady	ttyt2	ttyt2	9565	7	USER_PROCESS	0	0	1013452649	gateway-1.jhancock.com
+	ttyt1	ttyt1	9309	8	DEAD_PROCESS	0	0	1013452661	
+tyasin	ttyt1	ttyt1	11278	7	USER_PROCESS	0	0	1013452672	roam181-29.student.harvard.edu
+wdesmar	ttyt9	ttyt9	2182	7	USER_PROCESS	0	0	1013452684	12.27.183.121
+fcheever	ttyuf	ttyuf	954	7	USER_PROCESS	0	0	1013452701	roam67-184.student.harvard.edu
+cperry	ttyv0	ttyv0	6652	7	USER_PROCESS	0	0	1013452726	net-42553.fas.harvard.edu
+cperry	ttyv0	ttyv0	6652	7	USER_PROCESS	0	0	1013452726	net-42553.fas.harvard.edu
+pmoreno	ttyv2	ttyv2	25851	7	USER_PROCESS	0	0	1013452730	net-31506.student.harvard.edu
+pmoreno	ttyv2	ttyv2	25851	7	USER_PROCESS	0	0	1013452730	net-31506.student.harvard.edu
+	ttyv0	ttyv0	8843	8	DEAD_PROCESS	0	0	1013452781	
+	ttyt1	ttyt1	9489	8	DEAD_PROCESS	0	0	1013452821	
+	ttyv2	ttyv2	13066	8	DEAD_PROCESS	0	0	1013452921	
+ronz	ttyt1	ttyt1	3195	7	USER_PROCESS	0	0	1013452954	roam173-220.student.harvard.edu
+ronz	ttyt1	ttyt1	3195	7	USER_PROCESS	0	0	1013452955	roam173-220.student.harvard.edu
+	ttys2	ttys2	12837	8	DEAD_PROCESS	0	0	1013452989	
+ajanis	ttys2	ttys2	14198	7	USER_PROCESS	0	0	1013453035	wjh-21946.wjh.harvard.edu
+ajanis	ttys2	ttys2	14198	7	USER_PROCESS	0	0	1013453036	wjh-21946.wjh.harvard.edu
+	ttyub	ttyub	10392	8	DEAD_PROCESS	0	0	1013453039	
+	ttyu4	ttyu4	9975	8	DEAD_PROCESS	0	0	1013453040	
+	ttys2	ttys2	13274	8	DEAD_PROCESS	0	0	1013453064	
+barrett	ttys2	ttys2	12252	7	USER_PROCESS	0	0	1013453102	roam175-70.student.harvard.edu
+barrett	ttys2	ttys2	12252	7	USER_PROCESS	0	0	1013453102	roam175-70.student.harvard.edu
+	ttyu3	ttyu3	233	8	DEAD_PROCESS	0	0	1013453108	
+	ttyua	ttyua	8621	8	DEAD_PROCESS	0	0	1013453121	
+hchang	ttyu3	ttyu3	14091	7	USER_PROCESS	0	0	1013453140	roam129-43.student.harvard.edu
+hchang	ttyu3	ttyu3	14091	7	USER_PROCESS	0	0	1013453141	roam129-43.student.harvard.edu
+	ttyu3	ttyu3	14279	8	DEAD_PROCESS	0	0	1013453156	
+deiner	ttyu3	ttyu3	14632	7	USER_PROCESS	0	0	1013453269	turtle27.harvard.edu
+	ttyu3	ttyu3	13282	8	DEAD_PROCESS	0	0	1013453293	
+mgsulliv	ttyu3	ttyu3	13372	7	USER_PROCESS	0	0	1013453314	roam187-58.student.harvard.edu
+mgsulliv	ttyu3	ttyu3	13372	7	USER_PROCESS	0	0	1013453314	roam187-58.student.harvard.edu
+	ttyq6	ttyq6	5442	8	DEAD_PROCESS	0	0	1013453364	
+	ttyt9	ttyt9	13686	8	DEAD_PROCESS	0	0	1013453375	
+cperry	ttyq6	ttyq6	14010	7	USER_PROCESS	0	0	1013453470	net-42553.fas.harvard.edu
+cperry	ttyq6	ttyq6	14010	7	USER_PROCESS	0	0	1013453470	net-42553.fas.harvard.edu
+lederman	ttyt9	ttyt9	6627	7	USER_PROCESS	0	0	1013453502	roam165-145.student.harvard.edu
+	ttyu3	ttyu3	14923	8	DEAD_PROCESS	0	0	1013453508	
+	ttyu9	ttyu9	11051	8	DEAD_PROCESS	0	0	1013453517	
+	ttyq6	ttyq6	13653	8	DEAD_PROCESS	0	0	1013453523	
+cperry	ttyq6	ttyq6	2856	7	USER_PROCESS	0	0	1013453529	net-42553.fas.harvard.edu
+cperry	ttyq6	ttyq6	2856	7	USER_PROCESS	0	0	1013453529	net-42553.fas.harvard.edu
+	ttyq6	ttyq6	14084	8	DEAD_PROCESS	0	0	1013453546	
+ajwilson	ttyq6	ttyq6	14543	7	USER_PROCESS	0	0	1013453582	roam161-227.student.harvard.edu
+ajwilson	ttyq6	ttyq6	14543	7	USER_PROCESS	0	0	1013453582	roam161-227.student.harvard.edu
+	ttyq6	ttyq6	14946	8	DEAD_PROCESS	0	0	1013453653	
+jmontoy	ttyq6	ttyq6	14967	7	USER_PROCESS	0	0	1013453670	roam173-59.student.harvard.edu
+jmontoy	ttyq6	ttyq6	14967	7	USER_PROCESS	0	0	1013453670	roam173-59.student.harvard.edu
+jkabala	ttyq6	ttyq6	14967	7	USER_PROCESS	0	0	1013453683	
+meiers	ttyu3	ttyu3	15548	7	USER_PROCESS	0	0	1013453750	roam163-212.student.harvard.edu
+	ttyu7	ttyu7	8820	8	DEAD_PROCESS	0	0	1013453768	
+shamji	ttyu4	ttyu4	15732	7	USER_PROCESS	0	0	1013453852	h00045ad9d938.ne.mediaone.net
+shamji	ttyu4	ttyu4	15732	7	USER_PROCESS	0	0	1013453852	h00045ad9d938.ne.mediaone.net
+dtsao	ttyu7	ttyu7	13456	7	USER_PROCESS	0	0	1013453898	wab58031.harvard.edu
+khawkins	ttyu9	ttyu9	13671	7	USER_PROCESS	0	0	1013453900	roam141-177.student.harvard.edu
+khawkins	ttyu9	ttyu9	13671	7	USER_PROCESS	0	0	1013453900	roam141-177.student.harvard.edu
+li2	ttyua	ttyua	30528	7	USER_PROCESS	0	0	1013453902	sprite.harvard.edu
+li2	ttyua	ttyua	30528	7	USER_PROCESS	0	0	1013453902	sprite.harvard.edu
+	ttyua	ttyua	2068	8	DEAD_PROCESS	0	0	1013453905	
+	ttyta	ttyta	12043	8	DEAD_PROCESS	0	0	1013453908	
+anders4	ttyta	ttyta	14340	7	USER_PROCESS	0	0	1013453917	user-2ivef3j.dsl.mindspring.com
+anders4	ttyta	ttyta	14340	7	USER_PROCESS	0	0	1013453917	user-2ivef3j.dsl.mindspring.com
+	ttyu4	ttyu4	9028	8	DEAD_PROCESS	0	0	1013453930	
+arudolph	ttyu4	ttyu4	12107	7	USER_PROCESS	0	0	1013453951	roam59-62.fas.harvard.edu
+arudolph	ttyu4	ttyu4	12107	7	USER_PROCESS	0	0	1013453951	roam59-62.fas.harvard.edu
+	ttyue	ttyue	215	8	DEAD_PROCESS	0	0	1013453964	
+	ttyu4	ttyu4	15739	8	DEAD_PROCESS	0	0	1013453969	
+ksanchez	ttyu4	ttyu4	15956	7	USER_PROCESS	0	0	1013453993	roam153-32.student.harvard.edu
+ksanchez	ttyu4	ttyu4	15956	7	USER_PROCESS	0	0	1013453993	roam153-32.student.harvard.edu
+arcrock	ttyua	ttyua	15836	7	USER_PROCESS	0	0	1013453997	roam197-69.dce.harvard.edu
+arcrock	ttyua	ttyua	15836	7	USER_PROCESS	0	0	1013453997	roam197-69.dce.harvard.edu
+	ttyu4	ttyu4	13678	8	DEAD_PROCESS	0	0	1013454006	
+antunes	ttyu4	ttyu4	15972	7	USER_PROCESS	0	0	1013454125	roam183-170.student.harvard.edu
+antunes	ttyu4	ttyu4	15972	7	USER_PROCESS	0	0	1013454125	roam183-170.student.harvard.edu
+	ttyu4	ttyu4	7087	8	DEAD_PROCESS	0	0	1013454136	
+anders6	ttyu4	ttyu4	15036	7	USER_PROCESS	0	0	1013454178	roam36-49.fas.harvard.edu
+mrgarcia	ttyub	ttyub	15625	7	USER_PROCESS	0	0	1013454205	64.213.188.90
+ajwilson	ttyue	ttyue	9031	7	USER_PROCESS	0	0	1013454211	roam161-227.student.harvard.edu
+ajwilson	ttyue	ttyue	9031	7	USER_PROCESS	0	0	1013454212	roam161-227.student.harvard.edu
+	ttyq6	ttyq6	9131	8	DEAD_PROCESS	0	0	1013454258	
+mdeng	ttyq6	ttyq6	13184	7	USER_PROCESS	0	0	1013454268	128.103.172.49
+	ttyu7	ttyu7	15804	8	DEAD_PROCESS	0	0	1013454282	
+thairu	ttyu7	ttyu7	15842	7	USER_PROCESS	0	0	1013454393	roam73-206.student.harvard.edu
+thairu	ttyu7	ttyu7	15842	7	USER_PROCESS	0	0	1013454393	roam73-206.student.harvard.edu
+mdeng	ttyv0	ttyv0	16728	7	USER_PROCESS	0	0	1013454443	128.103.172.49
+who	ttyv2	ttyv2	16222	7	USER_PROCESS	0	0	1013454470	roam169-73.student.harvard.edu
+who	ttyv2	ttyv2	16222	7	USER_PROCESS	0	0	1013454471	roam169-73.student.harvard.edu
+	ttyu1	ttyu1	11732	8	DEAD_PROCESS	0	0	1013454576	
+	ttyt1	ttyt1	9718	8	DEAD_PROCESS	0	0	1013454579	
+mlu	ttyt1	ttyt1	16748	7	USER_PROCESS	0	0	1013454610	roam187-151.student.harvard.edu
+mlu	ttyt1	ttyt1	16748	7	USER_PROCESS	0	0	1013454610	roam187-151.student.harvard.edu
+flanner	ttyu1	ttyu1	15047	7	USER_PROCESS	0	0	1013454671	roam155-159.student.harvard.edu
+flanner	ttyu1	ttyu1	15047	7	USER_PROCESS	0	0	1013454671	roam155-159.student.harvard.edu
+root	ttyv3	ttyv3	11404	7	USER_PROCESS	0	0	1013454673	admin-31.fas.harvard.edu
+dtsao	ttyv5	ttyv5	16780	7	USER_PROCESS	0	0	1013454680	wab58031.harvard.edu
+	ttyu1	ttyu1	11339	8	DEAD_PROCESS	0	0	1013454682	
+	ttysf	ttysf	32559	8	DEAD_PROCESS	0	0	1013454684	
+	ttyv3	ttyv3	3587	8	DEAD_PROCESS	0	0	1013454706	
+desjard	ttysf	ttysf	16942	7	USER_PROCESS	0	0	1013454740	desjard-2.fas.harvard.edu
+stiles	ttyu1	ttyu1	16709	7	USER_PROCESS	0	0	1013454747	199.221.118.105
+guerra	ttytb	ttytb	9196	7	USER_PROCESS	0	0	1013454798	
+	ttysf	ttysf	1899	8	DEAD_PROCESS	0	0	1013454838	
+	ttyua	ttyua	29672	8	DEAD_PROCESS	0	0	1013454905	
+	ttyuf	ttyuf	13682	8	DEAD_PROCESS	0	0	1013454922	
+	ttyu7	ttyu7	15873	8	DEAD_PROCESS	0	0	1013454934	
+thairu	ttysf	ttysf	8982	7	USER_PROCESS	0	0	1013454980	roam73-206.student.harvard.edu
+thairu	ttysf	ttysf	8982	7	USER_PROCESS	0	0	1013454980	roam73-206.student.harvard.edu
+ksanchez	ttyu7	ttyu7	17064	7	USER_PROCESS	0	0	1013455010	roam153-32.student.harvard.edu
+ksanchez	ttyu7	ttyu7	17064	7	USER_PROCESS	0	0	1013455011	roam153-32.student.harvard.edu
+	ttyu7	ttyu7	6039	8	DEAD_PROCESS	0	0	1013455029	
+	ttyt9	ttyt9	17382	8	DEAD_PROCESS	0	0	1013455029	
+	ttyv5	ttyv5	16278	8	DEAD_PROCESS	0	0	1013455069	
+who	ttyt9	ttyt9	17470	7	USER_PROCESS	0	0	1013455085	roam169-73.student.harvard.edu
+who	ttyt9	ttyt9	17470	7	USER_PROCESS	0	0	1013455085	roam169-73.student.harvard.edu
+mtfox	ttyu7	ttyu7	17458	7	USER_PROCESS	0	0	1013455099	wjh-21946.wjh.harvard.edu
+mtfox	ttyu7	ttyu7	17458	7	USER_PROCESS	0	0	1013455099	wjh-21946.wjh.harvard.edu
+polisson	ttyua	ttyua	17469	7	USER_PROCESS	0	0	1013455105	roam147-106.student.harvard.edu
+root	ttyuf	ttyuf	17538	7	USER_PROCESS	0	0	1013455127	admin-31.fas.harvard.edu
+	ttyuf	ttyuf	16393	8	DEAD_PROCESS	0	0	1013455142	
+	ttyud	ttyud	10426	8	DEAD_PROCESS	0	0	1013455197	
+	ttyu7	ttyu7	17641	8	DEAD_PROCESS	0	0	1013455214	
+lavers	ttyu7	ttyu7	4550	7	USER_PROCESS	0	0	1013455225	roam149-62.student.harvard.edu
+	ttyua	ttyua	16029	8	DEAD_PROCESS	0	0	1013455232	
+	ttyr7	ttyr7	7256	8	DEAD_PROCESS	0	0	1013455236	
+	ttyu7	ttyu7	17668	8	DEAD_PROCESS	0	0	1013455285	
+yaman	ttyr7	ttyr7	23382	7	USER_PROCESS	0	0	1013455428	lrcpc35.fas.harvard.edu
+yaman	ttyr7	ttyr7	23382	7	USER_PROCESS	0	0	1013455428	lrcpc35.fas.harvard.edu
+vlam	ttyu7	ttyu7	13417	7	USER_PROCESS	0	0	1013455444	roam173-177.student.harvard.edu
+vlam	ttyu7	ttyu7	13417	7	USER_PROCESS	0	0	1013455444	roam173-177.student.harvard.edu
+	ttyta	ttyta	15512	8	DEAD_PROCESS	0	0	1013455483	
+	ttyr7	ttyr7	17633	8	DEAD_PROCESS	0	0	1013455493	
+	ttyu7	ttyu7	17197	8	DEAD_PROCESS	0	0	1013455566	
+ngatia	ttyr7	ttyr7	17271	7	USER_PROCESS	0	0	1013455618	tech-pc3.fas.harvard.edu
+ngatia	ttyr7	ttyr7	17271	7	USER_PROCESS	0	0	1013455618	tech-pc3.fas.harvard.edu
+ksanchez	ttyta	ttyta	17698	7	USER_PROCESS	0	0	1013455649	roam153-32.student.harvard.edu
+ksanchez	ttyta	ttyta	17698	7	USER_PROCESS	0	0	1013455649	roam153-32.student.harvard.edu
+	ttysf	ttysf	12993	8	DEAD_PROCESS	0	0	1013455677	
+	ttyqd	ttyqd	23851	8	DEAD_PROCESS	0	0	1013455758	
+	ttyq4	ttyq4	20777	8	DEAD_PROCESS	0	0	1013455763	
+	ttyt2	ttyt2	13462	8	DEAD_PROCESS	0	0	1013455767	
+flanner	ttyq4	ttyq4	19438	7	USER_PROCESS	0	0	1013455781	roam155-159.student.harvard.edu
+flanner	ttyq4	ttyq4	19438	7	USER_PROCESS	0	0	1013455781	roam155-159.student.harvard.edu
+	ttyq4	ttyq4	17707	8	DEAD_PROCESS	0	0	1013455787	
+tbrady	ttyqd	ttyqd	10071	7	USER_PROCESS	0	0	1013455791	gateway-1.jhancock.com
+	ttyt7	ttyt7	7396	8	DEAD_PROCESS	0	0	1013455805	
+tbrady	ttyq4	ttyq4	18446	7	USER_PROCESS	0	0	1013455815	gateway-1.jhancock.com
+blmiller	ttysf	ttysf	17126	7	USER_PROCESS	0	0	1013455816	roam131-145.student.harvard.edu
+	ttyr2	ttyr2	29118	8	DEAD_PROCESS	0	0	1013455816	
+	ttys6	ttys6	21274	8	DEAD_PROCESS	0	0	1013455821	
+tbrady	ttyr2	ttyr2	16284	7	USER_PROCESS	0	0	1013455839	gateway-1.jhancock.com
+dtsao	ttys6	ttys6	13629	7	USER_PROCESS	0	0	1013455848	wab58031.harvard.edu
+	ttys6	ttys6	18173	8	DEAD_PROCESS	0	0	1013455861	
+hwalton	ttys9	ttys9	21011	7	USER_PROCESS	0	0	1013455917	
+	ttyu1	ttyu1	11213	8	DEAD_PROCESS	0	0	1013455920	
+cjyip	ttys6	ttys6	16827	7	USER_PROCESS	0	0	1013455948	roam241-104.fas.harvard.edu
+cjyip	ttys6	ttys6	16827	7	USER_PROCESS	0	0	1013455948	roam241-104.fas.harvard.edu
+	ttytb	ttytb	9432	8	DEAD_PROCESS	0	0	1013455959	
+cjyip	ttyt2	ttyt2	18641	7	USER_PROCESS	0	0	1013455983	roam241-104.fas.harvard.edu
+cjyip	ttyt2	ttyt2	18641	7	USER_PROCESS	0	0	1013455983	roam241-104.fas.harvard.edu
+	ttysa	ttysa	12342	8	DEAD_PROCESS	0	0	1013456004	
+	ttys9	ttys9	29644	8	DEAD_PROCESS	0	0	1013456007	
+mlevy	ttysa	ttysa	23042	7	USER_PROCESS	0	0	1013456023	roam171-113.student.harvard.edu
+mlevy	ttysa	ttysa	23042	7	USER_PROCESS	0	0	1013456023	roam171-113.student.harvard.edu
+	ttysa	ttysa	18340	8	DEAD_PROCESS	0	0	1013456029	
+bechis	ttys9	ttys9	3390	7	USER_PROCESS	0	0	1013456046	roam165-34.student.harvard.edu
+arudolph	ttysa	ttysa	18209	7	USER_PROCESS	0	0	1013456134	roam59-70.fas.harvard.edu
+arudolph	ttysa	ttysa	18209	7	USER_PROCESS	0	0	1013456134	roam59-70.fas.harvard.edu
+	ttysa	ttysa	18924	8	DEAD_PROCESS	0	0	1013456143	
+	ttyt1	ttyt1	16123	8	DEAD_PROCESS	0	0	1013456162	
+deiner	ttysa	ttysa	15567	7	USER_PROCESS	0	0	1013456182	turtle27.harvard.edu
+tbrady	ftp	ftpd18872	18872	7	USER_PROCESS	0	0	1013456197	gateway-1.jhancock.com
+	ttysa	ttysa	18462	8	DEAD_PROCESS	0	0	1013456219	
+kellner	ttysa	ttysa	19182	7	USER_PROCESS	0	0	1013456281	roam183-213.student.harvard.edu
+kellner	ttysa	ttysa	19182	7	USER_PROCESS	0	0	1013456281	roam183-213.student.harvard.edu
+zucker	ttyt1	ttyt1	31429	7	USER_PROCESS	0	0	1013456295	net-19428.fas.harvard.edu
+yogo	ttyt7	ttyt7	18637	7	USER_PROCESS	0	0	1013456329	nat-t241.nber.org
+yogo	ttyt7	ttyt7	18637	7	USER_PROCESS	0	0	1013456329	nat-t241.nber.org
+lee37	ttytb	ttytb	19455	7	USER_PROCESS	0	0	1013456333	roam59-68.fas.harvard.edu
+lee37	ttytb	ttytb	19455	7	USER_PROCESS	0	0	1013456333	roam59-68.fas.harvard.edu
+gosek	ttyu1	ttyu1	18380	7	USER_PROCESS	0	0	1013456335	128.103.152.95
+gosek	ttyu1	ttyu1	18380	7	USER_PROCESS	0	0	1013456335	128.103.152.95
+zeilberg	ttyu7	ttyu7	18797	7	USER_PROCESS	0	0	1013456363	swordfish.fishbowl.deas.harvard.edu
+zeilberg	ttyu7	ttyu7	18797	7	USER_PROCESS	0	0	1013456363	swordfish.fishbowl.deas.harvard.edu
+	ttyu9	ttyu9	11504	8	DEAD_PROCESS	0	0	1013456367	
+	ttyqc	ttyqc	7166	8	DEAD_PROCESS	0	0	1013456410	
+mlu	ttyqc	ttyqc	18609	7	USER_PROCESS	0	0	1013456426	roam187-151.student.harvard.edu
+mlu	ttyqc	ttyqc	18609	7	USER_PROCESS	0	0	1013456426	roam187-151.student.harvard.edu
+	ttys9	ttys9	14090	8	DEAD_PROCESS	0	0	1013456431	
+tsekova	ttys9	ttys9	17231	7	USER_PROCESS	0	0	1013456434	roam179-39.student.harvard.edu
+tsekova	ttys9	ttys9	17231	7	USER_PROCESS	0	0	1013456435	roam179-39.student.harvard.edu
+	ttyqc	ttyqc	14857	8	DEAD_PROCESS	0	0	1013456450	
+	ttyu1	ttyu1	17561	8	DEAD_PROCESS	0	0	1013456460	
+	ttyt1	ttyt1	12297	8	DEAD_PROCESS	0	0	1013456482	
+nesson	ttyqc	ttyqc	19121	7	USER_PROCESS	0	0	1013456495	roam200-43.law.harvard.edu
+vaishnav	ttyt1	ttyt1	19533	7	USER_PROCESS	0	0	1013456559	tsunami.harvard.edu
+vaishnav	ttyt1	ttyt1	19533	7	USER_PROCESS	0	0	1013456559	tsunami.harvard.edu
+	ttys6	ttys6	18488	8	DEAD_PROCESS	0	0	1013456561	
+	ttyt2	ttyt2	18746	8	DEAD_PROCESS	0	0	1013456565	
+fetterm	ttys6	ttys6	19704	7	USER_PROCESS	0	0	1013456570	sho-nuff.eecs.harvard.edu
+	ttyu7	ttyu7	18222	8	DEAD_PROCESS	0	0	1013456583	
+	ttys6	ttys6	19965	8	DEAD_PROCESS	0	0	1013456630	
+fxu	ttys6	ttys6	17044	7	USER_PROCESS	0	0	1013456898	roam149-166.student.harvard.edu
+fxu	ttys6	ttys6	17044	7	USER_PROCESS	0	0	1013456898	roam149-166.student.harvard.edu
+vtse	ttyt2	ttyt2	20856	7	USER_PROCESS	0	0	1013456941	roam147-49.student.harvard.edu
+vtse	ttyt2	ttyt2	20856	7	USER_PROCESS	0	0	1013456941	roam147-49.student.harvard.edu
+	ttyt2	ttyt2	18674	8	DEAD_PROCESS	0	0	1013456982	
+madrigal	ttyt2	ttyt2	19839	7	USER_PROCESS	0	0	1013457117	roam177-131.student.harvard.edu
+madrigal	ttyt2	ttyt2	19839	7	USER_PROCESS	0	0	1013457117	roam177-131.student.harvard.edu
+	ttys6	ttys6	20235	8	DEAD_PROCESS	0	0	1013457171	
+suciu	ttys6	ttys6	18100	7	USER_PROCESS	0	0	1013457212	roam155-133.student.harvard.edu
+suciu	ttys6	ttys6	18100	7	USER_PROCESS	0	0	1013457212	roam155-133.student.harvard.edu
+fogarty	ttyu1	ttyu1	18476	7	USER_PROCESS	0	0	1013457285	roam76-21.fas.harvard.edu
+	ttys6	ttys6	13949	8	DEAD_PROCESS	0	0	1013457375	
+vdowney	ttys6	ttys6	19873	7	USER_PROCESS	0	0	1013457386	divin22-16695.fas.harvard.edu
+	ftp	ftpd18872	18872	8	DEAD_PROCESS	0	0	1013457391	
+	ttys6	ttys6	21489	8	DEAD_PROCESS	0	0	1013457400	
+dtsao	ttys6	ttys6	18876	7	USER_PROCESS	0	0	1013457447	wab58031.harvard.edu
+	ttys6	ttys6	19406	8	DEAD_PROCESS	0	0	1013457457	
+	ttys5	ttys5	9002	8	DEAD_PROCESS	0	0	1013457488	
+areddy	ftp	ftpd9465	9465	7	USER_PROCESS	0	0	1013457497	cmb2-nip1.atg.com
+	ftp	ftpd9465	9465	8	DEAD_PROCESS	0	0	1013457500	
+jha2	ttys5	ttys5	19647	7	USER_PROCESS	0	0	1013457520	roam75-68.student.harvard.edu
+jha2	ttys5	ttys5	19647	7	USER_PROCESS	0	0	1013457520	roam75-68.student.harvard.edu
+	ttyu1	ttyu1	21140	8	DEAD_PROCESS	0	0	1013457539	
+paniza	ttys6	ttys6	25906	7	USER_PROCESS	0	0	1013457556	roam153-179.student.harvard.edu
+paniza	ttys6	ttys6	25906	7	USER_PROCESS	0	0	1013457556	roam153-179.student.harvard.edu
+paniza	ttyu1	ttyu1	8182	7	USER_PROCESS	0	0	1013457700	roam153-179.student.harvard.edu
+paniza	ttyu1	ttyu1	8182	7	USER_PROCESS	0	0	1013457700	roam153-179.student.harvard.edu
+stella	ttyu7	ttyu7	21560	7	USER_PROCESS	0	0	1013457780	roam175-129.student.harvard.edu
+dhsieh	ttyu9	ttyu9	23821	7	USER_PROCESS	0	0	1013457784	divin2-cardcat.fas.harvard.edu
+	ttyue	ttyue	16080	8	DEAD_PROCESS	0	0	1013457792	
+	ttyu7	ttyu7	22118	8	DEAD_PROCESS	0	0	1013457813	
+stella	ttyu7	ttyu7	21458	7	USER_PROCESS	0	0	1013457823	roam175-129.student.harvard.edu
+	ttyu7	ttyu7	19843	8	DEAD_PROCESS	0	0	1013457836	
+	ttyt2	ttyt2	20407	8	DEAD_PROCESS	0	0	1013457843	
+anders6	ttyt2	ttyt2	9877	7	USER_PROCESS	0	0	1013457900	roam36-49.fas.harvard.edu
+anders6	ttyu7	ttyu7	21857	7	USER_PROCESS	0	0	1013457918	roam36-49.fas.harvard.edu
+mcallah	ttyua	ttyua	21869	7	USER_PROCESS	0	0	1013457924	roam179-106.student.harvard.edu
+mcallah	ttyua	ttyua	21869	7	USER_PROCESS	0	0	1013457924	roam179-106.student.harvard.edu
+	ttyp7	ttyp7	13463	8	DEAD_PROCESS	0	0	1013457928	
+	ttyu9	ttyu9	11794	8	DEAD_PROCESS	0	0	1013458102	
+belabbas	ttyp7	ttyp7	22079	7	USER_PROCESS	0	0	1013458104	roam103-29.student.harvard.edu
+belabbas	ttyp7	ttyp7	22079	7	USER_PROCESS	0	0	1013458104	roam103-29.student.harvard.edu
+	ttyp7	ttyp7	15300	8	DEAD_PROCESS	0	0	1013458111	
+abbriano	ttyp7	ttyp7	21657	7	USER_PROCESS	0	0	1013458114	roam73-139.student.harvard.edu
+abbriano	ttyp7	ttyp7	21657	7	USER_PROCESS	0	0	1013458114	roam73-139.student.harvard.edu
+dfarley	ttyu9	ttyu9	21722	7	USER_PROCESS	0	0	1013458150	roam153-139.student.harvard.edu
+dfarley	ttyu9	ttyu9	21722	7	USER_PROCESS	0	0	1013458150	roam153-139.student.harvard.edu
+	ttyua	ttyua	16379	8	DEAD_PROCESS	0	0	1013458257	
+murray	ttyud	ttyud	19347	7	USER_PROCESS	0	0	1013458492	140.247.126.78
+	ttyu9	ttyu9	20075	8	DEAD_PROCESS	0	0	1013458525	
+ahchu	ttyua	ttyua	18720	7	USER_PROCESS	0	0	1013458525	advocate-3.fas.harvard.edu
+hilles	ttyue	ttyue	22896	7	USER_PROCESS	0	0	1013458526	hilles-17103.fas.harvard.edu
+	ttyua	ttyua	22866	8	DEAD_PROCESS	0	0	1013458539	
+	ttyud	ttyud	22933	8	DEAD_PROCESS	0	0	1013458584	
+jsulliv	ttyu9	ttyu9	23206	7	USER_PROCESS	0	0	1013458668	roam155-142.student.harvard.edu
+jsulliv	ttyu9	ttyu9	23206	7	USER_PROCESS	0	0	1013458668	roam155-142.student.harvard.edu
+sunderam	ttyua	ttyua	14669	7	USER_PROCESS	0	0	1013458669	roam59-137.fas.harvard.edu
+sunderam	ttyua	ttyua	14669	7	USER_PROCESS	0	0	1013458669	roam59-137.fas.harvard.edu
+	ttyu9	ttyu9	21744	8	DEAD_PROCESS	0	0	1013458684	
+dafrench	ttyu9	ttyu9	22702	7	USER_PROCESS	0	0	1013458705	circ-desk-pc.fas.harvard.edu
+slojka	ttyud	ttyud	23157	7	USER_PROCESS	0	0	1013458811	nas2-244.fas.harvard.edu
+slojka	ttyud	ttyud	23157	7	USER_PROCESS	0	0	1013458811	nas2-244.fas.harvard.edu
+	ttyua	ttyua	23230	8	DEAD_PROCESS	0	0	1013458924	
+denby	ttyua	ttyua	21360	7	USER_PROCESS	0	0	1013458986	arch76.harvard.edu
+ncoquill	ttyuf	ttyuf	22001	7	USER_PROCESS	0	0	1013459081	roam181-205.student.harvard.edu
+mfrances	ttyv3	ttyv3	20431	7	USER_PROCESS	0	0	1013459100	roam149-26.student.harvard.edu
+thairu	ttyv5	ttyv5	18296	7	USER_PROCESS	0	0	1013459264	roam163-161.student.harvard.edu
+thairu	ttyv5	ttyv5	18296	7	USER_PROCESS	0	0	1013459264	roam163-161.student.harvard.edu
+subraman	ttyv6	ttyv6	22556	7	USER_PROCESS	0	0	1013459305	noonan.harvard.edu
+wally	ttyv7	ttyv7	22588	7	USER_PROCESS	0	0	1013459330	roam179-50.student.harvard.edu
+dleach	ttyv8	ttyv8	21251	7	USER_PROCESS	0	0	1013459340	roam147-194.student.harvard.edu
+szilagyi	ttyv9	ttyv9	23412	7	USER_PROCESS	0	0	1013459341	nas2-244.fas.harvard.edu
+szilagyi	ttyv9	ttyv9	23412	7	USER_PROCESS	0	0	1013459341	nas2-244.fas.harvard.edu
+	ttyua	ttyua	23079	8	DEAD_PROCESS	0	0	1013459341	
+subraman	ttyua	ttyua	23374	7	USER_PROCESS	0	0	1013459356	noonan.harvard.edu
+olinsky	ttyva	ttyva	24632	7	USER_PROCESS	0	0	1013459364	roam189-66.student.harvard.edu
+	ttyq2	ttyq2	27147	8	DEAD_PROCESS	0	0	1013459375	
+girard	ttyq2	ttyq2	22441	7	USER_PROCESS	0	0	1013459402	net-43651.fas.harvard.edu
+	ttyq2	ttyq2	28619	8	DEAD_PROCESS	0	0	1013459407	
+	ttyv9	ttyv9	11466	8	DEAD_PROCESS	0	0	1013459480	
+mclynch	ttyq2	ttyq2	24333	7	USER_PROCESS	0	0	1013459485	roam131-32.student.harvard.edu
+mclynch	ttyq2	ttyq2	24333	7	USER_PROCESS	0	0	1013459485	roam131-32.student.harvard.edu
+	ttyq2	ttyq2	24273	8	DEAD_PROCESS	0	0	1013459505	
+	ttyva	ttyva	23789	8	DEAD_PROCESS	0	0	1013459572	
+lenarcic	ttyq2	ttyq2	24217	7	USER_PROCESS	0	0	1013459616	roam167-65.student.harvard.edu
+lib161	ttyv9	ttyv9	23782	7	USER_PROCESS	0	2	1013459645	140.247.179.50
+	ttyq2	ttyq2	21995	8	DEAD_PROCESS	0	0	1013459648	
+	ttyt9	ttyt9	15121	8	DEAD_PROCESS	0	0	1013459655	
+	ttyv2	ttyv2	16135	8	DEAD_PROCESS	0	0	1013459657	
+mgershow	ttyq2	ttyq2	22490	7	USER_PROCESS	0	0	1013459791	roam123-122.fas.harvard.edu
+kkwok	ttyv2	ttyv2	24611	7	USER_PROCESS	0	0	1013459826	roam73-200.student.harvard.edu
+kkwok	ttyv2	ttyv2	24611	7	USER_PROCESS	0	0	1013459826	roam73-200.student.harvard.edu
+	ttyt9	ttyt9	24727	8	DEAD_PROCESS	0	2	1013459843	
+	ttyq2	ttyq2	6695	8	DEAD_PROCESS	0	0	1013459848	
+trierw	ttyq2	ttyq2	22752	7	USER_PROCESS	0	0	1013459857	roam141-190.student.harvard.edu
+trierw	ttyq2	ttyq2	22752	7	USER_PROCESS	0	0	1013459857	roam141-190.student.harvard.edu
+	ttyv5	ttyv5	23189	8	DEAD_PROCESS	0	0	1013459889	
+	ttyue	ttyue	14035	8	DEAD_PROCESS	0	0	1013459912	
+	ttyub	ttyub	15899	8	DEAD_PROCESS	0	0	1013459931	
+thmacdon	ttyt9	ttyt9	24675	7	USER_PROCESS	0	0	1013459944	hilles-17103.fas.harvard.edu
+	ttyp5	ttyp5	12418	8	DEAD_PROCESS	0	0	1013459963	

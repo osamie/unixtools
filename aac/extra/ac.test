@@ -1,0 +1,45 @@
+#!/bin/sh
+#
+# shell script to see what is happening with the
+# difference reported between /usr/sbin/ac 
+# and /usr/sbin/ac -w /var/adm/wtmp
+#
+# method: run both in quick succession and
+#         grab the output into shell variables
+#         then use bc to do the math to convert
+#         the difference into seconds (i.e. mult by 60)
+#         Then see when the difference declines
+#
+
+PREVDIFF=0
+
+while true
+do
+	/usr/sbin/ac > A
+	/usr/sbin/ac -w /var/adm/wtmp > W
+
+	#
+	# now compute the difference in totals
+	#
+	set `diff A W`
+	if test $# -eq 0
+	then
+		DIFF=0
+		echo "in sync at " `date`
+		echo "0.00"
+	else
+		At=$4		# ac time
+		Wt=$8		# with wtmp time
+
+		set `printf "scale=4; x=$At - $Wt; x; x*60;  x*600; \n" | bc`
+		DIFF=$3
+		if test $DIFF -lt $PREVDIFF
+		then
+			echo "Diff dropped at " `date`
+		fi
+		echo $1 $2
+		# printf "%4.2f %6.2f\n" $1 $2
+		PREVDIFF=$DIFF
+	fi
+	sleep 5
+done

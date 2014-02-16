@@ -1,0 +1,20 @@
+This dataset contains a problem for EXTRA CREDIT.
+If your program can process this dataset correctly
+for users with these patterns of use, you can receive
+up to four extra points.
+
+If the output of your program differs from that of ac
+for this dataset, here are some places to look:
+
+   a. Read the man page very carefully about
+      what it does with missing logouts.  There
+      is even a command line option to tell ac
+      to process missing logouts using a different
+      policy.  That might be worth trying.
+
+   b. Also, look at how much time ac reports .
+      Add that time to the login time to see
+      what time ac is using for the end of the
+      session.
+
+

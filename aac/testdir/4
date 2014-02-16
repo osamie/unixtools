@@ -1,0 +1,1680 @@
+girash   s/14 pts/14    11809    7 USER_PROCESS     1262356332 [Jan  1 09:32:12]cpe001839f259f5-cm00159a090d1c.cpe.net.cable.rogers.com
+              pts/14    11809    8 DEAD_PROCESS     1262356338 [Jan  1 09:32:18]
+ghess    s/14 pts/14    11938    7 USER_PROCESS     1262357162 [Jan  1 09:46:02]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/14    11938    8 DEAD_PROCESS     1262357188 [Jan  1 09:46:28]
+saiyar   s/14 pts/14    14020    7 USER_PROCESS     1262365045 [Jan  1 11:57:25]c-66-31-201-164.hsd1.ma.comcast.net
+              pts/14    14020    8 DEAD_PROCESS     1262365046 [Jan  1 11:57:26]
+csteinh  p4   pts/4     22320    8 DEAD_PROCESS     1262365679 [Jan  1 12:07:59]localhost:11.0
+cscie119 ts/4 pts/4     15463    7 USER_PROCESS     1262370028 [Jan  1 13:20:28]pool-173-48-213-11.bstnma.fios.verizon.net
+              pts/8     18675    8 DEAD_PROCESS     1262373393 [Jan  1 14:16:33]
+dbragg   ts/8 pts/8     18905    7 USER_PROCESS     1262374597 [Jan  1 14:36:37]pool-173-73-2-214.washdc.fios.verizon.net
+cscie207 s/14 pts/14    19422    7 USER_PROCESS     1262376387 [Jan  1 15:06:27]pool-173-57-44-12.dllstx.fios.verizon.net
+csteinh  p18  pts/18    19662    7 USER_PROCESS     1262377791 [Jan  1 15:29:51]localhost:12.0
+              pts/8     18905    8 DEAD_PROCESS     1262379639 [Jan  1 16:00:39]
+csteinh  p18  pts/18    19662    8 DEAD_PROCESS     1262392909 [Jan  1 19:41:49]localhost:12.0
+ekruse   ts/8 pts/8     24550    7 USER_PROCESS     1262394883 [Jan  1 20:14:43]modemcable158.78-20-96.mc.videotron.ca
+              pts/8     24550    8 DEAD_PROCESS     1262396993 [Jan  1 20:49:53]
+deckst   ts/8 pts/8     27128    7 USER_PROCESS     1262404488 [Jan  1 22:54:48]c-71-232-46-61.hsd1.ma.comcast.net
+              pts/8     27128    8 DEAD_PROCESS     1262404493 [Jan  1 22:54:53]
+dbragg   ts/8 pts/8     28575    7 USER_PROCESS     1262409056 [Jan  2 00:10:56]pool-173-73-2-214.washdc.fios.verizon.net
+              pts/17    17666    8 DEAD_PROCESS     1262415612 [Jan  2 02:00:12]
+              pts/14    19422    8 DEAD_PROCESS     1262415612 [Jan  2 02:00:12]
+rait     s/14 pts/14    31150    7 USER_PROCESS     1262418588 [Jan  2 02:49:48]vpn11-96.fas.harvard.edu
+jbragg   s/17 pts/17    31266    7 USER_PROCESS     1262419368 [Jan  2 03:02:48]pool-173-73-2-214.washdc.fios.verizon.net
+              pts/14    31150    8 DEAD_PROCESS     1262419692 [Jan  2 03:08:12]
+              pts/17    31266    8 DEAD_PROCESS     1262420284 [Jan  2 03:18:04]
+              pts/8     28575    8 DEAD_PROCESS     1262423890 [Jan  2 04:18:10]
+              pts/4     15463    8 DEAD_PROCESS     1262425239 [Jan  2 04:40:39]
+ghess    ts/4 pts/4      4388    7 USER_PROCESS     1262438853 [Jan  2 08:27:33]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/4      4388    8 DEAD_PROCESS     1262438873 [Jan  2 08:27:53]
+sablue   ts/4 pts/4      6387    7 USER_PROCESS     1262445763 [Jan  2 10:22:43]cpe-098-024-123-209.carolina.res.rr.com
+ekruse   ts/8 pts/8      6498    7 USER_PROCESS     1262446372 [Jan  2 10:32:52]modemcable158.78-20-96.mc.videotron.ca
+              pts/8      6498    8 DEAD_PROCESS     1262446552 [Jan  2 10:35:52]
+              pts/4      6387    8 DEAD_PROCESS     1262448968 [Jan  2 11:16:08]
+sablue   ts/4 pts/4      7554    7 USER_PROCESS     1262450057 [Jan  2 11:34:17]cpe-098-024-123-209.carolina.res.rr.com
+              pts/4      7554    8 DEAD_PROCESS     1262452934 [Jan  2 12:22:14]
+rlesage  ts/4 pts/4     13514    7 USER_PROCESS     1262471487 [Jan  2 17:31:27]pool-68-239-61-122.bos.east.verizon.net
+              pts/4     13514    8 DEAD_PROCESS     1262473463 [Jan  2 18:04:23]
+jbragg   ts/4 pts/4     16788    7 USER_PROCESS     1262482891 [Jan  2 20:41:31]pool-173-73-2-214.washdc.fios.verizon.net
+jbragg   ts/8 pts/8     16834    7 USER_PROCESS     1262482969 [Jan  2 20:42:49]pool-173-73-2-214.washdc.fios.verizon.net
+              pts/4     16788    8 DEAD_PROCESS     1262483895 [Jan  2 20:58:15]
+              pts/8     16834    8 DEAD_PROCESS     1262483899 [Jan  2 20:58:19]
+ekruse   ts/4 pts/4     17882    7 USER_PROCESS     1262486756 [Jan  2 21:45:56]pool-71-183-84-137.nycmny.fios.verizon.net
+sablue   ts/8 pts/8     18500    7 USER_PROCESS     1262489255 [Jan  2 22:27:35]cpe-098-024-123-209.carolina.res.rr.com
+              pts/4     17882    8 DEAD_PROCESS     1262493411 [Jan  2 23:36:51]
+              pts/8     18500    8 DEAD_PROCESS     1262493922 [Jan  2 23:45:22]
+              pts/0      6804    8 DEAD_PROCESS     1262495136 [Jan  3 00:05:36]
+              pts/3      7366    8 DEAD_PROCESS     1262495162 [Jan  3 00:06:02]
+rgoldst  ts/0 pts/0     21665    7 USER_PROCESS     1262499382 [Jan  3 01:16:22]c-71-203-117-111.hsd1.pa.comcast.net
+dbragg   ts/3 pts/3     21759    7 USER_PROCESS     1262499773 [Jan  3 01:22:53]pool-173-73-2-214.washdc.fios.verizon.net
+jbragg   ts/4 pts/4     21813    7 USER_PROCESS     1262499906 [Jan  3 01:25:06]pool-173-73-2-214.washdc.fios.verizon.net
+              pts/0     21665    8 DEAD_PROCESS     1262501900 [Jan  3 01:58:20]
+              pts/4     21813    8 DEAD_PROCESS     1262503431 [Jan  3 02:23:51]
+dbragg   ts/0 pts/0     24497    7 USER_PROCESS     1262505033 [Jan  3 02:50:33]pool-173-73-2-214.washdc.fios.verizon.net
+              pts/3     21759    8 DEAD_PROCESS     1262506639 [Jan  3 03:17:19]
+              pts/0     24497    8 DEAD_PROCESS     1262506643 [Jan  3 03:17:23]
+ghess    ts/0 pts/0     30897    7 USER_PROCESS     1262527026 [Jan  3 08:57:06]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     30897    8 DEAD_PROCESS     1262527037 [Jan  3 08:57:17]
+cscie119 ts/0 pts/0     32376    7 USER_PROCESS     1262532105 [Jan  3 10:21:45]pool-173-48-213-11.bstnma.fios.verizon.net
+deckst   ts/3 pts/3      2303    7 USER_PROCESS     1262538325 [Jan  3 12:05:25]c-71-232-46-61.hsd1.ma.comcast.net
+              pts/3      2303    8 DEAD_PROCESS     1262538350 [Jan  3 12:05:50]
+rgoldst  ts/3 pts/3      2815    7 USER_PROCESS     1262539535 [Jan  3 12:25:35]c-71-203-117-111.hsd1.pa.comcast.net
+              pts/3      2815    8 DEAD_PROCESS     1262541361 [Jan  3 12:56:01]
+rgoldst  ts/3 pts/3      4461    7 USER_PROCESS     1262545276 [Jan  3 14:01:16]c-71-203-117-111.hsd1.pa.comcast.net
+              pts/3      4461    8 DEAD_PROCESS     1262546018 [Jan  3 14:13:38]
+dschultz ts/3 pts/3      5805    7 USER_PROCESS     1262549274 [Jan  3 15:07:54]96.243.217.202
+dschultz ts/4 pts/4      5909    7 USER_PROCESS     1262549531 [Jan  3 15:12:11]96.243.217.202
+              pts/4      5909    8 DEAD_PROCESS     1262549534 [Jan  3 15:12:14]
+              pts/3      5805    8 DEAD_PROCESS     1262550512 [Jan  3 15:28:32]
+rgoldst  ts/3 pts/3      7496    7 USER_PROCESS     1262554995 [Jan  3 16:43:15]c-71-203-117-111.hsd1.pa.comcast.net
+ekruse   ts/4 pts/4      8235    7 USER_PROCESS     1262556872 [Jan  3 17:14:32]pool-71-183-84-137.nycmny.fios.verizon.net
+girash   ts/8 pts/8      8339    7 USER_PROCESS     1262557248 [Jan  3 17:20:48]209-6-212-240.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/8      8339    8 DEAD_PROCESS     1262557270 [Jan  3 17:21:10]
+              pts/3      7496    8 DEAD_PROCESS     1262558359 [Jan  3 17:39:19]
+rgoldst  ts/3 pts/3      8841    7 USER_PROCESS     1262558373 [Jan  3 17:39:33]c-71-203-117-111.hsd1.pa.comcast.net
+              pts/4      8235    8 DEAD_PROCESS     1262558686 [Jan  3 17:44:46]
+              pts/3      8841    8 DEAD_PROCESS     1262559971 [Jan  3 18:06:11]
+rgoldst  ts/3 pts/3      9193    7 USER_PROCESS     1262559993 [Jan  3 18:06:33]c-71-203-117-111.hsd1.pa.comcast.net
+              pts/3      9193    8 DEAD_PROCESS     1262561352 [Jan  3 18:29:12]
+rgoldst  ts/3 pts/3      9726    7 USER_PROCESS     1262561365 [Jan  3 18:29:25]c-71-203-117-111.hsd1.pa.comcast.net
+              pts/3      9726    8 DEAD_PROCESS     1262561896 [Jan  3 18:38:16]
+rgoldst  ts/3 pts/3      9868    7 USER_PROCESS     1262561923 [Jan  3 18:38:43]c-71-203-117-111.hsd1.pa.comcast.net
+              pts/3      9868    8 DEAD_PROCESS     1262563150 [Jan  3 18:59:10]
+sablue   ts/3 pts/3     10838    7 USER_PROCESS     1262564783 [Jan  3 19:26:23]cpe-098-024-123-209.carolina.res.rr.com
+dbragg   ts/4 pts/4     11362    7 USER_PROCESS     1262566267 [Jan  3 19:51:07]pool-173-73-2-214.washdc.fios.verizon.net
+rgoldst  ts/8 pts/8     11577    7 USER_PROCESS     1262567029 [Jan  3 20:03:49]c-71-203-117-111.hsd1.pa.comcast.net
+              pts/8     11577    8 DEAD_PROCESS     1262567610 [Jan  3 20:13:30]
+rgoldst  ts/8 pts/8     12072    7 USER_PROCESS     1262567626 [Jan  3 20:13:46]c-71-203-117-111.hsd1.pa.comcast.net
+ghess    s/14 pts/14    12534    7 USER_PROCESS     1262568966 [Jan  3 20:36:06]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/14    12534    8 DEAD_PROCESS     1262568975 [Jan  3 20:36:15]
+mcnamar  s/14 pts/14    12631    7 USER_PROCESS     1262569014 [Jan  3 20:36:54]dhcp-0046420562-39-4e.client.student.harvard.edu
+              pts/8     12072    8 DEAD_PROCESS     1262569368 [Jan  3 20:42:48]
+rgoldst  ts/8 pts/8     13052    7 USER_PROCESS     1262569381 [Jan  3 20:43:01]c-71-203-117-111.hsd1.pa.comcast.net
+choi10   s/17 pts/17    13106    7 USER_PROCESS     1262569526 [Jan  3 20:45:26]58.141.149.190
+              pts/17    13106    8 DEAD_PROCESS     1262569552 [Jan  3 20:45:52]
+              pts/8     13052    8 DEAD_PROCESS     1262570073 [Jan  3 20:54:33]
+rgoldst  ts/8 pts/8     13381    7 USER_PROCESS     1262570093 [Jan  3 20:54:53]c-71-203-117-111.hsd1.pa.comcast.net
+girash   s/17 pts/17    13707    7 USER_PROCESS     1262570641 [Jan  3 21:04:01]209-6-212-240.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/14    12631    8 DEAD_PROCESS     1262570802 [Jan  3 21:06:42]
+              pts/17    13707    8 DEAD_PROCESS     1262571194 [Jan  3 21:13:14]
+girash   s/14 pts/14    14326    7 USER_PROCESS     1262571799 [Jan  3 21:23:19]209-6-212-240.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/14    14326    8 DEAD_PROCESS     1262571819 [Jan  3 21:23:39]
+              pts/8     13381    8 DEAD_PROCESS     1262571854 [Jan  3 21:24:14]
+              pts/3     10838    8 DEAD_PROCESS     1262572218 [Jan  3 21:30:18]
+rgoldst  ts/3 pts/3     14940    7 USER_PROCESS     1262574017 [Jan  3 22:00:17]c-71-203-117-111.hsd1.pa.comcast.net
+              pts/3     14940    8 DEAD_PROCESS     1262574586 [Jan  3 22:09:46]
+ekruse   ts/3 pts/3     15622    7 USER_PROCESS     1262575745 [Jan  3 22:29:05]pool-71-183-84-137.nycmny.fios.verizon.net
+jbragg   ts/8 pts/8     16729    7 USER_PROCESS     1262580191 [Jan  3 23:43:11]pool-173-73-2-214.washdc.fios.verizon.net
+              pts/8     16729    8 DEAD_PROCESS     1262580275 [Jan  3 23:44:35]
+              pts/0     32376    8 DEAD_PROCESS     1262586368 [Jan  4 01:26:08]
+              pts/4     11362    8 DEAD_PROCESS     1262586551 [Jan  4 01:29:11]
+              pts/3     15622    8 DEAD_PROCESS     1262594589 [Jan  4 03:43:09]
+rlesage  ts/0 pts/0     25724    7 USER_PROCESS     1262611210 [Jan  4 08:20:10]pool-68-239-54-76.bos.east.verizon.net
+              pts/0     25724    8 DEAD_PROCESS     1262611336 [Jan  4 08:22:16]
+ghess    ts/0 pts/0     25841    7 USER_PROCESS     1262611780 [Jan  4 08:29:40]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     25841    8 DEAD_PROCESS     1262611791 [Jan  4 08:29:51]
+girash   ts/0 pts/0     27333    7 USER_PROCESS     1262617132 [Jan  4 09:58:52]209-6-212-240.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     27333    8 DEAD_PROCESS     1262618091 [Jan  4 10:14:51]
+girash   ts/0 pts/0     27824    7 USER_PROCESS     1262618591 [Jan  4 10:23:11]209-6-212-240.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+cen      ts/3 pts/3     28455    7 USER_PROCESS     1262620800 [Jan  4 11:00:00]comp-cen-1.ad.fas.harvard.edu
+dmca2    ts/4 pts/4     28532    7 USER_PROCESS     1262621087 [Jan  4 11:04:47]comp-cen-1.ad.fas.harvard.edu
+ghess    ts/8 pts/8     28567    7 USER_PROCESS     1262621112 [Jan  4 11:05:12]dorrance-two-sixty-nine.mit.edu
+dschultz s/14 pts/14    28604    7 USER_PROCESS     1262621137 [Jan  4 11:05:37]96.243.217.202
+dschultz s/17 pts/17    28661    7 USER_PROCESS     1262621276 [Jan  4 11:07:56]96.243.217.202
+              pts/17    28661    8 DEAD_PROCESS     1262621418 [Jan  4 11:10:18]
+zagorsky s/17 pts/17    31257    7 USER_PROCESS     1262628493 [Jan  4 13:08:13]ws30.fas.harvard.edu
+              pts/17    31257    8 DEAD_PROCESS     1262628534 [Jan  4 13:08:54]
+              pts/14    28604    8 DEAD_PROCESS     1262629643 [Jan  4 13:27:23]
+bowill   s/14 pts/14    32679    7 USER_PROCESS     1262632799 [Jan  4 14:19:59]wirefire.akamai.com
+              pts/14    32679    8 DEAD_PROCESS     1262632815 [Jan  4 14:20:15]
+girash   s/14 pts/14     1329    7 USER_PROCESS     1262635263 [Jan  4 15:01:03]209-6-212-240.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/8     28567    8 DEAD_PROCESS     1262637676 [Jan  4 15:41:16]
+ghess    ts/8 pts/8      3560    7 USER_PROCESS     1262640998 [Jan  4 16:36:38]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/8      3560    8 DEAD_PROCESS     1262641062 [Jan  4 16:37:42]
+ekruse   ts/8 pts/8      4124    7 USER_PROCESS     1262642955 [Jan  4 17:09:15]pool-71-183-84-137.nycmny.fios.verizon.net
+              pts/8      4124    8 DEAD_PROCESS     1262643230 [Jan  4 17:13:50]
+awad     ts/8 pts/8      5159    7 USER_PROCESS     1262645770 [Jan  4 17:56:10]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/8      5159    8 DEAD_PROCESS     1262647300 [Jan  4 18:21:40]
+awad     ts/8 pts/8      5802    7 USER_PROCESS     1262648109 [Jan  4 18:35:09]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/8      5802    8 DEAD_PROCESS     1262651154 [Jan  4 19:25:54]
+choi10   ts/8 pts/8      7028    7 USER_PROCESS     1262652549 [Jan  4 19:49:09]58.141.159.50
+              pts/8      7028    8 DEAD_PROCESS     1262652579 [Jan  4 19:49:39]
+deckst   ts/8 pts/8      8929    7 USER_PROCESS     1262657927 [Jan  4 21:18:47]c-71-232-46-61.hsd1.ma.comcast.net
+              pts/8      8929    8 DEAD_PROCESS     1262657932 [Jan  4 21:18:52]
+mmacgill ts/8 pts/8      9618    7 USER_PROCESS     1262659349 [Jan  4 21:42:29]pool-68-163-165-12.bos.east.verizon.net
+              pts/8      9618    8 DEAD_PROCESS     1262659354 [Jan  4 21:42:34]
+girash   ts/8 pts/8     10563    7 USER_PROCESS     1262661994 [Jan  4 22:26:34]209-6-212-240.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/8     10563    8 DEAD_PROCESS     1262662001 [Jan  4 22:26:41]
+ekruse   ts/8 pts/8     10613    7 USER_PROCESS     1262662203 [Jan  4 22:30:03]pool-71-183-84-137.nycmny.fios.verizon.net
+              pts/8     10613    8 DEAD_PROCESS     1262662231 [Jan  4 22:30:31]
+              pts/14     1329    8 DEAD_PROCESS     1262662396 [Jan  4 22:33:16]
+              pts/0     27824    8 DEAD_PROCESS     1262662396 [Jan  4 22:33:16]
+wluo     ts/0 pts/0     12201    7 USER_PROCESS     1262667354 [Jan  4 23:55:54]c-98-253-37-183.hsd1.il.comcast.net
+awad     ts/8 pts/8     12780    7 USER_PROCESS     1262669449 [Jan  5 00:30:49]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/8     12780    8 DEAD_PROCESS     1262669549 [Jan  5 00:32:29]
+dschultz ts/8 pts/8     13355    7 USER_PROCESS     1262671403 [Jan  5 01:03:23]96.243.217.202
+              pts/8     13355    8 DEAD_PROCESS     1262671456 [Jan  5 01:04:16]
+              pts/0     12201    8 DEAD_PROCESS     1262671951 [Jan  5 01:12:31]
+chang6   ts/0 pts/0     16120    7 USER_PROCESS     1262681477 [Jan  5 03:51:17]c-67-175-246-43.hsd1.il.comcast.net
+              pts/0     16120    8 DEAD_PROCESS     1262682079 [Jan  5 04:01:19]
+cen      ts/0 pts/0     22004    7 USER_PROCESS     1262700874 [Jan  5 09:14:34]comp-cen-1.ad.fas.harvard.edu
+              pts/0     22004    8 DEAD_PROCESS     1262700951 [Jan  5 09:15:51]
+              pts/3     28455    8 DEAD_PROCESS     1262701443 [Jan  5 09:24:03]
+              pts/4     28532    8 DEAD_PROCESS     1262701492 [Jan  5 09:24:52]
+cscie119 ts/0 pts/0     22559    7 USER_PROCESS     1262702724 [Jan  5 09:45:24]pool-173-48-213-11.bstnma.fios.verizon.net
+ghess    ts/3 pts/3     22989    7 USER_PROCESS     1262703706 [Jan  5 10:01:46]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/3     22989    8 DEAD_PROCESS     1262703738 [Jan  5 10:02:18]
+cen      ts/3 pts/3     23690    7 USER_PROCESS     1262706581 [Jan  5 10:49:41]comp-cen-1.ad.fas.harvard.edu
+ghess    ts/4 pts/4     24184    7 USER_PROCESS     1262707860 [Jan  5 11:11:00]dorrance-two-sixty-nine.mit.edu
+dmca2    ts/8 pts/8     24838    7 USER_PROCESS     1262710380 [Jan  5 11:53:00]comp-cen-1.ad.fas.harvard.edu
+cscie119 s/14 pts/14    25853    7 USER_PROCESS     1262713460 [Jan  5 12:44:20]pool-173-48-213-11.bstnma.fios.verizon.net
+              pts/14    25853    8 DEAD_PROCESS     1262716269 [Jan  5 13:31:09]
+              pts/0     22559    8 DEAD_PROCESS     1262716637 [Jan  5 13:37:17]
+dsteinbr ts/0 pts/0     27240    7 USER_PROCESS     1262716961 [Jan  5 13:42:41]pool-72-74-14-215.bstnma.east.verizon.net
+              pts/0     27240    8 DEAD_PROCESS     1262717543 [Jan  5 13:52:23]
+chang6   ts/0 pts/0     27830    7 USER_PROCESS     1262719022 [Jan  5 14:17:02]c-67-175-246-43.hsd1.il.comcast.net
+              pts/0     27830    8 DEAD_PROCESS     1262719216 [Jan  5 14:20:16]
+deckst   ts/0 pts/0     27893    7 USER_PROCESS     1262719374 [Jan  5 14:22:54]c-71-232-46-61.hsd1.ma.comcast.net
+              pts/0     27893    8 DEAD_PROCESS     1262720810 [Jan  5 14:46:50]
+brickman ts/0 pts/0     28567    7 USER_PROCESS     1262720998 [Jan  5 14:49:58]dhcp-19-160.harvard.edu
+              pts/0     28567    8 DEAD_PROCESS     1262721506 [Jan  5 14:58:26]
+lliu     ts/0 pts/0     29603    7 USER_PROCESS     1262723981 [Jan  5 15:39:41]216.228.136.48
+              pts/0     29603    8 DEAD_PROCESS     1262724058 [Jan  5 15:40:58]
+jbragg   ts/0 pts/0     30460    7 USER_PROCESS     1262726582 [Jan  5 16:23:02]pool-173-73-2-214.washdc.fios.verizon.net
+              pts/4     24184    8 DEAD_PROCESS     1262731387 [Jan  5 17:43:07]
+ghess    ts/4 pts/4      5462    7 USER_PROCESS     1262736139 [Jan  5 19:02:19]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/4      5462    8 DEAD_PROCESS     1262736154 [Jan  5 19:02:34]
+jbragg   ts/4 pts/4      6153    7 USER_PROCESS     1262737995 [Jan  5 19:33:15]pool-173-73-2-214.washdc.fios.verizon.net
+lib215   s/14 pts/14     6953    7 USER_PROCESS     1262739129 [Jan  5 19:52:09]static-68-162-220-185.bos.east.verizon.net
+              pts/14     6953    8 DEAD_PROCESS     1262740479 [Jan  5 20:14:39]
+ekruse   s/14 pts/14     7980    7 USER_PROCESS     1262742672 [Jan  5 20:51:12]pool-71-183-84-137.nycmny.fios.verizon.net
+dbragg   s/17 pts/17     8673    7 USER_PROCESS     1262745394 [Jan  5 21:36:34]pool-173-73-2-214.washdc.fios.verizon.net
+              pts/4      6153    8 DEAD_PROCESS     1262745874 [Jan  5 21:44:34]
+jbragg   ts/4 pts/4      9109    7 USER_PROCESS     1262746095 [Jan  5 21:48:15]pool-173-73-2-214.washdc.fios.verizon.net
+dbragg   s/18 pts/18     9324    7 USER_PROCESS     1262746628 [Jan  5 21:57:08]pool-173-73-2-214.washdc.fios.verizon.net
+              pts/4      9109    8 DEAD_PROCESS     1262748369 [Jan  5 22:26:09]
+              pts/0     30460    8 DEAD_PROCESS     1262748381 [Jan  5 22:26:21]
+dbragg   ts/0 pts/0     10281    7 USER_PROCESS     1262748773 [Jan  5 22:32:53]pool-173-73-2-214.washdc.fios.verizon.net
+obastani ts/4 pts/4     11276    7 USER_PROCESS     1262751754 [Jan  5 23:22:34]ppp-70-129-128-240.dsl.rcsntx.swbell.net
+              pts/4     11276    8 DEAD_PROCESS     1262751757 [Jan  5 23:22:37]
+awad     ts/4 pts/4     11487    7 USER_PROCESS     1262752826 [Jan  5 23:40:26]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+chang6   s/19 pts/19    12447    7 USER_PROCESS     1262755468 [Jan  6 00:24:28]c-67-175-246-43.hsd1.il.comcast.net
+chang6   s/20 pts/20    12668    7 USER_PROCESS     1262756529 [Jan  6 00:42:09]c-67-175-246-43.hsd1.il.comcast.net
+              pts/18     9324    8 DEAD_PROCESS     1262756693 [Jan  6 00:44:53]
+              pts/17     8673    8 DEAD_PROCESS     1262756698 [Jan  6 00:44:58]
+              pts/0     10281    8 DEAD_PROCESS     1262756704 [Jan  6 00:45:04]
+              pts/19    12447    8 DEAD_PROCESS     1262759938 [Jan  6 01:38:58]
+              pts/4     11487    8 DEAD_PROCESS     1262764514 [Jan  6 02:55:14]
+              pts/14     7980    8 DEAD_PROCESS     1262766583 [Jan  6 03:29:43]
+chang6   ts/0 pts/0     17665    7 USER_PROCESS     1262773679 [Jan  6 05:27:59]c-67-175-246-43.hsd1.il.comcast.net
+              pts/0     17665    8 DEAD_PROCESS     1262774012 [Jan  6 05:33:32]
+              pts/20    12668    8 DEAD_PROCESS     1262774019 [Jan  6 05:33:39]
+ghess    ts/0 pts/0     21337    7 USER_PROCESS     1262785830 [Jan  6 08:50:30]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     21337    8 DEAD_PROCESS     1262785848 [Jan  6 08:50:48]
+dhar     ts/0 pts/0     21547    7 USER_PROCESS     1262786802 [Jan  6 09:06:42]dhar.fas.harvard.edu
+              pts/0     21547    8 DEAD_PROCESS     1262786809 [Jan  6 09:06:49]
+root     ts/0 pts/0     22055    7 USER_PROCESS     1262788193 [Jan  6 09:29:53]hal.unix.fas.harvard.edu
+              pts/0     22053    8 DEAD_PROCESS     1262788212 [Jan  6 09:30:12]
+dhar     ts/0 pts/0     22125    7 USER_PROCESS     1262788378 [Jan  6 09:32:58]dhar.fas.harvard.edu
+              pts/0     22125    8 DEAD_PROCESS     1262788385 [Jan  6 09:33:05]
+jjackson ts/0 pts/0     23781    7 USER_PROCESS     1262794658 [Jan  6 11:17:38]1story-vpn-gw.dce.harvard.edu
+              pts/0     23781    8 DEAD_PROCESS     1262794956 [Jan  6 11:22:36]
+libe50a  ts/0 pts/0     24208    7 USER_PROCESS     1262794961 [Jan  6 11:22:41]1story-vpn-gw.dce.harvard.edu
+              pts/0     24208    8 DEAD_PROCESS     1262795024 [Jan  6 11:23:44]
+jjackson ts/0 pts/0     24286    7 USER_PROCESS     1262795441 [Jan  6 11:30:41]1story-vpn-gw.dce.harvard.edu
+eps236   ts/4 pts/4     24797    7 USER_PROCESS     1262796925 [Jan  6 11:55:25]dhcp-164.as.harvard.edu
+eps236   s/14 pts/14    24859    7 USER_PROCESS     1262797052 [Jan  6 11:57:32]dhcp-164.as.harvard.edu
+              pts/14    24859    8 DEAD_PROCESS     1262797056 [Jan  6 11:57:36]
+              pts/0     24286    8 DEAD_PROCESS     1262797337 [Jan  6 12:02:17]
+              pts/4     24797    8 DEAD_PROCESS     1262798507 [Jan  6 12:21:47]
+eps5     ts/0 pts/0     25926    7 USER_PROCESS     1262800749 [Jan  6 12:59:09]dhcp-164.as.harvard.edu
+              pts/0     25926    8 DEAD_PROCESS     1262800778 [Jan  6 12:59:38]
+eps5     ts/0 pts/0     26465    7 USER_PROCESS     1262802532 [Jan  6 13:28:52]dhcp-194.as.harvard.edu
+eps5     ts/4 pts/4     26608    7 USER_PROCESS     1262803206 [Jan  6 13:40:06]dhcp-194.as.harvard.edu
+              pts/4     26608    8 DEAD_PROCESS     1262803229 [Jan  6 13:40:29]
+              pts/0     26465    8 DEAD_PROCESS     1262803419 [Jan  6 13:43:39]
+eps5     ts/0 pts/0     26734    7 USER_PROCESS     1262803755 [Jan  6 13:49:15]dhcp-194.as.harvard.edu
+dbear    ts/4 pts/4     26770    7 USER_PROCESS     1262803802 [Jan  6 13:50:02]dhc017097.med.harvard.edu
+              pts/0     26734    8 DEAD_PROCESS     1262803929 [Jan  6 13:52:09]
+jbragg   ts/0 pts/0     28005    7 USER_PROCESS     1262807520 [Jan  6 14:52:00]pool-173-73-2-214.washdc.fios.verizon.net
+              pts/4     26770    8 DEAD_PROCESS     1262807989 [Jan  6 14:59:49]
+cscie119 ts/4 pts/4     28543    7 USER_PROCESS     1262808715 [Jan  6 15:11:55]pool-173-48-213-11.bstnma.fios.verizon.net
+              pts/4     28543    8 DEAD_PROCESS     1262808728 [Jan  6 15:12:08]
+libe50a  ts/4 pts/4     29572    7 USER_PROCESS     1262811833 [Jan  6 16:03:53]1story-vpn-gw.dce.harvard.edu
+              pts/4     29572    8 DEAD_PROCESS     1262811855 [Jan  6 16:04:15]
+dsteinbr ts/4 pts/4     29764    7 USER_PROCESS     1262813050 [Jan  6 16:24:10]pool-72-70-96-3.bstnma.east.verizon.net
+chang6   s/14 pts/14    30127    7 USER_PROCESS     1262813428 [Jan  6 16:30:28]c-67-175-246-43.hsd1.il.comcast.net
+              pts/14    30127    8 DEAD_PROCESS     1262815069 [Jan  6 16:57:49]
+vmodi    s/14 pts/14    31229    7 USER_PROCESS     1262817033 [Jan  6 17:30:33]ool-44c1accb.dyn.optonline.net
+              pts/4     29764    8 DEAD_PROCESS     1262817803 [Jan  6 17:43:23]
+              pts/14    31229    8 DEAD_PROCESS     1262825662 [Jan  6 19:54:22]
+chang6   ts/4 pts/4      2608    7 USER_PROCESS     1262831042 [Jan  6 21:24:02]c-67-175-246-43.hsd1.il.comcast.net
+cscie119 s/14 pts/14     4499    7 USER_PROCESS     1262837032 [Jan  6 23:03:52]pool-71-162-105-103.bstnma.east.verizon.net
+              pts/14     4499    8 DEAD_PROCESS     1262837048 [Jan  6 23:04:08]
+              pts/4      2608    8 DEAD_PROCESS     1262837833 [Jan  6 23:17:13]
+chang6   ts/4 pts/4      4660    7 USER_PROCESS     1262837978 [Jan  6 23:19:38]c-67-175-246-43.hsd1.il.comcast.net
+              pts/4      4660    8 DEAD_PROCESS     1262838109 [Jan  6 23:21:49]
+chang6   ts/4 pts/4      4690    7 USER_PROCESS     1262838113 [Jan  6 23:21:53]c-67-175-246-43.hsd1.il.comcast.net
+              pts/4      4690    8 DEAD_PROCESS     1262839366 [Jan  6 23:42:46]
+              pts/0     28005    8 DEAD_PROCESS     1262839588 [Jan  6 23:46:28]
+chang6   ts/0 pts/0      6153    7 USER_PROCESS     1262842656 [Jan  7 00:37:36]c-67-175-246-43.hsd1.il.comcast.net
+              pts/0      6153    8 DEAD_PROCESS     1262865670 [Jan  7 07:01:10]
+ghess    ts/0 pts/0     17104    7 USER_PROCESS     1262874642 [Jan  7 09:30:42]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     17104    8 DEAD_PROCESS     1262874665 [Jan  7 09:31:05]
+              pts/8     24838    8 DEAD_PROCESS     1262875868 [Jan  7 09:51:08]
+              pts/3     23690    8 DEAD_PROCESS     1262875879 [Jan  7 09:51:19]
+ghess    ts/0 pts/0     18057    7 USER_PROCESS     1262877411 [Jan  7 10:16:51]dorrance-two-sixty-nine.mit.edu
+hartmann ts/3 pts/3     19574    7 USER_PROCESS     1262882301 [Jan  7 11:38:21]hal.unix.fas.harvard.edu
+              pts/3     19574    8 DEAD_PROCESS     1262882446 [Jan  7 11:40:46]
+hartmann ts/3 pts/3     19646    7 USER_PROCESS     1262882660 [Jan  7 11:44:20]hal.unix.fas.harvard.edu
+              pts/3     19646    8 DEAD_PROCESS     1262882691 [Jan  7 11:44:51]
+              pts/0     18057    8 DEAD_PROCESS     1262898552 [Jan  7 16:09:12]
+rksalik  ts/0 pts/0     24811    7 USER_PROCESS     1262900506 [Jan  7 16:41:46]140.247.128.41
+              pts/0     24811    8 DEAD_PROCESS     1262900532 [Jan  7 16:42:12]
+masker   ts/0 pts/0     25406    7 USER_PROCESS     1262902747 [Jan  7 17:19:07]166.205.11.227
+              pts/0     25406    8 DEAD_PROCESS     1262902980 [Jan  7 17:23:00]
+masker   ts/0 pts/0     25491    7 USER_PROCESS     1262903266 [Jan  7 17:27:46]166.205.11.227
+              pts/0     25491    8 DEAD_PROCESS     1262903510 [Jan  7 17:31:50]
+masker   ts/0 pts/0     25584    7 USER_PROCESS     1262903660 [Jan  7 17:34:20]166.205.11.227
+              pts/0     25584    8 DEAD_PROCESS     1262903711 [Jan  7 17:35:11]
+masker   ts/0 pts/0     25628    7 USER_PROCESS     1262903727 [Jan  7 17:35:27]166.205.11.227
+              pts/0     25628    8 DEAD_PROCESS     1262903888 [Jan  7 17:38:08]
+eps5     ts/0 pts/0     26507    7 USER_PROCESS     1262905822 [Jan  7 18:10:22]dhcp-164.as.harvard.edu
+eps5     ts/3 pts/3     26588    7 USER_PROCESS     1262906169 [Jan  7 18:16:09]dhcp-164.as.harvard.edu
+              pts/3     26588    8 DEAD_PROCESS     1262906180 [Jan  7 18:16:20]
+scia30   ts/3 pts/3     26655    7 USER_PROCESS     1262906307 [Jan  7 18:18:27]ice4.fas.harvard.edu
+              pts/3     26655    8 DEAD_PROCESS     1262906316 [Jan  7 18:18:36]
+scia30   ts/3 pts/3     26727    7 USER_PROCESS     1262906648 [Jan  7 18:24:08]dhcp-164.as.harvard.edu
+              pts/3     26727    8 DEAD_PROCESS     1262906909 [Jan  7 18:28:29]
+scia30   ts/3 pts/3     26792    7 USER_PROCESS     1262906920 [Jan  7 18:28:40]dhcp-164.as.harvard.edu
+              pts/3     26792    8 DEAD_PROCESS     1262907024 [Jan  7 18:30:24]
+scia30   ts/3 pts/3     26874    7 USER_PROCESS     1262907273 [Jan  7 18:34:33]dhcp-164.as.harvard.edu
+              pts/3     26874    8 DEAD_PROCESS     1262910302 [Jan  7 19:25:02]
+              pts/0     26507    8 DEAD_PROCESS     1262914919 [Jan  7 20:41:59]
+mcnamar  ts/0 pts/0     31040    7 USER_PROCESS     1262921523 [Jan  7 22:32:03]cpe-24-31-148-123.maine.res.rr.com
+              pts/0     31040    8 DEAD_PROCESS     1262923421 [Jan  7 23:03:41]
+mcnamar  ts/0 pts/0     32095    7 USER_PROCESS     1262923938 [Jan  7 23:12:18]cpe-24-31-148-123.maine.res.rr.com
+              pts/0     32095    8 DEAD_PROCESS     1262924054 [Jan  7 23:14:14]
+ghess    ts/0 pts/0     10138    7 USER_PROCESS     1262960354 [Jan  8 09:19:14]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     10138    8 DEAD_PROCESS     1262960372 [Jan  8 09:19:32]
+ghess    ts/0 pts/0     11247    7 USER_PROCESS     1262964615 [Jan  8 10:30:15]dorrance-two-sixty-nine.mit.edu
+dzhu     ts/3 pts/3     13564    7 USER_PROCESS     1262972741 [Jan  8 12:45:41]user-0cdfhvu.cable.mindspring.com
+              pts/3     13564    8 DEAD_PROCESS     1262972760 [Jan  8 12:46:00]
+ghess    ts/3 pts/3     14085    7 USER_PROCESS     1262974199 [Jan  8 13:09:59]dorrance-two-sixty-nine.mit.edu
+              pts/0     11247    8 DEAD_PROCESS     1262974682 [Jan  8 13:18:02]
+ghess    ts/0 pts/0     14554    7 USER_PROCESS     1262975277 [Jan  8 13:27:57]dorrance-two-sixty-nine.mit.edu
+              pts/3     14085    8 DEAD_PROCESS     1262975768 [Jan  8 13:36:08]
+              pts/0     14554    8 DEAD_PROCESS     1262979261 [Jan  8 14:34:21]
+ghess    ts/0 pts/0     16080    7 USER_PROCESS     1262980427 [Jan  8 14:53:47]dorrance-two-sixty-nine.mit.edu
+csteinh  p3   pts/3     17655    7 USER_PROCESS     1262985915 [Jan  8 16:25:15]localhost:10.0
+csteinh  p4   pts/4     18737    7 USER_PROCESS     1262989536 [Jan  8 17:25:36]localhost:11.0
+csteinh  p3   pts/3     17655    8 DEAD_PROCESS     1262989574 [Jan  8 17:26:14]localhost:10.0
+              pts/0     16080    8 DEAD_PROCESS     1262991893 [Jan  8 18:04:53]
+csteinh  p4   pts/4     18737    8 DEAD_PROCESS     1262996852 [Jan  8 19:27:32]localhost:11.0
+yzhu     ts/0 pts/0     23211    7 USER_PROCESS     1263005241 [Jan  8 21:47:21]116.232.204.255
+vmodi    ts/3 pts/3     24734    7 USER_PROCESS     1263010483 [Jan  8 23:14:43]ool-44c1accb.dyn.optonline.net
+              pts/3     24734    8 DEAD_PROCESS     1263010495 [Jan  8 23:14:55]
+              pts/0     23211    8 DEAD_PROCESS     1263013613 [Jan  9 00:06:53]
+ghess    ts/0 pts/0      3825    7 USER_PROCESS     1263050205 [Jan  9 10:16:45]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0      3825    8 DEAD_PROCESS     1263050215 [Jan  9 10:16:55]
+awad     ts/0 pts/0      6309    7 USER_PROCESS     1263058218 [Jan  9 12:30:18]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+dzhu     ts/3 pts/3      7063    7 USER_PROCESS     1263061585 [Jan  9 13:26:25]165.155.202.254
+              pts/3      7063    8 DEAD_PROCESS     1263063435 [Jan  9 13:57:15]
+dzhu     ts/3 pts/3      8034    7 USER_PROCESS     1263064464 [Jan  9 14:14:24]165.155.202.254
+dzhu     ts/4 pts/4      8317    7 USER_PROCESS     1263065326 [Jan  9 14:28:46]165.155.202.254
+              pts/4      8317    8 DEAD_PROCESS     1263065506 [Jan  9 14:31:46]
+dzhu     ts/4 pts/4      8731    7 USER_PROCESS     1263065548 [Jan  9 14:32:28]165.155.202.254
+              pts/4      8731    8 DEAD_PROCESS     1263066184 [Jan  9 14:43:04]
+              pts/3      8034    8 DEAD_PROCESS     1263066211 [Jan  9 14:43:31]
+dschultz ts/3 pts/3     11161    7 USER_PROCESS     1263072968 [Jan  9 16:36:08]c-24-91-250-145.hsd1.ma.comcast.net
+              pts/3     11161    8 DEAD_PROCESS     1263072974 [Jan  9 16:36:14]
+ghess    ts/3 pts/3     12360    7 USER_PROCESS     1263076997 [Jan  9 17:43:17]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/3     12360    8 DEAD_PROCESS     1263078105 [Jan  9 18:01:45]
+mcnamar  ts/3 pts/3     15092    7 USER_PROCESS     1263086389 [Jan  9 20:19:49]cpe-24-31-148-123.maine.res.rr.com
+              pts/3     15092    8 DEAD_PROCESS     1263086723 [Jan  9 20:25:23]
+ekruse   ts/3 pts/3     16670    7 USER_PROCESS     1263091327 [Jan  9 21:42:07]pool-71-183-84-137.nycmny.fios.verizon.net
+              pts/3     16670    8 DEAD_PROCESS     1263095221 [Jan  9 22:47:01]
+dzhu     ts/3 pts/3     18906    7 USER_PROCESS     1263099699 [Jan 10 00:01:39]user-0cdfhvu.cable.mindspring.com
+              pts/3     18906    8 DEAD_PROCESS     1263101801 [Jan 10 00:36:41]
+              pts/0      6309    8 DEAD_PROCESS     1263106279 [Jan 10 01:51:19]
+ghess    ts/0 pts/0     29035    7 USER_PROCESS     1263132600 [Jan 10 09:10:00]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     29035    8 DEAD_PROCESS     1263132939 [Jan 10 09:15:39]
+ghess    ts/0 pts/0     30079    7 USER_PROCESS     1263136081 [Jan 10 10:08:01]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     30079    8 DEAD_PROCESS     1263136389 [Jan 10 10:13:09]
+ghess    ts/0 pts/0      3050    7 USER_PROCESS     1263154812 [Jan 10 15:20:12]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0      3050    8 DEAD_PROCESS     1263154821 [Jan 10 15:20:21]
+awad     ts/0 pts/0      6765    7 USER_PROCESS     1263168168 [Jan 10 19:02:48]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/0      6765    8 DEAD_PROCESS     1263174777 [Jan 10 20:52:57]
+awad     ts/0 pts/0      8878    7 USER_PROCESS     1263174844 [Jan 10 20:54:04]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+awad     ts/3 pts/3      8930    7 USER_PROCESS     1263174987 [Jan 10 20:56:27]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+dbragg   ts/4 pts/4     11129    7 USER_PROCESS     1263183157 [Jan 10 23:12:37]pool-173-73-2-214.washdc.fios.verizon.net
+ghess    ts/8 pts/8     12650    7 USER_PROCESS     1263187985 [Jan 11 00:33:05]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/4     11129    8 DEAD_PROCESS     1263187992 [Jan 11 00:33:12]
+              pts/8     12650    8 DEAD_PROCESS     1263188021 [Jan 11 00:33:41]
+              pts/3      8930    8 DEAD_PROCESS     1263191870 [Jan 11 01:37:50]
+              pts/0      8878    8 DEAD_PROCESS     1263191875 [Jan 11 01:37:55]
+ghess    ts/0 pts/0      2767    7 USER_PROCESS     1263216138 [Jan 11 08:22:18]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0      2767    8 DEAD_PROCESS     1263216154 [Jan 11 08:22:34]
+ghess    ts/0 pts/0      7646    7 USER_PROCESS     1263225256 [Jan 11 10:54:16]dorrance-two-sixty-nine.mit.edu
+              pts/0      7646    8 DEAD_PROCESS     1263226258 [Jan 11 11:10:58]
+lrc      ts/0 pts/0      8534    7 USER_PROCESS     1263227566 [Jan 11 11:32:46]kubrat.fas.harvard.edu
+              pts/0      8534    8 DEAD_PROCESS     1263229340 [Jan 11 12:02:20]
+lrc      ts/0 pts/0      9102    7 USER_PROCESS     1263229484 [Jan 11 12:04:44]kubrat.fas.harvard.edu
+              pts/0      9102    8 DEAD_PROCESS     1263229687 [Jan 11 12:08:07]
+lrc      ts/0 pts/0      9682    7 USER_PROCESS     1263231552 [Jan 11 12:39:12]kubrat.fas.harvard.edu
+              pts/0      9682    8 DEAD_PROCESS     1263232401 [Jan 11 12:53:21]
+eps5     ts/0 pts/0     10172    7 USER_PROCESS     1263232968 [Jan 11 13:02:48]140.247.104.214
+              pts/0     10172    8 DEAD_PROCESS     1263232999 [Jan 11 13:03:19]
+scia30   ts/0 pts/0     10208    7 USER_PROCESS     1263233006 [Jan 11 13:03:26]140.247.104.214
+              pts/0     10208    8 DEAD_PROCESS     1263233021 [Jan 11 13:03:41]
+bowill   ts/0 pts/0     11361    7 USER_PROCESS     1263237595 [Jan 11 14:19:55]wirefire.akamai.com
+              pts/0     11361    8 DEAD_PROCESS     1263237601 [Jan 11 14:20:01]
+dschultz ts/0 pts/0     12894    7 USER_PROCESS     1263242856 [Jan 11 15:47:36]c-24-91-250-145.hsd1.ma.comcast.net
+              pts/0     12894    8 DEAD_PROCESS     1263242862 [Jan 11 15:47:42]
+dsteinbr ts/0 pts/0     13499    7 USER_PROCESS     1263245263 [Jan 11 16:27:43]pool-72-74-4-116.bstnma.east.verizon.net
+awad     ts/3 pts/3     14922    7 USER_PROCESS     1263249769 [Jan 11 17:42:49]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+lliu     ts/4 pts/4     14992    7 USER_PROCESS     1263250061 [Jan 11 17:47:41]216.228.136.48
+              pts/4     14992    8 DEAD_PROCESS     1263250495 [Jan 11 17:54:55]
+              pts/0     13499    8 DEAD_PROCESS     1263251923 [Jan 11 18:18:43]
+girash   ts/0 pts/0     15568    7 USER_PROCESS     1263252263 [Jan 11 18:24:23]209-6-178-23.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     15568    8 DEAD_PROCESS     1263252286 [Jan 11 18:24:46]
+chang6   ts/0 pts/0     15986    7 USER_PROCESS     1263253200 [Jan 11 18:40:00]c-67-175-246-43.hsd1.il.comcast.net
+dzhu     ts/4 pts/4     16061    7 USER_PROCESS     1263253624 [Jan 11 18:47:04]user-0cdfhvu.cable.mindspring.com
+              pts/4     16061    8 DEAD_PROCESS     1263254841 [Jan 11 19:07:21]
+dzhu     ts/4 pts/4     16663    7 USER_PROCESS     1263255609 [Jan 11 19:20:09]user-0cdfhvu.cable.mindspring.com
+chang6   ts/8 pts/8     16811    7 USER_PROCESS     1263256399 [Jan 11 19:33:19]c-67-175-246-43.hsd1.il.comcast.net
+              pts/8     16811    8 DEAD_PROCESS     1263257284 [Jan 11 19:48:04]
+              pts/0     15986    8 DEAD_PROCESS     1263257305 [Jan 11 19:48:25]
+ghess    ts/0 pts/0     19165    7 USER_PROCESS     1263264044 [Jan 11 21:40:44]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     19165    8 DEAD_PROCESS     1263264052 [Jan 11 21:40:52]
+              pts/3     14922    8 DEAD_PROCESS     1263264710 [Jan 11 21:51:50]
+              pts/4     16663    8 DEAD_PROCESS     1263268711 [Jan 11 22:58:31]
+dbragg   ts/0 pts/0     20735    7 USER_PROCESS     1263269813 [Jan 11 23:16:53]pool-173-73-2-214.washdc.fios.verizon.net
+              pts/0     20735    8 DEAD_PROCESS     1263281163 [Jan 12 02:26:03]
+choi10   ts/0 pts/0     24304    7 USER_PROCESS     1263282540 [Jan 12 02:49:00]58.141.155.23
+              pts/0     24304    8 DEAD_PROCESS     1263282569 [Jan 12 02:49:29]
+csimmons ts/0 pts/0     25472    7 USER_PROCESS     1263286839 [Jan 12 04:00:39]adsl-065-012-172-149.sip.asm.bellsouth.net
+              pts/0     25472    8 DEAD_PROCESS     1263288485 [Jan 12 04:28:05]
+csimmons ts/0 pts/0     26097    7 USER_PROCESS     1263288503 [Jan 12 04:28:23]adsl-065-012-172-149.sip.asm.bellsouth.net
+              pts/0     26097    8 DEAD_PROCESS     1263288699 [Jan 12 04:31:39]
+csimmons ts/0 pts/0     26579    7 USER_PROCESS     1263289887 [Jan 12 04:51:27]adsl-065-012-172-149.sip.asm.bellsouth.net
+skanev   ts/3 pts/3     27295    7 USER_PROCESS     1263292735 [Jan 12 05:38:55]79.100.236.145
+              pts/0     26579    8 DEAD_PROCESS     1263293689 [Jan 12 05:54:49]
+rlesage  ts/0 pts/0     28966    7 USER_PROCESS     1263297418 [Jan 12 06:56:58]pool-70-19-156-25.bos.east.verizon.net
+              pts/0     28966    8 DEAD_PROCESS     1263297684 [Jan 12 07:01:24]
+              pts/3     27295    8 DEAD_PROCESS     1263303159 [Jan 12 08:32:39]
+skanev   ts/0 pts/0     30581    7 USER_PROCESS     1263303169 [Jan 12 08:32:49]79.100.236.145
+dsteinbr ts/3 pts/3     30672    7 USER_PROCESS     1263303824 [Jan 12 08:43:44]pool-72-74-10-203.bstnma.east.verizon.net
+benbrown ts/4 pts/4     32020    7 USER_PROCESS     1263307815 [Jan 12 09:50:15]ls04.fas.harvard.edu
+karabel  ts/8 pts/8     32199    7 USER_PROCESS     1263309201 [Jan 12 10:13:21]140.247.136.111
+              pts/8     32199    8 DEAD_PROCESS     1263309218 [Jan 12 10:13:38]
+              pts/4     32020    8 DEAD_PROCESS     1263312437 [Jan 12 11:07:17]
+benbrown ts/4 pts/4       798    7 USER_PROCESS     1263312461 [Jan 12 11:07:41]140.247.26.70
+              pts/3     30672    8 DEAD_PROCESS     1263313290 [Jan 12 11:21:30]
+              pts/0     30581    8 DEAD_PROCESS     1263313715 [Jan 12 11:28:35]
+bowill   ts/0 pts/0      2420    7 USER_PROCESS     1263318579 [Jan 12 12:49:39]wirefire.akamai.com
+              pts/0      2420    8 DEAD_PROCESS     1263318586 [Jan 12 12:49:46]
+dzhu     ts/0 pts/0      3470    7 USER_PROCESS     1263321934 [Jan 12 13:45:34]user-0cdfhvu.cable.mindspring.com
+              pts/0      3470    8 DEAD_PROCESS     1263321948 [Jan 12 13:45:48]
+vmodi    ts/0 pts/0      7457    7 USER_PROCESS     1263335089 [Jan 12 17:24:49]ool-44c1accb.dyn.optonline.net
+bowill   ts/3 pts/3      7474    7 USER_PROCESS     1263335137 [Jan 12 17:25:37]wirefire.akamai.com
+              pts/3      7474    8 DEAD_PROCESS     1263335146 [Jan 12 17:25:46]
+              pts/0      7457    8 DEAD_PROCESS     1263335548 [Jan 12 17:32:28]
+dzhu     ts/0 pts/0      8802    7 USER_PROCESS     1263339038 [Jan 12 18:30:38]user-0cdfhvu.cable.mindspring.com
+              pts/0      8802    8 DEAD_PROCESS     1263339133 [Jan 12 18:32:13]
+vmodi    ts/0 pts/0     10041    7 USER_PROCESS     1263343953 [Jan 12 19:52:33]ool-44c1accb.dyn.optonline.net
+              pts/0     10041    8 DEAD_PROCESS     1263343973 [Jan 12 19:52:53]
+bthomas  ts/0 pts/0     11961    7 USER_PROCESS     1263350306 [Jan 12 21:38:26]c-24-147-175-126.hsd1.ma.comcast.net
+ekruse   ts/3 pts/3     14475    7 USER_PROCESS     1263359231 [Jan 13 00:07:11]dhcp-0019812566-49-27.client.student.harvard.edu
+cccheng  ts/8 pts/8     14564    7 USER_PROCESS     1263359359 [Jan 13 00:09:19]dhcp-0000104904-e7-69.client.student.harvard.edu
+              pts/8     14564    8 DEAD_PROCESS     1263359414 [Jan 13 00:10:14]
+awad     ts/8 pts/8     15023    7 USER_PROCESS     1263360524 [Jan 13 00:28:44]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+awad     s/14 pts/14    15085    7 USER_PROCESS     1263360705 [Jan 13 00:31:45]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/8     15023    8 DEAD_PROCESS     1263360846 [Jan 13 00:34:06]
+              pts/14    15085    8 DEAD_PROCESS     1263360895 [Jan 13 00:34:55]
+              pts/3     14475    8 DEAD_PROCESS     1263361102 [Jan 13 00:38:22]
+apm121   ts/3 pts/3     16809    7 USER_PROCESS     1263367527 [Jan 13 02:25:27]128.103.135.187
+              pts/0     11961    8 DEAD_PROCESS     1263370329 [Jan 13 03:12:09]
+chang6   ts/0 pts/0     19177    7 USER_PROCESS     1263375112 [Jan 13 04:31:52]c-67-175-246-43.hsd1.il.comcast.net
+              pts/0     19177    8 DEAD_PROCESS     1263375754 [Jan 13 04:42:34]
+fzembow  ts/0 pts/0     23936    7 USER_PROCESS     1263392006 [Jan 13 09:13:26]dhcp-18-111-61-121.dyn.mit.edu
+ghess    ts/8 pts/8     24990    7 USER_PROCESS     1263395696 [Jan 13 10:14:56]dorrance-two-sixty-nine.mit.edu
+scia30   s/14 pts/14    26222    7 USER_PROCESS     1263399072 [Jan 13 11:11:12]dhcp-194.as.harvard.edu
+              pts/14    26222    8 DEAD_PROCESS     1263399458 [Jan 13 11:17:38]
+thartman s/14 pts/14    27265    7 USER_PROCESS     1263401182 [Jan 13 11:46:22]dhcp-0070186359-b5-86.client.student.harvard.edu
+              pts/14    27265    8 DEAD_PROCESS     1263401187 [Jan 13 11:46:27]
+              pts/8     24990    8 DEAD_PROCESS     1263403157 [Jan 13 12:19:17]
+              pts/3     16809    8 DEAD_PROCESS     1263410757 [Jan 13 14:25:57]
+ghess    ts/3 pts/3     30276    7 USER_PROCESS     1263411444 [Jan 13 14:37:24]c-66-31-19-114.hsd1.ma.comcast.net
+dschultz ts/8 pts/8     30832    7 USER_PROCESS     1263413508 [Jan 13 15:11:48]c-24-91-250-145.hsd1.ma.comcast.net
+              pts/8     30832    8 DEAD_PROCESS     1263413582 [Jan 13 15:13:02]
+              pts/0     23936    8 DEAD_PROCESS     1263414798 [Jan 13 15:33:18]
+dschultz ts/0 pts/0     31366    7 USER_PROCESS     1263415110 [Jan 13 15:38:30]c-24-91-250-145.hsd1.ma.comcast.net
+              pts/0     31366    8 DEAD_PROCESS     1263415123 [Jan 13 15:38:43]
+dsteinbr ts/0 pts/0      3171    7 USER_PROCESS     1263430811 [Jan 13 20:00:11]pool-72-74-9-180.bstnma.east.verizon.net
+tawilson ts/8 pts/8      5243    7 USER_PROCESS     1263436940 [Jan 13 21:42:20]adsl-68-122-8-254.dsl.pltn13.pacbell.net
+              pts/0      3171    8 DEAD_PROCESS     1263438106 [Jan 13 22:01:46]
+dsteinbr ts/0 pts/0      5793    7 USER_PROCESS     1263438698 [Jan 13 22:11:38]pool-72-74-9-180.bstnma.east.verizon.net
+              pts/0      5793    8 DEAD_PROCESS     1263439435 [Jan 13 22:23:55]
+              pts/3     30276    8 DEAD_PROCESS     1263442404 [Jan 13 23:13:24]
+ghess    ts/0 pts/0      7339    7 USER_PROCESS     1263444156 [Jan 13 23:42:36]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0      7339    8 DEAD_PROCESS     1263444165 [Jan 13 23:42:45]
+              pts/8      5243    8 DEAD_PROCESS     1263452573 [Jan 14 02:02:53]
+ghess    ts/0 pts/0     17723    7 USER_PROCESS     1263476865 [Jan 14 08:47:45]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     17723    8 DEAD_PROCESS     1263476877 [Jan 14 08:47:57]
+girash   ts/0 pts/0     17955    7 USER_PROCESS     1263478291 [Jan 14 09:11:31]209-6-167-5.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+fzembow  ts/3 pts/3     18400    7 USER_PROCESS     1263479182 [Jan 14 09:26:22]dhcp-18-111-61-121.dyn.mit.edu
+              pts/0     17955    8 DEAD_PROCESS     1263479496 [Jan 14 09:31:36]
+dsteinbr ts/0 pts/0     18484    7 USER_PROCESS     1263479542 [Jan 14 09:32:22]pool-72-74-11-116.bstnma.east.verizon.net
+vmodi    ts/8 pts/8     20081    7 USER_PROCESS     1263485429 [Jan 14 11:10:29]ool-44c1accb.dyn.optonline.net
+ghess    s/14 pts/14    20534    7 USER_PROCESS     1263486671 [Jan 14 11:31:11]dorrance-two-sixty-nine.mit.edu
+              pts/0     18484    8 DEAD_PROCESS     1263487252 [Jan 14 11:40:52]
+dsteinbr ts/0 pts/0     20982    7 USER_PROCESS     1263487720 [Jan 14 11:48:40]pool-72-74-11-116.bstnma.east.verizon.net
+ngupta   s/17 pts/17    21144    7 USER_PROCESS     1263488855 [Jan 14 12:07:35]dhcp-0017724422-b3-5e.client.student.harvard.edu
+              pts/17    21144    8 DEAD_PROCESS     1263489167 [Jan 14 12:12:47]
+ngupta   s/17 pts/17    21211    7 USER_PROCESS     1263489180 [Jan 14 12:13:00]dhcp-0017724422-b3-5e.client.student.harvard.edu
+              pts/17    21211    8 DEAD_PROCESS     1263489400 [Jan 14 12:16:40]
+              pts/0     20982    8 DEAD_PROCESS     1263489406 [Jan 14 12:16:46]
+ngupta   ts/0 pts/0     21551    7 USER_PROCESS     1263489411 [Jan 14 12:16:51]dhcp-0017724422-b3-5e.client.student.harvard.edu
+              pts/8     20081    8 DEAD_PROCESS     1263489914 [Jan 14 12:25:14]
+              pts/0     21551    8 DEAD_PROCESS     1263491696 [Jan 14 12:54:56]
+ngupta   ts/0 pts/0     22175    7 USER_PROCESS     1263491704 [Jan 14 12:55:04]dhcp-0017724422-b3-5e.client.student.harvard.edu
+vmodi    ts/8 pts/8     22765    7 USER_PROCESS     1263493957 [Jan 14 13:32:37]ool-44c1accb.dyn.optonline.net
+bowill   s/17 pts/17    23288    7 USER_PROCESS     1263495963 [Jan 14 14:06:03]wirefire.akamai.com
+              pts/17    23288    8 DEAD_PROCESS     1263496018 [Jan 14 14:06:58]
+              pts/3     18400    8 DEAD_PROCESS     1263496384 [Jan 14 14:13:04]
+              pts/8     22765    8 DEAD_PROCESS     1263497606 [Jan 14 14:33:26]
+              pts/0     22175    8 DEAD_PROCESS     1263499059 [Jan 14 14:57:39]
+ngupta   ts/0 pts/0     24307    7 USER_PROCESS     1263499111 [Jan 14 14:58:31]dhcp-0017724422-b3-5e.client.student.harvard.edu
+              pts/0     24307    8 DEAD_PROCESS     1263499270 [Jan 14 15:01:10]
+ngupta   ts/0 pts/0     24360    7 USER_PROCESS     1263499281 [Jan 14 15:01:21]dhcp-0017724422-b3-5e.client.student.harvard.edu
+              pts/0     24360    8 DEAD_PROCESS     1263500101 [Jan 14 15:15:01]
+ngupta   ts/0 pts/0     24480    7 USER_PROCESS     1263500109 [Jan 14 15:15:09]dhcp-0017724422-b3-5e.client.student.harvard.edu
+ekruse   ts/3 pts/3     24824    7 USER_PROCESS     1263500283 [Jan 14 15:18:03]dhcp-0019812566-49-27.client.student.harvard.edu
+              pts/0     24480    8 DEAD_PROCESS     1263500991 [Jan 14 15:29:51]
+              pts/4       798    8 DEAD_PROCESS     1263501072 [Jan 14 15:31:12]
+ngupta   ts/0 pts/0     24969    7 USER_PROCESS     1263501166 [Jan 14 15:32:46]dhcp-0017724422-b3-5e.client.student.harvard.edu
+              pts/0     24969    8 DEAD_PROCESS     1263502649 [Jan 14 15:57:29]
+donn     ts/0 pts/0     26442    7 USER_PROCESS     1263506144 [Jan 14 16:55:44]donn.fas.harvard.edu
+              pts/0     26442    8 DEAD_PROCESS     1263506180 [Jan 14 16:56:20]
+herron   ts/0 pts/0     26489    7 USER_PROCESS     1263506307 [Jan 14 16:58:27]cain.unix.fas.harvard.edu
+drumberg ts/4 pts/4     26601    7 USER_PROCESS     1263507020 [Jan 14 17:10:20]64.119.145.190
+              pts/0     26489    8 DEAD_PROCESS     1263507184 [Jan 14 17:13:04]
+              pts/14    20534    8 DEAD_PROCESS     1263513088 [Jan 14 18:51:28]
+girash   ts/0 pts/0     29786    7 USER_PROCESS     1263516218 [Jan 14 19:43:38]209-6-167-5.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+awad     ts/8 pts/8     30300    7 USER_PROCESS     1263517754 [Jan 14 20:09:14]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+ghess    s/14 pts/14    30933    7 USER_PROCESS     1263519742 [Jan 14 20:42:22]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/14    30933    8 DEAD_PROCESS     1263519758 [Jan 14 20:42:38]
+              pts/3     24824    8 DEAD_PROCESS     1263519853 [Jan 14 20:44:13]
+hartmann ts/3 pts/3     31925    7 USER_PROCESS     1263522298 [Jan 14 21:24:58]ls04.fas.harvard.edu
+              pts/3     31925    8 DEAD_PROCESS     1263522299 [Jan 14 21:24:59]
+              pts/8     30300    8 DEAD_PROCESS     1263522603 [Jan 14 21:30:03]
+              pts/0     29786    8 DEAD_PROCESS     1263522605 [Jan 14 21:30:05]
+girash   ts/0 pts/0     31993    7 USER_PROCESS     1263522611 [Jan 14 21:30:11]209-6-167-5.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     31993    8 DEAD_PROCESS     1263522631 [Jan 14 21:30:31]
+hartmann ts/0 pts/0     32509    7 USER_PROCESS     1263524251 [Jan 14 21:57:31]cain.unix.fas.harvard.edu
+              pts/0     32509    8 DEAD_PROCESS     1263524253 [Jan 14 21:57:33]
+dzhu     ts/0 pts/0       543    7 USER_PROCESS     1263525887 [Jan 14 22:24:47]user-0cdfhvu.cable.mindspring.com
+byoung   ts/3 pts/3      1182    7 USER_PROCESS     1263528339 [Jan 14 23:05:39]pool-173-57-44-12.dllstx.fios.verizon.net
+              pts/0       543    8 DEAD_PROCESS     1263529362 [Jan 14 23:22:42]
+awad     ts/0 pts/0      1672    7 USER_PROCESS     1263529374 [Jan 14 23:22:54]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/0      1672    8 DEAD_PROCESS     1263533004 [Jan 15 00:23:24]
+              pts/4     26601    8 DEAD_PROCESS     1263534124 [Jan 15 00:42:04]
+yzhu     ts/0 pts/0      3310    7 USER_PROCESS     1263535530 [Jan 15 01:05:30]58.247.195.130
+dzhu     ts/4 pts/4      3758    7 USER_PROCESS     1263536629 [Jan 15 01:23:49]user-0cdfhvu.cable.mindspring.com
+              pts/0      3310    8 DEAD_PROCESS     1263536700 [Jan 15 01:25:00]
+              pts/4      3758    8 DEAD_PROCESS     1263537065 [Jan 15 01:31:05]
+yzhu     ts/0 pts/0      5913    7 USER_PROCESS     1263543896 [Jan 15 03:24:56]58.247.195.130
+hoongng  ts/4 pts/4      6658    7 USER_PROCESS     1263547285 [Jan 15 04:21:25]118.100.84.203
+              pts/4      6658    8 DEAD_PROCESS     1263547364 [Jan 15 04:22:44]
+              pts/0      5913    8 DEAD_PROCESS     1263547696 [Jan 15 04:28:16]
+              pts/3      1182    8 DEAD_PROCESS     1263550466 [Jan 15 05:14:26]
+ghess    ts/0 pts/0     10849    7 USER_PROCESS     1263561718 [Jan 15 08:21:58]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     10849    8 DEAD_PROCESS     1263561733 [Jan 15 08:22:13]
+ghess    ts/0 pts/0     12405    7 USER_PROCESS     1263567421 [Jan 15 09:57:01]dorrance-two-sixty-nine.mit.edu
+lrc      ts/3 pts/3     13779    7 USER_PROCESS     1263571157 [Jan 15 10:59:17]kubrat.fas.harvard.edu
+              pts/3     13779    8 DEAD_PROCESS     1263571173 [Jan 15 10:59:33]
+thlin    ts/3 pts/3     14388    7 USER_PROCESS     1263573651 [Jan 15 11:40:51]dhcp-0018006335-dc-5b.client.student.harvard.edu
+dschultz ts/4 pts/4     18128    7 USER_PROCESS     1263588287 [Jan 15 15:44:47]c-24-91-250-145.hsd1.ma.comcast.net
+              pts/4     18128    8 DEAD_PROCESS     1263588290 [Jan 15 15:44:50]
+              pts/0     12405    8 DEAD_PROCESS     1263593432 [Jan 15 17:10:32]
+vmodi    ts/0 pts/0     20352    7 USER_PROCESS     1263597427 [Jan 15 18:17:07]ool-44c1accb.dyn.optonline.net
+              pts/0     20352    8 DEAD_PROCESS     1263597609 [Jan 15 18:20:09]
+              pts/3     14388    8 DEAD_PROCESS     1263598255 [Jan 15 18:30:55]
+slwendo  ts/0 pts/0     23334    7 USER_PROCESS     1263608297 [Jan 15 21:18:17]sph247-68.harvard.edu
+              pts/0     23334    8 DEAD_PROCESS     1263608473 [Jan 15 21:21:13]
+ghess    ts/0 pts/0     23863    7 USER_PROCESS     1263610085 [Jan 15 21:48:05]c-66-31-19-114.hsd1.ma.comcast.net
+yzhu     ts/3 pts/3     24423    7 USER_PROCESS     1263611960 [Jan 15 22:19:20]58.247.195.130
+              pts/3     24423    8 DEAD_PROCESS     1263613938 [Jan 15 22:52:18]
+              pts/0     23863    8 DEAD_PROCESS     1263615796 [Jan 15 23:23:16]
+awad     ts/0 pts/0     27904    7 USER_PROCESS     1263624492 [Jan 16 01:48:12]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+hoongng  ts/3 pts/3     30031    7 USER_PROCESS     1263631921 [Jan 16 03:52:01]118.100.81.14
+              pts/0     27904    8 DEAD_PROCESS     1263631952 [Jan 16 03:52:32]
+girash   ts/0 pts/0      3086    7 USER_PROCESS     1263650208 [Jan 16 08:56:48]207-172-130-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0      3086    8 DEAD_PROCESS     1263650219 [Jan 16 08:56:59]
+girash   ts/0 pts/0      4054    7 USER_PROCESS     1263653313 [Jan 16 09:48:33]207-172-130-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0      4054    8 DEAD_PROCESS     1263654669 [Jan 16 10:11:09]
+              pts/3     30031    8 DEAD_PROCESS     1263655811 [Jan 16 10:30:11]
+girash   ts/0 pts/0      6153    7 USER_PROCESS     1263660873 [Jan 16 11:54:33]207-172-130-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0      6153    8 DEAD_PROCESS     1263660945 [Jan 16 11:55:45]
+patel5   ts/0 pts/0      7184    7 USER_PROCESS     1263664496 [Jan 16 12:54:56]dt0c2ncc.tampabay.res.rr.com
+              pts/0      7184    8 DEAD_PROCESS     1263665009 [Jan 16 13:03:29]
+girash   ts/0 pts/0      8345    7 USER_PROCESS     1263668590 [Jan 16 14:03:10]207-172-130-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0      8345    8 DEAD_PROCESS     1263668653 [Jan 16 14:04:13]
+long     ts/0 pts/0      9363    7 USER_PROCESS     1263671505 [Jan 16 14:51:45]97-81-82-134.dhcp.athn.ga.charter.com
+              pts/0      9363    8 DEAD_PROCESS     1263671794 [Jan 16 14:56:34]
+girash   ts/0 pts/0      9939    7 USER_PROCESS     1263673631 [Jan 16 15:27:11]207-172-130-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0      9939    8 DEAD_PROCESS     1263673634 [Jan 16 15:27:14]
+awad     ts/0 pts/0     11562    7 USER_PROCESS     1263679835 [Jan 16 17:10:35]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+awad     ts/3 pts/3     11985    7 USER_PROCESS     1263680574 [Jan 16 17:22:54]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+sshareef ts/4 pts/4     13524    7 USER_PROCESS     1263685962 [Jan 16 18:52:42]adsl-69-209-205-70.dsl.chcgil.ameritech.net
+ghess    ts/8 pts/8     14721    7 USER_PROCESS     1263690183 [Jan 16 20:03:03]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/8     14721    8 DEAD_PROCESS     1263690206 [Jan 16 20:03:26]
+              pts/4     13524    8 DEAD_PROCESS     1263692405 [Jan 16 20:40:05]
+jgonzal  ts/4 pts/4     17195    7 USER_PROCESS     1263698997 [Jan 16 22:29:57]adsl-69-152-234-8.dsl.snantx.swbell.net
+dzhu     ts/8 pts/8     18335    7 USER_PROCESS     1263702363 [Jan 16 23:26:03]user-0cdfhvu.cable.mindspring.com
+              pts/8     18335    8 DEAD_PROCESS     1263702391 [Jan 16 23:26:31]
+lrc      ts/8 pts/8     20217    7 USER_PROCESS     1263707203 [Jan 17 00:46:43]kubrat.fas.harvard.edu
+              pts/8     20217    8 DEAD_PROCESS     1263707366 [Jan 17 00:49:26]
+              pts/3     11985    8 DEAD_PROCESS     1263708189 [Jan 17 01:03:09]
+              pts/0     11562    8 DEAD_PROCESS     1263708189 [Jan 17 01:03:09]
+              pts/4     17195    8 DEAD_PROCESS     1263708308 [Jan 17 01:05:08]
+csteinh  p0   pts/0     30483    7 USER_PROCESS     1263726037 [Jan 17 06:00:37]localhost:10.0
+csteinh  p0   pts/0     30483    8 DEAD_PROCESS     1263726294 [Jan 17 06:04:54]localhost:10.0
+ghess    ts/0 pts/0      5802    7 USER_PROCESS     1263736461 [Jan 17 08:54:21]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0      5802    8 DEAD_PROCESS     1263736476 [Jan 17 08:54:36]
+awad     ts/0 pts/0      9728    7 USER_PROCESS     1263742272 [Jan 17 10:31:12]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+awad     ts/3 pts/3      9768    7 USER_PROCESS     1263742300 [Jan 17 10:31:40]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+lrc      ts/4 pts/4     21337    7 USER_PROCESS     1263761021 [Jan 17 15:43:41]kubrat.fas.harvard.edu
+              pts/4     21337    8 DEAD_PROCESS     1263761503 [Jan 17 15:51:43]
+ghess    ts/4 pts/4     24666    7 USER_PROCESS     1263767568 [Jan 17 17:32:48]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/4     24666    8 DEAD_PROCESS     1263767577 [Jan 17 17:32:57]
+byoung   ts/4 pts/4     25065    7 USER_PROCESS     1263768814 [Jan 17 17:53:34]pool-173-57-44-12.dllstx.fios.verizon.net
+              pts/4     25065    8 DEAD_PROCESS     1263770638 [Jan 17 18:23:58]
+choi10   ts/4 pts/4     27150    7 USER_PROCESS     1263772410 [Jan 17 18:53:30]58.141.159.240
+choi10   ts/8 pts/8     28941    7 USER_PROCESS     1263775436 [Jan 17 19:43:56]58.141.159.240
+dbear    s/14 pts/14    29151    7 USER_PROCESS     1263775786 [Jan 17 19:49:46]ls04.fas.harvard.edu
+              pts/14    29151    8 DEAD_PROCESS     1263775951 [Jan 17 19:52:31]
+              pts/8     28941    8 DEAD_PROCESS     1263776295 [Jan 17 19:58:15]
+              pts/4     27150    8 DEAD_PROCESS     1263776303 [Jan 17 19:58:23]
+choi10   ts/4 pts/4      1716    7 USER_PROCESS     1263785894 [Jan 17 22:38:14]58.141.153.38
+              pts/4      1716    8 DEAD_PROCESS     1263786922 [Jan 17 22:55:22]
+lrc      ts/4 pts/4      3631    7 USER_PROCESS     1263789456 [Jan 17 23:37:36]kubrat.fas.harvard.edu
+              pts/3      9768    8 DEAD_PROCESS     1263793568 [Jan 18 00:46:08]
+              pts/0      9728    8 DEAD_PROCESS     1263795522 [Jan 18 01:18:42]
+awad     ts/0 pts/0      7139    7 USER_PROCESS     1263796706 [Jan 18 01:38:26]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/0      7139    8 DEAD_PROCESS     1263797047 [Jan 18 01:44:07]
+hoongng  ts/0 pts/0      8451    7 USER_PROCESS     1263799925 [Jan 18 02:32:05]118.100.81.59
+              pts/0      8451    8 DEAD_PROCESS     1263810267 [Jan 18 05:24:27]
+              pts/4      3631    8 DEAD_PROCESS     1263813185 [Jan 18 06:13:05]
+choi10   ts/0 pts/0     16865    7 USER_PROCESS     1263817936 [Jan 18 07:32:16]58.141.154.210
+              pts/0     16865    8 DEAD_PROCESS     1263818009 [Jan 18 07:33:29]
+choi10   ts/0 pts/0     20805    7 USER_PROCESS     1263828179 [Jan 18 10:22:59]58.141.151.51
+girash   ts/3 pts/3     22059    7 USER_PROCESS     1263831195 [Jan 18 11:13:15]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/3     22059    8 DEAD_PROCESS     1263831230 [Jan 18 11:13:50]
+ghess    ts/3 pts/3     24083    7 USER_PROCESS     1263838478 [Jan 18 13:14:38]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/3     24083    8 DEAD_PROCESS     1263838513 [Jan 18 13:15:13]
+              pts/0     20805    8 DEAD_PROCESS     1263838782 [Jan 18 13:19:42]
+girash   ts/0 pts/0     25226    7 USER_PROCESS     1263842773 [Jan 18 14:26:13]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+girash   ts/3 pts/3     25718    7 USER_PROCESS     1263844251 [Jan 18 14:50:51]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+thartman ts/4 pts/4     26271    7 USER_PROCESS     1263845635 [Jan 18 15:13:55]dhcp-0070186359-b5-86.client.student.harvard.edu
+              pts/3     25718    8 DEAD_PROCESS     1263847657 [Jan 18 15:47:37]
+              pts/0     25226    8 DEAD_PROCESS     1263847758 [Jan 18 15:49:18]
+girash   ts/0 pts/0     26986    7 USER_PROCESS     1263848789 [Jan 18 16:06:29]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+shnayder ts/3 pts/3     27496    7 USER_PROCESS     1263850356 [Jan 18 16:32:36]dhcp-0030328169-8d-b0.client.fas.harvard.edu
+lib51    ts/8 pts/8     27552    7 USER_PROCESS     1263850606 [Jan 18 16:36:46]dhcp-0030328169-8d-b0.client.fas.harvard.edu
+jgonzal  s/14 pts/14    27881    7 USER_PROCESS     1263851014 [Jan 18 16:43:34]adsl-69-152-234-8.dsl.snantx.swbell.net
+              pts/0     26986    8 DEAD_PROCESS     1263851631 [Jan 18 16:53:51]
+              pts/14    27881    8 DEAD_PROCESS     1263853053 [Jan 18 17:17:33]
+              pts/8     27552    8 DEAD_PROCESS     1263853082 [Jan 18 17:18:02]
+              pts/3     27496    8 DEAD_PROCESS     1263853098 [Jan 18 17:18:18]
+awad     ts/0 pts/0     28673    7 USER_PROCESS     1263854216 [Jan 18 17:36:56]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/0     28673    8 DEAD_PROCESS     1263856085 [Jan 18 18:08:05]
+              pts/4     26271    8 DEAD_PROCESS     1263859240 [Jan 18 19:00:40]
+girash   ts/0 pts/0     31569    7 USER_PROCESS     1263864173 [Jan 18 20:22:53]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     31569    8 DEAD_PROCESS     1263864196 [Jan 18 20:23:16]
+afeier   ts/0 pts/0       744    7 USER_PROCESS     1263870671 [Jan 18 22:11:11]dhcp-0021322261-14-3f.client.student.harvard.edu
+              pts/0       744    8 DEAD_PROCESS     1263870708 [Jan 18 22:11:48]
+afeier   ts/0 pts/0      1125    7 USER_PROCESS     1263871202 [Jan 18 22:20:02]dhcp-0021322261-14-3f.client.student.harvard.edu
+              pts/0      1125    8 DEAD_PROCESS     1263871226 [Jan 18 22:20:26]
+yzhu     ts/0 pts/0      5362    7 USER_PROCESS     1263887209 [Jan 19 02:46:49]58.247.195.130
+              pts/0      5362    8 DEAD_PROCESS     1263890636 [Jan 19 03:43:56]
+ghess    ts/0 pts/0     11508    7 USER_PROCESS     1263908849 [Jan 19 08:47:29]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     11508    8 DEAD_PROCESS     1263908873 [Jan 19 08:47:53]
+vmodi    ts/0 pts/0     11907    7 USER_PROCESS     1263909547 [Jan 19 08:59:07]ool-44c1accb.dyn.optonline.net
+              pts/0     11907    8 DEAD_PROCESS     1263910561 [Jan 19 09:16:01]
+ghess    ts/0 pts/0     13458    7 USER_PROCESS     1263915092 [Jan 19 10:31:32]dorrance-two-sixty-nine.mit.edu
+benbrown ts/3 pts/3     14112    7 USER_PROCESS     1263918016 [Jan 19 11:20:16]140.247.26.70
+              pts/3     14112    8 DEAD_PROCESS     1263918022 [Jan 19 11:20:22]
+benbrown ts/3 pts/3     14128    7 USER_PROCESS     1263918041 [Jan 19 11:20:41]140.247.26.70
+              pts/3     14128    8 DEAD_PROCESS     1263918258 [Jan 19 11:24:18]
+              pts/0     13458    8 DEAD_PROCESS     1263926006 [Jan 19 13:33:26]
+nishihar ts/0 pts/0     16509    7 USER_PROCESS     1263926176 [Jan 19 13:36:16]adsl-68-126-198-12.dsl.pltn13.pacbell.net
+              pts/0     16509    8 DEAD_PROCESS     1263926199 [Jan 19 13:36:39]
+jgonzal  ts/0 pts/0     19235    7 USER_PROCESS     1263929886 [Jan 19 14:38:06]adsl-69-152-234-8.dsl.snantx.swbell.net
+              pts/0     19235    8 DEAD_PROCESS     1263931675 [Jan 19 15:07:55]
+ghess    ts/0 pts/0     20697    7 USER_PROCESS     1263932864 [Jan 19 15:27:44]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     20697    8 DEAD_PROCESS     1263932871 [Jan 19 15:27:51]
+kleong   ts/0 pts/0     23383    7 USER_PROCESS     1263942363 [Jan 19 18:06:03]96.237.122.164
+dzhu     ts/3 pts/3     23967    7 USER_PROCESS     1263944022 [Jan 19 18:33:42]user-0cdfhvu.cable.mindspring.com
+              pts/3     23967    8 DEAD_PROCESS     1263944106 [Jan 19 18:35:06]
+              pts/0     23383    8 DEAD_PROCESS     1263944118 [Jan 19 18:35:18]
+girash   ts/0 pts/0     24055    7 USER_PROCESS     1263944354 [Jan 19 18:39:14]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     24055    8 DEAD_PROCESS     1263944357 [Jan 19 18:39:17]
+girash   ts/0 pts/0     24149    7 USER_PROCESS     1263944959 [Jan 19 18:49:19]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     24149    8 DEAD_PROCESS     1263946402 [Jan 19 19:13:22]
+girash   ts/0 pts/0     24666    7 USER_PROCESS     1263946700 [Jan 19 19:18:20]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+kleong   ts/3 pts/3     24724    7 USER_PROCESS     1263946893 [Jan 19 19:21:33]pool-71-174-141-185.bstnma.east.verizon.net
+              pts/0     24666    8 DEAD_PROCESS     1263947701 [Jan 19 19:35:01]
+              pts/3     24724    8 DEAD_PROCESS     1263948675 [Jan 19 19:51:15]
+kleong   ts/0 pts/0     25616    7 USER_PROCESS     1263949162 [Jan 19 19:59:22]pool-71-184-179-69.bstnma.east.verizon.net
+girash   ts/3 pts/3     25689    7 USER_PROCESS     1263949322 [Jan 19 20:02:02]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/3     25689    8 DEAD_PROCESS     1263949591 [Jan 19 20:06:31]
+scwilson ts/3 pts/3     25879    7 USER_PROCESS     1263950652 [Jan 19 20:24:12]pool-72-72-9-177.bstnma.east.verizon.net
+pbailis  ts/4 pts/4     26235    7 USER_PROCESS     1263951017 [Jan 19 20:30:17]140.247.149.169
+              pts/4     26235    8 DEAD_PROCESS     1263951033 [Jan 19 20:30:33]
+girash   ts/4 pts/4     26433    7 USER_PROCESS     1263951680 [Jan 19 20:41:20]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/4     26433    8 DEAD_PROCESS     1263952824 [Jan 19 21:00:24]
+awad     ts/4 pts/4     27525    7 USER_PROCESS     1263955038 [Jan 19 21:37:18]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+girash   ts/8 pts/8     27694    7 USER_PROCESS     1263956034 [Jan 19 21:53:54]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/8     27694    8 DEAD_PROCESS     1263956083 [Jan 19 21:54:43]
+              pts/3     25879    8 DEAD_PROCESS     1263957675 [Jan 19 22:21:15]
+              pts/0     25616    8 DEAD_PROCESS     1263959250 [Jan 19 22:47:30]
+girash   ts/0 pts/0     28824    7 USER_PROCESS     1263959372 [Jan 19 22:49:32]146-115-126-52.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     28824    8 DEAD_PROCESS     1263959376 [Jan 19 22:49:36]
+kleong   ts/0 pts/0     29925    7 USER_PROCESS     1263963474 [Jan 19 23:57:54]pool-71-174-128-241.bstnma.east.verizon.net
+              pts/4     27525    8 DEAD_PROCESS     1263963626 [Jan 20 00:00:26]
+              pts/0     29925    8 DEAD_PROCESS     1263964567 [Jan 20 00:16:07]
+yzhu     ts/0 pts/0     11932    7 USER_PROCESS     1263982884 [Jan 20 05:21:24]58.247.195.130
+              pts/0     11932    8 DEAD_PROCESS     1263983890 [Jan 20 05:38:10]
+ghess    ts/0 pts/0     15157    7 USER_PROCESS     1263994444 [Jan 20 08:34:04]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     15157    8 DEAD_PROCESS     1263994469 [Jan 20 08:34:29]
+bowill   ts/0 pts/0     19190    7 USER_PROCESS     1264001557 [Jan 20 10:32:37]wirefire.akamai.com
+              pts/0     19190    8 DEAD_PROCESS     1264001571 [Jan 20 10:32:51]
+kleong   ts/0 pts/0     21943    7 USER_PROCESS     1264004241 [Jan 20 11:17:21]140.247.82.129
+jgonzal  ts/3 pts/3     23744    7 USER_PROCESS     1264006548 [Jan 20 11:55:48]adsl-69-152-234-8.dsl.snantx.swbell.net
+              pts/0     21943    8 DEAD_PROCESS     1264006910 [Jan 20 12:01:50]
+kleong   ts/0 pts/0     23856    7 USER_PROCESS     1264006915 [Jan 20 12:01:55]140.247.82.129
+bowill   ts/4 pts/4     24249    7 USER_PROCESS     1264007532 [Jan 20 12:12:12]wirefire.akamai.com
+              pts/4     24249    8 DEAD_PROCESS     1264007559 [Jan 20 12:12:39]
+              pts/3     23744    8 DEAD_PROCESS     1264007799 [Jan 20 12:16:39]
+              pts/0     23856    8 DEAD_PROCESS     1264008216 [Jan 20 12:23:36]
+apm121   ts/0 pts/0     25489    7 USER_PROCESS     1264012262 [Jan 20 13:31:02]dhcp-0009123710-01-51.client.student.harvard.edu
+              pts/0     25489    8 DEAD_PROCESS     1264012476 [Jan 20 13:34:36]
+jgonzal  ts/0 pts/0     25953    7 USER_PROCESS     1264013633 [Jan 20 13:53:53]adsl-69-152-234-8.dsl.snantx.swbell.net
+              pts/0     25953    8 DEAD_PROCESS     1264013736 [Jan 20 13:55:36]
+cen      ts/0 pts/0     26550    7 USER_PROCESS     1264015888 [Jan 20 14:31:28]comp-cen-1.ad.fas.harvard.edu
+              pts/0     26550    8 DEAD_PROCESS     1264015937 [Jan 20 14:32:17]
+dmca2    ts/0 pts/0     26607    7 USER_PROCESS     1264016065 [Jan 20 14:34:25]comp-cen-1.ad.fas.harvard.edu
+kleong   ts/3 pts/3     26643    7 USER_PROCESS     1264016112 [Jan 20 14:35:12]140.247.82.129
+              pts/0     26607    8 DEAD_PROCESS     1264016500 [Jan 20 14:41:40]
+byoung   ts/0 pts/0     27161    7 USER_PROCESS     1264017235 [Jan 20 14:53:55]pool-173-57-44-12.dllstx.fios.verizon.net
+              pts/3     26643    8 DEAD_PROCESS     1264017607 [Jan 20 15:00:07]
+kleong   ts/3 pts/3     27810    7 USER_PROCESS     1264019829 [Jan 20 15:37:09]140.247.82.129
+bdozier  ts/4 pts/4     29498    7 USER_PROCESS     1264025114 [Jan 20 17:05:14]63.151.226.106
+              pts/4     29498    8 DEAD_PROCESS     1264028486 [Jan 20 18:01:26]
+              pts/0     27161    8 DEAD_PROCESS     1264029413 [Jan 20 18:16:53]
+              pts/3     27810    8 DEAD_PROCESS     1264031159 [Jan 20 18:45:59]
+girash   ts/0 pts/0       423    7 USER_PROCESS     1264036451 [Jan 20 20:14:11]146-115-71-198.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0       423    8 DEAD_PROCESS     1264037890 [Jan 20 20:38:10]
+girash   ts/0 pts/0       725    7 USER_PROCESS     1264038162 [Jan 20 20:42:42]146-115-71-198.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0       725    8 DEAD_PROCESS     1264038184 [Jan 20 20:43:04]
+choi10   ts/0 pts/0      1864    7 USER_PROCESS     1264042139 [Jan 20 21:48:59]58.141.152.239
+              pts/0      1864    8 DEAD_PROCESS     1264042178 [Jan 20 21:49:38]
+girash   ts/0 pts/0      2268    7 USER_PROCESS     1264042364 [Jan 20 21:52:44]146-115-71-198.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0      2268    8 DEAD_PROCESS     1264042367 [Jan 20 21:52:47]
+girash   ts/0 pts/0      2414    7 USER_PROCESS     1264043382 [Jan 20 22:09:42]146-115-71-198.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0      2414    8 DEAD_PROCESS     1264043386 [Jan 20 22:09:46]
+jgonzal  ts/0 pts/0      5439    7 USER_PROCESS     1264054301 [Jan 21 01:11:41]adsl-69-152-234-8.dsl.snantx.swbell.net
+              pts/0      5439    8 DEAD_PROCESS     1264057798 [Jan 21 02:09:58]
+ghess    ts/0 pts/0     13316    7 USER_PROCESS     1264080532 [Jan 21 08:28:52]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     13316    8 DEAD_PROCESS     1264080546 [Jan 21 08:29:06]
+girash   ts/0 pts/0     13892    7 USER_PROCESS     1264081536 [Jan 21 08:45:36]dhcp-0000072652-2b-94.client.fas.harvard.edu
+ghess    ts/3 pts/3     16321    7 USER_PROCESS     1264087446 [Jan 21 10:24:06]dorrance-two-sixty-nine.mit.edu
+bowill   ts/4 pts/4     16923    7 USER_PROCESS     1264088531 [Jan 21 10:42:11]wirefire.akamai.com
+              pts/4     16923    8 DEAD_PROCESS     1264088535 [Jan 21 10:42:15]
+yzhu     ts/4 pts/4     17707    7 USER_PROCESS     1264090255 [Jan 21 11:10:55]116.232.215.203
+libcs124 ts/8 pts/8     17945    7 USER_PROCESS     1264090971 [Jan 21 11:22:51]pool-173-57-44-12.dllstx.fios.verizon.net
+              pts/4     17707    8 DEAD_PROCESS     1264091258 [Jan 21 11:27:38]
+bowill   ts/4 pts/4     18632    7 USER_PROCESS     1264092535 [Jan 21 11:48:55]wirefire.akamai.com
+              pts/4     18632    8 DEAD_PROCESS     1264094372 [Jan 21 12:19:32]
+cs1      ts/4 pts/4     19786    7 USER_PROCESS     1264094649 [Jan 21 12:24:09]pool-173-57-44-12.dllstx.fios.verizon.net
+gonzales s/14 pts/14    20554    7 USER_PROCESS     1264096552 [Jan 21 12:55:52]134.174.1.208
+              pts/14    20554    8 DEAD_PROCESS     1264097128 [Jan 21 13:05:28]
+kleong   s/14 pts/14    22850    7 USER_PROCESS     1264102220 [Jan 21 14:30:20]140.247.82.129
+              pts/3     16321    8 DEAD_PROCESS     1264105445 [Jan 21 15:24:05]
+girash   ts/3 pts/3     24441    7 USER_PROCESS     1264105697 [Jan 21 15:28:17]dhcp-0000072652-2b-94.client.fas.harvard.edu
+              pts/0     13892    8 DEAD_PROCESS     1264111627 [Jan 21 17:07:07]
+              pts/3     24441    8 DEAD_PROCESS     1264111627 [Jan 21 17:07:07]
+              pts/14    22850    8 DEAD_PROCESS     1264111654 [Jan 21 17:07:34]
+girash   ts/0 pts/0     30747    7 USER_PROCESS     1264120260 [Jan 21 19:31:00]146-115-126-2.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     30747    8 DEAD_PROCESS     1264122442 [Jan 21 20:07:22]
+girash   ts/0 pts/0       350    7 USER_PROCESS     1264125403 [Jan 21 20:56:43]146-115-126-2.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+dzhu     ts/3 pts/3      2403    7 USER_PROCESS     1264130051 [Jan 21 22:14:11]user-0cdfhvu.cable.mindspring.com
+              pts/3      2403    8 DEAD_PROCESS     1264130088 [Jan 21 22:14:48]
+              pts/0       350    8 DEAD_PROCESS     1264130111 [Jan 21 22:15:11]
+jcohen   ts/0 pts/0      2595    7 USER_PROCESS     1264130510 [Jan 21 22:21:50]cpe-72-229-183-247.nyc.res.rr.com
+              pts/0      2595    8 DEAD_PROCESS     1264131595 [Jan 21 22:39:55]
+girash   ts/0 pts/0      3277    7 USER_PROCESS     1264132108 [Jan 21 22:48:28]146-115-126-2.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0      3277    8 DEAD_PROCESS     1264132127 [Jan 21 22:48:47]
+xzhu     ts/0 pts/0      4221    7 USER_PROCESS     1264134952 [Jan 21 23:35:52]pool-71-178-51-253.washdc.fios.verizon.net
+              pts/0      4221    8 DEAD_PROCESS     1264134970 [Jan 21 23:36:10]
+dangong  ts/0 pts/0      9523    7 USER_PROCESS     1264140122 [Jan 22 01:02:02]dhcp-0026482324-e0-d6.client.student.harvard.edu
+              pts/0      9523    8 DEAD_PROCESS     1264141716 [Jan 22 01:28:36]
+dangong  ts/0 pts/0     11289    7 USER_PROCESS     1264141725 [Jan 22 01:28:45]ls04.fas.harvard.edu
+              pts/0     11289    8 DEAD_PROCESS     1264144994 [Jan 22 02:23:14]
+yzhu     ts/0 pts/0     18318    7 USER_PROCESS     1264152676 [Jan 22 04:31:16]116.232.215.203
+              pts/0     18318    8 DEAD_PROCESS     1264159131 [Jan 22 06:18:51]
+              pts/4     19786    8 DEAD_PROCESS     1264163534 [Jan 22 07:32:14]
+              pts/8     17945    8 DEAD_PROCESS     1264163535 [Jan 22 07:32:15]
+yzhu     ts/0 pts/0     28088    7 USER_PROCESS     1264166289 [Jan 22 08:18:09]116.232.215.203
+dsteinbr ts/3 pts/3     28654    7 USER_PROCESS     1264166622 [Jan 22 08:23:42]pool-72-74-1-11.bstnma.east.verizon.net
+              pts/0     28088    8 DEAD_PROCESS     1264166709 [Jan 22 08:25:09]
+              pts/3     28654    8 DEAD_PROCESS     1264166963 [Jan 22 08:29:23]
+ghess    ts/0 pts/0     29353    7 USER_PROCESS     1264167805 [Jan 22 08:43:25]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     29353    8 DEAD_PROCESS     1264167828 [Jan 22 08:43:48]
+kleong   ts/0 pts/0     29993    7 USER_PROCESS     1264168437 [Jan 22 08:53:57]140.247.82.129
+lrc      ts/3 pts/3     30161    7 USER_PROCESS     1264168657 [Jan 22 08:57:37]kubrat.fas.harvard.edu
+              pts/0     29993    8 DEAD_PROCESS     1264169814 [Jan 22 09:16:54]
+              pts/3     30161    8 DEAD_PROCESS     1264169876 [Jan 22 09:17:56]
+fay      ts/0 pts/0     31303    7 USER_PROCESS     1264170186 [Jan 22 09:23:06]pool-68-160-174-58.bos.east.verizon.net
+              pts/0     31303    8 DEAD_PROCESS     1264170387 [Jan 22 09:26:27]
+lib215   ts/0 pts/0      4824    7 USER_PROCESS     1264184590 [Jan 22 13:23:10]ceas-nat.eecs.tufts.edu
+cs278    ts/3 pts/3      5439    7 USER_PROCESS     1264186944 [Jan 22 14:02:24]dhcp-0000109084-4b-d7.client.fas.harvard.edu
+              pts/3      5439    8 DEAD_PROCESS     1264186948 [Jan 22 14:02:28]
+cs277    ts/3 pts/3      5467    7 USER_PROCESS     1264186960 [Jan 22 14:02:40]dhcp-0000109084-4b-d7.client.fas.harvard.edu
+dsteinbr ts/4 pts/4      5547    7 USER_PROCESS     1264187357 [Jan 22 14:09:17]pool-72-74-4-150.bstnma.east.verizon.net
+kleong   ts/8 pts/8      5589    7 USER_PROCESS     1264187457 [Jan 22 14:10:57]140.247.82.129
+              pts/8      5589    8 DEAD_PROCESS     1264187679 [Jan 22 14:14:39]
+              pts/3      5467    8 DEAD_PROCESS     1264188421 [Jan 22 14:27:01]
+              pts/0      4824    8 DEAD_PROCESS     1264191299 [Jan 22 15:14:59]
+              pts/4      5547    8 DEAD_PROCESS     1264191390 [Jan 22 15:16:30]
+dsteinbr ts/0 pts/0      9131    7 USER_PROCESS     1264199704 [Jan 22 17:35:04]pool-72-74-5-153.bstnma.east.verizon.net
+fzembow  ts/3 pts/3      9654    7 USER_PROCESS     1264201583 [Jan 22 18:06:23]dhcp-0020013287-db-00.client.student.harvard.edu
+dschultz ts/4 pts/4      9784    7 USER_PROCESS     1264202341 [Jan 22 18:19:01]c-24-91-250-145.hsd1.ma.comcast.net
+              pts/4      9784    8 DEAD_PROCESS     1264202343 [Jan 22 18:19:03]
+              pts/0      9131    8 DEAD_PROCESS     1264202823 [Jan 22 18:27:03]
+              pts/3      9654    8 DEAD_PROCESS     1264203247 [Jan 22 18:34:07]
+abarrett ts/0 pts/0     14240    7 USER_PROCESS     1264218730 [Jan 22 22:52:10]ls04.fas.harvard.edu
+              pts/0     14240    8 DEAD_PROCESS     1264218754 [Jan 22 22:52:34]
+ghess    ts/0 pts/0     24133    7 USER_PROCESS     1264253477 [Jan 23 08:31:17]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0     24133    8 DEAD_PROCESS     1264253494 [Jan 23 08:31:34]
+kleong   ts/0 pts/0     25126    7 USER_PROCESS     1264256927 [Jan 23 09:28:47]140.247.82.129
+              pts/0     25126    8 DEAD_PROCESS     1264257948 [Jan 23 09:45:48]
+npomata  ts/0 pts/0     28101    7 USER_PROCESS     1264266447 [Jan 23 12:07:27]c-68-59-28-8.hsd1.sc.comcast.net
+eps5     ts/3 pts/3     28335    7 USER_PROCESS     1264268132 [Jan 23 12:35:32]dhcp-194.as.harvard.edu
+              pts/3     28335    8 DEAD_PROCESS     1264268219 [Jan 23 12:36:59]
+vmodi    ts/3 pts/3     29378    7 USER_PROCESS     1264271353 [Jan 23 13:29:13]ool-44c1accb.dyn.optonline.net
+              pts/3     29378    8 DEAD_PROCESS     1264271372 [Jan 23 13:29:32]
+hartmann ts/3 pts/3     29408    7 USER_PROCESS     1264271457 [Jan 23 13:30:57]mobile-166-137-139-100.mycingular.net
+              pts/3     29408    8 DEAD_PROCESS     1264271516 [Jan 23 13:31:56]
+thlin    ts/3 pts/3     30765    7 USER_PROCESS     1264275566 [Jan 23 14:39:26]dhcp-0018006335-dc-5b.client.student.harvard.edu
+kleong   ts/4 pts/4     31412    7 USER_PROCESS     1264278397 [Jan 23 15:26:37]140.247.82.129
+              pts/4     31412    8 DEAD_PROCESS     1264278443 [Jan 23 15:27:23]
+              pts/0     28101    8 DEAD_PROCESS     1264281079 [Jan 23 16:11:19]
+kleong   ts/0 pts/0       420    7 USER_PROCESS     1264283216 [Jan 23 16:46:56]140.247.82.129
+              pts/0       420    8 DEAD_PROCESS     1264283266 [Jan 23 16:47:46]
+dzhu     ts/0 pts/0     10499    7 USER_PROCESS     1264296070 [Jan 23 20:21:10]user-0cdfhvu.cable.mindspring.com
+              pts/0     10499    8 DEAD_PROCESS     1264297511 [Jan 23 20:45:11]
+kleong   ts/0 pts/0     17992    7 USER_PROCESS     1264298147 [Jan 23 20:55:47]140.247.82.129
+              pts/0     17992    8 DEAD_PROCESS     1264298702 [Jan 23 21:05:02]
+              pts/3     30765    8 DEAD_PROCESS     1264302447 [Jan 23 22:07:27]
+yzhu     ts/0 pts/0     24224    7 USER_PROCESS     1264308932 [Jan 23 23:55:32]58.247.195.130
+              pts/0     24224    8 DEAD_PROCESS     1264310073 [Jan 24 00:14:33]
+jianli   ts/0 pts/0     24734    7 USER_PROCESS     1264310457 [Jan 24 00:20:57]pool-71-187-82-254.nwrknj.east.verizon.net
+awad     ts/3 pts/3     25280    7 USER_PROCESS     1264312254 [Jan 24 00:50:54]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+obastani ts/4 pts/4     25338    7 USER_PROCESS     1264312532 [Jan 24 00:55:32]ppp-70-253-145-110.dsl.rcsntx.swbell.net
+              pts/4     25338    8 DEAD_PROCESS     1264312960 [Jan 24 01:02:40]
+              pts/0     24734    8 DEAD_PROCESS     1264313548 [Jan 24 01:12:28]
+              pts/3     25280    8 DEAD_PROCESS     1264325288 [Jan 24 04:28:08]
+eps5     ts/0 pts/0      4902    7 USER_PROCESS     1264354360 [Jan 24 12:32:40]dhcp-194.as.harvard.edu
+              pts/0      4902    8 DEAD_PROCESS     1264354363 [Jan 24 12:32:43]
+scia30   ts/0 pts/0      4933    7 USER_PROCESS     1264354371 [Jan 24 12:32:51]dhcp-194.as.harvard.edu
+              pts/0      4933    8 DEAD_PROCESS     1264354423 [Jan 24 12:33:43]
+scia30   ts/0 pts/0      5309    7 USER_PROCESS     1264355247 [Jan 24 12:47:27]dhcp-194.as.harvard.edu
+              pts/0      5309    8 DEAD_PROCESS     1264355248 [Jan 24 12:47:28]
+ltmurray ts/0 pts/0      5349    7 USER_PROCESS     1264355265 [Jan 24 12:47:45]dhcp-194.as.harvard.edu
+              pts/0      5349    8 DEAD_PROCESS     1264355274 [Jan 24 12:47:54]
+pbailis  ts/0 pts/0      6285    7 USER_PROCESS     1264355929 [Jan 24 12:58:49]dhcp-0064359361-f6-37.client.student.harvard.edu
+              pts/0      6285    8 DEAD_PROCESS     1264355930 [Jan 24 12:58:50]
+eps5     ts/0 pts/0      6826    7 USER_PROCESS     1264356742 [Jan 24 13:12:22]dhcp-194.as.harvard.edu
+              pts/0      6826    8 DEAD_PROCESS     1264357103 [Jan 24 13:18:23]
+obastani ts/0 pts/0      7242    7 USER_PROCESS     1264357542 [Jan 24 13:25:42]ppp-70-253-145-110.dsl.rcsntx.swbell.net
+              pts/0      7242    8 DEAD_PROCESS     1264357569 [Jan 24 13:26:09]
+eps5     ts/0 pts/0      7302    7 USER_PROCESS     1264357592 [Jan 24 13:26:32]dhcp-194.as.harvard.edu
+obastani ts/3 pts/3      7341    7 USER_PROCESS     1264357690 [Jan 24 13:28:10]ppp-70-253-145-110.dsl.rcsntx.swbell.net
+              pts/3      7341    8 DEAD_PROCESS     1264357789 [Jan 24 13:29:49]
+              pts/0      7302    8 DEAD_PROCESS     1264358276 [Jan 24 13:37:56]
+chen50   ts/0 pts/0      7481    7 USER_PROCESS     1264358568 [Jan 24 13:42:48]c-76-119-234-194.hsd1.ma.comcast.net
+              pts/0      7481    8 DEAD_PROCESS     1264358839 [Jan 24 13:47:19]
+apm121   ts/0 pts/0      7544    7 USER_PROCESS     1264358863 [Jan 24 13:47:43]c-76-119-234-194.hsd1.ma.comcast.net
+eps5     ts/3 pts/3      7895    7 USER_PROCESS     1264359132 [Jan 24 13:52:12]dhcp-194.as.harvard.edu
+              pts/0      7544    8 DEAD_PROCESS     1264360926 [Jan 24 14:22:06]
+chen50   ts/0 pts/0      8564    7 USER_PROCESS     1264362049 [Jan 24 14:40:49]c-76-119-234-194.hsd1.ma.comcast.net
+kleong   ts/4 pts/4      8990    7 USER_PROCESS     1264362795 [Jan 24 14:53:15]140.247.82.129
+              pts/0      8564    8 DEAD_PROCESS     1264363417 [Jan 24 15:03:37]
+apm121   ts/0 pts/0      9634    7 USER_PROCESS     1264364861 [Jan 24 15:27:41]128.103.135.187
+              pts/0      9634    8 DEAD_PROCESS     1264364888 [Jan 24 15:28:08]
+              pts/4      8990    8 DEAD_PROCESS     1264368172 [Jan 24 16:22:52]
+apm121   ts/0 pts/0     10810    7 USER_PROCESS     1264369496 [Jan 24 16:44:56]128.103.135.187
+              pts/0     10810    8 DEAD_PROCESS     1264369563 [Jan 24 16:46:03]
+apm121   ts/0 pts/0     10848    7 USER_PROCESS     1264369566 [Jan 24 16:46:06]128.103.135.187
+              pts/0     10848    8 DEAD_PROCESS     1264369672 [Jan 24 16:47:52]
+apm121   ts/0 pts/0     10912    7 USER_PROCESS     1264369674 [Jan 24 16:47:54]128.103.135.187
+              pts/0     10912    8 DEAD_PROCESS     1264369709 [Jan 24 16:48:29]
+apm121   ts/0 pts/0     10947    7 USER_PROCESS     1264369712 [Jan 24 16:48:32]128.103.135.187
+              pts/0     10947    8 DEAD_PROCESS     1264369745 [Jan 24 16:49:05]
+apm121   ts/0 pts/0     10985    7 USER_PROCESS     1264369765 [Jan 24 16:49:25]128.103.135.187
+              pts/0     10985    8 DEAD_PROCESS     1264369788 [Jan 24 16:49:48]
+kleong   ts/0 pts/0     11856    7 USER_PROCESS     1264372119 [Jan 24 17:28:39]140.247.82.129
+ghess    ts/4 pts/4     13030    7 USER_PROCESS     1264375963 [Jan 24 18:32:43]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/4     13030    8 DEAD_PROCESS     1264376163 [Jan 24 18:36:03]
+              pts/0     11856    8 DEAD_PROCESS     1264379075 [Jan 24 19:24:35]
+apm121   ts/0 pts/0     16627    7 USER_PROCESS     1264388368 [Jan 24 21:59:28]128.103.135.187
+              pts/0     16627    8 DEAD_PROCESS     1264388373 [Jan 24 21:59:33]
+apm121   ts/0 pts/0     16658    7 USER_PROCESS     1264388401 [Jan 24 22:00:01]128.103.135.187
+              pts/0     16658    8 DEAD_PROCESS     1264389589 [Jan 24 22:19:49]
+apm121   ts/0 pts/0     16856    7 USER_PROCESS     1264389592 [Jan 24 22:19:52]128.103.135.187
+              pts/0     16856    8 DEAD_PROCESS     1264389788 [Jan 24 22:23:08]
+dsteinbr ts/0 pts/0     26546    7 USER_PROCESS     1264424263 [Jan 25 07:57:43]dhcp-0059783143-45-15.client.student.harvard.edu
+ghess    ts/4 pts/4     27467    7 USER_PROCESS     1264427025 [Jan 25 08:43:45]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/4     27467    8 DEAD_PROCESS     1264427043 [Jan 25 08:44:03]
+yzhu     ts/4 pts/4     27574    7 USER_PROCESS     1264427733 [Jan 25 08:55:33]116.232.215.203
+              pts/4     27574    8 DEAD_PROCESS     1264429158 [Jan 25 09:19:18]
+ghess    ts/4 pts/4     28169    7 USER_PROCESS     1264429953 [Jan 25 09:32:33]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/4     28169    8 DEAD_PROCESS     1264429963 [Jan 25 09:32:43]
+dmca2    ts/4 pts/4     28710    7 USER_PROCESS     1264431245 [Jan 25 09:54:05]comp-cen-1.ad.fas.harvard.edu
+cen      ts/8 pts/8     28753    7 USER_PROCESS     1264431395 [Jan 25 09:56:35]comp-cen-1.ad.fas.harvard.edu
+sef      s/14 pts/14    29201    7 USER_PROCESS     1264432545 [Jan 25 10:15:45]63.174.212.190
+sef      s/17 pts/17    29402    7 USER_PROCESS     1264433663 [Jan 25 10:34:23]63.174.212.190
+qiangwu  s/18 pts/18    30295    7 USER_PROCESS     1264436180 [Jan 25 11:16:20]29.sub-75-226-36.myvzw.com
+              pts/18    30295    8 DEAD_PROCESS     1264436208 [Jan 25 11:16:48]
+              pts/14    29201    8 DEAD_PROCESS     1264436541 [Jan 25 11:22:21]
+              pts/17    29402    8 DEAD_PROCESS     1264436547 [Jan 25 11:22:27]
+kleong   s/14 pts/14    30931    7 USER_PROCESS     1264438943 [Jan 25 12:02:23]140.247.82.129
+              pts/3      7895    8 DEAD_PROCESS     1264439091 [Jan 25 12:04:51]
+              pts/14    30931    8 DEAD_PROCESS     1264439821 [Jan 25 12:17:01]
+sef      ts/3 pts/3     32030    7 USER_PROCESS     1264442890 [Jan 25 13:08:10]63.174.212.190
+kleong   s/14 pts/14      785    7 USER_PROCESS     1264446614 [Jan 25 14:10:14]140.247.82.129
+thartman s/17 pts/17     1764    7 USER_PROCESS     1264448970 [Jan 25 14:49:30]dhcp-0070186359-b5-86.client.student.harvard.edu
+jjackson s/18 pts/18     2469    7 USER_PROCESS     1264450994 [Jan 25 15:23:14]1story-vpn-gw.dce.harvard.edu
+              pts/18     2469    8 DEAD_PROCESS     1264452180 [Jan 25 15:43:00]
+              pts/3     32030    8 DEAD_PROCESS     1264454240 [Jan 25 16:17:20]
+              pts/14      785    8 DEAD_PROCESS     1264455008 [Jan 25 16:30:08]
+wbkenney ts/3 pts/3      4155    7 USER_PROCESS     1264456850 [Jan 25 17:00:50]dhcp-0061342077-1c-07.client.fas.harvard.edu
+czaplick s/14 pts/14     4687    7 USER_PROCESS     1264458457 [Jan 25 17:27:37]dhcp-0019875237-78-14.client.student.harvard.edu
+              pts/14     4687    8 DEAD_PROCESS     1264458649 [Jan 25 17:30:49]
+              pts/3      4155    8 DEAD_PROCESS     1264459127 [Jan 25 17:38:47]
+ylsul    ts/3 pts/3      5702    7 USER_PROCESS     1264461875 [Jan 25 18:24:35]c-71-233-148-159.hsd1.ma.comcast.net
+              pts/3      5702    8 DEAD_PROCESS     1264461890 [Jan 25 18:24:50]
+kleong   ts/3 pts/3      5834    7 USER_PROCESS     1264462726 [Jan 25 18:38:46]140.247.82.129
+              pts/3      5834    8 DEAD_PROCESS     1264463151 [Jan 25 18:45:51]
+              pts/17     1764    8 DEAD_PROCESS     1264464000 [Jan 25 19:00:00]
+girash   ts/3 pts/3      7850    7 USER_PROCESS     1264468000 [Jan 25 20:06:40]216-15-114-41.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+ntselent s/14 pts/14     8966    7 USER_PROCESS     1264469343 [Jan 25 20:29:03]dhcp-0000080593-db-44.client.law.harvard.edu
+ghess    s/17 pts/17     9057    7 USER_PROCESS     1264469456 [Jan 25 20:30:56]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/17     9057    8 DEAD_PROCESS     1264469465 [Jan 25 20:31:05]
+              pts/3      7850    8 DEAD_PROCESS     1264470210 [Jan 25 20:43:30]
+reyna    ts/3 pts/3     10119    7 USER_PROCESS     1264470766 [Jan 25 20:52:46]ls04.fas.harvard.edu
+girash   s/17 pts/17    10211    7 USER_PROCESS     1264470875 [Jan 25 20:54:35]216-15-114-41.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+girash   s/18 pts/18    11063    7 USER_PROCESS     1264472105 [Jan 25 21:15:05]216-15-114-41.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/18    11063    8 DEAD_PROCESS     1264473720 [Jan 25 21:42:00]
+girash   s/18 pts/18    12408    7 USER_PROCESS     1264473727 [Jan 25 21:42:07]216-15-114-41.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/18    12408    8 DEAD_PROCESS     1264474276 [Jan 25 21:51:16]
+              pts/14     8966    8 DEAD_PROCESS     1264474387 [Jan 25 21:53:07]
+              pts/17    10211    8 DEAD_PROCESS     1264475351 [Jan 25 22:09:11]
+              pts/3     10119    8 DEAD_PROCESS     1264475658 [Jan 25 22:14:18]
+girash   ts/3 pts/3     15124    7 USER_PROCESS     1264477416 [Jan 25 22:43:36]216-15-114-41.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/3     15124    8 DEAD_PROCESS     1264477428 [Jan 25 22:43:48]
+girash   ts/3 pts/3     15717    7 USER_PROCESS     1264477914 [Jan 25 22:51:54]216-15-114-41.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/3     15717    8 DEAD_PROCESS     1264477916 [Jan 25 22:51:56]
+girash   ts/3 pts/3     16075    7 USER_PROCESS     1264478489 [Jan 25 23:01:29]216-15-114-41.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/3     16075    8 DEAD_PROCESS     1264478492 [Jan 25 23:01:32]
+bendeck  ts/3 pts/3     16299    7 USER_PROCESS     1264478856 [Jan 25 23:07:36]dhcp-0064189729-47-5c.client.student.harvard.edu
+              pts/3     16299    8 DEAD_PROCESS     1264478858 [Jan 25 23:07:38]
+bendeck  ts/3 pts/3     16322    7 USER_PROCESS     1264478859 [Jan 25 23:07:39]dhcp-0064189729-47-5c.client.student.harvard.edu
+              pts/3     16322    8 DEAD_PROCESS     1264478860 [Jan 25 23:07:40]
+              pts/0     26546    8 DEAD_PROCESS     1264479352 [Jan 25 23:15:52]
+noronha  ts/0 pts/0     17237    7 USER_PROCESS     1264479964 [Jan 25 23:26:04]dhcp-0000103703-5d-a1.client.student.harvard.edu
+hritchie ts/3 pts/3     17374    7 USER_PROCESS     1264480139 [Jan 25 23:28:59]209-6-52-45.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+              pts/3     17374    8 DEAD_PROCESS     1264481238 [Jan 25 23:47:18]
+ntardiff ts/3 pts/3     18713    7 USER_PROCESS     1264481904 [Jan 25 23:58:24]c-24-91-153-138.hsd1.ma.comcast.net
+              pts/3     18713    8 DEAD_PROCESS     1264482336 [Jan 26 00:05:36]
+              pts/0     17237    8 DEAD_PROCESS     1264485477 [Jan 26 00:57:57]
+yzhu     ts/0 pts/0     23114    7 USER_PROCESS     1264495866 [Jan 26 03:51:06]58.247.195.130
+              pts/0     23114    8 DEAD_PROCESS     1264497462 [Jan 26 04:17:42]
+girash   ts/0 pts/0     27267    7 USER_PROCESS     1264510278 [Jan 26 07:51:18]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     27267    8 DEAD_PROCESS     1264510360 [Jan 26 07:52:40]
+girash   ts/0 pts/0     27844    7 USER_PROCESS     1264512286 [Jan 26 08:24:46]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     27844    8 DEAD_PROCESS     1264512342 [Jan 26 08:25:42]
+girash   ts/0 pts/0     28255    7 USER_PROCESS     1264512992 [Jan 26 08:36:32]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+ghess    ts/3 pts/3     28344    7 USER_PROCESS     1264513580 [Jan 26 08:46:20]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/3     28344    8 DEAD_PROCESS     1264513629 [Jan 26 08:47:09]
+              pts/0     28255    8 DEAD_PROCESS     1264514195 [Jan 26 08:56:35]
+girash   ts/0 pts/0     28860    7 USER_PROCESS     1264514662 [Jan 26 09:04:22]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     28860    8 DEAD_PROCESS     1264515632 [Jan 26 09:20:32]
+girash   ts/0 pts/0     29036    7 USER_PROCESS     1264515922 [Jan 26 09:25:22]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     29036    8 DEAD_PROCESS     1264515932 [Jan 26 09:25:32]
+girash   ts/0 pts/0     29390    7 USER_PROCESS     1264516196 [Jan 26 09:29:56]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     29390    8 DEAD_PROCESS     1264516201 [Jan 26 09:30:01]
+girash   ts/0 pts/0     29456    7 USER_PROCESS     1264516446 [Jan 26 09:34:06]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+girash   ts/3 pts/3     29572    7 USER_PROCESS     1264517298 [Jan 26 09:48:18]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     29456    8 DEAD_PROCESS     1264517406 [Jan 26 09:50:06]
+dbragg   ts/0 pts/0     29997    7 USER_PROCESS     1264518248 [Jan 26 10:04:08]dhcp-0000053790-75-3a.client.student.harvard.edu
+              pts/3     29572    8 DEAD_PROCESS     1264518258 [Jan 26 10:04:18]
+dbragg   ts/3 pts/3     30056    7 USER_PROCESS     1264518492 [Jan 26 10:08:12]dhcp-0000053790-75-3a.client.student.harvard.edu
+dbragg   s/14 pts/14    30109    7 USER_PROCESS     1264518681 [Jan 26 10:11:21]dhcp-0000053790-75-3a.client.student.harvard.edu
+              pts/0     29997    8 DEAD_PROCESS     1264521421 [Jan 26 10:57:01]
+              pts/3     30056    8 DEAD_PROCESS     1264521423 [Jan 26 10:57:03]
+              pts/14    30109    8 DEAD_PROCESS     1264521426 [Jan 26 10:57:06]
+kleong   ts/0 pts/0     32477    7 USER_PROCESS     1264525139 [Jan 26 11:58:59]140.247.82.129
+cs165    ts/3 pts/3       690    7 USER_PROCESS     1264526978 [Jan 26 12:29:38]dhcp-0019549759-a7-cc.client.fas.harvard.edu
+              pts/0     32477    8 DEAD_PROCESS     1264528275 [Jan 26 12:51:15]
+kleong   ts/0 pts/0       934    7 USER_PROCESS     1264528279 [Jan 26 12:51:19]140.247.82.129
+              pts/0       934    8 DEAD_PROCESS     1264528283 [Jan 26 12:51:23]
+kleong   ts/0 pts/0       985    7 USER_PROCESS     1264528321 [Jan 26 12:52:01]140.247.82.129
+              pts/0       985    8 DEAD_PROCESS     1264528339 [Jan 26 12:52:19]
+brickman ts/0 pts/0      1077    7 USER_PROCESS     1264528583 [Jan 26 12:56:23]10.11.82.51
+              pts/0      1077    8 DEAD_PROCESS     1264528813 [Jan 26 13:00:13]
+sef      ts/0 pts/0      1518    7 USER_PROCESS     1264529120 [Jan 26 13:05:20]63.174.212.190
+adamchin s/14 pts/14     3595    7 USER_PROCESS     1264531559 [Jan 26 13:45:59]pool-173-76-19-135.bstnma.fios.verizon.net
+              pts/14     3595    8 DEAD_PROCESS     1264531786 [Jan 26 13:49:46]
+adamchin s/14 pts/14     3875    7 USER_PROCESS     1264531850 [Jan 26 13:50:50]pool-173-76-19-135.bstnma.fios.verizon.net
+              pts/14     3875    8 DEAD_PROCESS     1264532153 [Jan 26 13:55:53]
+bendeck  s/14 pts/14     5420    7 USER_PROCESS     1264533410 [Jan 26 14:16:50]140.247.131.95
+adamchin s/17 pts/17     5509    7 USER_PROCESS     1264533616 [Jan 26 14:20:16]pool-173-76-19-135.bstnma.fios.verizon.net
+              pts/17     5509    8 DEAD_PROCESS     1264533643 [Jan 26 14:20:43]
+adamchin s/17 pts/17     5544    7 USER_PROCESS     1264533652 [Jan 26 14:20:52]pool-173-76-19-135.bstnma.fios.verizon.net
+              pts/14     5420    8 DEAD_PROCESS     1264533793 [Jan 26 14:23:13]
+bowill   s/14 pts/14     5617    7 USER_PROCESS     1264533815 [Jan 26 14:23:35]wirefire.akamai.com
+              pts/17     5544    8 DEAD_PROCESS     1264533888 [Jan 26 14:24:48]
+lib215   s/17 pts/17     6045    7 USER_PROCESS     1264534197 [Jan 26 14:29:57]ice4.fas.harvard.edu
+              pts/17     6045    8 DEAD_PROCESS     1264534498 [Jan 26 14:34:58]
+              pts/14     5617    8 DEAD_PROCESS     1264534500 [Jan 26 14:35:00]
+adamchin s/14 pts/14     6142    7 USER_PROCESS     1264534702 [Jan 26 14:38:22]pool-173-76-19-135.bstnma.fios.verizon.net
+              pts/14     6142    8 DEAD_PROCESS     1264534782 [Jan 26 14:39:42]
+              pts/3       690    8 DEAD_PROCESS     1264537239 [Jan 26 15:20:39]
+jgonzal  ts/3 pts/3      7477    7 USER_PROCESS     1264539131 [Jan 26 15:52:11]dhcp-0059505893-84-68.client.student.harvard.edu
+eps5     s/14 pts/14     8098    7 USER_PROCESS     1264540354 [Jan 26 16:12:34]pool-173-76-198-237.bstnma.fios.verizon.net
+              pts/3      7477    8 DEAD_PROCESS     1264541846 [Jan 26 16:37:26]
+              pts/14     8098    8 DEAD_PROCESS     1264541962 [Jan 26 16:39:22]
+jgonzal  ts/3 pts/3      8931    7 USER_PROCESS     1264542965 [Jan 26 16:56:05]dhcp-0059505893-84-68.client.student.harvard.edu
+              pts/3      8931    8 DEAD_PROCESS     1264544403 [Jan 26 17:20:03]
+jpackard ts/3 pts/3     10074    7 USER_PROCESS     1264544791 [Jan 26 17:26:31]ls04.fas.harvard.edu
+              pts/3     10074    8 DEAD_PROCESS     1264544911 [Jan 26 17:28:31]
+adamchin ts/3 pts/3     11453    7 USER_PROCESS     1264547480 [Jan 26 18:11:20]pool-173-76-19-135.bstnma.fios.verizon.net
+lib215   s/14 pts/14    11500    7 USER_PROCESS     1264547602 [Jan 26 18:13:22]static-68-162-220-185.bos.east.verizon.net
+              pts/3     11453    8 DEAD_PROCESS     1264547926 [Jan 26 18:18:46]
+kleong   ts/3 pts/3     11728    7 USER_PROCESS     1264547969 [Jan 26 18:19:29]140.247.82.129
+              pts/3     11728    8 DEAD_PROCESS     1264547989 [Jan 26 18:19:49]
+lib215   ts/3 pts/3     11791    7 USER_PROCESS     1264548043 [Jan 26 18:20:43]static-68-162-220-185.bos.east.verizon.net
+              pts/3     11791    8 DEAD_PROCESS     1264549841 [Jan 26 18:50:41]
+shnayder ts/3 pts/3     12427    7 USER_PROCESS     1264549996 [Jan 26 18:53:16]dhcp-0030328169-8d-b0.client.fas.harvard.edu
+lib51    s/17 pts/17    12481    7 USER_PROCESS     1264550037 [Jan 26 18:53:57]dhcp-0030328169-8d-b0.client.fas.harvard.edu
+              pts/17    12481    8 DEAD_PROCESS     1264550125 [Jan 26 18:55:25]
+              pts/3     12427    8 DEAD_PROCESS     1264550126 [Jan 26 18:55:26]
+lib215   ts/3 pts/3     12541    7 USER_PROCESS     1264550289 [Jan 26 18:58:09]static-68-162-220-185.bos.east.verizon.net
+czaplick s/17 pts/17    12578    7 USER_PROCESS     1264550389 [Jan 26 18:59:49]dhcp-0019875237-78-14.client.student.harvard.edu
+              pts/3     12541    8 DEAD_PROCESS     1264550408 [Jan 26 19:00:08]
+              pts/14    11500    8 DEAD_PROCESS     1264551157 [Jan 26 19:12:37]
+lib215   ts/3 pts/3     13021    7 USER_PROCESS     1264551311 [Jan 26 19:15:11]static-68-162-220-185.bos.east.verizon.net
+              pts/3     13021    8 DEAD_PROCESS     1264551418 [Jan 26 19:16:58]
+girash   ts/3 pts/3     13098    7 USER_PROCESS     1264551667 [Jan 26 19:21:07]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/17    12578    8 DEAD_PROCESS     1264552867 [Jan 26 19:41:07]
+              pts/3     13098    8 DEAD_PROCESS     1264554180 [Jan 26 20:03:00]
+girash   ts/3 pts/3     14027    7 USER_PROCESS     1264554247 [Jan 26 20:04:07]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+girash   s/14 pts/14    14130    7 USER_PROCESS     1264554656 [Jan 26 20:10:56]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+tosulliv s/17 pts/17    14319    7 USER_PROCESS     1264555187 [Jan 26 20:19:47]65.112.9.0
+awad     s/18 pts/18    14992    7 USER_PROCESS     1264556259 [Jan 26 20:37:39]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+tosulliv s/19 pts/19    15026    7 USER_PROCESS     1264556294 [Jan 26 20:38:14]65.112.9.0
+              pts/18    14992    8 DEAD_PROCESS     1264556614 [Jan 26 20:43:34]
+awad     s/18 pts/18    15252    7 USER_PROCESS     1264556638 [Jan 26 20:43:58]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/14    14130    8 DEAD_PROCESS     1264556854 [Jan 26 20:47:34]
+              pts/17    14319    8 DEAD_PROCESS     1264556970 [Jan 26 20:49:30]
+              pts/3     14027    8 DEAD_PROCESS     1264556982 [Jan 26 20:49:42]
+smunyiri ts/3 pts/3     15523    7 USER_PROCESS     1264557404 [Jan 26 20:56:44]140.247.255.172
+tosulliv s/14 pts/14    15667    7 USER_PROCESS     1264557644 [Jan 26 21:00:44]65.112.9.0
+ghess    s/17 pts/17    15736    7 USER_PROCESS     1264557720 [Jan 26 21:02:00]c-66-31-19-114.hsd1.ma.comcast.net
+smunyiri s/20 pts/20    16431    7 USER_PROCESS     1264558332 [Jan 26 21:12:12]dhcp-0061375388-94-e0.client.student.harvard.edu
+              pts/19    15026    8 DEAD_PROCESS     1264558506 [Jan 26 21:15:06]
+smunyiri s/19 pts/19    16915    7 USER_PROCESS     1264559387 [Jan 26 21:29:47]dhcp-0061375388-94-e0.client.student.harvard.edu
+tosulliv s/21 pts/21    17589    7 USER_PROCESS     1264560098 [Jan 26 21:41:38]65.112.9.0
+girash   s/22 pts/22    17673    7 USER_PROCESS     1264560182 [Jan 26 21:43:02]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/17    15736    8 DEAD_PROCESS     1264560295 [Jan 26 21:44:55]
+              pts/22    17673    8 DEAD_PROCESS     1264560887 [Jan 26 21:54:47]
+              pts/14    15667    8 DEAD_PROCESS     1264561028 [Jan 26 21:57:08]
+tosulliv s/14 pts/14    18218    7 USER_PROCESS     1264561191 [Jan 26 21:59:51]dhcp-0028442789-9e-24.client.fas.harvard.edu
+tosulliv s/17 pts/17    18256    7 USER_PROCESS     1264561237 [Jan 26 22:00:37]65.112.9.0
+girash   s/22 pts/22    18816    7 USER_PROCESS     1264561790 [Jan 26 22:09:50]146-115-125-24.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/22    18816    8 DEAD_PROCESS     1264561792 [Jan 26 22:09:52]
+wluo     s/22 pts/22    18909    7 USER_PROCESS     1264561922 [Jan 26 22:12:02]dhcp-0074752665-aa-14.client.student.harvard.edu
+              pts/21    17589    8 DEAD_PROCESS     1264562070 [Jan 26 22:14:30]
+              pts/14    18218    8 DEAD_PROCESS     1264562151 [Jan 26 22:15:51]
+              pts/17    18256    8 DEAD_PROCESS     1264562588 [Jan 26 22:23:08]
+              pts/22    18909    8 DEAD_PROCESS     1264562726 [Jan 26 22:25:26]
+              pts/20    16431    8 DEAD_PROCESS     1264567151 [Jan 26 23:39:11]
+              pts/19    16915    8 DEAD_PROCESS     1264567153 [Jan 26 23:39:13]
+              pts/3     15523    8 DEAD_PROCESS     1264567156 [Jan 26 23:39:16]
+feng3    ts/3 pts/3     20848    7 USER_PROCESS     1264567741 [Jan 26 23:49:01]140.247.183.81
+adamchin s/14 pts/14    20910    7 USER_PROCESS     1264568125 [Jan 26 23:55:25]pool-173-76-19-135.bstnma.fios.verizon.net
+              pts/14    20910    8 DEAD_PROCESS     1264569451 [Jan 27 00:17:31]
+              pts/3     20848    8 DEAD_PROCESS     1264571770 [Jan 27 00:56:10]
+              pts/18    15252    8 DEAD_PROCESS     1264572714 [Jan 27 01:11:54]
+smunyiri ts/3 pts/3     22883    7 USER_PROCESS     1264574868 [Jan 27 01:47:48]c-76-118-142-182.hsd1.ma.comcast.net
+smunyiri s/14 pts/14    22915    7 USER_PROCESS     1264574881 [Jan 27 01:48:01]c-76-118-142-182.hsd1.ma.comcast.net
+smunyiri s/17 pts/17    24303    7 USER_PROCESS     1264579332 [Jan 27 03:02:12]c-76-118-142-182.hsd1.ma.comcast.net
+smackay  s/18 pts/18    28746    7 USER_PROCESS     1264592829 [Jan 27 06:47:09]pd9eb906b.dip0.t-ipconnect.de
+              pts/17    24303    8 DEAD_PROCESS     1264593319 [Jan 27 06:55:19]
+              pts/3     22883    8 DEAD_PROCESS     1264593323 [Jan 27 06:55:23]
+              pts/14    22915    8 DEAD_PROCESS     1264593326 [Jan 27 06:55:26]
+yzhu     ts/3 pts/3     29052    7 USER_PROCESS     1264593444 [Jan 27 06:57:24]116.233.157.91
+rlesage  s/14 pts/14    29484    7 USER_PROCESS     1264594405 [Jan 27 07:13:25]pool-68-239-45-99.bos.east.verizon.net
+              pts/3     29052    8 DEAD_PROCESS     1264595310 [Jan 27 07:28:30]
+              pts/14    29484    8 DEAD_PROCESS     1264595616 [Jan 27 07:33:36]
+rlesage  ts/3 pts/3     29706    7 USER_PROCESS     1264595641 [Jan 27 07:34:01]pool-68-239-45-99.bos.east.verizon.net
+              pts/3     29706    8 DEAD_PROCESS     1264595654 [Jan 27 07:34:14]
+rlesage  ts/3 pts/3     29737    7 USER_PROCESS     1264595668 [Jan 27 07:34:28]pool-68-239-45-99.bos.east.verizon.net
+              pts/3     29737    8 DEAD_PROCESS     1264595743 [Jan 27 07:35:43]
+rlesage  ts/3 pts/3     29775    7 USER_PROCESS     1264595753 [Jan 27 07:35:53]pool-68-239-45-99.bos.east.verizon.net
+              pts/3     29775    8 DEAD_PROCESS     1264595761 [Jan 27 07:36:01]
+karabel  ts/3 pts/3     30214    7 USER_PROCESS     1264596910 [Jan 27 07:55:10]pool-68-239-45-99.bos.east.verizon.net
+              pts/3     30214    8 DEAD_PROCESS     1264597292 [Jan 27 08:01:32]
+              pts/0      1518    8 DEAD_PROCESS     1264598755 [Jan 27 08:25:55]
+sef      ts/0 pts/0     30796    7 USER_PROCESS     1264598793 [Jan 27 08:26:33]63.174.212.190
+ghess    ts/3 pts/3     30890    7 USER_PROCESS     1264598976 [Jan 27 08:29:36]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/3     30890    8 DEAD_PROCESS     1264598989 [Jan 27 08:29:49]
+              pts/18    28746    8 DEAD_PROCESS     1264601005 [Jan 27 09:03:25]
+dsteinbr ts/3 pts/3     31961    7 USER_PROCESS     1264602434 [Jan 27 09:27:14]dhcp-0059783143-45-15.client.student.harvard.edu
+kleong   s/14 pts/14    32080    7 USER_PROCESS     1264603028 [Jan 27 09:37:08]pool-71-174-131-180.bstnma.east.verizon.net
+sef      s/17 pts/17    32696    7 USER_PROCESS     1264603841 [Jan 27 09:50:41]63.174.212.190
+              pts/3     31961    8 DEAD_PROCESS     1264603992 [Jan 27 09:53:12]
+              pts/0     30796    8 DEAD_PROCESS     1264604741 [Jan 27 10:05:41]
+sef      ts/0 pts/0       409    7 USER_PROCESS     1264604950 [Jan 27 10:09:10]63.174.212.190
+              pts/17    32696    8 DEAD_PROCESS     1264605027 [Jan 27 10:10:27]
+abarrett ts/3 pts/3       744    7 USER_PROCESS     1264605072 [Jan 27 10:11:12]dhcp-0025772395-72-6f.client.fas.harvard.edu
+abarrett s/19 pts/19      874    7 USER_PROCESS     1264605199 [Jan 27 10:13:19]dhcp-0025772395-72-6f.client.fas.harvard.edu
+sef      s/20 pts/20      934    7 USER_PROCESS     1264605356 [Jan 27 10:15:56]63.174.212.190
+vnarang  s/21 pts/21     1006    7 USER_PROCESS     1264605451 [Jan 27 10:17:31]c-66-31-201-9.hsd1.ma.comcast.net
+              pts/21     1006    8 DEAD_PROCESS     1264605455 [Jan 27 10:17:35]
+              pts/0       409    8 DEAD_PROCESS     1264606043 [Jan 27 10:27:23]
+wshaw    ts/0 pts/0      1119    7 USER_PROCESS     1264606427 [Jan 27 10:33:47]dhcp-0019815365-49-8e.client.student.harvard.edu
+              pts/14    32080    8 DEAD_PROCESS     1264606657 [Jan 27 10:37:37]
+              pts/0      1119    8 DEAD_PROCESS     1264607241 [Jan 27 10:47:21]
+laakso   ts/0 pts/0      1533    7 USER_PROCESS     1264607390 [Jan 27 10:49:50]dhcp-0020232925-54-ef.client.student.harvard.edu
+              pts/0      1533    8 DEAD_PROCESS     1264608279 [Jan 27 11:04:39]
+              pts/19      874    8 DEAD_PROCESS     1264610227 [Jan 27 11:37:07]
+tmacwill ts/0 pts/0      2945    7 USER_PROCESS     1264613263 [Jan 27 12:27:43]dhcp-0059516172-b5-d8.client.student.harvard.edu
+              pts/0      2945    8 DEAD_PROCESS     1264613374 [Jan 27 12:29:34]
+chang2   ts/0 pts/0      3838    7 USER_PROCESS     1264615677 [Jan 27 13:07:57]dhcp-0059529427-b6-15.client.student.harvard.edu
+lfduarte ts/3 pts/3      3871    7 USER_PROCESS     1264615707 [Jan 27 13:08:27]dhcp-0059525204-8b-d6.client.student.harvard.edu
+              pts/0      3838    8 DEAD_PROCESS     1264615756 [Jan 27 13:09:16]
+chang2   ts/0 pts/0      4296    7 USER_PROCESS     1264616365 [Jan 27 13:19:25]dhcp-0059529427-b6-15.client.student.harvard.edu
+              pts/0      4296    8 DEAD_PROCESS     1264616394 [Jan 27 13:19:54]
+kcorrea  ts/0 pts/0      4509    7 USER_PROCESS     1264617711 [Jan 27 13:41:51]ls04.fas.harvard.edu
+lcardar  s/14 pts/14     4505    7 USER_PROCESS     1264617784 [Jan 27 13:43:04]host232-213-dynamic.6-87-r.retail.telecomitalia.it
+              pts/14     4505    8 DEAD_PROCESS     1264618053 [Jan 27 13:47:33]
+              pts/3      3871    8 DEAD_PROCESS     1264618348 [Jan 27 13:52:28]
+ekruse   ts/3 pts/3      4988    7 USER_PROCESS     1264618856 [Jan 27 14:00:56]dhcp-0019812566-49-27.client.student.harvard.edu
+              pts/0      4509    8 DEAD_PROCESS     1264618979 [Jan 27 14:02:59]
+laakso   ts/0 pts/0      5041    7 USER_PROCESS     1264619087 [Jan 27 14:04:47]dhcp-0020232925-54-ef.client.student.harvard.edu
+lib215   s/14 pts/14     5081    7 USER_PROCESS     1264619187 [Jan 27 14:06:27]static-68-162-220-185.bos.east.verizon.net
+jhansbr  s/19 pts/19     5221    7 USER_PROCESS     1264619414 [Jan 27 14:10:14]dhcp-0059526637-5b-99.client.student.harvard.edu
+libe50b  s/21 pts/21     5258    7 USER_PROCESS     1264619456 [Jan 27 14:10:56]1story-vpn-gw.dce.harvard.edu
+kleong   s/22 pts/22     5299    7 USER_PROCESS     1264619520 [Jan 27 14:12:00]140.247.82.129
+molay    s/23 pts/23     5666    7 USER_PROCESS     1264619579 [Jan 27 14:12:59]ice4.fas.harvard.edu
+nbrown   s/24 pts/24     5722    7 USER_PROCESS     1264619719 [Jan 27 14:15:19]dhcp-0059168541-5c-e0.client.student.harvard.edu
+              pts/24     5722    8 DEAD_PROCESS     1264619990 [Jan 27 14:19:50]
+nbrown   s/24 pts/24     5840    7 USER_PROCESS     1264620303 [Jan 27 14:25:03]dhcp-0059168541-5c-e0.client.student.harvard.edu
+              pts/24     5840    8 DEAD_PROCESS     1264620318 [Jan 27 14:25:18]
+              pts/19     5221    8 DEAD_PROCESS     1264620415 [Jan 27 14:26:55]
+jhansbr  s/19 pts/19     5954    7 USER_PROCESS     1264620915 [Jan 27 14:35:15]dhcp-0059526637-5b-99.client.student.harvard.edu
+              pts/23     5666    8 DEAD_PROCESS     1264620935 [Jan 27 14:35:35]
+              pts/14     5081    8 DEAD_PROCESS     1264621447 [Jan 27 14:44:07]
+              pts/19     5954    8 DEAD_PROCESS     1264621517 [Jan 27 14:45:17]
+molay    s/14 pts/14     6381    7 USER_PROCESS     1264621529 [Jan 27 14:45:29]static-68-162-220-185.bos.east.verizon.net
+eps5     s/19 pts/19     6451    7 USER_PROCESS     1264621810 [Jan 27 14:50:10]dhcp-0000096328-f6-d9.client.student.harvard.edu
+nbrown   s/23 pts/23     6551    7 USER_PROCESS     1264622281 [Jan 27 14:58:01]dhcp-0059168541-5c-e0.client.student.harvard.edu
+              pts/23     6551    8 DEAD_PROCESS     1264622362 [Jan 27 14:59:22]
+nbrown   s/23 pts/23     6601    7 USER_PROCESS     1264622384 [Jan 27 14:59:44]dhcp-0059168541-5c-e0.client.student.harvard.edu
+              pts/23     6601    8 DEAD_PROCESS     1264622578 [Jan 27 15:02:58]
+bowill   s/23 pts/23     6718    7 USER_PROCESS     1264623026 [Jan 27 15:10:26]wirefire.akamai.com
+              pts/23     6718    8 DEAD_PROCESS     1264623029 [Jan 27 15:10:29]
+dbragg   s/23 pts/23     6782    7 USER_PROCESS     1264623054 [Jan 27 15:10:54]dhcp-0000053790-75-3a.client.student.harvard.edu
+dbragg   s/24 pts/24     6816    7 USER_PROCESS     1264623074 [Jan 27 15:11:14]dhcp-0000053790-75-3a.client.student.harvard.edu
+dbragg   s/25 pts/25     7224    7 USER_PROCESS     1264623566 [Jan 27 15:19:26]dhcp-0000053790-75-3a.client.student.harvard.edu
+              pts/3      4988    8 DEAD_PROCESS     1264624663 [Jan 27 15:37:43]
+              pts/22     5299    8 DEAD_PROCESS     1264625083 [Jan 27 15:44:43]
+crichton ts/3 pts/3      7838    7 USER_PROCESS     1264625401 [Jan 27 15:50:01]dhcp-0019787359-f3-68.client.student.harvard.edu
+              pts/3      7838    8 DEAD_PROCESS     1264626131 [Jan 27 16:02:11]
+crichton ts/3 pts/3      7991    7 USER_PROCESS     1264626416 [Jan 27 16:06:56]ws20.fas.harvard.edu
+esoliman s/22 pts/22     8098    7 USER_PROCESS     1264626609 [Jan 27 16:10:09]dhcp-0019782668-04-43.client.student.harvard.edu
+              pts/14     6381    8 DEAD_PROCESS     1264626628 [Jan 27 16:10:28]
+              pts/22     8098    8 DEAD_PROCESS     1264626710 [Jan 27 16:11:50]
+csteinh  p14  pts/14     8496    7 USER_PROCESS     1264626909 [Jan 27 16:15:09]localhost:11.0
+              pts/19     6451    8 DEAD_PROCESS     1264627065 [Jan 27 16:17:45]
+              pts/21     5258    8 DEAD_PROCESS     1264627507 [Jan 27 16:25:07]
+ekruse   s/19 pts/19     8672    7 USER_PROCESS     1264627755 [Jan 27 16:29:15]dhcp-0019812566-49-27.client.student.harvard.edu
+              pts/0      5041    8 DEAD_PROCESS     1264628597 [Jan 27 16:43:17]
+csteinh  p14  pts/14     8496    8 DEAD_PROCESS     1264628916 [Jan 27 16:48:36]localhost:11.0
+              pts/25     7224    8 DEAD_PROCESS     1264629642 [Jan 27 17:00:42]
+esoliman ts/0 pts/0      9298    7 USER_PROCESS     1264629747 [Jan 27 17:02:27]dhcp-0019782668-04-43.client.student.harvard.edu
+              pts/3      7991    8 DEAD_PROCESS     1264629820 [Jan 27 17:03:40]
+              pts/23     6782    8 DEAD_PROCESS     1264629871 [Jan 27 17:04:31]
+              pts/24     6816    8 DEAD_PROCESS     1264629874 [Jan 27 17:04:34]
+crichton ts/3 pts/3      9365    7 USER_PROCESS     1264630103 [Jan 27 17:08:23]ws20.fas.harvard.edu
+              pts/19     8672    8 DEAD_PROCESS     1264630127 [Jan 27 17:08:47]
+              pts/3      9365    8 DEAD_PROCESS     1264630269 [Jan 27 17:11:09]
+ajain    ts/3 pts/3      9770    7 USER_PROCESS     1264630709 [Jan 27 17:18:29]dhcp-0028210567-2a-24.client.student.harvard.edu
+kim31    s/14 pts/14     9837    7 USER_PROCESS     1264631048 [Jan 27 17:24:08]140.247.71.100
+              pts/0      9298    8 DEAD_PROCESS     1264631606 [Jan 27 17:33:26]
+esoliman ts/0 pts/0      9944    7 USER_PROCESS     1264631620 [Jan 27 17:33:40]dhcp-0019782668-04-43.client.student.harvard.edu
+drumberg s/19 pts/19    10015    7 USER_PROCESS     1264631950 [Jan 27 17:39:10]64.119.145.190
+              pts/14     9837    8 DEAD_PROCESS     1264632297 [Jan 27 17:44:57]
+kcorrea  s/14 pts/14    10446    7 USER_PROCESS     1264632648 [Jan 27 17:50:48]ls04.fas.harvard.edu
+              pts/0      9944    8 DEAD_PROCESS     1264632838 [Jan 27 17:53:58]
+              pts/3      9770    8 DEAD_PROCESS     1264632881 [Jan 27 17:54:41]
+lib215   ts/0 pts/0     11021    7 USER_PROCESS     1264635504 [Jan 27 18:38:24]140.247.4.199
+dbragg   ts/3 pts/3     11574    7 USER_PROCESS     1264636800 [Jan 27 19:00:00]dhcp-0000053790-75-3a.client.student.harvard.edu
+dbragg   s/21 pts/21    11617    7 USER_PROCESS     1264636832 [Jan 27 19:00:32]dhcp-0000053790-75-3a.client.student.harvard.edu
+dbragg   s/22 pts/22    11657    7 USER_PROCESS     1264636863 [Jan 27 19:01:03]dhcp-0000053790-75-3a.client.student.harvard.edu
+phung    s/23 pts/23    12600    7 USER_PROCESS     1264638885 [Jan 27 19:34:45]dhcp-0019893990-a0-8b.client.student.harvard.edu
+              pts/23    12600    8 DEAD_PROCESS     1264638965 [Jan 27 19:36:05]
+              pts/0     11021    8 DEAD_PROCESS     1264639503 [Jan 27 19:45:03]
+lib215   ts/0 pts/0     13086    7 USER_PROCESS     1264639925 [Jan 27 19:52:05]ws20.fas.harvard.edu
+smunyiri s/23 pts/23    13369    7 USER_PROCESS     1264640395 [Jan 27 19:59:55]c-76-118-142-182.hsd1.ma.comcast.net
+              pts/0     13086    8 DEAD_PROCESS     1264642948 [Jan 27 20:42:28]
+hdmello  ts/0 pts/0     14591    7 USER_PROCESS     1264643464 [Jan 27 20:51:04]74.13.115.3
+              pts/0     14591    8 DEAD_PROCESS     1264643550 [Jan 27 20:52:30]
+              pts/23    13369    8 DEAD_PROCESS     1264647355 [Jan 27 21:55:55]
+jshah    ts/0 pts/0     15604    7 USER_PROCESS     1264647456 [Jan 27 21:57:36]dhcp-0000103934-ed-6a.client.student.harvard.edu
+              pts/0     15604    8 DEAD_PROCESS     1264647674 [Jan 27 22:01:14]
+shen2    ts/0 pts/0     15738    7 USER_PROCESS     1264648362 [Jan 27 22:12:42]dhcp-0059487913-06-d6.client.student.harvard.edu
+              pts/0     15738    8 DEAD_PROCESS     1264648668 [Jan 27 22:17:48]
+shen2    ts/0 pts/0     16152    7 USER_PROCESS     1264649379 [Jan 27 22:29:39]dhcp-0059487913-06-d6.client.student.harvard.edu
+yisun    s/23 pts/23    16225    7 USER_PROCESS     1264649815 [Jan 27 22:36:55]dhcp-0000053760-81-6d.client.student.harvard.edu
+              pts/23    16225    8 DEAD_PROCESS     1264649860 [Jan 27 22:37:40]
+cklee    s/23 pts/23    17736    7 USER_PROCESS     1264651648 [Jan 27 23:07:28]dhcp-0037845678-8e-57.client.student.harvard.edu
+              pts/3     11574    8 DEAD_PROCESS     1264651839 [Jan 27 23:10:39]
+              pts/21    11617    8 DEAD_PROCESS     1264651843 [Jan 27 23:10:43]
+              pts/22    11657    8 DEAD_PROCESS     1264651846 [Jan 27 23:10:46]
+              pts/14    10446    8 DEAD_PROCESS     1264652495 [Jan 27 23:21:35]
+              pts/23    17736    8 DEAD_PROCESS     1264652812 [Jan 27 23:26:52]
+ghess    ts/3 pts/3     20750    7 USER_PROCESS     1264654072 [Jan 27 23:47:52]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/3     20750    8 DEAD_PROCESS     1264654105 [Jan 27 23:48:25]
+cklee    ts/3 pts/3     21097    7 USER_PROCESS     1264654425 [Jan 27 23:53:45]dhcp-0037845678-8e-57.client.student.harvard.edu
+cklee    s/14 pts/14    22226    7 USER_PROCESS     1264655539 [Jan 28 00:12:19]dhcp-0037845678-8e-57.client.student.harvard.edu
+awad     s/21 pts/21    23500    7 USER_PROCESS     1264657075 [Jan 28 00:37:55]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+bendeck  s/22 pts/22    23569    7 USER_PROCESS     1264657159 [Jan 28 00:39:19]dhcp-0064189729-47-5c.client.student.harvard.edu
+              pts/22    23569    8 DEAD_PROCESS     1264657197 [Jan 28 00:39:57]
+bendeck  s/22 pts/22    23608    7 USER_PROCESS     1264657199 [Jan 28 00:39:59]dhcp-0064189729-47-5c.client.student.harvard.edu
+              pts/22    23608    8 DEAD_PROCESS     1264657238 [Jan 28 00:40:38]
+bendeck  s/22 pts/22    23650    7 USER_PROCESS     1264657239 [Jan 28 00:40:39]dhcp-0064189729-47-5c.client.student.harvard.edu
+              pts/22    23650    8 DEAD_PROCESS     1264657330 [Jan 28 00:42:10]
+              pts/3     21097    8 DEAD_PROCESS     1264659040 [Jan 28 01:10:40]
+              pts/14    22226    8 DEAD_PROCESS     1264659046 [Jan 28 01:10:46]
+nshah    ts/3 pts/3     25044    7 USER_PROCESS     1264659491 [Jan 28 01:18:11]dhcp-0011023785-63-15.client.student.harvard.edu
+              pts/3     25044    8 DEAD_PROCESS     1264659546 [Jan 28 01:19:06]
+              pts/21    23500    8 DEAD_PROCESS     1264660987 [Jan 28 01:43:07]
+kleong   ts/3 pts/3     25881    7 USER_PROCESS     1264661427 [Jan 28 01:50:27]pool-71-174-127-14.bstnma.east.verizon.net
+              pts/3     25881    8 DEAD_PROCESS     1264661513 [Jan 28 01:51:53]
+kleong   ts/3 pts/3     25953    7 USER_PROCESS     1264661578 [Jan 28 01:52:58]pool-71-174-127-14.bstnma.east.verizon.net
+              pts/0     16152    8 DEAD_PROCESS     1264661669 [Jan 28 01:54:29]
+              pts/3     25953    8 DEAD_PROCESS     1264662541 [Jan 28 02:09:01]
+cklee    ts/0 pts/0     31844    7 USER_PROCESS     1264684201 [Jan 28 08:10:01]dhcp-0037845678-8e-57.client.student.harvard.edu
+girash   ts/3 pts/3     31900    7 USER_PROCESS     1264684440 [Jan 28 08:14:00]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/3     31900    8 DEAD_PROCESS     1264684555 [Jan 28 08:15:55]
+ghess    ts/3 pts/3       367    7 USER_PROCESS     1264687216 [Jan 28 09:00:16]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/3       367    8 DEAD_PROCESS     1264687237 [Jan 28 09:00:37]
+              pts/0     31844    8 DEAD_PROCESS     1264688906 [Jan 28 09:28:26]
+              pts/19    10015    8 DEAD_PROCESS     1264689114 [Jan 28 09:31:54]
+wcnewell ts/0 pts/0      1547    7 USER_PROCESS     1264691545 [Jan 28 10:12:25]dhcp-0001796856-b4-55.client.student.harvard.edu
+fzembow  ts/3 pts/3      1688    7 USER_PROCESS     1264691999 [Jan 28 10:19:59]dhcp-0020013287-db-00.client.student.harvard.edu
+              pts/3      1688    8 DEAD_PROCESS     1264692019 [Jan 28 10:20:19]
+wcnewell ts/3 pts/3      2041    7 USER_PROCESS     1264692282 [Jan 28 10:24:42]dhcp-0001796856-b4-55.client.student.harvard.edu
+yzhu     s/14 pts/14     2105    7 USER_PROCESS     1264692519 [Jan 28 10:28:39]116.233.157.91
+kleong   s/19 pts/19     2205    7 USER_PROCESS     1264692874 [Jan 28 10:34:34]96.237.133.147
+ngupta   s/21 pts/21     2289    7 USER_PROCESS     1264693257 [Jan 28 10:40:57]dhcp-0017724422-b3-5e.client.student.harvard.edu
+              pts/0      1547    8 DEAD_PROCESS     1264693749 [Jan 28 10:49:09]
+sincock  ts/0 pts/0      2387    7 USER_PROCESS     1264693971 [Jan 28 10:52:51]dhcp-0077987230-af-93.client.fas.harvard.edu
+              pts/0      2387    8 DEAD_PROCESS     1264694037 [Jan 28 10:53:57]
+              pts/19     2205    8 DEAD_PROCESS     1264694066 [Jan 28 10:54:26]
+              pts/3      2041    8 DEAD_PROCESS     1264694069 [Jan 28 10:54:29]
+wcnewell ts/0 pts/0      2725    7 USER_PROCESS     1264694078 [Jan 28 10:54:38]dhcp-0001796856-b4-55.client.student.harvard.edu
+              pts/0      2725    8 DEAD_PROCESS     1264694348 [Jan 28 10:59:08]
+              pts/14     2105    8 DEAD_PROCESS     1264696677 [Jan 28 11:37:57]
+kleong   ts/0 pts/0      3786    7 USER_PROCESS     1264697847 [Jan 28 11:57:27]140.247.82.129
+laakso   ts/3 pts/3      3932    7 USER_PROCESS     1264698500 [Jan 28 12:08:20]dhcp-0020232925-54-ef.client.student.harvard.edu
+              pts/3      3932    8 DEAD_PROCESS     1264698514 [Jan 28 12:08:34]
+              pts/0      3786    8 DEAD_PROCESS     1264699224 [Jan 28 12:20:24]
+lib215   ts/0 pts/0      4507    7 USER_PROCESS     1264700454 [Jan 28 12:40:54]static-68-162-220-185.bos.east.verizon.net
+              pts/0      4507    8 DEAD_PROCESS     1264700792 [Jan 28 12:46:32]
+dzhu     ts/0 pts/0      5202    7 USER_PROCESS     1264702236 [Jan 28 13:10:36]dhcp-0059801237-68-10.client.student.harvard.edu
+ekruse   ts/3 pts/3      5248    7 USER_PROCESS     1264702255 [Jan 28 13:10:55]dhcp-0019812566-49-27.client.student.harvard.edu
+shimberg s/14 pts/14     5293    7 USER_PROCESS     1264702292 [Jan 28 13:11:32]dhcp-0019802698-89-fc.client.student.harvard.edu
+              pts/3      5248    8 DEAD_PROCESS     1264702362 [Jan 28 13:12:42]
+molay    ts/3 pts/3      5453    7 USER_PROCESS     1264702559 [Jan 28 13:15:59]static-68-162-220-185.bos.east.verizon.net
+cscie268 s/19 pts/19     5578    7 USER_PROCESS     1264702775 [Jan 28 13:19:35]dhcp-0004560306-53-73.client.student.harvard.edu
+zhou     s/22 pts/22     5616    7 USER_PROCESS     1264702813 [Jan 28 13:20:13]dhcp-0019428617-1b-f7.client.student.harvard.edu
+kleong   s/23 pts/23     5827    7 USER_PROCESS     1264703023 [Jan 28 13:23:43]140.247.82.129
+fritz    s/24 pts/24     6165    7 USER_PROCESS     1264703087 [Jan 28 13:24:47]dhcp-0019131404-35-59.client.student.harvard.edu
+zhou     s/25 pts/25     6385    7 USER_PROCESS     1264703977 [Jan 28 13:39:37]dhcp-0019428617-1b-f7.client.student.harvard.edu
+              pts/22     5616    8 DEAD_PROCESS     1264703990 [Jan 28 13:39:50]
+              pts/14     5293    8 DEAD_PROCESS     1264704719 [Jan 28 13:51:59]
+shimberg s/14 pts/14     6575    7 USER_PROCESS     1264704748 [Jan 28 13:52:28]dhcp-0019802698-89-fc.client.student.harvard.edu
+              pts/0      5202    8 DEAD_PROCESS     1264705041 [Jan 28 13:57:21]
+dzhu     ts/0 pts/0      6963    7 USER_PROCESS     1264705132 [Jan 28 13:58:52]dhcp-0059801237-68-10.client.student.harvard.edu
+              pts/19     5578    8 DEAD_PROCESS     1264705179 [Jan 28 13:59:39]
+jtgreen  s/19 pts/19     7159    7 USER_PROCESS     1264705606 [Jan 28 14:06:46]dhcp-0045066170-f2-2a.client.student.harvard.edu
+ekruse   s/27 pts/27     7197    7 USER_PROCESS     1264705642 [Jan 28 14:07:22]dhcp-0019812566-49-27.client.student.harvard.edu
+              pts/0      6963    8 DEAD_PROCESS     1264706172 [Jan 28 14:16:12]
+dzhu     ts/0 pts/0      7347    7 USER_PROCESS     1264706241 [Jan 28 14:17:21]dhcp-0059801237-68-10.client.student.harvard.edu
+predescu s/22 pts/22     7412    7 USER_PROCESS     1264706339 [Jan 28 14:18:59]dhcp-0050227272-15-32.client.student.harvard.edu
+              pts/0      7347    8 DEAD_PROCESS     1264706519 [Jan 28 14:21:59]
+              pts/22     7412    8 DEAD_PROCESS     1264706856 [Jan 28 14:27:36]
+predescu ts/0 pts/0      7841    7 USER_PROCESS     1264706921 [Jan 28 14:28:41]dhcp-0050227272-15-32.client.student.harvard.edu
+              pts/27     7197    8 DEAD_PROCESS     1264706958 [Jan 28 14:29:18]
+              pts/14     6575    8 DEAD_PROCESS     1264707846 [Jan 28 14:44:06]
+              pts/19     7159    8 DEAD_PROCESS     1264707852 [Jan 28 14:44:12]
+              pts/25     6385    8 DEAD_PROCESS     1264707856 [Jan 28 14:44:16]
+              pts/24     6165    8 DEAD_PROCESS     1264707965 [Jan 28 14:46:05]
+              pts/0      7841    8 DEAD_PROCESS     1264708018 [Jan 28 14:46:58]
+              pts/23     5827    8 DEAD_PROCESS     1264708411 [Jan 28 14:53:31]
+kleong   ts/0 pts/0      8511    7 USER_PROCESS     1264708966 [Jan 28 15:02:46]140.247.82.129
+              pts/3      5453    8 DEAD_PROCESS     1264709036 [Jan 28 15:03:56]
+lib215   ts/3 pts/3      8591    7 USER_PROCESS     1264709224 [Jan 28 15:07:04]static-68-162-220-185.bos.east.verizon.net
+jtsai    s/14 pts/14     8702    7 USER_PROCESS     1264709620 [Jan 28 15:13:40]140.247.83.112
+              pts/14     8702    8 DEAD_PROCESS     1264709674 [Jan 28 15:14:34]
+              pts/3      8591    8 DEAD_PROCESS     1264711868 [Jan 28 15:51:08]
+kleong   ts/3 pts/3      9386    7 USER_PROCESS     1264711883 [Jan 28 15:51:23]140.247.82.129
+              pts/3      9386    8 DEAD_PROCESS     1264712088 [Jan 28 15:54:48]
+              pts/21     2289    8 DEAD_PROCESS     1264715538 [Jan 28 16:52:18]
+benho    ts/3 pts/3     11031    7 USER_PROCESS     1264716840 [Jan 28 17:14:00]140.247.196.105
+trott    s/14 pts/14    11056    7 USER_PROCESS     1264716843 [Jan 28 17:14:03]ls04.fas.harvard.edu
+              pts/14    11056    8 DEAD_PROCESS     1264716855 [Jan 28 17:14:15]
+mbwong   s/14 pts/14    11153    7 USER_PROCESS     1264717068 [Jan 28 17:17:48]dhcp-0020521077-14-ea.client.student.harvard.edu
+              pts/14    11153    8 DEAD_PROCESS     1264717137 [Jan 28 17:18:57]
+              pts/3     11031    8 DEAD_PROCESS     1264717223 [Jan 28 17:20:23]
+              pts/20      934    8 DEAD_PROCESS     1264717426 [Jan 28 17:23:46]
+mbwong   ts/3 pts/3     11650    7 USER_PROCESS     1264718443 [Jan 28 17:40:43]dhcp-0020521077-14-ea.client.student.harvard.edu
+              pts/0      8511    8 DEAD_PROCESS     1264719016 [Jan 28 17:50:16]
+girash   ts/0 pts/0     12664    7 USER_PROCESS     1264721372 [Jan 28 18:29:32]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     12664    8 DEAD_PROCESS     1264722004 [Jan 28 18:40:04]
+girash   ts/0 pts/0     12872    7 USER_PROCESS     1264722317 [Jan 28 18:45:17]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     12872    8 DEAD_PROCESS     1264722322 [Jan 28 18:45:22]
+cpillot  ts/0 pts/0     13314    7 USER_PROCESS     1264723138 [Jan 28 18:58:58]sc1-ksk-m08.fas.harvard.edu
+              pts/0     13314    8 DEAD_PROCESS     1264723223 [Jan 28 19:00:23]
+bolotin  ts/0 pts/0     13773    7 USER_PROCESS     1264724121 [Jan 28 19:15:21]140.247.196.65
+girash   s/14 pts/14    15755    7 USER_PROCESS     1264727007 [Jan 28 20:03:27]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/14    15755    8 DEAD_PROCESS     1264727304 [Jan 28 20:08:24]
+girash   s/14 pts/14    15953    7 USER_PROCESS     1264727422 [Jan 28 20:10:22]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/0     13773    8 DEAD_PROCESS     1264727581 [Jan 28 20:13:01]
+yzhu     ts/0 pts/0     16010    7 USER_PROCESS     1264727716 [Jan 28 20:15:16]116.233.157.91
+              pts/14    15953    8 DEAD_PROCESS     1264728635 [Jan 28 20:30:35]
+              pts/0     16010    8 DEAD_PROCESS     1264728773 [Jan 28 20:32:53]
+chang6   ts/0 pts/0     16495    7 USER_PROCESS     1264728975 [Jan 28 20:36:15]dhcp-0077941948-ae-11.client.student.harvard.edu
+              pts/3     11650    8 DEAD_PROCESS     1264730430 [Jan 28 21:00:30]
+              pts/0     16495    8 DEAD_PROCESS     1264730647 [Jan 28 21:04:07]
+chang6   ts/0 pts/0     17211    7 USER_PROCESS     1264730992 [Jan 28 21:09:52]dhcp-0077941948-ae-11.client.student.harvard.edu
+              pts/0     17211    8 DEAD_PROCESS     1264731053 [Jan 28 21:10:53]
+dzhu     ts/0 pts/0     17266    7 USER_PROCESS     1264731066 [Jan 28 21:11:06]dhcp-0060118427-77-5b.client.student.harvard.edu
+              pts/0     17266    8 DEAD_PROCESS     1264731085 [Jan 28 21:11:25]
+dzhu     ts/0 pts/0     18248    7 USER_PROCESS     1264732253 [Jan 28 21:30:53]dhcp-0060118427-77-5b.client.student.harvard.edu
+              pts/0     18248    8 DEAD_PROCESS     1264732273 [Jan 28 21:31:13]
+dzhu     ts/0 pts/0     18828    7 USER_PROCESS     1264732958 [Jan 28 21:42:38]dhcp-0060118427-77-5b.client.student.harvard.edu
+nshah    ts/3 pts/3     19224    7 USER_PROCESS     1264733337 [Jan 28 21:48:57]dhcp-0011023785-63-15.client.student.harvard.edu
+              pts/3     19224    8 DEAD_PROCESS     1264733458 [Jan 28 21:50:58]
+girash   ts/3 pts/3     19378    7 USER_PROCESS     1264733563 [Jan 28 21:52:43]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/3     19378    8 DEAD_PROCESS     1264733577 [Jan 28 21:52:57]
+bendeck  ts/3 pts/3     20118    7 USER_PROCESS     1264734347 [Jan 28 22:05:47]140.247.131.96
+              pts/3     20118    8 DEAD_PROCESS     1264734425 [Jan 28 22:07:05]
+girash   ts/3 pts/3     20338    7 USER_PROCESS     1264734720 [Jan 28 22:12:00]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+lacarval s/14 pts/14    20518    7 USER_PROCESS     1264735013 [Jan 28 22:16:53]dhcp-0020169528-e6-27.client.student.harvard.edu
+              pts/0     18828    8 DEAD_PROCESS     1264735194 [Jan 28 22:19:54]
+dzhu     ts/0 pts/0     20742    7 USER_PROCESS     1264735196 [Jan 28 22:19:56]dhcp-0060118427-77-5b.client.student.harvard.edu
+              pts/0     20742    8 DEAD_PROCESS     1264735331 [Jan 28 22:22:11]
+              pts/3     20338    8 DEAD_PROCESS     1264736065 [Jan 28 22:34:25]
+bendeck  ts/0 pts/0     23082    7 USER_PROCESS     1264737488 [Jan 28 22:58:08]140.247.131.96
+              pts/0     23082    8 DEAD_PROCESS     1264737489 [Jan 28 22:58:09]
+              pts/14    20518    8 DEAD_PROCESS     1264738012 [Jan 28 23:06:52]
+dmuhlest ts/0 pts/0     25036    7 USER_PROCESS     1264740737 [Jan 28 23:52:17]dhcp-0059487840-49-1c.client.student.harvard.edu
+              pts/0     25036    8 DEAD_PROCESS     1264740742 [Jan 28 23:52:22]
+dmuhlest ts/0 pts/0     25121    7 USER_PROCESS     1264740810 [Jan 28 23:53:30]dhcp-0059487840-49-1c.client.student.harvard.edu
+              pts/0     25121    8 DEAD_PROCESS     1264740936 [Jan 28 23:55:36]
+dmuhlest ts/0 pts/0     25968    7 USER_PROCESS     1264741884 [Jan 29 00:11:24]dhcp-0059487840-49-1c.client.student.harvard.edu
+kleong   ts/3 pts/3     26217    7 USER_PROCESS     1264742879 [Jan 29 00:27:59]pool-71-184-191-215.bstnma.east.verizon.net
+yzhu     s/14 pts/14    26718    7 USER_PROCESS     1264743852 [Jan 29 00:44:12]116.233.157.91
+              pts/0     25968    8 DEAD_PROCESS     1264743888 [Jan 29 00:44:48]
+dmuhlest ts/0 pts/0     26768    7 USER_PROCESS     1264743937 [Jan 29 00:45:37]dhcp-0059487840-49-1c.client.student.harvard.edu
+              pts/0     26768    8 DEAD_PROCESS     1264744003 [Jan 29 00:46:43]
+bowill   ts/0 pts/0     27374    7 USER_PROCESS     1264745645 [Jan 29 01:14:05]m220f36d0.tmodns.net
+              pts/0     27374    8 DEAD_PROCESS     1264745672 [Jan 29 01:14:32]
+              pts/3     26217    8 DEAD_PROCESS     1264746663 [Jan 29 01:31:03]
+kleong   ts/0 pts/0     27911    7 USER_PROCESS     1264747150 [Jan 29 01:39:10]pool-71-184-184-134.bstnma.east.verizon.net
+              pts/0     27911    8 DEAD_PROCESS     1264748112 [Jan 29 01:55:12]
+              pts/14    26718    8 DEAD_PROCESS     1264752395 [Jan 29 03:06:35]
+kintzing ts/0 pts/0      2069    7 USER_PROCESS     1264770349 [Jan 29 08:05:49]ksge66.harvard.edu
+              pts/0      2069    8 DEAD_PROCESS     1264770454 [Jan 29 08:07:34]
+kintzing ts/0 pts/0      2126    7 USER_PROCESS     1264770477 [Jan 29 08:07:57]ksge66.harvard.edu
+girash   s/14 pts/14     2235    7 USER_PROCESS     1264771021 [Jan 29 08:17:01]216-15-114-41.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/14     2235    8 DEAD_PROCESS     1264771096 [Jan 29 08:18:16]
+              pts/0      2126    8 DEAD_PROCESS     1264772939 [Jan 29 08:48:59]
+ghess    ts/0 pts/0      2828    7 USER_PROCESS     1264773085 [Jan 29 08:51:25]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/0      2828    8 DEAD_PROCESS     1264773164 [Jan 29 08:52:44]
+kintzing ts/0 pts/0      2888    7 USER_PROCESS     1264773276 [Jan 29 08:54:36]ksge66.harvard.edu
+              pts/0      2888    8 DEAD_PROCESS     1264773282 [Jan 29 08:54:42]
+kleong   ts/0 pts/0      3415    7 USER_PROCESS     1264775079 [Jan 29 09:24:39]96.237.134.231
+kintzing ts/3 pts/3      3493    7 USER_PROCESS     1264775339 [Jan 29 09:28:59]ksge66.harvard.edu
+              pts/3      3493    8 DEAD_PROCESS     1264775369 [Jan 29 09:29:29]
+lib215   ts/3 pts/3      3973    7 USER_PROCESS     1264776628 [Jan 29 09:50:28]static-68-162-220-185.bos.east.verizon.net
+              pts/3      3973    8 DEAD_PROCESS     1264778232 [Jan 29 10:17:12]
+              pts/0      3415    8 DEAD_PROCESS     1264779926 [Jan 29 10:45:26]
+nishihar ts/0 pts/0      5120    7 USER_PROCESS     1264780086 [Jan 29 10:48:06]ws16.fas.harvard.edu
+              pts/0      5120    8 DEAD_PROCESS     1264780097 [Jan 29 10:48:17]
+lcardar  ts/0 pts/0      5154    7 USER_PROCESS     1264780100 [Jan 29 10:48:20]host96-228-dynamic.3-87-r.retail.telecomitalia.it
+              pts/0      5154    8 DEAD_PROCESS     1264781300 [Jan 29 11:08:20]
+nsarnath ts/0 pts/0      6141    7 USER_PROCESS     1264783033 [Jan 29 11:37:13]dhcp-0019893869-ad-6d.client.student.harvard.edu
+hswill   ts/3 pts/3      6822    7 USER_PROCESS     1264786158 [Jan 29 12:29:18]c-76-118-37-147.hsd1.ma.comcast.net
+tobio    s/14 pts/14     7238    7 USER_PROCESS     1264786853 [Jan 29 12:40:53]ksge151.harvard.edu
+              pts/14     7238    8 DEAD_PROCESS     1264786991 [Jan 29 12:43:11]
+sef      s/14 pts/14     7390    7 USER_PROCESS     1264787928 [Jan 29 12:58:48]63.174.212.190
+tcai     s/19 pts/19     7954    7 USER_PROCESS     1264789329 [Jan 29 13:22:09]ws05.fas.harvard.edu
+              pts/14     7390    8 DEAD_PROCESS     1264790224 [Jan 29 13:37:04]
+              pts/0      6141    8 DEAD_PROCESS     1264790540 [Jan 29 13:42:20]
+              pts/19     7954    8 DEAD_PROCESS     1264791734 [Jan 29 14:02:14]
+kleong   ts/0 pts/0      9147    7 USER_PROCESS     1264793055 [Jan 29 14:24:15]140.247.82.129
+              pts/3      6822    8 DEAD_PROCESS     1264793483 [Jan 29 14:31:23]
+dwatts   ts/3 pts/3      9766    7 USER_PROCESS     1264794782 [Jan 29 14:53:02]sc2-229-m18.fas.harvard.edu
+              pts/3      9766    8 DEAD_PROCESS     1264796964 [Jan 29 15:29:24]
+              pts/0      9147    8 DEAD_PROCESS     1264801922 [Jan 29 16:52:02]
+jzimmerm ts/0 pts/0     11990    7 USER_PROCESS     1264802150 [Jan 29 16:55:50]dhcp-0068711153-2d-cc.client.student.harvard.edu
+              pts/0     11990    8 DEAD_PROCESS     1264802159 [Jan 29 16:55:59]
+molay    ts/0 pts/0     13457    7 USER_PROCESS     1264807037 [Jan 29 18:17:17]static-68-162-220-185.bos.east.verizon.net
+              pts/0     13457    8 DEAD_PROCESS     1264807047 [Jan 29 18:17:27]
+dsun     ts/0 pts/0     13505    7 USER_PROCESS     1264807360 [Jan 29 18:22:40]dhcp-0000053626-fd-f5.client.student.harvard.edu
+              pts/0     13505    8 DEAD_PROCESS     1264807650 [Jan 29 18:27:30]
+danz     ts/0 pts/0     14975    7 USER_PROCESS     1264812420 [Jan 29 19:47:00]dhcp-0069624429-a7-43.client.student.harvard.edu
+girash   ts/3 pts/3     15482    7 USER_PROCESS     1264813813 [Jan 29 20:10:13]216-15-114-41.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/3     15482    8 DEAD_PROCESS     1264814538 [Jan 29 20:22:18]
+jzimmerm ts/3 pts/3     16594    7 USER_PROCESS     1264815870 [Jan 29 20:44:30]dhcp-0068711153-2d-cc.client.student.harvard.edu
+              pts/3     16594    8 DEAD_PROCESS     1264816960 [Jan 29 21:02:40]
+smunyiri ts/3 pts/3     17767    7 USER_PROCESS     1264817288 [Jan 29 21:08:08]c-76-118-142-182.hsd1.ma.comcast.net
+parthas  s/14 pts/14    20578    7 USER_PROCESS     1264820310 [Jan 29 21:58:30]dhcp-0020516548-0c-fa.client.student.harvard.edu
+danz     s/19 pts/19    20689    7 USER_PROCESS     1264821014 [Jan 29 22:10:14]dhcp-0069624429-a7-43.client.student.harvard.edu
+ekogan   s/20 pts/20    21083    7 USER_PROCESS     1264821636 [Jan 29 22:20:36]dhcp-0019924607-04-69.client.student.harvard.edu
+ekogan   s/21 pts/21    21145    7 USER_PROCESS     1264821677 [Jan 29 22:21:17]ice4.fas.harvard.edu
+xzhu     s/22 pts/22    21208    7 USER_PROCESS     1264821791 [Jan 29 22:23:11]dhcp-0000103350-d0-bb.client.student.harvard.edu
+              pts/20    21083    8 DEAD_PROCESS     1264821837 [Jan 29 22:23:57]
+              pts/21    21145    8 DEAD_PROCESS     1264821837 [Jan 29 22:23:57]
+              pts/22    21208    8 DEAD_PROCESS     1264821865 [Jan 29 22:24:25]
+xzhu     s/20 pts/20    21293    7 USER_PROCESS     1264822042 [Jan 29 22:27:22]dhcp-0000103350-d0-bb.client.student.harvard.edu
+girash   s/21 pts/21    21387    7 USER_PROCESS     1264822520 [Jan 29 22:35:20]216-15-114-41.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/21    21387    8 DEAD_PROCESS     1264822523 [Jan 29 22:35:23]
+              pts/20    21293    8 DEAD_PROCESS     1264824463 [Jan 29 23:07:43]
+awad     s/20 pts/20    22412    7 USER_PROCESS     1264825996 [Jan 29 23:33:16]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+kleong   s/21 pts/21    23493    7 USER_PROCESS     1264829369 [Jan 30 00:29:29]pool-98-118-16-90.bstnma.east.verizon.net
+              pts/0     14975    8 DEAD_PROCESS     1264830600 [Jan 30 00:50:00]
+              pts/19    20689    8 DEAD_PROCESS     1264830607 [Jan 30 00:50:07]
+zhang32  ts/0 pts/0     24048    7 USER_PROCESS     1264830963 [Jan 30 00:56:03]dhcp-0077720857-81-20.client.student.harvard.edu
+              pts/0     24048    8 DEAD_PROCESS     1264831032 [Jan 30 00:57:12]
+              pts/20    22412    8 DEAD_PROCESS     1264833439 [Jan 30 01:37:19]
+dzhu     ts/0 pts/0     25223    7 USER_PROCESS     1264835324 [Jan 30 02:08:44]dhcp-0060118427-77-5b.client.student.harvard.edu
+              pts/0     25223    8 DEAD_PROCESS     1264836194 [Jan 30 02:23:14]
+smunyiri ts/0 pts/0     26381    7 USER_PROCESS     1264838733 [Jan 30 03:05:33]c-76-118-142-182.hsd1.ma.comcast.net
+smunyiri s/19 pts/19    26440    7 USER_PROCESS     1264838972 [Jan 30 03:09:32]c-76-118-142-182.hsd1.ma.comcast.net
+              pts/3     17767    8 DEAD_PROCESS     1264839372 [Jan 30 03:16:12]
+              pts/21    23493    8 DEAD_PROCESS     1264841529 [Jan 30 03:52:09]
+smunyiri ts/3 pts/3     29068    7 USER_PROCESS     1264846502 [Jan 30 05:15:02]c-76-118-142-182.hsd1.ma.comcast.net
+yzhu     s/20 pts/20    30681    7 USER_PROCESS     1264852138 [Jan 30 06:48:58]116.233.157.91
+              pts/20    30681    8 DEAD_PROCESS     1264855253 [Jan 30 07:40:53]
+girash   s/20 pts/20    32545    7 USER_PROCESS     1264859048 [Jan 30 08:44:08]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/20    32545    8 DEAD_PROCESS     1264859051 [Jan 30 08:44:11]
+girash   s/20 pts/20      436    7 USER_PROCESS     1264859478 [Jan 30 08:51:18]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/20      436    8 DEAD_PROCESS     1264859480 [Jan 30 08:51:20]
+aabes    s/20 pts/20     1557    7 USER_PROCESS     1264863943 [Jan 30 10:05:43]64.241.37.140
+rsinha   s/21 pts/21     1677    7 USER_PROCESS     1264864319 [Jan 30 10:11:59]c-76-118-22-151.hsd1.ma.comcast.net
+kleong   s/22 pts/22     2155    7 USER_PROCESS     1264865674 [Jan 30 10:34:34]96.237.133.188
+              pts/21     1677    8 DEAD_PROCESS     1264866000 [Jan 30 10:40:00]
+tjau     s/21 pts/21     2313    7 USER_PROCESS     1264866323 [Jan 30 10:45:23]140.247.26.61
+              pts/21     2313    8 DEAD_PROCESS     1264866346 [Jan 30 10:45:46]
+ikamoun  s/21 pts/21     2774    7 USER_PROCESS     1264867309 [Jan 30 11:01:49]dhcp-0000053789-af-90.client.student.harvard.edu
+              pts/21     2774    8 DEAD_PROCESS     1264867390 [Jan 30 11:03:10]
+              pts/22     2155    8 DEAD_PROCESS     1264867578 [Jan 30 11:06:18]
+kleong   s/21 pts/21     2952    7 USER_PROCESS     1264868051 [Jan 30 11:14:11]pool-71-174-134-179.bstnma.east.verizon.net
+kleong   s/22 pts/22     3510    7 USER_PROCESS     1264869892 [Jan 30 11:44:52]pool-71-174-134-179.bstnma.east.verizon.net
+              pts/22     3510    8 DEAD_PROCESS     1264869898 [Jan 30 11:44:58]
+              pts/14    20578    8 DEAD_PROCESS     1264870117 [Jan 30 11:48:37]
+              pts/20     1557    8 DEAD_PROCESS     1264871477 [Jan 30 12:11:17]
+              pts/21     2952    8 DEAD_PROCESS     1264874066 [Jan 30 12:54:26]
+kopparty s/14 pts/14     5009    7 USER_PROCESS     1264874116 [Jan 30 12:55:16]dhcp-0078413244-29-3f.client.student.harvard.edu
+              pts/14     5009    8 DEAD_PROCESS     1264876504 [Jan 30 13:35:04]
+kleong   s/14 pts/14     5790    7 USER_PROCESS     1264877278 [Jan 30 13:47:58]140.247.82.129
+kleong   s/20 pts/20     6249    7 USER_PROCESS     1264878298 [Jan 30 14:04:58]140.247.82.129
+              pts/20     6249    8 DEAD_PROCESS     1264878454 [Jan 30 14:07:34]
+shimberg s/20 pts/20     6370    7 USER_PROCESS     1264878464 [Jan 30 14:07:44]dhcp-0019802698-89-fc.client.student.harvard.edu
+lib215   s/21 pts/21     6472    7 USER_PROCESS     1264878835 [Jan 30 14:13:55]pool-96-252-63-87.bstnma.fios.verizon.net
+tzou     s/22 pts/22     6797    7 USER_PROCESS     1264879115 [Jan 30 14:18:35]dhcp-0060906455-bb-de.client.student.harvard.edu
+hritchie s/23 pts/23     6967    7 USER_PROCESS     1264879744 [Jan 30 14:29:04]209-6-52-45.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+              pts/22     6797    8 DEAD_PROCESS     1264879815 [Jan 30 14:30:15]
+              pts/23     6967    8 DEAD_PROCESS     1264879970 [Jan 30 14:32:50]
+hritchie s/22 pts/22     7110    7 USER_PROCESS     1264880291 [Jan 30 14:38:11]209-6-52-45.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+girash   s/23 pts/23     7591    7 USER_PROCESS     1264881296 [Jan 30 14:54:56]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/22     7110    8 DEAD_PROCESS     1264882191 [Jan 30 15:09:51]
+              pts/14     5790    8 DEAD_PROCESS     1264882514 [Jan 30 15:15:14]
+skanev   s/14 pts/14     7905    7 USER_PROCESS     1264882727 [Jan 30 15:18:47]dhcp-0019458972-1c-2f.client.student.harvard.edu
+alin     s/22 pts/22     8539    7 USER_PROCESS     1264883552 [Jan 30 15:32:32]dhcp-0000055439-30-0c.client.student.harvard.edu
+              pts/22     8539    8 DEAD_PROCESS     1264883604 [Jan 30 15:33:24]
+kleong   s/22 pts/22     8610    7 USER_PROCESS     1264883690 [Jan 30 15:34:50]pool-71-174-134-179.bstnma.east.verizon.net
+girash   s/24 pts/24     8668    7 USER_PROCESS     1264883738 [Jan 30 15:35:38]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/23     7591    8 DEAD_PROCESS     1264883740 [Jan 30 15:35:40]
+girash   s/23 pts/23     8704    7 USER_PROCESS     1264883758 [Jan 30 15:35:58]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+ghess    s/25 pts/25     8990    7 USER_PROCESS     1264884489 [Jan 30 15:48:09]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/25     8990    8 DEAD_PROCESS     1264884503 [Jan 30 15:48:23]
+              pts/23     8704    8 DEAD_PROCESS     1264885362 [Jan 30 16:02:42]
+              pts/24     8668    8 DEAD_PROCESS     1264885365 [Jan 30 16:02:45]
+              pts/20     6370    8 DEAD_PROCESS     1264887646 [Jan 30 16:40:46]
+shimberg s/20 pts/20    10001    7 USER_PROCESS     1264887656 [Jan 30 16:40:56]dhcp-0019802698-89-fc.client.student.harvard.edu
+shivvers s/23 pts/23    10288    7 USER_PROCESS     1264888021 [Jan 30 16:47:01]dhcp-0033897276-a2-ea.client.student.harvard.edu
+kleong   s/24 pts/24    10704    7 USER_PROCESS     1264888361 [Jan 30 16:52:41]96.237.121.36
+              pts/24    10704    8 DEAD_PROCESS     1264889139 [Jan 30 17:05:39]
+              pts/23    10288    8 DEAD_PROCESS     1264889300 [Jan 30 17:08:20]
+              pts/22     8610    8 DEAD_PROCESS     1264889322 [Jan 30 17:08:42]
+              pts/21     6472    8 DEAD_PROCESS     1264889464 [Jan 30 17:11:04]
+eps5     s/21 pts/21    11661    7 USER_PROCESS     1264891025 [Jan 30 17:37:05]pool-173-76-198-237.bstnma.fios.verizon.net
+trott    s/22 pts/22    11699    7 USER_PROCESS     1264891086 [Jan 30 17:38:06]dhcp-0000104629-ee-7f.client.student.harvard.edu
+trott    s/23 pts/23    11740    7 USER_PROCESS     1264891101 [Jan 30 17:38:21]ice4.fas.harvard.edu
+              pts/21    11661    8 DEAD_PROCESS     1264891120 [Jan 30 17:38:40]
+trott    s/21 pts/21    12177    7 USER_PROCESS     1264891973 [Jan 30 17:52:53]ice4.fas.harvard.edu
+              pts/22    11699    8 DEAD_PROCESS     1264892024 [Jan 30 17:53:44]
+              pts/23    11740    8 DEAD_PROCESS     1264892024 [Jan 30 17:53:44]
+              pts/21    12177    8 DEAD_PROCESS     1264892025 [Jan 30 17:53:45]
+trott    s/21 pts/21    12244    7 USER_PROCESS     1264892224 [Jan 30 17:57:04]dhcp-0000104629-ee-7f.client.student.harvard.edu
+              pts/14     7905    8 DEAD_PROCESS     1264892930 [Jan 30 18:08:50]
+              pts/20    10001    8 DEAD_PROCESS     1264892957 [Jan 30 18:09:17]
+molay    s/14 pts/14    13847    7 USER_PROCESS     1264895506 [Jan 30 18:51:46]pool-96-252-63-87.bstnma.fios.verizon.net
+              pts/14    13847    8 DEAD_PROCESS     1264895531 [Jan 30 18:52:11]
+lib215   s/14 pts/14    13945    7 USER_PROCESS     1264895899 [Jan 30 18:58:19]pool-96-252-63-87.bstnma.fios.verizon.net
+gehrlich s/20 pts/20    14097    7 USER_PROCESS     1264896768 [Jan 30 19:12:48]dhcp-0059516096-47-1c.client.student.harvard.edu
+skanev   s/22 pts/22    14185    7 USER_PROCESS     1264897006 [Jan 30 19:16:46]dhcp-0019458972-1c-2f.client.student.harvard.edu
+girash   s/23 pts/23    14829    7 USER_PROCESS     1264898772 [Jan 30 19:46:12]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/23    14829    8 DEAD_PROCESS     1264898835 [Jan 30 19:47:15]
+bolotin  s/23 pts/23    14891    7 USER_PROCESS     1264899031 [Jan 30 19:50:31]140.247.196.65
+girash   s/24 pts/24    15681    7 USER_PROCESS     1264900734 [Jan 30 20:18:54]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/22    14185    8 DEAD_PROCESS     1264900838 [Jan 30 20:20:38]
+danz     s/22 pts/22    16140    7 USER_PROCESS     1264901692 [Jan 30 20:34:52]dhcp-0019827839-a0-50.client.student.harvard.edu
+              pts/22    16140    8 DEAD_PROCESS     1264901696 [Jan 30 20:34:56]
+girash   s/22 pts/22    16739    7 USER_PROCESS     1264902918 [Jan 30 20:55:18]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/22    16739    8 DEAD_PROCESS     1264902921 [Jan 30 20:55:21]
+              pts/24    15681    8 DEAD_PROCESS     1264905004 [Jan 30 21:30:04]
+girash   s/22 pts/22    18516    7 USER_PROCESS     1264905448 [Jan 30 21:37:28]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/22    18516    8 DEAD_PROCESS     1264905450 [Jan 30 21:37:30]
+girash   s/22 pts/22    18900    7 USER_PROCESS     1264906124 [Jan 30 21:48:44]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/22    18900    8 DEAD_PROCESS     1264906126 [Jan 30 21:48:46]
+              pts/23    14891    8 DEAD_PROCESS     1264906142 [Jan 30 21:49:02]
+              pts/14    13945    8 DEAD_PROCESS     1264906380 [Jan 30 21:53:00]
+girash   s/14 pts/14    19852    7 USER_PROCESS     1264909009 [Jan 30 22:36:49]146-115-71-138.c3-0.arl-ubr1.sbo-arl.ma.cable.rcn.com
+              pts/14    19852    8 DEAD_PROCESS     1264909013 [Jan 30 22:36:53]
+apm121   s/14 pts/14    19926    7 USER_PROCESS     1264909455 [Jan 30 22:44:15]128.103.135.187
+kleong   s/22 pts/22    20403    7 USER_PROCESS     1264910861 [Jan 30 23:07:41]96.237.121.36
+hritchie s/23 pts/23    20605    7 USER_PROCESS     1264911604 [Jan 30 23:20:04]209-6-52-45.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+belal    s/24 pts/24    21535    7 USER_PROCESS     1264914100 [Jan 31 00:01:40]dhcp-0019462051-08-24.client.student.harvard.edu
+awad     s/25 pts/25    21623    7 USER_PROCESS     1264914260 [Jan 31 00:04:20]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/22    20403    8 DEAD_PROCESS     1264914382 [Jan 31 00:06:22]
+lfduarte s/22 pts/22    21802    7 USER_PROCESS     1264915400 [Jan 31 00:23:20]dhcp-0059525204-8b-d6.client.student.harvard.edu
+qiangwu  s/26 pts/26    22173    7 USER_PROCESS     1264915744 [Jan 31 00:29:04]111.sub-75-226-162.myvzw.com
+              pts/22    21802    8 DEAD_PROCESS     1264915775 [Jan 31 00:29:35]
+              pts/23    20605    8 DEAD_PROCESS     1264916597 [Jan 31 00:43:17]
+hritchie s/22 pts/22    22331    7 USER_PROCESS     1264916618 [Jan 31 00:43:38]209-6-52-45.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+              pts/14    19926    8 DEAD_PROCESS     1264916667 [Jan 31 00:44:27]
+              pts/24    21535    8 DEAD_PROCESS     1264916879 [Jan 31 00:47:59]
+              pts/22    22331    8 DEAD_PROCESS     1264917000 [Jan 31 00:50:00]
+hritchie s/14 pts/14    22418    7 USER_PROCESS     1264917014 [Jan 31 00:50:14]209-6-52-45.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+hritchie s/22 pts/22    22454    7 USER_PROCESS     1264917118 [Jan 31 00:51:58]209-6-52-45.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+              pts/22    22454    8 DEAD_PROCESS     1264917512 [Jan 31 00:58:32]
+hritchie s/22 pts/22    22847    7 USER_PROCESS     1264917523 [Jan 31 00:58:43]209-6-52-45.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+              pts/14    22418    8 DEAD_PROCESS     1264917645 [Jan 31 01:00:45]
+              pts/22    22847    8 DEAD_PROCESS     1264917838 [Jan 31 01:03:58]
+hritchie s/14 pts/14    22930    7 USER_PROCESS     1264917849 [Jan 31 01:04:09]209-6-52-45.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+              pts/14    22930    8 DEAD_PROCESS     1264918033 [Jan 31 01:07:13]
+hritchie s/14 pts/14    22975    7 USER_PROCESS     1264918043 [Jan 31 01:07:23]209-6-52-45.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+              pts/26    22173    8 DEAD_PROCESS     1264918469 [Jan 31 01:14:29]
+              pts/25    21623    8 DEAD_PROCESS     1264918619 [Jan 31 01:16:59]
+              pts/14    22975    8 DEAD_PROCESS     1264918628 [Jan 31 01:17:08]
+hritchie s/14 pts/14    23079    7 USER_PROCESS     1264918639 [Jan 31 01:17:19]209-6-52-45.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com
+awad     s/22 pts/22    23206    7 USER_PROCESS     1264919063 [Jan 31 01:24:23]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+yzhu     s/23 pts/23    23754    7 USER_PROCESS     1264920420 [Jan 31 01:47:00]58.247.195.130
+              pts/14    23079    8 DEAD_PROCESS     1264920548 [Jan 31 01:49:08]
+              pts/22    23206    8 DEAD_PROCESS     1264920796 [Jan 31 01:53:16]
+              pts/23    23754    8 DEAD_PROCESS     1264921082 [Jan 31 01:58:02]
+ekruse   s/14 pts/14    24857    7 USER_PROCESS     1264924006 [Jan 31 02:46:46]dhcp-0019812566-49-27.client.student.harvard.edu
+              pts/14    24857    8 DEAD_PROCESS     1264924251 [Jan 31 02:50:51]
+fyun     s/14 pts/14    25361    7 USER_PROCESS     1264925640 [Jan 31 03:14:00]c-67-180-78-24.hsd1.ca.comcast.net
+              pts/14    25361    8 DEAD_PROCESS     1264928733 [Jan 31 04:05:33]
+rlesage  s/14 pts/14    32287    7 USER_PROCESS     1264949362 [Jan 31 09:49:22]pool-68-239-4-26.bos.east.verizon.net
+fwood    s/22 pts/22    32705    7 USER_PROCESS     1264950186 [Jan 31 10:03:06]dhcp-0059910631-1c-d8.client.student.harvard.edu
+              pts/22    32705    8 DEAD_PROCESS     1264950254 [Jan 31 10:04:14]
+kleong   s/22 pts/22      313    7 USER_PROCESS     1264950536 [Jan 31 10:08:56]96.237.126.106
+fwood    s/23 pts/23      403    7 USER_PROCESS     1264950668 [Jan 31 10:11:08]dhcp-0059910631-1c-d8.client.student.harvard.edu
+              pts/23      403    8 DEAD_PROCESS     1264950696 [Jan 31 10:11:36]
+fwood    s/23 pts/23      438    7 USER_PROCESS     1264950715 [Jan 31 10:11:55]dhcp-0059910631-1c-d8.client.student.harvard.edu
+              pts/23      438    8 DEAD_PROCESS     1264950968 [Jan 31 10:16:08]
+kleong   s/23 pts/23      967    7 USER_PROCESS     1264952367 [Jan 31 10:39:27]pool-98-118-13-46.bstnma.east.verizon.net
+mxhe     s/24 pts/24     1170    7 USER_PROCESS     1264952587 [Jan 31 10:43:07]140.247.183.116
+              pts/22      313    8 DEAD_PROCESS     1264952677 [Jan 31 10:44:37]
+              pts/14    32287    8 DEAD_PROCESS     1264953219 [Jan 31 10:53:39]
+              pts/23      967    8 DEAD_PROCESS     1264953952 [Jan 31 11:05:52]
+ssugai   s/14 pts/14     2741    7 USER_PROCESS     1264953952 [Jan 31 11:05:52]10.1.57.36
+              pts/24     1170    8 DEAD_PROCESS     1264955963 [Jan 31 11:39:23]
+              pts/21    12244    8 DEAD_PROCESS     1264956202 [Jan 31 11:43:22]
+awad     s/21 pts/21     5647    7 USER_PROCESS     1264957714 [Jan 31 12:08:34]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+dsteinbr s/22 pts/22     6467    7 USER_PROCESS     1264959064 [Jan 31 12:31:04]dhcp-0059783143-45-15.client.student.harvard.edu
+bolotin  s/23 pts/23     6886    7 USER_PROCESS     1264959965 [Jan 31 12:46:05]140.247.196.65
+ylsul    s/24 pts/24     7559    7 USER_PROCESS     1264961717 [Jan 31 13:15:17]c-71-233-148-159.hsd1.ma.comcast.net
+ylsul    s/25 pts/25     7591    7 USER_PROCESS     1264961727 [Jan 31 13:15:27]c-71-233-148-159.hsd1.ma.comcast.net
+ylsul    s/26 pts/26     8262    7 USER_PROCESS     1264963486 [Jan 31 13:44:46]c-71-233-148-159.hsd1.ma.comcast.net
+akinfenw s/27 pts/27     8363    7 USER_PROCESS     1264963653 [Jan 31 13:47:33]dhcp-0019972056-f0-c6.client.student.harvard.edu
+              pts/27     8363    8 DEAD_PROCESS     1264964384 [Jan 31 13:59:44]
+akinfenw s/27 pts/27     8569    7 USER_PROCESS     1264964390 [Jan 31 13:59:50]dhcp-0019972056-f0-c6.client.student.harvard.edu
+              pts/27     8569    8 DEAD_PROCESS     1264964934 [Jan 31 14:08:54]
+akinfenw s/27 pts/27     9117    7 USER_PROCESS     1264964948 [Jan 31 14:09:08]dhcp-0019972056-f0-c6.client.student.harvard.edu
+              pts/27     9117    8 DEAD_PROCESS     1264965086 [Jan 31 14:11:26]
+mariaxia s/27 pts/27     9172    7 USER_PROCESS     1264965087 [Jan 31 14:11:27]dhcp-0039516710-86-82.client.student.harvard.edu
+              pts/27     9172    8 DEAD_PROCESS     1264965396 [Jan 31 14:16:36]
+akinfenw s/27 pts/27     9383    7 USER_PROCESS     1264965638 [Jan 31 14:20:38]dhcp-0019972056-f0-c6.client.student.harvard.edu
+              pts/27     9383    8 DEAD_PROCESS     1264965724 [Jan 31 14:22:04]
+akinfenw s/28 pts/28     9584    7 USER_PROCESS     1264965735 [Jan 31 14:22:15]dhcp-0019972056-f0-c6.client.student.harvard.edu
+crichton s/27 pts/27    10081    7 USER_PROCESS     1264966384 [Jan 31 14:33:04]dhcp-0019787359-f3-68.client.student.harvard.edu
+karabel  s/29 pts/29    10218    7 USER_PROCESS     1264966494 [Jan 31 14:34:54]pool-68-239-4-26.bos.east.verizon.net
+              pts/29    10218    8 DEAD_PROCESS     1264966683 [Jan 31 14:38:03]
+              pts/28     9584    8 DEAD_PROCESS     1264966703 [Jan 31 14:38:23]
+akinfenw s/28 pts/28    10716    7 USER_PROCESS     1264966707 [Jan 31 14:38:27]dhcp-0019972056-f0-c6.client.student.harvard.edu
+yangge   s/29 pts/29    10752    7 USER_PROCESS     1264966715 [Jan 31 14:38:35]dhcp-0020702239-9e-b2.client.student.harvard.edu
+cashann  s/30 pts/30    10895    7 USER_PROCESS     1264966935 [Jan 31 14:42:15]ls04.fas.harvard.edu
+              pts/30    10895    8 DEAD_PROCESS     1264966961 [Jan 31 14:42:41]
+awad     s/30 pts/30    11423    7 USER_PROCESS     1264967647 [Jan 31 14:54:07]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/29    10752    8 DEAD_PROCESS     1264967692 [Jan 31 14:54:52]
+danz     s/29 pts/29    11491    7 USER_PROCESS     1264967711 [Jan 31 14:55:11]dhcp-0019827839-a0-50.client.student.harvard.edu
+scrouch  s/31 pts/31    11758    7 USER_PROCESS     1264968107 [Jan 31 15:01:47]dhcp-0059492531-a1-04.client.student.harvard.edu
+              pts/31    11758    8 DEAD_PROCESS     1264968139 [Jan 31 15:02:19]
+ellenyan s/31 pts/31    11913    7 USER_PROCESS     1264968383 [Jan 31 15:06:23]dhcp-0060053626-fc-c2.client.student.harvard.edu
+              pts/31    11913    8 DEAD_PROCESS     1264968420 [Jan 31 15:07:00]
+              pts/28    10716    8 DEAD_PROCESS     1264968549 [Jan 31 15:09:09]
+scrouch  s/28 pts/28    12353    7 USER_PROCESS     1264968779 [Jan 31 15:12:59]dhcp-0059492531-a1-04.client.student.harvard.edu
+              pts/29    11491    8 DEAD_PROCESS     1264968999 [Jan 31 15:16:39]
+danz     s/29 pts/29    12497    7 USER_PROCESS     1264969004 [Jan 31 15:16:44]dhcp-0019827839-a0-50.client.student.harvard.edu
+              pts/28    12353    8 DEAD_PROCESS     1264969943 [Jan 31 15:32:23]
+zhou     s/28 pts/28    12767    7 USER_PROCESS     1264969950 [Jan 31 15:32:30]dhcp-0019428617-1b-f7.client.student.harvard.edu
+scrouch  s/31 pts/31    12800    7 USER_PROCESS     1264969962 [Jan 31 15:32:42]dhcp-0059492531-a1-04.client.student.harvard.edu
+              pts/31    12800    8 DEAD_PROCESS     1264970154 [Jan 31 15:35:54]
+scrouch  s/31 pts/31    12875    7 USER_PROCESS     1264970175 [Jan 31 15:36:15]dhcp-0059492531-a1-04.client.student.harvard.edu
+              pts/28    12767    8 DEAD_PROCESS     1264970342 [Jan 31 15:39:02]
+zhou     s/28 pts/28    13241    7 USER_PROCESS     1264970488 [Jan 31 15:41:28]dhcp-0019428617-1b-f7.client.student.harvard.edu
+khsieh   s/32 pts/32    13274    7 USER_PROCESS     1264970497 [Jan 31 15:41:37]dhcp-0060572666-64-82.client.student.harvard.edu
+              pts/29    12497    8 DEAD_PROCESS     1264970685 [Jan 31 15:44:45]
+              pts/32    13274    8 DEAD_PROCESS     1264970722 [Jan 31 15:45:22]
+khsieh   s/29 pts/29    13370    7 USER_PROCESS     1264970762 [Jan 31 15:46:02]dhcp-0060572666-64-82.client.student.harvard.edu
+adonisan s/32 pts/32    13414    7 USER_PROCESS     1264970855 [Jan 31 15:47:35]dhcp-0059910143-4f-19.client.student.harvard.edu
+              pts/28    13241    8 DEAD_PROCESS     1264970880 [Jan 31 15:48:00]
+zhou     s/28 pts/28    13449    7 USER_PROCESS     1264970895 [Jan 31 15:48:15]dhcp-0019428617-1b-f7.client.student.harvard.edu
+              pts/29    13370    8 DEAD_PROCESS     1264971140 [Jan 31 15:52:20]
+zhou     s/29 pts/29    13557    7 USER_PROCESS     1264971146 [Jan 31 15:52:26]dhcp-0019428617-1b-f7.client.student.harvard.edu
+khsieh   s/33 pts/33    13616    7 USER_PROCESS     1264971210 [Jan 31 15:53:30]dhcp-0060572666-64-82.client.student.harvard.edu
+              pts/33    13616    8 DEAD_PROCESS     1264971599 [Jan 31 15:59:59]
+khsieh   s/33 pts/33    14190    7 USER_PROCESS     1264972035 [Jan 31 16:07:15]dhcp-0060572666-64-82.client.student.harvard.edu
+              pts/33    14190    8 DEAD_PROCESS     1264972103 [Jan 31 16:08:23]
+ellenyan s/33 pts/33    14400    7 USER_PROCESS     1264972501 [Jan 31 16:15:01]dhcp-0060053626-fc-c2.client.student.harvard.edu
+              pts/33    14400    8 DEAD_PROCESS     1264972810 [Jan 31 16:20:10]
+zhou     s/33 pts/33    15401    7 USER_PROCESS     1264973839 [Jan 31 16:37:19]dhcp-0019428617-1b-f7.client.student.harvard.edu
+zhou     s/34 pts/34    15460    7 USER_PROCESS     1264973872 [Jan 31 16:37:52]dhcp-0019428617-1b-f7.client.student.harvard.edu
+              pts/29    13557    8 DEAD_PROCESS     1264973880 [Jan 31 16:38:00]
+              pts/28    13449    8 DEAD_PROCESS     1264973902 [Jan 31 16:38:22]
+              pts/34    15460    8 DEAD_PROCESS     1264974311 [Jan 31 16:45:11]
+              pts/27    10081    8 DEAD_PROCESS     1264974630 [Jan 31 16:50:30]
+              pts/31    12875    8 DEAD_PROCESS     1264975179 [Jan 31 16:59:39]
+              pts/20    14097    8 DEAD_PROCESS     1264975298 [Jan 31 17:01:38]
+              pts/22     6467    8 DEAD_PROCESS     1264975321 [Jan 31 17:02:01]
+              pts/33    15401    8 DEAD_PROCESS     1264975336 [Jan 31 17:02:16]
+              pts/23     6886    8 DEAD_PROCESS     1264976423 [Jan 31 17:20:23]
+              pts/25     7591    8 DEAD_PROCESS     1264977781 [Jan 31 17:43:01]
+              pts/24     7559    8 DEAD_PROCESS     1264977781 [Jan 31 17:43:01]
+              pts/26     8262    8 DEAD_PROCESS     1264977781 [Jan 31 17:43:01]
+hgudjons s/20 pts/20    17166    7 USER_PROCESS     1264978448 [Jan 31 17:54:08]krk-lab-03.fas.harvard.edu
+              pts/20    17166    8 DEAD_PROCESS     1264978642 [Jan 31 17:57:22]
+ghess    s/20 pts/20    17305    7 USER_PROCESS     1264978922 [Jan 31 18:02:02]c-66-31-19-114.hsd1.ma.comcast.net
+              pts/20    17305    8 DEAD_PROCESS     1264978933 [Jan 31 18:02:13]
+              pts/32    13414    8 DEAD_PROCESS     1264978977 [Jan 31 18:02:57]
+gebeyehu s/20 pts/20    17389    7 USER_PROCESS     1264979181 [Jan 31 18:06:21]dhcp-0020357490-3a-10.client.student.harvard.edu
+aszasz   s/22 pts/22    17424    7 USER_PROCESS     1264979207 [Jan 31 18:06:47]dhcp-0019907616-b4-80.client.student.harvard.edu
+              pts/22    17424    8 DEAD_PROCESS     1264979410 [Jan 31 18:10:10]
+ntardiff s/22 pts/22    17826    7 USER_PROCESS     1264979719 [Jan 31 18:15:19]c-24-91-153-138.hsd1.ma.comcast.net
+              pts/22    17826    8 DEAD_PROCESS     1264980002 [Jan 31 18:20:02]
+              pts/20    17389    8 DEAD_PROCESS     1264980739 [Jan 31 18:32:19]
+fwood    s/20 pts/20    18406    7 USER_PROCESS     1264981470 [Jan 31 18:44:30]dhcp-0059910631-1c-d8.client.student.harvard.edu
+              pts/20    18406    8 DEAD_PROCESS     1264982318 [Jan 31 18:58:38]
+zhang32  s/20 pts/20    19439    7 USER_PROCESS     1264985044 [Jan 31 19:44:04]dhcp-0077720857-81-20.client.student.harvard.edu
+              pts/20    19439    8 DEAD_PROCESS     1264985197 [Jan 31 19:46:37]
+nhoward  s/20 pts/20    20080    7 USER_PROCESS     1264986819 [Jan 31 20:13:39]dhcp-0019892694-29-47.client.student.harvard.edu
+gebeyehu s/22 pts/22    20113    7 USER_PROCESS     1264986843 [Jan 31 20:14:03]dhcp-0020357490-3a-10.client.student.harvard.edu
+              pts/20    20080    8 DEAD_PROCESS     1264988019 [Jan 31 20:33:39]
+mdboyd   s/20 pts/20    20406    7 USER_PROCESS     1264988239 [Jan 31 20:37:19]dhcp-0019830482-92-1a.client.student.harvard.edu
+lmocz    s/23 pts/23    20751    7 USER_PROCESS     1264988410 [Jan 31 20:40:10]dhcp-0059475540-e8-ee.client.student.harvard.edu
+              pts/23    20751    8 DEAD_PROCESS     1264988579 [Jan 31 20:42:59]
+              pts/22    20113    8 DEAD_PROCESS     1264989914 [Jan 31 21:05:14]
+amgoldb  s/22 pts/22    21073    7 USER_PROCESS     1264990067 [Jan 31 21:07:47]ws05.fas.harvard.edu
+gonzales s/23 pts/23    21412    7 USER_PROCESS     1264990287 [Jan 31 21:11:27]c-98-204-98-43.hsd1.dc.comcast.net
+              pts/22    21073    8 DEAD_PROCESS     1264990816 [Jan 31 21:20:16]
+              pts/23    21412    8 DEAD_PROCESS     1264991205 [Jan 31 21:26:45]
+              pts/20    20406    8 DEAD_PROCESS     1264991540 [Jan 31 21:32:20]
+hlhindal s/20 pts/20    22148    7 USER_PROCESS     1264992979 [Jan 31 21:56:19]dhcp-0019879820-e9-a6.client.student.harvard.edu
+              pts/20    22148    8 DEAD_PROCESS     1264993308 [Jan 31 22:01:48]
+pthamm   s/20 pts/20    22291    7 USER_PROCESS     1264993312 [Jan 31 22:01:52]dhcp-0000104438-97-cd.client.student.harvard.edu
+              pts/20    22291    8 DEAD_PROCESS     1264993711 [Jan 31 22:08:31]
+              pts/30    11423    8 DEAD_PROCESS     1264997858 [Jan 31 23:17:38]
+              pts/14     2741    8 DEAD_PROCESS     1265000461 [Feb  1 00:01:01]
+yzhu     s/14 pts/14    24816    7 USER_PROCESS     1265001593 [Feb  1 00:19:53]dhcp-0059484598-d5-54.client.student.harvard.edu
+nshah    s/20 pts/20    24890    7 USER_PROCESS     1265001876 [Feb  1 00:24:36]dhcp-0011023785-63-15.client.student.harvard.edu
+              pts/20    24890    8 DEAD_PROCESS     1265001913 [Feb  1 00:25:13]
+              pts/21     5647    8 DEAD_PROCESS     1265002799 [Feb  1 00:39:59]
+              pts/14    24816    8 DEAD_PROCESS     1265003094 [Feb  1 00:44:54]
+awad     s/14 pts/14    25398    7 USER_PROCESS     1265003482 [Feb  1 00:51:22]pool-71-98-19-18.mdsnwi.dsl-w.verizon.net
+              pts/14    25398    8 DEAD_PROCESS     1265009126 [Feb  1 02:25:26]
+yzhu     s/14 pts/14     4745    7 USER_PROCESS     1265024915 [Feb  1 06:48:35]116.232.209.141

@@ -1,0 +1,151 @@
+<dl>
+<dt><b>Time Changes</b></dt>
+	<dd>
+	<p>
+	The version of ac on nice does not check for time changes.
+	Read the manual page on wtmpfix to see how the
+	time changes are handled on ice.
+	</p>
+	</dd>
+<dt><b>Special Cases</b></dt>
+	<dd>
+	<p>
+	The following sections explain how ac (on ice) handles
+	various special cases.  The gnu version of ac supports
+	these ways of doing things as well as other ways.
+	For more information, login to nice.harvard.edu and
+	read the manual page on ac.  
+	</p>
+	</dd>
+<dt><b>Mystery Logins: Missing logouts</b></dt>
+	<dd>
+	<p>
+	Many people have wondered about people logging into ttys without
+	a logout before it.  For example:<pre>
+	sdas     ttys ttys6          8834    7 USER_PROCESS      949441628 
+	bfriedm  ttys ttys6          8834    7 USER_PROCESS      949441637 
+	</pre>
+	shows that bfriedm logs in to ttys6 after sdas, but that sdas does
+	not appear to logout.  How does that work?  It turns out you can
+	type  <tt>login smith</tt> from a login session and start a new
+	login session for a different user.  No DEAD_PROCESS record appears
+	in wtmp because you never logout.  A new USER_PROCESS record appears
+	because you have logged in.
+	<p>
+	</dd>
+<dt><b>Multiple Logins: Same User</b></dt>
+	<dd>
+	<p>
+	Many people have wondered about the multiple login
+	entries in sample.wtmp for some people.
+	For example, consider:
+	<p>
+	<pre>
+	xliu     ttyq ttyq7         32714    7 USER_PROCESS      949441760
+	zchen    ttys ttys6         23234    7 USER_PROCESS      949441772
+	zchen    ttys ttys6         23234    7 USER_PROCESS      949441772
+		 ttys ttys6         21395    8 DEAD_PROCESS      949441781
+	</pre>
+	<p>
+	Here, we see zchen at ttys5 twice with the same process id and
+	the same time.  What is going on?
+	<p>
+	It turns out that when a user connects to a machine using
+	ssh (the secure shell encrypted connection program) two
+	entries appear.  On the other hand, when a user connects using
+	telnet, only one entry appears.  You can try this yourself.
+	<p>
+	I do not have the code in front of me, but I suspect that the
+	ssh server that accepts the connection adds an entry to wtmp
+	when it starts the login session.  Once it has established an
+	encrypted connection, the ssh server calls login to handle
+	the rest of the session startup.
+	<p>
+	Login, usually called from getty or telnetd, adds a record to
+	the wtmp file.  
+	<p>
+	The process id is the same because the ssh server starts a process
+	for the session, arranges for the communication channel to
+	be encrypted, then calls exec(2) to run the login program
+	in that encrypted environment.
+	<p>
+	</dd>
+<dt><b>People Still Logged In</b></dt>
+	<dd>
+	<p>
+	Consider the following situation:  
+	<p>
+	<blockquote>
+	User fred logs in at 2pm on Monday.<br>
+	A wtmp entry for fred at 2pm on monday is created.<br>
+	You type <tt>ac fred</tt> at 3pm on Monday<br>
+	How much login time does ac report?
+	</blockquote>
+	<p>
+	The traditional ac solution is to scan through the file and
+	see that fred logged in at 2pm and has no matching logout entry.
+	Since the current time is 3pm, fred is charged 1 hour for this
+	session.
+	<p>
+	Makes sense?  Many people think so.  In fact, the version of ac
+	on the system uses that model.
+	<p>
+	<b>BUT NOT ALWAYS</b>
+	<P>
+	If you type <tt>ac -f /var/adm/wtmp fred</tt> at 3pm on Monday,
+	you may well get less than one hour of time.
+	<p>
+	Here's why.
+	<p>
+	The version of ac on the system here behaves differently when given
+	the <tt>-f</tt> option than it does when it uses the `default file',
+	even if they are the same.
+	<p>
+	Here's what it does.  If a filename is given, it takes the last
+	login entry in the file as the `end of time.'  Therefore, if fred
+	logged in at 2pm in that wtmp file, and the last login recorded in
+	that file was as 2:30pm, then fred would only be charged for 30
+	minutes.
+	<p>
+	There are some good reasons for that.  See if you can think of
+	them.
+	<p>
+	</dd>
+<dt><B>Handling REBOOTS</b></dt>
+	<dd>
+	<p>
+	The way this version of ac handles reboot entries is a bit odd.
+	If fred logs in at 2pm and the wtmp file shows a reboot at 3pm,
+	you might think that fred would be charged for 1 hour.  That
+	does not seem to be the case.  
+	<p>
+	Examine the data used for the reboot test to see what this program
+	really does.
+	<p>
+	</dd>
+<dt><B>What about those <font size=-1>LOGIN</font> records I don't see?</b></dt>
+	<dd>
+	<p>
+	Some systems have terminals connected to the computer.  If you run Unix at
+	home, you probably see a login: prompt on your screen.  Most PC unix versions
+	allow multiple screens, each with its own login: prompt.
+	<p>
+	When you sit down at the computer, you enter your logname and password to
+	that login: prompt and then are logged in.
+	<p>
+	When you logout, the system issues a new login: prompt on the screen and
+	sits there.
+	<p>
+	It is those login: prompt screens that correspond to <font size=-1>LOGIN</font>
+	entries in wtmp.
+	<p>
+	On the other hand, when you telnet into a machine, or click on a terminal
+	button on the workstations at the science center, a new shell is started
+	up <i>just like that</i> with no login screen at all.
+	<p>
+	Therefore, the wtmp file at the science center lacks the <font size=-1>LOGIN</font>
+	entries.  If you are running this on a home linux machine, you are likely to
+	see those entries.
+	<p>
+	</dd>
+</dl>

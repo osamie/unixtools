@@ -1,0 +1,195 @@
+.\"
+.\" source file for aac project - uses -ms macros for groff
+.\" version: 31 Jan 2012
+.\" version: 31 Jan 2010
+.\"
+.\"
+.de sS
+.br
+.ft C
+.ps 8
+.vs 0.12i
+.sp 3p
+.nf
+.in +0.5i
+..
+.de eS
+.in -0.5i
+.fi
+.sp 3p
+.vs 12p
+.ps 10
+.ft R
+..
+.rm CH
+.rm CF
+.ds RH \s8almost ac\s0
+.ds RF \s8page %\s0
+.ds LF \s8printed \*(DY\s0
+.DS C
+.ft B
+csci-e215
+Assignment 1: almost ac
+.ft R
+.DE
+.SH
+Introduction
+.sp 4p
+.LP
+For this assignment you will write a program to implement some
+of the functions of the Unix \fBac\fR command.  In doing so, you
+will use the open(), read(), and close()
+system calls, work with functions for managing the Unix representation
+of time, and experiment with buffered input.  Much of the information
+you will need will come from the on-line manual.  
+\fBac\fR is an accounting command that computes login time for users.
+On nice, the command should be in the directory /usr/bin.
+.SH
+Specific Details
+.sp 4p
+.LP
+Write a program called \fBaac\fR (for \fBa\fRlmost-ac) that implements
+two parts of the regular \fBac\fR command -- the part that handles a single 
+logname as a command line argument and the part that handles alternate
+login info files (the -f option) -- and an additional feature -- adjustable
+buffer size.  That is, your program should handle commands such as
+.sS
+ % aac smith
+ % aac -f wtmp.sample lib215
+ % aac lib215 -f wtmp.sample 
+.eS
+The output of your program should be identical to that produced by the
+version of ac on the systems here.   
+In the example just given, it might look like:
+.sS
+    total     1846.45
+.eS
+.sp -3p
+.SH
+Getting Started
+.sp 4p
+.LP
+Make a subdirectory for this project.  Change into
+that directory and link to sample files by typing:
+.sS
+ mkdir aac
+ cd aac
+ ln   -s   ~lib215/hw/aac/files/*   \fB\s+2.\s-2\fP     \fR<- that's a dot at the end\fP
+.eS
+The sample files include an ac info page, some sample datasets, a
+tool for analyzing login history files, and a sample Makefile and software Plan.  
+Read the manual page for \fBac\fR.  Try the \fBac\fR command.  Read the 
+man page to find what file \fBac\fR uses to get its data.  Read the manual 
+page for \fIthat\fR file.  Figure out 
+how to use that information to compute total connect time for a user.
+.sp 6p
+The sample files includes wtmp.sample, a copy of the wtmp file
+for January on ice1.fas.harvard.edu .
+This sample file does not change; the real one does.
+It is easier to test your software on a fixed set of data.
+You can use it to experiment with the real ac and with your program.  
+To tell \fBac\fR to use this file, use the -f option.   
+.sp 6p
+The sample files include a program, \fBdumputmp.c\fR  that prints out
+the contents of utmp files.  Read the program, study the header file,
+make sense of data structures.
+To use \fBdumputmp\fR to examine the sample file, compile the
+program then type:\ \ \  \fC\s8dumputmp wtmp.sample\s0\fR
+You can also use \fBwho\fR to examine a utmp file.  Type:
+\ \ \ \fC\s8who -a wtmp.sample\s0\fR .  There is also a program
+called /usr/sbin/dump-utmp that comes with the system and is like
+the dumputmp.c program we provide.
+.sp 6p
+The sample file contains records of users logging in and logging out.
+A \s8USER\s0 process means a user has logged in and is running 
+user commands at the terminal, and a \s8DEAD\s0 process means the user 
+process has died.  
+.sp 6p
+The purpose of your program is to compute total login time for
+a user specified on the command line.  You need to devise a system to
+read the file with an eye for a specific logname.
+Your program should print an error message if it does not 
+get one logname as an argument.  (Note: the real ac program
+prints a total of all login session times if no argument is
+given; your program does not have to do this.) 
+Read the file looking for records that represent logins for that
+user.  Then look for the corresponding logout on that terminal.  
+When your program finds the corresponding logout, the program 
+can compute the connect time for that session at a terminal.
+.SH
+Special Conditions
+.sp 2p
+.LP
+Once you handle simple logins and logouts, enhance your logic
+to handle fancier conditions.
+First, the same user can be logged in at several
+terminals at the same time.  All these connect sessions are counted
+separately.  For example, if you login at one terminal from noon to
+2pm, and at another terminal from 1pm to 4pm, you accrue 5 hours
+of connect time.
+.sp 4p
+The next thing to worry about is that not every login has a matching
+logout.  For example, what happens if a user is still logged
+in when you run \fBac\fR?  In that case, you have to use the current time
+as the `logout' time.  Second, what happens when the system crashes?
+In this case there will be a `reboot' entry in the login data file after
+the crash.
+.sp 4p
+When the system administrator changes the system clock, login times
+have to be adjusted.  On some Unix systems, a program called
+wtmpfix handles this situation.  Your program does not 
+have to handle time changes.
+.SH
+Getting Finished: Buffering
+.sp 2p
+.LP
+When you have the basic version working and handling special 
+conditions, tune your program by buffering file input.  
+In particular, you must include the following features:
+.sp 4p
+\fB(a)\fR The buffering code must be in a separate file with a
+clearly defined set of functions.  By doing so, you can modify how 
+you read from the file without having to change the main program.  
+You may use the buffering functions in \fButmplib.c\fR as a basis, or you may 
+write your own.
+.sp 3p
+\fB(b)\fR Your program must accept an additional command line option
+\fB-b #\fR to set the number of structs in the buffer.  The utmplib.c
+code has a fixed buffer size of 16.  That may not provide optimal
+efficiency.  With this new option, your program could be called
+with \ \ \ \fC\s8 aac -b 64 lib215\s0\fP\ \ \ 
+to set the buffering to read 64 records at a time.
+.SH
+Testing Your Program
+.sp 2p
+.LP
+Your program should be an exact subset of the regular
+\fBac\fR, so you can test your program by comparing its output to
+the output of \fBac\fR.  Here's how (the manual explains \fBdiff\fR):
+.sS
+ /usr/bin/ac $USER > output.ac
+ ./aac $USER > output.aac
+ diff output.ac output.aac
+.eS
+More exhaustive testing can be done with a shell script
+we have prepared.  It compares your program to the
+real one on a variety of data sets.  To use this
+test program, type this: \ \ \fC\s8~lib215/hw/aac/test.aac\s0\fR 
+.SH
+What to Hand in
+.sp 2p
+.LP
+Submit your code for this solution, a Makefile, a project plan,
+and a \s8README\s0 file.  Change into the directory that contains
+all these items and type \ \ \ \fC\s8~lib215/handin aac\s0\fR
+.SH
+Note for Other Systems
+.sp 4p
+.LP
+You can develop and test your program on another Unix machine.  
+Different versions of Unix may have different structures for their 
+login records, so the sample wtmp files may not work.
+If you use GNU/Linux and \fBac\fR is not on your system, install
+it from the package called \fBacct\fR.  Mac OSX and versions
+of BSD Unix use a \fImuch\fR simpler utmp structure than the one on ice.
+See your local manual for details.   

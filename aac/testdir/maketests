@@ -1,0 +1,5 @@
+for f in *.wtmp
+do
+     B=`basename $f .wtmp`
+     ac -f $f -p | sed -e '/	total/d' -e 's/^[ 	]*//' -e 's/  */	/' > $B.people
+done
