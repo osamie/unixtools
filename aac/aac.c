@@ -180,17 +180,3 @@ void show_info( struct utmp *utbufp ) {
  		printf(" (%s)", utbufp->ut_host); /* the host */
  	printf("\n"); /* newline */
  }
-
-// #define MAXDATELEN 100
-
-// /*
-//  * * displays time in a format fit for human consumption.
-//  * * Uses localtime to convert the timeval into a struct of elements
-//  * * (see localtime(3)) and uses strftime to format the data
-//  * */
-// void showtime( time_t timeval , char *fmt ) {
-// 	char result[MAXDATELEN];
-// 	struct tm *tp = localtime(&timeval); /* convert time */
-// 	strftime(result, MAXDATELEN, fmt, tp); /* format it */
-// 	fputs(result, stdout);
-// }

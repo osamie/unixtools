@@ -128,7 +128,6 @@ time_t login_time(char * username){
 		
 		if((entry->ut_type==USER_PROCESS) && same_username){
 			login_time = entry->ut_time;
-			//printf("login time: %d \n", ((long int)login_time));		
 			return login_time;
 		}
 	}
