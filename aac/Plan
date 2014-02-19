@@ -1,6 +1,6 @@
 Project: aac
 
-Purpose: A program to display the total connect time of a user. 
+Purpose: A program that computes the total login time for a user specified on the command line
 
 Outline:
 	aac reads and processes the wtmp file records and 
@@ -11,6 +11,7 @@ Outline:
 Output:
 	The output looks like:
            total  10.6
+	where 10.6 or a decimal number represents the computed time
 
 Arguments:
 	aac accepts the following command line arguments;

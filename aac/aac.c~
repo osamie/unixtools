@@ -51,41 +51,6 @@ void print_list(linked_list * head);
 double derive_durations(linked_list * head);
 
 
-int main(int argc, char * argv[]){
-	char * username = NULL; //= malloc(UT_NAMESIZE * sizeof(char));
-	char * filename = NULL; //= malloc(32 * sizeof(char));
-
-	if(argc==2){
-		/* # aac <username>*/
-		username = argv[1];
-		if(username==NULL) show_usage();
-		if(filename!=NULL) {utmpxname(filename); /*set the utmp file to be accessed*/}
-		else {utmpxname(WTMP_FILE);}
-		dump_output(get_connect_time(username,filename),username);
-	}else if(argc==4){
-		//check for flag
-		if(strcmp(argv[1],"-f")==0){
-			filename = argv[2];
-			username = argv[3];
-		}else if(strcmp(argv[2],"-f")==0){
-			filename = argv[3];
-			username = argv[1];
-		}else{
-			show_usage();
-			return 0;
-		}
-		if(username==NULL) show_usage();
-		if(filename!=NULL) {utmpxname(filename); /*set the utmp file to be accessed*/}
-		else {utmpxname(WTMP_FILE);}
-		dump_output(get_connect_time(username,filename),username);
-	}else{
-		show_usage();
-		return 0;
-	}
-	return 0;
-}
-
-
 /*
 * Gets the connection duration in seconds, converts
 * it to decimal time and outputs it to the console
@@ -114,7 +79,7 @@ double get_connect_time(char *username, char *filename){
 	while(login_entry(username,entry)!=0){
 		//memcpy(new_entry,entry,sizeof(struct utmpx));
 		
-Adds a given utmpx to a linked list //adds to the user login entries
+//Adds a given utmpx to a linked list //adds to the user login entries
 		linked_list *curr=(linked_list *)malloc(sizeof(linked_list));
 		curr->value=*entry;
 		curr->next=head;
@@ -220,5 +185,39 @@ void show_usage() {
 	printf("\nUsage:\n\taac <username>\n");
 	printf("\taac -f <filename> <username>\n");
 	printf("\taac <username> -f <filename>\n");
+}
+
+int main(int argc, char * argv[]){
+	char * username = NULL; 
+	char * filename = NULL; 
+
+	if(argc==2){
+		/* # aac <username>*/
+		username = argv[1];
+		if(username==NULL) show_usage();
+		if(filename!=NULL) {utmpxname(filename); /*set the utmp file to be accessed*/}
+		else {utmpxname(WTMP_FILE);}
+		dump_output(get_connect_time(username,filename),username);
+	}else if(argc==4){
+		//check for flag
+		if(strcmp(argv[1],"-f")==0){
+			filename = argv[2];
+			username = argv[3];
+		}else if(strcmp(argv[2],"-f")==0){
+			filename = argv[3];
+			username = argv[1];
+		}else{
+			show_usage();
+			return 0;
+		}
+		if(username==NULL) show_usage();
+		if(filename!=NULL) {utmpxname(filename); /*set the utmp file to be accessed*/}
+		else {utmpxname(WTMP_FILE);}
+		dump_output(get_connect_time(username,filename),username);
+	}else{
+		show_usage();
+		return 0;
+	}
+	return 0;
 }
 

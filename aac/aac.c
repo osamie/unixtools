@@ -1,12 +1,26 @@
 /*
-*
 * 
-* Unix user accounting tool
+* aac: A unix user accounting tool
+* 
+*  Purpose: Computes the total login time for a user
+*	   specified on the command line.
+* 
+*   Args: username and filename.
+*	 When no filename is specified, the default
+*	 file,WTMPX is used.
 *	
-* Author: Osazuwa Omigie	
-*		
-* CSCI-E28
-* Harvard University
+*	 A filename is specified using the -f flag. For example, 
+*		$ aac *username* -f *filename*
+*			OR
+*		$ aac -f *filename* *username* 
+*
+*   Compiling: to compile this use
+*		$ gcc -o aac -Wall aac.c utmplib.c	
+* 
+*   Author: Osazuwa Omigie	
+*   Date: February 16,2014.		
+*   CSCI-E28
+*   Harvard University
 *	
 */
 #include <stdio.h>
@@ -49,41 +63,6 @@ void dump_output(double connect_time,char * username);
 void add_to_list(linked_list * head, struct utmpx entry);
 void print_list(linked_list * head);
 double derive_durations(linked_list * head);
-
-
-int main(int argc, char * argv[]){
-	char * username = NULL; //= malloc(UT_NAMESIZE * sizeof(char));
-	char * filename = NULL; //= malloc(32 * sizeof(char));
-
-	if(argc==2){
-		/* # aac <username>*/
-		username = argv[1];
-		if(username==NULL) show_usage();
-		if(filename!=NULL) {utmpxname(filename); /*set the utmp file to be accessed*/}
-		else {utmpxname(WTMP_FILE);}
-		dump_output(get_connect_time(username,filename),username);
-	}else if(argc==4){
-		//check for flag
-		if(strcmp(argv[1],"-f")==0){
-			filename = argv[2];
-			username = argv[3];
-		}else if(strcmp(argv[2],"-f")==0){
-			filename = argv[3];
-			username = argv[1];
-		}else{
-			show_usage();
-			return 0;
-		}
-		if(username==NULL) show_usage();
-		if(filename!=NULL) {utmpxname(filename); /*set the utmp file to be accessed*/}
-		else {utmpxname(WTMP_FILE);}
-		dump_output(get_connect_time(username,filename),username);
-	}else{
-		show_usage();
-		return 0;
-	}
-	return 0;
-}
 
 
 /*
@@ -220,5 +199,39 @@ void show_usage() {
 	printf("\nUsage:\n\taac <username>\n");
 	printf("\taac -f <filename> <username>\n");
 	printf("\taac <username> -f <filename>\n");
+}
+
+int main(int argc, char * argv[]){
+	char * username = NULL; 
+	char * filename = NULL; 
+
+	if(argc==2){
+		/* # aac <username>*/
+		username = argv[1];
+		if(username==NULL) show_usage();
+		if(filename!=NULL) {utmpxname(filename); /*set the utmp file to be accessed*/}
+		else {utmpxname(WTMP_FILE);}
+		dump_output(get_connect_time(username,filename),username);
+	}else if(argc==4){
+		//check for flag
+		if(strcmp(argv[1],"-f")==0){
+			filename = argv[2];
+			username = argv[3];
+		}else if(strcmp(argv[2],"-f")==0){
+			filename = argv[3];
+			username = argv[1];
+		}else{
+			show_usage();
+			return 0;
+		}
+		if(username==NULL) show_usage();
+		if(filename!=NULL) {utmpxname(filename); /*set the utmp file to be accessed*/}
+		else {utmpxname(WTMP_FILE);}
+		dump_output(get_connect_time(username,filename),username);
+	}else{
+		show_usage();
+		return 0;
+	}
+	return 0;
 }
 
