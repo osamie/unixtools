@@ -13,9 +13,11 @@
 
 #include <utmp.h>
 
+/*
 #ifndef __USE_GNU
 #warning __USE_GNU undefined
 #endif
+*/
 
 #define _GNU_SOURCE
 #include <utmpx.h>
@@ -26,11 +28,10 @@
 #include <stdlib.h>
 #include <sys/mman.h>
 #include <unistd.h>
-
-
 #include <fcntl.h>
 #include <time.h>
-//#include "utmplib.h" /* include interface def for utmplib.c */
+
+#include "utmpx.h" /*my custom utmpx interface*/
 
 #define DEBUG 0 /*Debug mode. Enable:1,Disable:0*/
 
@@ -47,6 +48,7 @@ time_t get_logout_time(struct utmpx * login_entry);
 void dump_output(double connect_time,char * username);
 void add_to_list(linked_list * head, struct utmpx entry);
 void print_list(linked_list * head);
+double derive_durations(linked_list * head);
 
 
 int main(int argc, char * argv[]){
@@ -56,6 +58,9 @@ int main(int argc, char * argv[]){
 	if(argc==2){
 		/* # aac <username>*/
 		username = argv[1];
+		if(username==NULL) show_usage();
+		if(filename!=NULL) {utmpxname(filename); /*set the utmp file to be accessed*/}
+		else {utmpxname(WTMP_FILE);}
 		dump_output(get_connect_time(username,filename),username);
 	}else if(argc==4){
 		//check for flag
@@ -69,6 +74,9 @@ int main(int argc, char * argv[]){
 			show_usage();
 			return 0;
 		}
+		if(username==NULL) show_usage();
+		if(filename!=NULL) {utmpxname(filename); /*set the utmp file to be accessed*/}
+		else {utmpxname(WTMP_FILE);}
 		dump_output(get_connect_time(username,filename),username);
 	}else{
 		show_usage();
@@ -76,22 +84,6 @@ int main(int argc, char * argv[]){
 	}
 	return 0;
 }
-
-
-/*	
-	time_t total=0;
-	store all entries of username in list
-	Iterate through list and find corresponding logouts..
-	
-	find corresponding logouts(login_utmp):	
-		getutline(login_utmp)
-
-	for each corresponding logout entry, 
-		total + (logout-login)	 
-
-*/
-
-
 
 
 /*
@@ -103,68 +95,55 @@ void dump_output(double connect_time,char * username){
 	/*convert seconds to decimal hours*/
 	connect_time = connect_time/3600; 
 
-	printf("\ttotal\t  %.2f\n",connect_time);		
+	printf("\ttotal      %.2f\n",connect_time);		
 }
 
 
 /**
-* Returns the connect time of the  
+* Finds the total connect time of a user in seconds
 *
 */
 double get_connect_time(char *username, char *filename){
-	if(username==NULL){
-		printf("\nget_connect_time: username is NULL \n");
-		return -1;
-	}	
-	if(filename!=NULL){
-		utmpxname(filename); /*set the utmp file to be accessed*/
-	}else{
-		//use system default wtmpx file
-		utmpxname(WTMP_FILE);
-	}
-	
-	linked_list * curr;
-	linked_list * head;
-	//struct utmpx;
-	head = NULL;
+	linked_list * head=NULL;
 	struct utmpx * entry = malloc(sizeof(struct utmpx));
 	struct utmpx * new_entry = malloc(sizeof(struct utmpx));
 	
 	setutxent(); /*set file pointer at the beginning*/
 	
-	//TODO: Build a list (called head) of login entries for this user 
+	/*Build a list (called head) of login entries for this user*/ 
 	while(login_entry(username,entry)!=0){
-			//printf("entry time: %.2f\n",(float)entry->ut_time);
-		memcpy(new_entry,entry,sizeof(struct utmpx));
-		//add_to_list(head,*entry); //adds to the user login entries
+		//memcpy(new_entry,entry,sizeof(struct utmpx));
+		
+//Adds a given utmpx to a linked list //adds to the user login entries
 		linked_list *curr=(linked_list *)malloc(sizeof(linked_list));
-		curr->value=*new_entry;
+		curr->value=*entry;
 		curr->next=head;
 		head=curr;
-		//printf("new time: %.2f\n",(float)(head->value).ut_time);
-		if(head==NULL)
-			printf("empty list");
-	}
+	}	
+	if(DEBUG) 
+		print_list(head);	
 	
-	if(DEBUG) print_list(head);
+	double total_connect_time;
+	total_connect_time=derive_durations(head);	
+
+	endutxent(); /*close wtmpx file*/
+	free(entry);
+	return total_connect_time;
+}
+
+/*
+ Iterates through list of login entries,head, and get their corresponding logout times
+*/
+double derive_durations(linked_list * head){
+	linked_list * curr;
+	time_t logout_time,login_time,total = 0;	
 	
-	time_t logout_time,login_time;
-	time_t total = 0;
-	
-	/*
-	TODO: iterate through list of login entries,head, and 
-	and get their corresponding logout times
-	*/
 	curr = head;
 	while(curr!=NULL){
-		struct utmpx * curr_value; 
-		curr_value = &(curr->value);
+		struct utmpx * curr_value = &(curr->value);
 		login_time=curr_value->ut_time;
 		logout_time = get_logout_time(curr_value);
 		if(logout_time==0){
-			if(DEBUG){
-				//printf("login:%f\tlogout:%f\n",(float)login_time,(float)logout_time);
-			}
 			/*use current time, if a logout entry is not found*/
 			time(&logout_time);
 		}else if(login_time > logout_time){
@@ -174,19 +153,8 @@ double get_connect_time(char *username, char *filename){
 		total+= (logout_time - login_time); 
 		curr = curr->next; 
 	}
-	/*
-		TODO: For each login entry call logout_time and do
-		total+=login_time-logout_time 
-		If logout_time = 0, use current_time
-	*/
-	
-	endutxent(); /*close utmpx file*/
-	
-	free(entry);
-	return (double)total;
+	return total;
 }
-
-
 
 void print_list(linked_list * head){
 	linked_list *curr;
@@ -197,18 +165,6 @@ void print_list(linked_list * head){
 	}
 }
 
-/*
-* Adds a given utmpx to a linked list 
-**/
-void add_to_list(linked_list * head, struct utmpx entry){
-	linked_list *curr=(linked_list *)malloc(sizeof(linked_list));
-	curr->value=entry;
-	curr->next=head;
-	head=curr;
-	printf("entry time: %.2f\n",(float)entry.ut_time);
-	printf("new time: %.2f\n",(float)(head->value).ut_time);
-	return;
-}
 
 /*
 * Given a specific username, searches the utmp file for user's initial login time 
