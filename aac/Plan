@@ -3,10 +3,17 @@ Project: aac
 Purpose: A program that computes the total login time for a user specified on the command line
 
 Outline:
-	aac reads and processes the wtmp file records and 
-        determines how long a user has been logged in on various terminals.  
-        aac uses read to get data from the file, and uses
-        printf to format and output results.
+	aac reads and processes the wtmpx file records and determines
+	how long a user has been logged in on various terminals.  
+	For each terminal logged into, aac stores the entries in a
+	linked list of utmpx structs.
+	
+	This list is then parsed, and derives the corresponding login
+	entries from the wtmpx file. The total time connect time for 
+	a user is the sum of the differences between the logout time 
+	and the login time for each login-logout pair.
+  
+        aac uses printf to format and output results.
 
 Output:
 	The output looks like:
@@ -14,12 +21,14 @@ Output:
 	where 10.6 or a decimal number represents the computed time
 
 Arguments:
-	aac accepts the following command line arguments;
-		% aac *username*
-         	% aac -f *filename* *username*
-         	% aac *username* -f *filename*
-        If no filename is given, aac uses WTMPX_FILE as defined
-        in utmpx.h
+	acc accepts 2 arguments: username and filename.
+	 When no filename is specified, WTMPX_FILE,
+	 as defined in the system's utmpx.h, is used.
+	
+	 A filename is specified using the -f flag. For example, 
+		$ aac *username* -f *filename*
+			OR
+		$ aac -f *filename* *username* 
 
 Input:
         aac does not accept any user input; the datafile and the systems wtmpx files are the only source of input

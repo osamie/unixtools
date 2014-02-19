@@ -1,0 +1,35 @@
+
+aac
+
+A unix user accounting tool used in computing the total login time for a user specified on the command line.
+
+ 
+Arguments: username and filename.
+	 When no filename is specified, WTMPX_FILE,
+	 as defined in the system's utmpx.h, is used.
+	
+	 A filename is specified using the -f flag. For example, 
+		$ aac *username* -f *filename*
+			OR
+		$ aac -f *filename* *username* 
+
+Compiling: to compile aac on the commandline,
+		$ gcc -o aac -Wall aac.c utmplib.c
+			OR 
+		$ make aac
+
+Other files:
+	
+	utmpx.c, utmpx.h
+		Provides a variation of the systems's utmpx interface.
+		These files provide functions
+		- struct utmpx *mygetutxent(void);
+		- int myutmpname(const char *file);
+		- void mysetutxent(void);
+		- void myendutxent(void);
+	
+	sample results and typescript
+	
+	Makefile
+
+	

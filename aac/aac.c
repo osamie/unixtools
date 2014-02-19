@@ -6,8 +6,8 @@
 *	   specified on the command line.
 * 
 *   Args: username and filename.
-*	 When no filename is specified, the default
-*	 file,WTMPX is used.
+*	 When no filename is specified, WTMPX_FILE,
+*	 as defined in the system's utmpx.h, is used.
 *	
 *	 A filename is specified using the -f flag. For example, 
 *		$ aac *username* -f *filename*
@@ -71,9 +71,8 @@ double derive_durations(linked_list * head);
 * 
 */
 void dump_output(double connect_time,char * username){
-	/*convert seconds to decimal hours*/
+	/*convert seconds to decimal hours and dump output*/
 	connect_time = connect_time/3600; 
-
 	printf("\ttotal      %.2f\n",connect_time);		
 }
 
@@ -93,7 +92,7 @@ double get_connect_time(char *username, char *filename){
 	while(login_entry(username,entry)!=0){
 		//memcpy(new_entry,entry,sizeof(struct utmpx));
 		
-//Adds a given utmpx to a linked list //adds to the user login entries
+/*Adds a given utmpx to a linked list //adds to the user login entries*/
 		linked_list *curr=(linked_list *)malloc(sizeof(linked_list));
 		curr->value=*entry;
 		curr->next=head;
@@ -111,7 +110,7 @@ double get_connect_time(char *username, char *filename){
 }
 
 /*
- Iterates through list of login entries,head, and get their corresponding logout times
+ Iterates through a list of login entries, gets their corresponding logout times, and sums the total duration for each pair.
 */
 double derive_durations(linked_list * head){
 	linked_list * curr;
@@ -135,23 +134,13 @@ double derive_durations(linked_list * head){
 	return total;
 }
 
-void print_list(linked_list * head){
-	linked_list *curr;
-	curr=head;
-	while(curr){
-		printf("%s logged in at %.2f on terminal %s\n",(curr->value).ut_user,(float)(curr->value).ut_time,(curr->value).ut_line);
-		curr=curr->next;
-	}
-}
-
-
 /*
 * Given a specific username, searches the utmp file for user's initial login time 
 * Returns 0 if not found and -1 if error detected
 */
 time_t login_entry(char * username, struct utmpx * entry){
 	struct utmpx * temp_entry; 
-	time_t login_time=0 ; //= malloc(sizeof(time_t)); 
+	time_t login_time=0 ; 
 
 	if (strlen(username)==0) {
 		return -1;	
@@ -199,6 +188,15 @@ void show_usage() {
 	printf("\nUsage:\n\taac <username>\n");
 	printf("\taac -f <filename> <username>\n");
 	printf("\taac <username> -f <filename>\n");
+}
+
+void print_list(linked_list * head){
+	linked_list *curr;
+	curr=head;
+	while(curr){
+		printf("%s logged in at %.2f on terminal %s\n",(curr->value).ut_user,(float)(curr->value).ut_time,(curr->value).ut_line);
+		curr=curr->next;
+	}
 }
 
 int main(int argc, char * argv[]){

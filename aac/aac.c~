@@ -1,12 +1,26 @@
 /*
-*
 * 
-* Unix user accounting tool
+* aac: A unix user accounting tool
+* 
+*  Purpose: Computes the total login time for a user
+*	   specified on the command line.
+* 
+*   Args: username and filename.
+*	 When no filename is specified, WTMPX_FILE,
+*	 as defined in the system's utmpx.h, is used.
 *	
-* Author: Osazuwa Omigie	
-*		
-* CSCI-E28
-* Harvard University
+*	 A filename is specified using the -f flag. For example, 
+*		$ aac *username* -f *filename*
+*			OR
+*		$ aac -f *filename* *username* 
+*
+*   Compiling: to compile this use
+*		$ gcc -o aac -Wall aac.c utmplib.c	
+* 
+*   Author: Osazuwa Omigie	
+*   Date: February 16,2014.		
+*   CSCI-E28
+*   Harvard University
 *	
 */
 #include <stdio.h>
@@ -57,9 +71,8 @@ double derive_durations(linked_list * head);
 * 
 */
 void dump_output(double connect_time,char * username){
-	/*convert seconds to decimal hours*/
+	/*convert seconds to decimal hours and dump output*/
 	connect_time = connect_time/3600; 
-
 	printf("\ttotal      %.2f\n",connect_time);		
 }
 
@@ -79,7 +92,7 @@ double get_connect_time(char *username, char *filename){
 	while(login_entry(username,entry)!=0){
 		//memcpy(new_entry,entry,sizeof(struct utmpx));
 		
-//Adds a given utmpx to a linked list //adds to the user login entries
+/*Adds a given utmpx to a linked list //adds to the user login entries*/
 		linked_list *curr=(linked_list *)malloc(sizeof(linked_list));
 		curr->value=*entry;
 		curr->next=head;
@@ -97,7 +110,7 @@ double get_connect_time(char *username, char *filename){
 }
 
 /*
- Iterates through list of login entries,head, and get their corresponding logout times
+ Iterates through a list of login entries, gets their corresponding logout times, and sums the total duration for each pair.
 */
 double derive_durations(linked_list * head){
 	linked_list * curr;
@@ -137,7 +150,7 @@ void print_list(linked_list * head){
 */
 time_t login_entry(char * username, struct utmpx * entry){
 	struct utmpx * temp_entry; 
-	time_t login_time=0 ; //= malloc(sizeof(time_t)); 
+	time_t login_time=0 ; 
 
 	if (strlen(username)==0) {
 		return -1;	
