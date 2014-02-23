@@ -1,0 +1,28 @@
+The first part of this assignment involves no programming, just some simple research. Name and describe three more Unix programs that operate on directory trees. Do not include find or the four commands men- tioned in the previous section. For each of the three you mention, state the name of the program, write a sample command line, and write a one sentence description of what the program does.
+
+
+Name, sample command line, one sentence description. 
+
+
+PART 1
+
+A) chown
+A sample usage: chown -R <user>:group <file/directory>. For example, 
+			$ chown -R oracle:dba oracle11gr2. 
+
+Description: This program changes the file owner and group of a file/direftory, and using the -R is able to apply this change recursively on subdirectories of the specified folder.   
+
+
+
+B) chgrp
+A sample usage: chgrp -R <groupname> <file/dir>. For example, 
+			$ chgrp -R everyone test_folder 
+
+Description: This program changes the group of a given file; it is also able to do this recursively on a given directory (i.e on all subdirectories as well).
+
+
+
+C) Grep
+A sample Usage: grep -R <regular_expression> <dir> 
+			$ grep -R expression[0-9] .
+Description: This program searches a given file/files for lines that match one or more specified patterns; using the -R option, the program is also able to search recursively for line patterns of all files under a directory tree.  
