@@ -8,6 +8,7 @@
 #include	<sys/types.h>
 #include	<dirent.h>
 #include	<sys/stat.h>
+#include	<string.h>
 
 void do_ls(char[]);
 void dostat(char *);
@@ -62,7 +63,7 @@ void show_file_info( char *filename, struct stat *info_p )
 {
 	char	*uid_to_name(), *ctime(), *gid_to_name(), *filemode();
 	void	mode_to_letters();
-        char    modestr[11];
+    char    modestr[11];
 
 	mode_to_letters( info_p->st_mode, modestr );
 
@@ -89,11 +90,11 @@ void show_file_info( char *filename, struct stat *info_p )
  */
 void mode_to_letters( int mode, char str[] )
 {
-    strcpy( str, "----------" );           /* default=no perms */
+    strcpy(str,"----------");           /* default=no perms */
 
     if ( S_ISDIR(mode) )  str[0] = 'd';    /* directory?       */
-    if ( S_ISCHR(mode) )  str[0] = 'c';    /* char devices     */
-    if ( S_ISBLK(mode) )  str[0] = 'b';    /* block device     */
+    else if ( S_ISCHR(mode) )  str[0] = 'c';    /* char devices     */
+    else if ( S_ISBLK(mode) )  str[0] = 'b';    /* block device     */
 
     if ( mode & S_IRUSR ) str[1] = 'r';    /* 3 bits for user  */
     if ( mode & S_IWUSR ) str[2] = 'w';

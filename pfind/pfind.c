@@ -24,17 +24,26 @@
 */
 
 
-#include <stdio.h>
+#include 	<stdio.h>
+#include	<sys/types.h>
+#include	<dirent.h>
+#include	<sys/stat.h>
+#include	<string.h>
 
+
+void do_ls(char dirname[]);
+void dostat(char *filename);
 
 int main(int argc, char * argv[]){
 		char * starting_dir=NULL, *name=NULL;
-		char type=NULL;
+		char type;
 
-		if(argc==2){
+		if(argc==1)
+			do_ls(".");
+		else if(argc==2){
 			/*pfind <dir> */
 			starting_dir =  argv[1];
-			//walk tree hierarchy
+			do_ls(starting_dir);
 		}else if(argc==4){
 			/* pfind <dir> -name <pattern>
 			   pfind <dir> -type <filetype>
@@ -45,7 +54,7 @@ int main(int argc, char * argv[]){
 				name = argv[3]; 
 				//walk tree hierarchy with name
 			}else if(strcmp(argv[2],"-type")){
-				type = argv[3];
+				type = atoi(argv[3]);
 				//walk tree hierarchy with type
 			}
 			//return 
@@ -54,21 +63,50 @@ int main(int argc, char * argv[]){
 			if(strcmp(argv[2],"-name")){
 				name = argv[3]; 
 				if(strcmp(argv[4],"-type")){
-					type = argv[5];
+					type = atoi(argv[5]);
 					//walk tree hierarchy with name and type
 				}
 				//error handling: print usage
 			}
 				//walk tree hierarchy with name
 			}else if(strcmp(argv[2],"-type")){
-				type = argv[3];
+				type = atoi(argv[3]);
 				if(strcmp(argv[4],"-name")){
-					type = argv[5];
+					type = atoi(argv[5]);
 					//walk tree hierarchy with name and type
 				}
 				//error handling: print usage
 			}
-		}
-
+		
 		return 0;
+}
+
+
+/*
+parse_dir(){
+	if(dir_entry is directory)
+		parsedir(dir_entry)
+	else 
+		if(dir_entry.filename == filename)
+			printf(dir_entry.filname)
+}
+
+*/
+
+void do_ls( char dirname[] )
+/*
+ *	list files in directory called dirname
+ */
+{
+	DIR		*dir_ptr;		/* the directory */
+	struct dirent	*direntp;		/* each entry	 */
+
+	if ( ( dir_ptr = opendir( dirname ) ) == NULL )
+		fprintf(stderr,"pfind: cannot open %s\n", dirname);
+	else
+	{
+		while ( ( direntp = readdir( dir_ptr ) ) != NULL )
+			printf("%s\n",direntp->d_name);
+		closedir(dir_ptr);
+	}
 }
