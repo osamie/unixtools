@@ -1,0 +1,25 @@
+Project: pfind
+
+Purpose: The find utility recursively descends the directory tree for each path listed, evaluating an expression (composed of the ``primaries'' and ``operands'' listed below) in terms of each file in the tree.
+
+
+Outline:
+	
+
+Output:
+	
+
+Arguments:
+	
+	
+
+Input:
+        
+
+Data Structures:
+        
+
+Files:
+	
+	
+        
