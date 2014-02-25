@@ -115,7 +115,6 @@ int match_type(struct dirent * entry, char type){
 	// supported types: f|d|b|c|p|l|s
 	switch(type){
 		case 'f':
-			// printf("found file\n");
 			return S_ISREG(mode);
 		case 'd':
 			return S_ISDIR(mode);
@@ -151,7 +150,6 @@ int match_name(struct dirent * entry, const char * pattern){
 
 
 void parse_dir(char * start_dir,char * name,char type){
-	printf("test\n");
 	if(strlen(name)==0){
 		parse_with_type(start_dir,type);
 	}
