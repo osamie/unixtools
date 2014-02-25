@@ -29,13 +29,17 @@
 #include	<sys/stat.h>
 #include	<string.h>
 #include	<stdlib.h>
-
+#include 	<fnmatch.h>
 
 void do_ls(char dirname[]);
 void dostat(char *filename);
 int match_type(struct dirent * entry,char type);
+int match_name(struct dirent * entry, const char * pattern);
 void parse_dir(char * start_dir,char * name, char type);
+void parse_with_type(char * start_dir,char type);
+void parse_with_name(char * start_dir,char * name);
 int get_stat(const char *filename, struct stat * info);
+
 
 int main(int argc, char * argv[]){
 		char * starting_dir=NULL, *name=NULL;
@@ -60,7 +64,7 @@ int main(int argc, char * argv[]){
 			}else if(!strcmp(argv[2],"-type")){
 				type = argv[3];
 				// printf("type:%c\n",type[0]);
-				parse_dir(starting_dir,NULL,type[0]);
+				parse_dir(starting_dir,"",type[0]);
 			}
 			//return 
 		}else if(argc==6){
@@ -132,11 +136,41 @@ int match_type(struct dirent * entry, char type){
 }
 
 
+// int fnmatch(const char *pattern, const char *string, int flags);
+/*
+	Returns zero if matching filename or pattern
+*/
+int match_name(struct dirent * entry, const char * pattern){
+	int is_a_match=0;
+	char * filename = entry->d_name;
+	if ((is_a_match=fnmatch(pattern, filename, FNM_PATHNAME)) !=0){
+		perror(pattern);
+	}
+	return is_a_match;
+}
+
 
 void parse_dir(char * start_dir,char * name,char type){
-	DIR		*dir_ptr;		/* the directory */
-	struct dirent	*direntp;		/* each entry	 */
+	printf("test\n");
+	if(strlen(name)==0){
+		parse_with_type(start_dir,type);
+	}
+		
 
+// match_name(struct dirent * entry, const char * pattern)
+
+	//entry = read the directory
+	// if(dir_entry is directory)
+	// 	parsedir(dir_entry)
+	// else 
+	// 	if(match_type(dirname,type))
+	// 		printf(dir_entry.filname)
+}
+
+void parse_with_type(char * start_dir,char type){
+
+	DIR	*dir_ptr;		/* the directory */
+	struct dirent *direntp;		/* each entry	 */
 
 	if ( (dir_ptr=opendir(start_dir))==NULL )
 		fprintf(stderr,"pfind: cannot open %s\n", start_dir);
@@ -151,13 +185,10 @@ void parse_dir(char * start_dir,char * name,char type){
 		closedir(dir_ptr);
 	}
 
+}
 
-	//entry = read the directory
-	// if(dir_entry is directory)
-	// 	parsedir(dir_entry)
-	// else 
-	// 	if(match_type(dirname,type))
-	// 		printf(dir_entry.filname)
+void parse_with_name(char * start_dir,char * name){
+
 }
 
 /*
