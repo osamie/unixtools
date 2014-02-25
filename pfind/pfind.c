@@ -33,10 +33,14 @@
 
 void do_ls(char dirname[]);
 void dostat(char *filename);
+int match_type(struct dirent * entry,char type);
+void parse_dir(char * start_dir,char * name, char type);
+int get_stat(char *filename, struct stat * info);
 
 int main(int argc, char * argv[]){
 		char * starting_dir=NULL, *name=NULL;
 		char type;
+		struct stat * info;
 
 		if(argc==1)
 			do_ls(".");
@@ -51,11 +55,12 @@ int main(int argc, char * argv[]){
 			starting_dir =  argv[1];
 
 			if(strcmp(argv[2],"-name")){
-				name = argv[3]; 
+				name = argv[3];
+
 				//walk tree hierarchy with name
 			}else if(strcmp(argv[2],"-type")){
 				type = atoi(argv[3]);
-				//walk tree hierarchy with type
+				parse_dir(starting_dir,NULL,type);
 			}
 			//return 
 		}else if(argc==6){
@@ -82,22 +87,95 @@ int main(int argc, char * argv[]){
 }
 
 
+int get_stat(char *filename, struct stat * info)
+{
+	if (lstat(filename, info) == -1){
+		/* cannot stat	 */
+		perror( filename );			/* say why	 */
+		return -1;
+	} 
+	return 0;	
+}
+
+
 /*
-parse_dir(){
+
+parse_dir(dirname,name,type){
+
+	//entry = read the directory
 	if(dir_entry is directory)
 		parsedir(dir_entry)
 	else 
-		if(dir_entry.filename == filename)
+		if(match_type(dirname,type))
 			printf(dir_entry.filname)
 }
 
-*/
 
-void do_ls( char dirname[] )
+*/
+int match_type(struct dirent * entry, char type){
+	struct stat * file_info;
+	int mode;
+
+	if (get_stat(entry->d_name,file_info) < 0){
+		perror(entry->d_name);
+		return 0;
+	}
+	mode = file_info->st_mode;
+
+
+	// supported types: f|d|b|c|p|l|s
+	switch(type){
+		case 'f':
+			return ISREG(mode);
+		case 'd':
+			return S_ISDIR(mode);
+		case 'b':
+			return S_ISBLK(mode);
+		case 'c':
+			return S_ISCHR(mode);
+		case 'p':
+			return S_ISFIFO(mode);
+		case 'l':
+			return S_ISLNK(mode);
+		case 's':
+			return S_ISSOCK(mode);
+		default: 
+			return 0;
+	}
+}
+
+
+
+void parse_dir(char * start_dir,char * name,char type){
+	DIR		*dir_ptr;		/* the directory */
+	struct dirent	*direntp;		/* each entry	 */
+
+	if ( ( dir_ptr = opendir(start_dir))==NULL )
+		fprintf(stderr,"pfind: cannot open %s\n", start_dir);
+	else
+	{
+		while ( ( direntp = readdir( dir_ptr ) ) != NULL ){
+			/*check if it is a file*/
+			if(match_type(direntp,'d')){
+				printf("%s\n",direntp->d_name);	
+			}
+		}
+		closedir(dir_ptr);
+	}
+
+
+	//entry = read the directory
+	// if(dir_entry is directory)
+	// 	parsedir(dir_entry)
+	// else 
+	// 	if(match_type(dirname,type))
+	// 		printf(dir_entry.filname)
+}
+
 /*
  *	list files in directory called dirname
  */
-{
+void do_ls(char dirname[]){
 	DIR		*dir_ptr;		/* the directory */
 	struct dirent	*direntp;		/* each entry	 */
 
