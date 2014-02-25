@@ -23,23 +23,23 @@
 *	
 */
 
-
 #include 	<stdio.h>
 #include	<sys/types.h>
 #include	<dirent.h>
 #include	<sys/stat.h>
 #include	<string.h>
+#include	<stdlib.h>
 
 
 void do_ls(char dirname[]);
 void dostat(char *filename);
 int match_type(struct dirent * entry,char type);
 void parse_dir(char * start_dir,char * name, char type);
-int get_stat(char *filename, struct stat * info);
+int get_stat(const char *filename, struct stat * info);
 
 int main(int argc, char * argv[]){
 		char * starting_dir=NULL, *name=NULL;
-		char type;
+		char * type;
 		struct stat * info;
 
 		if(argc==1)
@@ -53,14 +53,14 @@ int main(int argc, char * argv[]){
 			   pfind <dir> -type <filetype>
 			*/
 			starting_dir =  argv[1];
-
-			if(strcmp(argv[2],"-name")){
+			if(!strcmp(argv[2],"-name")){
 				name = argv[3];
 
 				//walk tree hierarchy with name
-			}else if(strcmp(argv[2],"-type")){
-				type = atoi(argv[3]);
-				parse_dir(starting_dir,NULL,type);
+			}else if(!strcmp(argv[2],"-type")){
+				type = argv[3];
+				// printf("type:%c\n",type[0]);
+				parse_dir(starting_dir,NULL,type[0]);
 			}
 			//return 
 		}else if(argc==6){
@@ -68,16 +68,16 @@ int main(int argc, char * argv[]){
 			if(strcmp(argv[2],"-name")){
 				name = argv[3]; 
 				if(strcmp(argv[4],"-type")){
-					type = atoi(argv[5]);
+					type = argv[5];
 					//walk tree hierarchy with name and type
 				}
 				//error handling: print usage
 			}
 				//walk tree hierarchy with name
 			}else if(strcmp(argv[2],"-type")){
-				type = atoi(argv[3]);
+				type = argv[3];
 				if(strcmp(argv[4],"-name")){
-					type = atoi(argv[5]);
+					type = argv[5];
 					//walk tree hierarchy with name and type
 				}
 				//error handling: print usage
@@ -87,9 +87,9 @@ int main(int argc, char * argv[]){
 }
 
 
-int get_stat(char *filename, struct stat * info)
+int get_stat(const char *filename, struct stat * info)
 {
-	if (lstat(filename, info) == -1){
+	if (stat(filename, info) == -1){
 		/* cannot stat	 */
 		perror( filename );			/* say why	 */
 		return -1;
@@ -97,36 +97,22 @@ int get_stat(char *filename, struct stat * info)
 	return 0;	
 }
 
-
-/*
-
-parse_dir(dirname,name,type){
-
-	//entry = read the directory
-	if(dir_entry is directory)
-		parsedir(dir_entry)
-	else 
-		if(match_type(dirname,type))
-			printf(dir_entry.filname)
-}
-
-
-*/
 int match_type(struct dirent * entry, char type){
-	struct stat * file_info;
+	struct stat * file_info = malloc(sizeof(struct stat));
 	int mode;
 
+	// printf("HERE: %s\n",entry->d_name);
+
 	if (get_stat(entry->d_name,file_info) < 0){
-		perror(entry->d_name);
 		return 0;
 	}
 	mode = file_info->st_mode;
 
-
 	// supported types: f|d|b|c|p|l|s
 	switch(type){
 		case 'f':
-			return ISREG(mode);
+			// printf("found file\n");
+			return S_ISREG(mode);
 		case 'd':
 			return S_ISDIR(mode);
 		case 'b':
@@ -142,6 +128,7 @@ int match_type(struct dirent * entry, char type){
 		default: 
 			return 0;
 	}
+	free(file_info);
 }
 
 
@@ -150,13 +137,14 @@ void parse_dir(char * start_dir,char * name,char type){
 	DIR		*dir_ptr;		/* the directory */
 	struct dirent	*direntp;		/* each entry	 */
 
-	if ( ( dir_ptr = opendir(start_dir))==NULL )
+
+	if ( (dir_ptr=opendir(start_dir))==NULL )
 		fprintf(stderr,"pfind: cannot open %s\n", start_dir);
 	else
 	{
 		while ( ( direntp = readdir( dir_ptr ) ) != NULL ){
 			/*check if it is a file*/
-			if(match_type(direntp,'d')){
+			if(match_type(direntp,type)){
 				printf("%s\n",direntp->d_name);	
 			}
 		}
