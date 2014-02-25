@@ -59,7 +59,7 @@ int main(int argc, char * argv[]){
 			starting_dir =  argv[1];
 			if(!strcmp(argv[2],"-name")){
 				name = argv[3];
-
+				parse_dir(starting_dir,name,"");
 				//walk tree hierarchy with name
 			}else if(!strcmp(argv[2],"-type")){
 				type = argv[3];
@@ -140,19 +140,24 @@ int match_type(struct dirent * entry, char type){
 	Returns zero if matching filename or pattern
 */
 int match_name(struct dirent * entry, const char * pattern){
-	int is_a_match=0;
+	// int is_a_match=1;
 	char * filename = entry->d_name;
-	if ((is_a_match=fnmatch(pattern, filename, FNM_PATHNAME)) !=0){
+	if (fnmatch(pattern, filename, 0) !=0){
 		perror(pattern);
+		return 1;
 	}
-	return is_a_match;
+	return 0;
 }
 
 
 void parse_dir(char * start_dir,char * name,char type){
-	if(strlen(name)==0){
+	if((strlen(name)==0) && (type > 0)) {
 		parse_with_type(start_dir,type);
+	}else if ((strlen(name)>0) && (type==0)){
+		
+		parse_with_name(start_dir,name);
 	}
+	printf("parsing with name criteria");
 		
 
 // match_name(struct dirent * entry, const char * pattern)
@@ -186,6 +191,21 @@ void parse_with_type(char * start_dir,char type){
 }
 
 void parse_with_name(char * start_dir,char * name){
+	DIR	*dir_ptr;		/* the directory */
+	struct dirent *direntp;		/* each entry	 */
+
+	if ( (dir_ptr=opendir(start_dir))==NULL )
+		fprintf(stderr,"pfind: cannot open %s\n", start_dir);
+	else
+	{
+		while ( ( direntp = readdir( dir_ptr ) ) != NULL ){
+			/*check if it is a file*/
+			if(match_name(direntp,name)){
+				printf("%s\n",direntp->d_name);	
+			}
+		}
+		closedir(dir_ptr);
+	}
 
 }
 
