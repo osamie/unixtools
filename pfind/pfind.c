@@ -37,6 +37,8 @@
 #define 	CR_NAME		1
 #define 	CR_TYPE		2
 
+#define		BUFF_SIZE	400
+
 
 void do_ls(char dirname[]);
 void dostat(char *filename);
@@ -46,6 +48,7 @@ void parse_dir(char * start_dir,char * name, const char type);
 void parse_with_type(char * start_dir,char type);
 void parse_with_name(char * start_dir,char * name);
 int get_stat(const char *filename, struct stat * info);
+void parse_dir_helper(char * start_dir,char * name,const char type,char * find_results[],int current_index, int criteria_flag);
 
 
 int main(int argc, char * argv[]){
@@ -79,14 +82,14 @@ int main(int argc, char * argv[]){
 					parse_dir(starting_dir,name,type[0]);		
 				}
 				//TODO error handling: print usage
+			} else if(!strcmp(argv[2],"-type")){
+				type = argv[3];
+				if(!strcmp(argv[4],"-name")){
+					name = argv[5];
+					parse_dir(starting_dir,name,type[0]);
+				}
+				//TODO error handling: print usage
 			}
-		}else if(!strcmp(argv[2],"-type")){
-			type = argv[3];
-			if(!strcmp(argv[4],"-name")){
-				type = argv[5];
-				parse_dir(starting_dir,name,type[0]);
-			}
-			//TODO error handling: print usage
 		}		
 		return 0;
 }
@@ -150,11 +153,29 @@ int match_name(struct dirent * entry, const char * pattern){
 	return 1;
 }
 
-// parse_with_type(start_dir,type); parse_with_name(start_dir,name);
+
+
 void parse_dir(char * start_dir,char * name,const char type){
 	DIR	*dir_ptr;		/* the directory */
 	struct dirent *direntp;		/* each entry	 */
 	int criteria_flag=CR_ALL;  
+	char * find_results[BUFF_SIZE];  //holds the entire search results
+	static int current_index = 0;
+
+	if((strlen(name)==0) && (type==' '))
+		return;
+	else if((strlen(name)==0) && (type > 0)) {
+		criteria_flag =CR_TYPE;
+	}else if ((strlen(name)>0) && (type==' ')){
+		criteria_flag=CR_NAME;
+	}
+	parse_dir_helper(start_dir,name,type,find_results,current_index, criteria_flag);
+}
+// parse_with_type(start_dir,type); parse_with_name(start_dir,name);
+void parse_dir_helper(char * start_dir,char * name,const char type,char * find_results[],int current_index, int criteria_flag){
+	DIR	*dir_ptr;		/* the directory */
+	struct dirent *direntp;		/* each entry	 */
+	// int criteria_flag=CR_ALL;  
 
 	if((strlen(name)==0) && (type==' '))
 		return;
@@ -193,9 +214,6 @@ void parse_dir(char * start_dir,char * name,const char type){
 	// 		printf(dir_entry.filname)
 }
 
-void parse_name_type(){
-
-}
 void parse_with_type(char * start_dir,char type){
 	DIR	*dir_ptr;		/* the directory */
 	struct dirent *direntp;		/* each entry	 */
