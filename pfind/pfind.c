@@ -214,7 +214,8 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 				// printf("currIndex %d\n",*current_index);
 				// strcpy(find_results[current_index++],direntp->d_name);
 			}else if ((criteria_flag==CR_ALL) && match_name(direntp,name) && match_type(direntp,type)){
-				// strcpy(find_results[current_index++],direntp->d_name);
+				find_results[*current_index] = direntp->d_name;
+				*current_index +=1;
 			}
 		}
 		closedir(dir_ptr);
