@@ -31,6 +31,13 @@
 #include	<stdlib.h>
 #include 	<fnmatch.h>
 
+
+//search criteria flags
+#define		CR_ALL		0
+#define 	CR_NAME		1
+#define 	CR_TYPE		2
+
+
 void do_ls(char dirname[]);
 void dostat(char *filename);
 int match_type(struct dirent * entry,char type);
@@ -42,51 +49,45 @@ int get_stat(const char *filename, struct stat * info);
 
 
 int main(int argc, char * argv[]){
-		char * starting_dir=NULL, *name=NULL;
+		char * starting_dir, *name=NULL;
 		char * type;
 		struct stat * info;
 
+		starting_dir =(argc>=2)? argv[1] : NULL;
 		if(argc==1)
 			do_ls(".");
 		else if(argc==2){
-			/*pfind <dir> */
-			starting_dir =  argv[1];
+			/*pfind <dir> */		
 			do_ls(starting_dir);
 		}else if(argc==4){
 			/* pfind <dir> -name <pattern>
 			   pfind <dir> -type <filetype>
-			*/
-			starting_dir =  argv[1];
+			*/			
 			if(!strcmp(argv[2],"-name")){
 				name = argv[3];
 				parse_dir(starting_dir,name,' ');
-				//walk tree hierarchy with name
 			}else if(!strcmp(argv[2],"-type")){
 				type = argv[3];
-				// printf("type:%c\n",type[0]);
 				parse_dir(starting_dir,"",type[0]);
 			}
-			//return 
 		}else if(argc==6){
 			/* */
-			if(strcmp(argv[2],"-name")){
+			if(!strcmp(argv[2],"-name")){
 				name = argv[3]; 
-				if(strcmp(argv[4],"-type")){
+				if(!strcmp(argv[4],"-type")){
 					type = argv[5];
-					//walk tree hierarchy with name and type
+					parse_dir(starting_dir,name,type[0]);		
 				}
-				//error handling: print usage
+				//TODO error handling: print usage
 			}
-				//walk tree hierarchy with name
-			}else if(strcmp(argv[2],"-type")){
-				type = argv[3];
-				if(strcmp(argv[4],"-name")){
-					type = argv[5];
-					//walk tree hierarchy with name and type
-				}
-				//error handling: print usage
+		}else if(!strcmp(argv[2],"-type")){
+			type = argv[3];
+			if(!strcmp(argv[4],"-name")){
+				type = argv[5];
+				parse_dir(starting_dir,name,type[0]);
 			}
-		
+			//TODO error handling: print usage
+		}		
 		return 0;
 }
 
@@ -149,13 +150,39 @@ int match_name(struct dirent * entry, const char * pattern){
 	return 1;
 }
 
-
+// parse_with_type(start_dir,type); parse_with_name(start_dir,name);
 void parse_dir(char * start_dir,char * name,const char type){
-	if((strlen(name)==0) && (type > 0)) {
-		parse_with_type(start_dir,type);
+	DIR	*dir_ptr;		/* the directory */
+	struct dirent *direntp;		/* each entry	 */
+	int criteria_flag=CR_ALL;  
+
+	if((strlen(name)==0) && (type==' '))
+		return;
+	else if((strlen(name)==0) && (type > 0)) {
+		criteria_flag =CR_TYPE;
 	}else if ((strlen(name)>0) && (type==' ')){
-		parse_with_name(start_dir,name);
+		criteria_flag=CR_NAME;
 	}
+
+	if ((dir_ptr=opendir(start_dir))==NULL )
+		fprintf(stderr,"pfind: cannot open %s\n", start_dir);
+	else
+	{
+		while ((direntp = readdir(dir_ptr)) != NULL){
+			/*check if it is a file*/
+			if((criteria_flag==CR_TYPE) && match_type(direntp,type)) {
+				printf("%s\n",direntp->d_name);	
+			}else if((criteria_flag==CR_NAME) && match_name(direntp,name)){
+				printf("%s\n",direntp->d_name);	
+			}else if ((criteria_flag==CR_ALL) && match_name(direntp,name) && match_type(direntp,type)){
+				printf("%s\n",direntp->d_name);	
+			}
+		}
+		closedir(dir_ptr);
+	}
+
+
+
 // match_name(struct dirent * entry, const char * pattern)
 
 	//entry = read the directory
@@ -166,8 +193,10 @@ void parse_dir(char * start_dir,char * name,const char type){
 	// 		printf(dir_entry.filname)
 }
 
-void parse_with_type(char * start_dir,char type){
+void parse_name_type(){
 
+}
+void parse_with_type(char * start_dir,char type){
 	DIR	*dir_ptr;		/* the directory */
 	struct dirent *direntp;		/* each entry	 */
 
