@@ -35,7 +35,7 @@ void do_ls(char dirname[]);
 void dostat(char *filename);
 int match_type(struct dirent * entry,char type);
 int match_name(struct dirent * entry, const char * pattern);
-void parse_dir(char * start_dir,char * name, char type);
+void parse_dir(char * start_dir,char * name, const char type);
 void parse_with_type(char * start_dir,char type);
 void parse_with_name(char * start_dir,char * name);
 int get_stat(const char *filename, struct stat * info);
@@ -59,7 +59,7 @@ int main(int argc, char * argv[]){
 			starting_dir =  argv[1];
 			if(!strcmp(argv[2],"-name")){
 				name = argv[3];
-				parse_dir(starting_dir,name,"");
+				parse_dir(starting_dir,name,' ');
 				//walk tree hierarchy with name
 			}else if(!strcmp(argv[2],"-type")){
 				type = argv[3];
@@ -140,26 +140,22 @@ int match_type(struct dirent * entry, char type){
 	Returns zero if matching filename or pattern
 */
 int match_name(struct dirent * entry, const char * pattern){
-	// int is_a_match=1;
 	char * filename = entry->d_name;
 	if (fnmatch(pattern, filename, 0) !=0){
-		perror(pattern);
-		return 1;
+		// printf("ouch! %s\n",filename);
+		// perror(pattern);
+		return 0;
 	}
-	return 0;
+	return 1;
 }
 
 
-void parse_dir(char * start_dir,char * name,char type){
+void parse_dir(char * start_dir,char * name,const char type){
 	if((strlen(name)==0) && (type > 0)) {
 		parse_with_type(start_dir,type);
-	}else if ((strlen(name)>0) && (type==0)){
-		
+	}else if ((strlen(name)>0) && (type==' ')){
 		parse_with_name(start_dir,name);
 	}
-	printf("parsing with name criteria");
-		
-
 // match_name(struct dirent * entry, const char * pattern)
 
 	//entry = read the directory
