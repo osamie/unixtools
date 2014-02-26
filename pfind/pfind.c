@@ -186,7 +186,9 @@ void parse_dir(char * start_dir,char * name,const char type){
 void parse_dir_helper(char * start_dir,char * name,const char type,char * find_results[],int * current_index, int criteria_flag){
 	DIR	*dir_ptr;		/* the directory */
 	struct dirent *direntp;		/* each entry	 */
-	// char * sub_directories[BUFF_SIZE];  //holds the final search results
+	char * sub_directories[BUFF_SIZE];  //holds the final search results
+	int index = 0;
+	// int * sub_dir_index = &index;
 
 	if((strlen(name)==0) && (type==' '))
 		return;
@@ -217,7 +219,20 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 				find_results[*current_index] = direntp->d_name;
 				*current_index +=1;
 			}
+
+			if(match_type(direntp,'d')){ //if this is a directory, store for parsing later
+				sub_directories[index++]=direntp->d_name;
+			}
 		}
+		printf("sub dir:\n");
+		int k;
+		for(k=0; k<index;k++){
+			char * sub_dir = sub_directories[k];
+			// printf("%s\n",sub_directories[k]);
+			if ((!strcmp(sub_dir,".")) && (!strcmp(sub_dir,"..")))
+				parse_dir_helper(sub_directories[k],name,type,find_results,current_index, criteria_flag);
+		}
+		printf("end_sub_dir:\n\n");
 		closedir(dir_ptr);
 	}
 
