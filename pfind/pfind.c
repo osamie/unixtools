@@ -37,7 +37,7 @@
 #define 	CR_NAME		1
 #define 	CR_TYPE		2
 
-#define		BUFF_SIZE	400
+#define		BUFF_SIZE	150
 
 
 void do_ls(char dirname[]);
@@ -48,13 +48,15 @@ void parse_dir(char * start_dir,char * name, const char type);
 void parse_with_type(char * start_dir,char type);
 void parse_with_name(char * start_dir,char * name);
 int get_stat(const char *filename, struct stat * info);
-void parse_dir_helper(char * start_dir,char * name,const char type,char * find_results[],int current_index, int criteria_flag);
+void parse_dir_helper(char * start_dir,char * name,const char type,char * find_results[],int * current_index, int criteria_flag);
 
+static int * current_index;
 
 int main(int argc, char * argv[]){
 		char * starting_dir, *name=NULL;
 		char * type;
 		struct stat * info;
+		// printf("HERE:");
 
 		starting_dir =(argc>=2)? argv[1] : NULL;
 		if(argc==1)
@@ -154,13 +156,13 @@ int match_name(struct dirent * entry, const char * pattern){
 }
 
 
-
 void parse_dir(char * start_dir,char * name,const char type){
 	DIR	*dir_ptr;		/* the directory */
 	struct dirent *direntp;		/* each entry	 */
 	int criteria_flag=CR_ALL;  
-	char * find_results[BUFF_SIZE];  //holds the entire search results
-	static int current_index = 0;
+	char * find_results[BUFF_SIZE];  //holds the final search results
+	int index=0;
+	current_index = &index;
 
 	if((strlen(name)==0) && (type==' '))
 		return;
@@ -169,13 +171,22 @@ void parse_dir(char * start_dir,char * name,const char type){
 	}else if ((strlen(name)>0) && (type==' ')){
 		criteria_flag=CR_NAME;
 	}
+
 	parse_dir_helper(start_dir,name,type,find_results,current_index, criteria_flag);
+	int i;
+	// printf("curr_index: %d\n",index);
+	for(i=0;i<index;i++){
+		printf("%s\n",find_results[i]);
+
+	}
 }
+
+
 // parse_with_type(start_dir,type); parse_with_name(start_dir,name);
-void parse_dir_helper(char * start_dir,char * name,const char type,char * find_results[],int current_index, int criteria_flag){
+void parse_dir_helper(char * start_dir,char * name,const char type,char * find_results[],int * current_index, int criteria_flag){
 	DIR	*dir_ptr;		/* the directory */
 	struct dirent *direntp;		/* each entry	 */
-	// int criteria_flag=CR_ALL;  
+	// char * sub_directories[BUFF_SIZE];  //holds the final search results
 
 	if((strlen(name)==0) && (type==' '))
 		return;
@@ -192,11 +203,18 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 		while ((direntp = readdir(dir_ptr)) != NULL){
 			/*check if it is a file*/
 			if((criteria_flag==CR_TYPE) && match_type(direntp,type)) {
-				printf("%s\n",direntp->d_name);	
+				//add to find results and increment index
+				find_results[*current_index] = direntp->d_name;
+				*current_index +=1;
+				// printf("currIndex %d\n",*current_index);
+				// strcpy(find_results[current_index++],direntp->d_name);	
 			}else if((criteria_flag==CR_NAME) && match_name(direntp,name)){
-				printf("%s\n",direntp->d_name);	
+				find_results[*current_index] = direntp->d_name;
+				*current_index +=1;
+				// printf("currIndex %d\n",*current_index);
+				// strcpy(find_results[current_index++],direntp->d_name);
 			}else if ((criteria_flag==CR_ALL) && match_name(direntp,name) && match_type(direntp,type)){
-				printf("%s\n",direntp->d_name);	
+				// strcpy(find_results[current_index++],direntp->d_name);
 			}
 		}
 		closedir(dir_ptr);
