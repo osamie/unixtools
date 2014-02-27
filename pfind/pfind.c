@@ -37,13 +37,13 @@
 #define 	CR_NAME		1
 #define 	CR_TYPE		2
 
-#define		BUFF_SIZE	150
+#define		BUFF_SIZE	1000
 
 
 void do_ls(char dirname[]);
 void dostat(char *filename);
-int match_type(struct dirent * entry,char type);
-int match_name(struct dirent * entry, const char * pattern);
+int match_type(char * entry_pathname,char type);
+int match_name(char * entry_pathname, const char * pattern);
 void parse_dir(char * start_dir,char * name, const char type);
 void parse_with_type(char * start_dir,char type);
 void parse_with_name(char * start_dir,char * name);
@@ -99,7 +99,7 @@ int main(int argc, char * argv[]){
 
 int get_stat(const char *filename, struct stat * info)
 {
-	if (stat(filename, info) == -1){
+	if (lstat(filename, info) == -1){
 		/* cannot stat	 */
 		perror( filename );			/* say why	 */
 		return -1;
@@ -107,13 +107,13 @@ int get_stat(const char *filename, struct stat * info)
 	return 0;	
 }
 
-int match_type(struct dirent * entry, char type){
+int match_type(char * entry_pathname, char type){
 	struct stat * file_info = malloc(sizeof(struct stat));
 	int mode;
 
 	// printf("HERE: %s\n",entry->d_name);
 
-	if (get_stat(entry->d_name,file_info) < 0){
+	if (get_stat(entry_pathname,file_info) < 0){
 		return 0;
 	}
 	mode = file_info->st_mode;
@@ -145,9 +145,9 @@ int match_type(struct dirent * entry, char type){
 /*
 	Returns zero if matching filename or pattern
 */
-int match_name(struct dirent * entry, const char * pattern){
-	char * filename = entry->d_name;
-	if (fnmatch(pattern, filename, 0) !=0){
+int match_name(char * entry_pathname, const char * pattern){
+	// char * filename = entry->d_name;
+	if (fnmatch(pattern, entry_pathname, 0) !=0){
 		// printf("ouch! %s\n",filename);
 		// perror(pattern);
 		return 0;
@@ -174,10 +174,9 @@ void parse_dir(char * start_dir,char * name,const char type){
 
 	parse_dir_helper(start_dir,name,type,find_results,current_index, criteria_flag);
 	int i;
-	// printf("curr_index: %d\n",index);
+	//TODO: sort find_results 
 	for(i=0;i<index;i++){
 		printf("%s\n",find_results[i]);
-
 	}
 }
 
@@ -188,103 +187,49 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 	struct dirent *direntp;		/* each entry	 */
 	char * sub_directories[BUFF_SIZE];  //holds the final search results
 	int index = 0;
-	// int * sub_dir_index = &index;
+	int is_parent,is_grandparent;
+	char * back_slash = "/";
+	char * subpath;
 
-	if((strlen(name)==0) && (type==' '))
-		return;
-	else if((strlen(name)==0) && (type > 0)) {
-		criteria_flag =CR_TYPE;
-	}else if ((strlen(name)>0) && (type==' ')){
-		criteria_flag=CR_NAME;
-	}
-
+	// printf("\n***Traversing path: %s****\n",start_dir);
 	if ((dir_ptr=opendir(start_dir))==NULL )
 		fprintf(stderr,"pfind: cannot open %s\n", start_dir);
 	else
 	{
 		while ((direntp = readdir(dir_ptr)) != NULL){
+			subpath = malloc(strlen(start_dir) + strlen(direntp->d_name) + 1);
+			strcpy(subpath,start_dir);
+			strcat(subpath,back_slash);
+			strcat(subpath,direntp->d_name);	
+			is_parent=!strcmp(direntp->d_name,".");
+			is_grandparent=!strcmp(direntp->d_name,"..");		
+
+			if(is_grandparent && is_parent) 
+				continue;
 			/*check if it is a file*/
-			if((criteria_flag==CR_TYPE) && match_type(direntp,type)) {
+			if((criteria_flag==CR_TYPE) && match_type(subpath,type)) {
 				//add to find results and increment index
-				find_results[*current_index] = direntp->d_name;
+				find_results[*current_index] = subpath;
+				*current_index +=1;	
+			}else if((criteria_flag==CR_NAME) && match_name(subpath,name)){
+				find_results[*current_index] = subpath;
 				*current_index +=1;
-				// printf("currIndex %d\n",*current_index);
-				// strcpy(find_results[current_index++],direntp->d_name);	
-			}else if((criteria_flag==CR_NAME) && match_name(direntp,name)){
-				find_results[*current_index] = direntp->d_name;
-				*current_index +=1;
-				// printf("currIndex %d\n",*current_index);
-				// strcpy(find_results[current_index++],direntp->d_name);
-			}else if ((criteria_flag==CR_ALL) && match_name(direntp,name) && match_type(direntp,type)){
-				find_results[*current_index] = direntp->d_name;
+			}else if ((criteria_flag==CR_ALL) && match_name(subpath,name) && match_type(subpath,type)){
+				find_results[*current_index] = subpath;
 				*current_index +=1;
 			}
+			
 
-			if(match_type(direntp,'d')){ //if this is a directory, store for parsing later
-				sub_directories[index++]=direntp->d_name;
-			}
-		}
-		printf("sub dir:\n");
-		int k;
-		for(k=0; k<index;k++){
-			char * sub_dir = sub_directories[k];
-			// printf("%s\n",sub_directories[k]);
-			if ((!strcmp(sub_dir,".")) && (!strcmp(sub_dir,"..")))
-				parse_dir_helper(sub_directories[k],name,type,find_results,current_index, criteria_flag);
-		}
-		printf("end_sub_dir:\n\n");
-		closedir(dir_ptr);
-	}
-
-
-
-// match_name(struct dirent * entry, const char * pattern)
-
-	//entry = read the directory
-	// if(dir_entry is directory)
-	// 	parsedir(dir_entry)
-	// else 
-	// 	if(match_type(dirname,type))
-	// 		printf(dir_entry.filname)
-}
-
-void parse_with_type(char * start_dir,char type){
-	DIR	*dir_ptr;		/* the directory */
-	struct dirent *direntp;		/* each entry	 */
-
-	if ( (dir_ptr=opendir(start_dir))==NULL )
-		fprintf(stderr,"pfind: cannot open %s\n", start_dir);
-	else
-	{
-		while ( ( direntp = readdir( dir_ptr ) ) != NULL ){
-			/*check if it is a file*/
-			if(match_type(direntp,type)){
-				printf("%s\n",direntp->d_name);	
+			if(match_type(subpath,'d') && !is_parent && !is_grandparent){ //if this is a directory, store for parsing later
+				// printf("subpath: %s\n", subpath);
+				parse_dir_helper(subpath,name,type,find_results,current_index, criteria_flag);
+				index++;
 			}
 		}
 		closedir(dir_ptr);
 	}
-
 }
 
-void parse_with_name(char * start_dir,char * name){
-	DIR	*dir_ptr;		/* the directory */
-	struct dirent *direntp;		/* each entry	 */
-
-	if ( (dir_ptr=opendir(start_dir))==NULL )
-		fprintf(stderr,"pfind: cannot open %s\n", start_dir);
-	else
-	{
-		while ( ( direntp = readdir( dir_ptr ) ) != NULL ){
-			/*check if it is a file*/
-			if(match_name(direntp,name)){
-				printf("%s\n",direntp->d_name);	
-			}
-		}
-		closedir(dir_ptr);
-	}
-
-}
 
 /*
  *	list files in directory called dirname
