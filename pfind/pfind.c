@@ -30,6 +30,7 @@
 #include	<string.h>
 #include	<stdlib.h>
 #include 	<fnmatch.h>
+#include 	<errno.h>
 
 
 //search criteria flags
@@ -141,7 +142,6 @@ int match_type(char * entry_pathname, char type){
 }
 
 
-// int fnmatch(const char *pattern, const char *string, int flags);
 /*
 	Returns zero if matching filename or pattern
 */
@@ -177,6 +177,7 @@ void parse_dir(char * start_dir,char * name,const char type){
 	//TODO: sort find_results 
 	for(i=0;i<index;i++){
 		printf("%s\n",find_results[i]);
+		free(find_results[i]);
 	}
 }
 
@@ -196,37 +197,45 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 		fprintf(stderr,"pfind: cannot open %s\n", start_dir);
 	else
 	{
-		while ((direntp = readdir(dir_ptr)) != NULL){
-			subpath = malloc(strlen(start_dir) + strlen(direntp->d_name) + 1);
-			strcpy(subpath,start_dir);
-			strcat(subpath,back_slash);
-			strcat(subpath,direntp->d_name);	
-			is_parent=!strcmp(direntp->d_name,".");
-			is_grandparent=!strcmp(direntp->d_name,"..");		
+		do{
+			errno = 0;		/*always clear errno before the readdir system call*/
+			if ((direntp = readdir(dir_ptr)) != NULL){
+				subpath = malloc(strlen(start_dir) + strlen(direntp->d_name) + 1);
+				strcpy(subpath,start_dir);
+				strcat(subpath,back_slash);
+				strcat(subpath,direntp->d_name);	
+				is_parent=!strcmp(direntp->d_name,".");
+				is_grandparent=!strcmp(direntp->d_name,"..");		
 
-			if(is_grandparent || is_parent)
-				continue;
-			
-			/*check if it is a file*/
-			if((criteria_flag==CR_TYPE) && match_type(subpath,type)) {
-				//add to find results and increment index
-				find_results[*current_index] = subpath;
-				*current_index +=1;	
-			}else if((criteria_flag==CR_NAME) && match_name(subpath,name)){
-				find_results[*current_index] = subpath;
-				*current_index +=1;
-			}else if ((criteria_flag==CR_ALL) && match_name(subpath,name) && match_type(subpath,type)){
-				find_results[*current_index] = subpath;
-				*current_index +=1;
-			}
-			
+				if(is_grandparent || is_parent)
+					continue;
+				
+				/*check if it is a file*/
+				if((criteria_flag==CR_TYPE) && match_type(subpath,type)) {
+					//add to find results and increment index
+					find_results[*current_index] = subpath;
+					*current_index +=1;	
+				}else if((criteria_flag==CR_NAME) && match_name(subpath,name)){
+					find_results[*current_index] = subpath;
+					*current_index +=1;
+				}else if ((criteria_flag==CR_ALL) && match_name(subpath,name) && match_type(subpath,type)){
+					find_results[*current_index] = subpath;
+					*current_index +=1;
+				}
 
-			if(match_type(subpath,'d')){ //if this is a directory, store for parsing later
-				// printf("subpath: %s\n", subpath);
-				parse_dir_helper(subpath,name,type,find_results,current_index, criteria_flag);
-				index++;
+				if(match_type(subpath,'d')){ //if this is a directory, traverse it
+					// printf("subpath: %s\n", subpath);
+					parse_dir_helper(subpath,name,type,find_results,current_index, criteria_flag);
+					index++;
+				}
 			}
-		}
+		}while(direntp != NULL);
+
+		if (errno != 0)
+        	perror("error reading directory");
+    	else
+        	printf("failed to find %s\n", start_dir);
+
 		closedir(dir_ptr);
 	}
 }
