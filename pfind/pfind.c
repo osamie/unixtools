@@ -41,7 +41,7 @@
 #define		FALSE		0
 #define		TRUE		1
 
-#define		BUFF_SIZE	1000
+#define		BUFF_SIZE	1500
 
 
 void do_ls(char dirname[]);
@@ -193,9 +193,10 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 	char * back_slash = "/";
 	char * subpath;
 
-	// printf("\n***Traversing path: %s****\n",start_dir);
-	if ((dir_ptr=opendir(start_dir))==NULL ) perror("could not open");
+	if ((dir_ptr=opendir(start_dir))==NULL ) 
+		perror("could not open directory"); //TODO: output dirname
 		// fprintf(stderr,"pfind: cannot open %s, error: %d \n", start_dir,errno);
+		
 	else
 	{
 		do{
@@ -237,8 +238,6 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 
 		if (errno != 0)
         	perror("error reading directory");
-    	else
-        	// (void) printf("failed to find %s\n", start_dir);
 
 		closedir(dir_ptr);
 	}
