@@ -163,6 +163,7 @@ void parse_dir(char * start_dir,char * name,const char type){
 	int criteria_flag=CR_ALL;  
 	char * find_results[BUFF_SIZE];  //holds the final search results
 	int index=0;
+	int free_start_dir_string = TRUE; //flag 
 	current_index = &index;
 
 	if((strlen(name)==0) && (type==' '))
@@ -173,12 +174,27 @@ void parse_dir(char * start_dir,char * name,const char type){
 		criteria_flag=CR_NAME;
 	}
 
+	if((criteria_flag==CR_TYPE) && match_type(start_dir,type)) {		
+		find_results[*current_index] = start_dir;
+		*current_index +=1;	
+		free_start_dir_string = FALSE;
+	}else if((criteria_flag==CR_NAME) && match_name(start_dir,name)){
+		find_results[*current_index] = start_dir;
+		*current_index +=1;
+		free_start_dir_string = FALSE;
+	}else if ((criteria_flag==CR_ALL) && match_name(start_dir,name) && match_type(start_dir,type)){
+		find_results[*current_index] = start_dir;
+		*current_index +=1;
+		free_start_dir_string = FALSE;
+	}
+
 	parse_dir_helper(start_dir,name,type,find_results,current_index, criteria_flag);
 	int i;
 	//TODO: sort find_results 
 	for(i=0;i<index;i++){
 		printf("%s\n",find_results[i]);
-		free(find_results[i]);
+		if(free_start_dir_string)
+			free(find_results[i]);
 	}
 }
 
@@ -209,6 +225,7 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 				if(strcmp(start_dir+(strlen(start_dir)-1),back_slash)!=0)
 					strcat(subpath,back_slash); //add a directory delimiter 
 				strcat(subpath,direntp->d_name);	
+
 				is_parent=!strcmp(direntp->d_name,".");
 				is_grandparent=!strcmp(direntp->d_name,"..");		
 
