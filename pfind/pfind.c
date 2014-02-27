@@ -38,6 +38,9 @@
 #define 	CR_NAME		1
 #define 	CR_TYPE		2
 
+#define		FALSE		0
+#define		TRUE		1
+
 #define		BUFF_SIZE	1000
 
 
@@ -115,7 +118,7 @@ int match_type(char * entry_pathname, char type){
 	// printf("HERE: %s\n",entry->d_name);
 
 	if (get_stat(entry_pathname,file_info) < 0){
-		return 0;
+		return FALSE;
 	}
 	mode = file_info->st_mode;
 
@@ -136,7 +139,7 @@ int match_type(char * entry_pathname, char type){
 		case 's':
 			return S_ISSOCK(mode);
 		default: 
-			return 0;
+			return FALSE;
 	}
 	free(file_info);
 }
@@ -148,11 +151,9 @@ int match_type(char * entry_pathname, char type){
 int match_name(char * entry_pathname, const char * pattern){
 	// char * filename = entry->d_name;
 	if (fnmatch(pattern, entry_pathname, 0) !=0){
-		// printf("ouch! %s\n",filename);
-		// perror(pattern);
-		return 0;
+		return FALSE;
 	}
-	return 1;
+	return TRUE;
 }
 
 
@@ -193,8 +194,8 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 	char * subpath;
 
 	// printf("\n***Traversing path: %s****\n",start_dir);
-	if ((dir_ptr=opendir(start_dir))==NULL )
-		fprintf(stderr,"pfind: cannot open %s\n", start_dir);
+	if ((dir_ptr=opendir(start_dir))==NULL ) perror("could not open");
+		// fprintf(stderr,"pfind: cannot open %s, error: %d \n", start_dir,errno);
 	else
 	{
 		do{
@@ -202,7 +203,10 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 			if ((direntp = readdir(dir_ptr)) != NULL){
 				subpath = malloc(strlen(start_dir) + strlen(direntp->d_name) + 1);
 				strcpy(subpath,start_dir);
-				strcat(subpath,back_slash);
+
+				// if((char *)start_dir[strlen(start_dir)-1],back )
+				if(strcmp(start_dir+(strlen(start_dir)-1),back_slash)!=0)
+					strcat(subpath,back_slash); //add a directory delimiter 
 				strcat(subpath,direntp->d_name);	
 				is_parent=!strcmp(direntp->d_name,".");
 				is_grandparent=!strcmp(direntp->d_name,"..");		
@@ -215,10 +219,10 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 					//add to find results and increment index
 					find_results[*current_index] = subpath;
 					*current_index +=1;	
-				}else if((criteria_flag==CR_NAME) && match_name(subpath,name)){
+				}else if((criteria_flag==CR_NAME) && match_name(direntp->d_name,name)){
 					find_results[*current_index] = subpath;
 					*current_index +=1;
-				}else if ((criteria_flag==CR_ALL) && match_name(subpath,name) && match_type(subpath,type)){
+				}else if ((criteria_flag==CR_ALL) && match_name(direntp->d_name,name) && match_type(subpath,type)){
 					find_results[*current_index] = subpath;
 					*current_index +=1;
 				}
@@ -234,7 +238,7 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 		if (errno != 0)
         	perror("error reading directory");
     	else
-        	printf("failed to find %s\n", start_dir);
+        	// (void) printf("failed to find %s\n", start_dir);
 
 		closedir(dir_ptr);
 	}
