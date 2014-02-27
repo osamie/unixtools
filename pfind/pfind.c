@@ -204,8 +204,9 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 			is_parent=!strcmp(direntp->d_name,".");
 			is_grandparent=!strcmp(direntp->d_name,"..");		
 
-			if(is_grandparent && is_parent) 
+			if(is_grandparent || is_parent)
 				continue;
+			
 			/*check if it is a file*/
 			if((criteria_flag==CR_TYPE) && match_type(subpath,type)) {
 				//add to find results and increment index
@@ -220,7 +221,7 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 			}
 			
 
-			if(match_type(subpath,'d') && !is_parent && !is_grandparent){ //if this is a directory, store for parsing later
+			if(match_type(subpath,'d')){ //if this is a directory, store for parsing later
 				// printf("subpath: %s\n", subpath);
 				parse_dir_helper(subpath,name,type,find_results,current_index, criteria_flag);
 				index++;
