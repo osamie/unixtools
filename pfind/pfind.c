@@ -41,7 +41,7 @@
 #define		FALSE		0
 #define		TRUE		1
 
-#define		BUFF_SIZE	1500
+#define		BUFF_SIZE	9000
 
 
 void do_ls(char dirname[]);
@@ -53,6 +53,8 @@ void parse_with_type(char * start_dir,char type);
 void parse_with_name(char * start_dir,char * name);
 int get_stat(const char *filename, struct stat * info);
 void parse_dir_helper(char * start_dir,char * name,const char type,char * find_results[],int * current_index, int criteria_flag);
+int compare(const void* str1, const void* str2);
+
 
 static int * current_index;
 
@@ -103,9 +105,17 @@ int main(int argc, char * argv[]){
 
 int get_stat(const char *filename, struct stat * info)
 {
+	errno=0;  //clear errno before system call
 	if (lstat(filename, info) == -1){
-		/* cannot stat	 */
-		perror( filename );			/* say why	 */
+		/* cannot do lstat	 */
+
+		if(errno==EACCES){
+			printf("%s: Permissions issue\n",filename);
+		}else{
+			printf("%s: errno %d\n",filename,errno);
+		}
+
+		// perror( filename );			/* say why	 */
 		return -1;
 	} 
 	return 0;	
@@ -190,12 +200,22 @@ void parse_dir(char * start_dir,char * name,const char type){
 
 	parse_dir_helper(start_dir,name,type,find_results,current_index, criteria_flag);
 	int i;
-	//TODO: sort find_results 
+	
+	/* sort find_results */
+	int result_size = sizeof(find_results)/sizeof(char *);
+	qsort(find_results,result_size,sizeof(char *),compare); /*sort the */
 	for(i=0;i<index;i++){
 		printf("%s\n",find_results[i]);
 		if(free_start_dir_string)
 			free(find_results[i]);
 	}
+}
+
+int compare(const void* str1, const void* str2)
+{
+    const char *str_a = (const char *)str1;
+    const char *str_b = (const char *)str2;
+    return strcmp(str_a, str_b);
 }
 
 
