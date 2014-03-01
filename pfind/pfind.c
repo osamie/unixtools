@@ -1,11 +1,13 @@
 /*
 * 
-* pfind: 
+* pfind (Pseudo Find) 
 * 
 *  Purpose: 
-*	   
+*	   This is a utility that recursively descends a given directory tree,
+*	   evaluating each file in the tree with a given expression or expressions 
+*	   (passed as commandline arguments).
 * 
-*   Args:
+*  Arguments:
 *	starting directory, filename-or-pattern, type-of-file
 *	$ pfind starting_dir [-name filename-or-pattern] [-type {f|d|b|c|p|l|s}]
 *		$ pfind /home/s/smith -name core
@@ -13,14 +15,11 @@
 *		$ pfind cscie215/hw
 *	 
 *	 
-*	
-*	 
 *   Author: Osazuwa Omigie	
 *   Date: February 22,2014.		
 *   CSCI-E28
 *   Harvard University		
 *		
-*	
 */
 
 #include 	<stdio.h>
@@ -42,30 +41,27 @@
 #define		FALSE		0
 #define		TRUE		1
 
-#define		BUFF_SIZE	9000
+#define		BUFF_SIZE	9000		/*Initial buffer size*/
 
 
-void do_ls(char dirname[]);
 void dostat(char *filename);
 int match_type(char * entry_pathname,char type);
 int match_name(char * entry_pathname, const char * pattern);
 void searchdir(char * start_dir,char * name, const char type);
-void parse_with_type(char * start_dir,char type);
-void parse_with_name(char * start_dir,char * name);
 int get_stat(const char *filename, struct stat * info);
-void parsedir(char * start_dir,char * name,const char type,char * find_results[],int * current_index, int criteria_flag);
+void parsedir(char * start_dir,char * name,const char type,char * find_results[],int * buffsize,int * current_index, int criteria_flag);
 int compare(const void* str1, const void* str2);
 void finalize_results(char * find_results[],int current_index,int free_start_dir_string);
 void process_args(int argc, char * argv[]);
 void show_usage();
+void add_item(char * find_results[], int* buffersize, int * current_index, char * item);
 
 static int * current_index;  /*holds the index of the results buffer*/
+int * buffersize;
 
 int main(int argc, char * argv[]){
-		// struct stat * info;
-		// printf("HERE:");
-		process_args(argc,argv);
-		return 0;
+	process_args(argc,argv);
+	return 0;
 }
 
 void process_args(int argc, char * argv[]){
@@ -168,16 +164,16 @@ int match_name(char * entry_pathname, const char * pattern){
 
 
 void searchdir(char * start_dir,char * name,const char type){
-	DIR	*dir_ptr;		/* the directory */
-	struct dirent *direntp;		/* each entry	 */
+	
 	char * find_results[BUFF_SIZE];  //holds the final search results
-	int criteria_flag=CR_ALL, index=0, free_start_dir_string = TRUE, same_name, same_all,same_type;
-
+	int criteria_flag=CR_ALL, index=0, buffsize=BUFF_SIZE, free_start_dir_string = TRUE, same_name, same_all,same_type;
 	same_name = (criteria_flag==CR_NAME) && match_name(start_dir,name);
 	same_type = (criteria_flag==CR_TYPE) && match_type(start_dir,type);
 	same_all = (criteria_flag==CR_ALL) && match_name(start_dir,name) && match_type(start_dir,type);
+	// is_wildcard = (criteria_flag == CR_NONE);
 
 	current_index = &index;
+	buffersize = &buffsize;
 
 	if((strlen(name)==0) && (type==' '))
 		criteria_flag = CR_NONE;
@@ -187,16 +183,42 @@ void searchdir(char * start_dir,char * name,const char type){
 		criteria_flag=CR_NAME;
 	}
 
-	if(same_name||same_type||same_all) {		
+
+
+	if(same_name||same_type||same_all||(criteria_flag==CR_NONE)){		
 		find_results[*current_index] = start_dir;
 		*current_index +=1;	
+		// add_item(find_results,buffersize,current_index,start_dir);
 		free_start_dir_string = FALSE;
 	}
-
-	parsedir(start_dir,name,type,find_results,current_index, criteria_flag);
+	
+	parsedir(start_dir,name,type,find_results,buffersize, current_index, criteria_flag);
 	finalize_results(find_results,*current_index,free_start_dir_string);
 }
 
+/**
+	Adds a given item to a given buffer and then increments it index. 
+	If the buffer is already full, the buffer is first incremented by 
+	two thirds it original size.   
+**/
+void add_item(char * find_results[],int * buffersize, int * current_index, char * item){
+	// int size = buffersize; // (sizeof(find_results)/sizeof(char));
+	int buffsize = *buffersize;
+	int newsize = (buffsize) + ((2/3) * buffsize);
+
+	int index = *current_index;
+	if(index == buffsize-1){
+		char * newBuffer[newsize]; /*create a new buffer 2/3 of current buffer*/
+		memcpy(newBuffer,find_results,sizeof(find_results)); /*transfer items to new buffer*/  
+		find_results = newBuffer; /*replacing buffer*/
+		*buffersize = newsize;
+		printf("New Buffer size: %d******\n",*buffersize);
+	}
+	find_results[index] = item;
+	*current_index = index+1;
+	printf("added:%s , index=%d, buffersize=%d\n",item,(int)*current_index, *buffersize);
+	return;
+}
 
 void finalize_results(char * find_results[],int current_index,int free_start_dir_string){
 	int i;
@@ -219,13 +241,14 @@ int compare(const void* str1, const void* str2)
 
 
 // parse_with_type(start_dir,type); parse_with_name(start_dir,name);
-void parsedir(char * start_dir,char * name,const char type,char * find_results[],int * current_index, int criteria_flag){
+void parsedir(char * start_dir,char * name,const char type,char * find_results[], int * buffersize, int * current_index, int criteria_flag){
 	DIR	*dir_ptr;		/* the directory */
 	struct dirent *direntp;		/* each entry	 */
-	char * sub_directories[BUFF_SIZE];  //holds the final search results
+	// char * sub_directories[BUFF_SIZE];  //holds the final search results
 	int index = 0,same_type, same_name, same_all, is_match, is_current_dir,is_parent_dir;
 	char * subpath, * back_slash = "/";
 
+	// puts("T");
 	if ((dir_ptr=opendir(start_dir))==NULL ) 
 		perror("could not open directory"); //TODO: output dirname
 		// fprintf(stderr,"pfind: cannot open %s, error: %d \n", start_dir,errno);		
@@ -251,16 +274,17 @@ void parsedir(char * start_dir,char * name,const char type,char * find_results[]
 				same_type = ((criteria_flag==CR_TYPE) && match_type(subpath,type));
 				same_name = ((criteria_flag==CR_NAME) && match_name(direntp->d_name,name));
 				same_all = ((criteria_flag==CR_ALL) && match_name(direntp->d_name,name) && match_type(subpath,type));
-				is_match = same_all || same_name || same_type;
+				is_match = same_all || same_name || same_type || (criteria_flag==CR_NONE);
 
 				if(is_match) {
 					find_results[*current_index] = subpath;
 					*current_index +=1;	
+					// add_item(find_results,buffersize,current_index,subpath);
 				}
 
 				if(match_type(subpath,'d')){ //if this is a directory, traverse it
 					// printf("subpath: %s\n", subpath);
-					parsedir(subpath,name,type,find_results,current_index, criteria_flag);
+					parsedir(subpath,name,type,find_results,buffersize, current_index, criteria_flag);
 					index++;
 				}
 			}
@@ -280,21 +304,4 @@ void show_usage(){
 	printf("\t\t-name\tprintout files or directories that match the following expression. \n"); 
 	printf("\t\t-type\tprintout files that match the following file type. \n"); 
 	return;
-}
-
-/*
- *	list files in directory called dirname
- */
-void do_ls(char dirname[]){
-	DIR		*dir_ptr;		/* the directory */
-	struct dirent	*direntp;		/* each entry	 */
-
-	if ( ( dir_ptr = opendir( dirname ) ) == NULL )
-		fprintf(stderr,"pfind: cannot open %s\n", dirname);
-	else
-	{
-		while ( ( direntp = readdir( dir_ptr ) ) != NULL )
-			printf("%s\n",direntp->d_name);
-		closedir(dir_ptr);
-	}
 }

@@ -1,5 +1,5 @@
 pfind:
-	gcc -o pfind pfind.c
+	gcc -Wall -o pfind pfind.c
 
 clean:
 	rm pfind
