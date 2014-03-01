@@ -37,6 +37,7 @@
 #define		CR_ALL		0
 #define 	CR_NAME		1
 #define 	CR_TYPE		2
+#define		CR_NONE		99
 
 #define		FALSE		0
 #define		TRUE		1
@@ -64,7 +65,7 @@ int main(int argc, char * argv[]){
 		struct stat * info;
 		// printf("HERE:");
 
-		starting_dir =(argc>=2)? argv[1] : NULL;
+		starting_dir =(argc>=2)? argv[1] : ".";
 		if(argc==1)
 			do_ls(".");
 		else if(argc==2){
@@ -174,27 +175,27 @@ void parse_dir(char * start_dir,char * name,const char type){
 	char * find_results[BUFF_SIZE];  //holds the final search results
 	int index=0;
 	int free_start_dir_string = TRUE; //flag 
+
+	//matches
+	int same_name=FALSE, same_all=FALSE, same_type=FALSE;
+
+	same_name = (criteria_flag==CR_NAME) && match_name(start_dir,name);
+	same_type = (criteria_flag==CR_TYPE) && match_type(start_dir,type);
+	same_all = (criteria_flag==CR_ALL) && match_name(start_dir,name) && match_type(start_dir,type);
+
 	current_index = &index;
 
 	if((strlen(name)==0) && (type==' '))
-		return;
+		criteria_flag = CR_NONE;
 	else if((strlen(name)==0) && (type > 0)) {
 		criteria_flag =CR_TYPE;
 	}else if ((strlen(name)>0) && (type==' ')){
 		criteria_flag=CR_NAME;
 	}
 
-	if((criteria_flag==CR_TYPE) && match_type(start_dir,type)) {		
+	if(same_name||same_type||same_all) {		
 		find_results[*current_index] = start_dir;
 		*current_index +=1;	
-		free_start_dir_string = FALSE;
-	}else if((criteria_flag==CR_NAME) && match_name(start_dir,name)){
-		find_results[*current_index] = start_dir;
-		*current_index +=1;
-		free_start_dir_string = FALSE;
-	}else if ((criteria_flag==CR_ALL) && match_name(start_dir,name) && match_type(start_dir,type)){
-		find_results[*current_index] = start_dir;
-		*current_index +=1;
 		free_start_dir_string = FALSE;
 	}
 
@@ -225,7 +226,7 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 	struct dirent *direntp;		/* each entry	 */
 	char * sub_directories[BUFF_SIZE];  //holds the final search results
 	int index = 0;
-	int is_parent,is_grandparent;
+	int is_current_dir,is_parent_dir;
 	char * back_slash = "/";
 	char * subpath;
 
@@ -246,10 +247,10 @@ void parse_dir_helper(char * start_dir,char * name,const char type,char * find_r
 					strcat(subpath,back_slash); //add a directory delimiter 
 				strcat(subpath,direntp->d_name);	
 
-				is_parent=!strcmp(direntp->d_name,".");
-				is_grandparent=!strcmp(direntp->d_name,"..");		
+				is_current_dir=!strcmp(direntp->d_name,".");
+				is_parent_dir=!strcmp(direntp->d_name,"..");		
 
-				if(is_grandparent || is_parent)
+				if(is_parent_dir || is_current_dir)
 					continue;
 				
 				/*check if it is a file*/
