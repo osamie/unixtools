@@ -5,9 +5,16 @@ Program Name:	Pfind - Pseudo Find
 
 
 =======================
-Summary of deliverables
+Deliverables
 =======================
+Program Source Code: 
+	pfind.c
 
+Typescript of its output from the test.pﬁnd test script:
+
+Makeﬁle
+
+Design outline file: DesignOutline.txt
 
 
 =======
@@ -41,5 +48,44 @@ Description: This program searches a given file/files for lines that match one o
 ======
 PART 3
 ======
+This is my current alogirithm for traversing (recursively) the directory tree. 
+
+	A) Attempts to open the given directory or path.
+	B) If this fails, writes to the standard error stream saying the reason (using errno's value).
+	C) Else if opening path/directory is successful, clears errno and performs the following;
+	D) Continues to read every entry in the directory into a dirent struct.
+	E) For each dirent struct (or entry read) in the directory, the following steps are performed;
+		i. If the entry is a "." or ".." ignore it and read next dir entry.
+		ii. Else, allocate memmory for a new string and put a properly formatted path of the dir entry currently been parsed.
+		iii. The properly formatted path string of a dirent is a concatenation of its parent path (passed in the function argument) and its d_name property 
+		iv. Next, check if the entry meets the search criteria.
+		v. If it meets the criteria, add the newly created string (dirent path) to the results buffer and increment the buffer's current index. 
+		vi. If the entry added is a directory itself, then call the parsedir function, passing the newly created string as the starting directory. 
+	F) close the opened path/directory.
+	G) return
+
+This is the modification I would make in order to support the system open file limit. 
+
+In step E(vi) above, instead of calling the recursive function before closing the current directory in step F, I would simply store the path to every subdirectoy in a local buffer. After looping through the entries and closing the currently opened path/directory in step F, then I iterate through my local buffer of subdirectoy paths, calling the recursive function on each subdirectory.
+Rewriting steps E and F of the algorithm:
+
+	E) For each dirent struct (or entry read) in the directory, the following steps are performed;
+		i. If the entry is a "." or ".." ignore it and read next dir entry.
+		
+		ii. Else, allocate memmory for a new string and put a properly formatted path of the dir entry currently been parsed.
+		
+		iii. The properly formatted path string of a dirent is a concatenation of its parent path (passed in the function argument) and its d_name property 
+		
+		iv. Next, check if the entry meets the search criteria; If it does not meet the criteria continue the loop onto the next entry.
+		
+		v. If the entry is a sub directory itself, store its path (the newly created string) in a the local buffer. Do not process if yet.  
+		
+		vi. Else, add the newly created string (dirent path) to the results buffer and increment the buffer's current index. 
+		
+	F) close the opened path/directory.
+
+	G) iterate through the local buffer of sub directories, calling this function on each item. 
+
+
 
 
