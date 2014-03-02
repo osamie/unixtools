@@ -1,13 +1,20 @@
-Pfind - Pseudo Find
+Author:			Osazuwa Omigie
+Date:			1-March-2014
+Course:			CSCI E-28 
+Program Name:	Pfind - Pseudo Find
 
 
-The first part of this assignment involves no programming, just some simple research. Name and describe three more Unix programs that operate on directory trees. Do not include find or the four commands men- tioned in the previous section. For each of the three you mention, state the name of the program, write a sample command line, and write a one sentence description of what the program does.
+=======================
+Summary of deliverables
+=======================
 
 
-Name, sample command line, one sentence description. 
 
-
+=======
 PART 1
+=======
+
+Name and description of 3 unix programs that operate on directory trees; name of the program, a sample command line, and a one sentence description of what the program does.
 
 A) chown
 A sample usage: chown -R <user>:group <file/directory>. For example, 
@@ -29,3 +36,10 @@ C) Grep
 A sample Usage: grep -R <regular_expression> <dir> 
 			$ grep -R expression[0-9] .
 Description: This program searches a given file/files for lines that match one or more specified patterns; using the -R option, the program is also able to search recursively for line patterns of all files under a directory tree.  
+
+
+======
+PART 3
+======
+
+

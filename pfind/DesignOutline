@@ -1,0 +1,98 @@
+
+
+Author:	Osazuwa Omigie
+	 Date:	1-March-2014
+     Contains:	Design details for CSCI E-28 homework 2 submission.
+====================================================================
+
+
+ =================================
+|| PROJECT:  PFIND (PSEUDO FIND) ||
+ =================================  
+
+
+=======
+PURPOSE
+=======
+This is a utility that recursively descends a given directory tree, evaluating each file in the tree with a given expression(s) (passed as commandline arguments).
+
+
+=========
+INTERFACE
+=========
+
+The user interface to the program is the command line. Command
+line syntax is as follows:
+
+	pfind [path] [-name <expression>] [-type {f|d|b|c|p|l|s}] 
+
+	path	This is the root of the directory tree to be traversed. 
+	-name	printout files or directories that match the following expression.
+	-type	printout files that match the given file type.
+
+
+
+==============
+DATA STRUCTURE
+==============
+
+An array is used in storing the search results from the traversal. 
+A benefit to using this data structure is that an array of strings can easily be sorted using the qsort c library function as opposed to a linkedlist of strings.
+
+The problem with using an array data structure is that I am already allocating that much memory at the onset of the program; memory which may never be completely used. 
+To minimize such overhead of iterating through the entire array when printing the search results, the iteration of the found_results buffer stops at the current_index (which is the index of the last non-null entry in the array).
+
+In terms of memory usage, a better approach would have been to use a linked list. With the head pointing to the last element added to the linked list, a pointer to the linkedlist head can be put on the stack with every recursive call. Just like using the array, the find results from traversing a directory/subdirectory would simply be appended to the original linkedlist structure. The advantage to this is that memory is only allocated as needed (i.e for each search).
+
+Another problem in using an array data structure is that they are initialized with a fixed size. This causes a potential for buffer overflow (i.e where my search results exceed the size of my found_results buffer). To handle such cases, I have implemented a sort of 'bounds checking' to ensure that the current index never exceeds the buffer capacity. However, if this happens, I then increase the size of my buffer, by replacing it with a larger one before inserting the newly found result. 
+
+
+=========
+ALGORITHM
+=========
+
+Depending on the command line arguments parsed, parse_dir() function sets the criteria flag accordingly.
+
+searcedir function sets the necessary variables and then kicks of the funtion which actually does the directory traversal - parsedir. Depending on the depth of the directory's file tree, the parsedir function makes recursive call(s) to itself, populating the same find_results buffer. 
+
+On each recursive call, a pointer to the find_results buffer and the current index position is put on the stack. 
+
+The flow below describes in detail how the program traverses the file tree.  
+
+=============
+PROGRAM FLOW
+=============
+searchdir: 
+	- Initializes the search results buffer. 
+	- Sets the criteria flag based on the commandline arguments
+	- If the root file/directory meets the criteria first add it to the results buffer.
+	- Puts the root file/directory path, a pointer to the results buffer and a pointer to its current index, as well as the search criteria and flag on the stack; and kicks off the tree traversal by calling parsedir function.  
+	- When parsedir completes, the finalize_results function is called which outputs the content of the search results buffer
+	- return 
+
+parsedir:
+	- Attempts to open the given directory or path.
+	- If this fails, writes to the standard error stream saying the reason (using errno's value).
+	- Else if opening path/directory is successful, clears errno and performs the following;
+	- Continues to read every entry in the directory into a dirent struct.
+	- For each dirent struct (or entry read) in the directory, the following steps are performed;
+		> If the entry is a "." or ".." ignore it and read next dir entry.
+		> Else, allocate memmory for a new string and put a properly formatted path of the dir entry currently been parsed.
+		> The properly formatted path string of a dirent is a concatenation of its parent path (passed in the function argument) and its d_name property 
+		> Next, check if the entry meets the search criteria.
+		> If it meets the criteria, add the newly created string (dirent path) to the results buffer and increment the buffer's current index. 
+		> If the entry added is a directory itself, then call the parsedir function, passing the newly created string as the starting directory. 
+	- close the opened path/directory.
+	- return
+
+finalize_results:
+	- Sorts the modified search results buffer.
+	- Iterates through the buffer up until the current index.
+	- On each iteration, after printing the string, it releases the allocated memory. 
+	- return 
+
+add_item:
+	- Determines the size of the given buffer.
+	- If the given current index exceeds the buffer size, reallocate a bigger memory for the current buffer (preserving its contents). 
+	- Adds the given item to buffer at the given index position.
+	- return

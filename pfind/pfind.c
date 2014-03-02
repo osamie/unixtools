@@ -54,10 +54,11 @@ int compare(const void* str1, const void* str2);
 void finalize_results(char * find_results[],int current_index,int free_start_dir_string);
 void process_args(int argc, char * argv[]);
 void show_usage();
-void add_item(char * find_results[], int* buffersize, int * current_index, char * item);
+void add_item(int * current_index, char * item);
 
 static int * current_index;  /*holds the index of the results buffer*/
 int * buffersize;
+char * find_results[BUFF_SIZE];  //holds the final search results
 
 int main(int argc, char * argv[]){
 	process_args(argc,argv);
@@ -104,14 +105,7 @@ int get_stat(const char *filename, struct stat * info)
 	errno=0;  //clear errno before system call
 	if (lstat(filename, info) == -1){
 		/* cannot do lstat	 */
-
-		if(errno==EACCES){
-			printf("%s: Permissions issue\n",filename);
-		}else{
-			printf("%s: errno %d\n",filename,errno);
-		}
-
-		// perror( filename );			/* say why	 */
+		fprintf(stderr, "pfind: %s: %s\n",filename, strerror(errno)); //print to stderr
 		return -1;
 	} 
 	return 0;	
@@ -164,12 +158,7 @@ int match_name(char * entry_pathname, const char * pattern){
 
 
 void searchdir(char * start_dir,char * name,const char type){
-	
-	char * find_results[BUFF_SIZE];  //holds the final search results
 	int criteria_flag=CR_ALL, index=0, buffsize=BUFF_SIZE, free_start_dir_string = TRUE, same_name, same_all,same_type;
-	same_name = (criteria_flag==CR_NAME) && match_name(start_dir,name);
-	same_type = (criteria_flag==CR_TYPE) && match_type(start_dir,type);
-	same_all = (criteria_flag==CR_ALL) && match_name(start_dir,name) && match_type(start_dir,type);
 	// is_wildcard = (criteria_flag == CR_NONE);
 
 	current_index = &index;
@@ -183,12 +172,14 @@ void searchdir(char * start_dir,char * name,const char type){
 		criteria_flag=CR_NAME;
 	}
 
-
+	same_name = (criteria_flag==CR_NAME) && match_name(start_dir,name);
+	same_type = (criteria_flag==CR_TYPE) && match_type(start_dir,type);
+	same_all = (criteria_flag==CR_ALL) && match_name(start_dir,name) && match_type(start_dir,type);
 
 	if(same_name||same_type||same_all||(criteria_flag==CR_NONE)){		
 		find_results[*current_index] = start_dir;
 		*current_index +=1;	
-		// add_item(find_results,buffersize,current_index,start_dir);
+		// add_item(current_index,start_dir);
 		free_start_dir_string = FALSE;
 	}
 	
@@ -201,22 +192,19 @@ void searchdir(char * start_dir,char * name,const char type){
 	If the buffer is already full, the buffer is first incremented by 
 	two thirds it original size.   
 **/
-void add_item(char * find_results[],int * buffersize, int * current_index, char * item){
-	// int size = buffersize; // (sizeof(find_results)/sizeof(char));
-	int buffsize = *buffersize;
+void add_item(int * current_index, char * item){
+	// int size = buffersize; // 
+	int buffsize = (sizeof(find_results)/sizeof(char *));
 	int newsize = (buffsize) + ((2/3) * buffsize);
 
 	int index = *current_index;
-	if(index == buffsize-1){
-		char * newBuffer[newsize]; /*create a new buffer 2/3 of current buffer*/
-		memcpy(newBuffer,find_results,sizeof(find_results)); /*transfer items to new buffer*/  
-		find_results = newBuffer; /*replacing buffer*/
-		*buffersize = newsize;
-		printf("New Buffer size: %d******\n",*buffersize);
+	if(index >= buffsize-1){
+		realloc(find_results,newsize); //increase the size of the results buffer
+		// printf("New Buffer size: %d******\n",*buffersize);
 	}
 	find_results[index] = item;
 	*current_index = index+1;
-	printf("added:%s , index=%d, buffersize=%d\n",item,(int)*current_index, *buffersize);
+	// printf("added:%s , index=%d, buffersize=%d\n",item,(int)*current_index, *buffersize);
 	return;
 }
 
@@ -244,55 +232,47 @@ int compare(const void* str1, const void* str2)
 void parsedir(char * start_dir,char * name,const char type,char * find_results[], int * buffersize, int * current_index, int criteria_flag){
 	DIR	*dir_ptr;		/* the directory */
 	struct dirent *direntp;		/* each entry	 */
-	// char * sub_directories[BUFF_SIZE];  //holds the final search results
-	int index = 0,same_type, same_name, same_all, is_match, is_current_dir,is_parent_dir;
+	int same_type, same_name, same_all, is_match, is_current_dir,is_parent_dir;
 	char * subpath, * back_slash = "/";
+	errno=0; //clear errno
 
-	// puts("T");
 	if ((dir_ptr=opendir(start_dir))==NULL ) 
-		perror("could not open directory"); //TODO: output dirname
-		// fprintf(stderr,"pfind: cannot open %s, error: %d \n", start_dir,errno);		
+		fprintf(stderr, "pfind: %s : %s\n",start_dir, strerror(errno)); //print to stderr
 	else
 	{
 		do{
 			errno = 0;		/*always clear errno before the readdir system call*/
 			if ((direntp = readdir(dir_ptr)) != NULL){
-				subpath = malloc(strlen(start_dir) + strlen(direntp->d_name) + 1);
-				strcpy(subpath,start_dir);
-
-				// if((char *)start_dir[strlen(start_dir)-1],back )
-				if(strcmp(start_dir+(strlen(start_dir)-1),back_slash)!=0)
-					strcat(subpath,back_slash); //add a directory delimiter 
-				strcat(subpath,direntp->d_name);	
-
 				is_current_dir=!strcmp(direntp->d_name,".");
 				is_parent_dir=!strcmp(direntp->d_name,"..");		
 
 				if(is_parent_dir || is_current_dir)
 					continue;
 				
+				subpath = malloc(strlen(start_dir) + strlen(direntp->d_name) + 1);
+				strcpy(subpath,start_dir);
+				// if((char *)start_dir[strlen(start_dir)-1],back )
+				if(strcmp(start_dir+(strlen(start_dir)-1),back_slash)!=0)
+					strcat(subpath,back_slash); //add a directory delimiter 
+				strcat(subpath,direntp->d_name);	
+
 				same_type = ((criteria_flag==CR_TYPE) && match_type(subpath,type));
 				same_name = ((criteria_flag==CR_NAME) && match_name(direntp->d_name,name));
 				same_all = ((criteria_flag==CR_ALL) && match_name(direntp->d_name,name) && match_type(subpath,type));
 				is_match = same_all || same_name || same_type || (criteria_flag==CR_NONE);
 
-				if(is_match) {
+				if(is_match) { // add_item(find_results,buffersize,current_index,subpath);
 					find_results[*current_index] = subpath;
-					*current_index +=1;	
-					// add_item(find_results,buffersize,current_index,subpath);
+					*current_index +=1;					
 				}
 
 				if(match_type(subpath,'d')){ //if this is a directory, traverse it
-					// printf("subpath: %s\n", subpath);
 					parsedir(subpath,name,type,find_results,buffersize, current_index, criteria_flag);
-					index++;
+					// index++;
 				}
 			}
 		}while(direntp != NULL);
-
-		if (errno != 0)
-        	perror("error reading directory");
-
+		// if (errno != 0) fprintf(stderr, "pfind: %s: %s\n",start_dir, strerror(errno)); //print to stderr
 		closedir(dir_ptr);
 	}
 }
