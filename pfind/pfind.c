@@ -65,6 +65,10 @@ int main(int argc, char * argv[]){
 	return 0;
 }
 
+/**
+	Process the command line arguments and call the search directory 
+	function based on the given commandline arguments
+**/
 void process_args(int argc, char * argv[]){
 	char * starting_dir, *name=NULL, * type;
 
@@ -100,6 +104,11 @@ void process_args(int argc, char * argv[]){
 	}
 }
 
+/*
+	Calls the system lstat function on a file. 
+	If sucessful, modifies the info stat structure to reflect the 
+	stat of the file. 
+*/
 int get_stat(const char *filename, struct stat * info)
 {
 	errno=0;  //clear errno before system call
@@ -111,21 +120,24 @@ int get_stat(const char *filename, struct stat * info)
 	return 0;	
 }
 
+/**
+	Returns 1 or TRUE if the given file is of the same type; 
+	FALSE or 0 otherwise. 
+	The supported type checks are f,d,b,c,p,l, and s.	
+**/
 int match_type(char * entry_pathname, char type){
 	struct stat * file_info = malloc(sizeof(struct stat));
 	int mode;
 
-	// printf("HERE: %s\n",entry->d_name);
-
 	if (get_stat(entry_pathname,file_info) < 0){
-		return FALSE;
+		return FALSE; //cannot get stat
 	}
 	mode = file_info->st_mode;
 
 	// supported types: f|d|b|c|p|l|s
 	switch(type){
 		case 'f':
-			return S_ISREG(mode);
+			return S_ISREG(mode); 
 		case 'd':
 			return S_ISDIR(mode);
 		case 'b':
@@ -161,30 +173,32 @@ void searchdir(char * start_dir,char * name,const char type){
 	int criteria_flag=CR_ALL, index=0, buffsize=BUFF_SIZE, free_start_dir_string = TRUE, same_name, same_all,same_type;
 	// is_wildcard = (criteria_flag == CR_NONE);
 
-	current_index = &index;
-	buffersize = &buffsize;
+	current_index = &index;  /* set the current index of the buffer to zero*/
+	buffersize = &buffsize;  /*keep a reference to the buffer current buffer size*/
 
-	if((strlen(name)==0) && (type==' '))
+	if((strlen(name)==0) && (type==' ')) /* no other commandline arguments*/
 		criteria_flag = CR_NONE;
-	else if((strlen(name)==0) && (type > 0)) {
+	else if((strlen(name)==0) && (type > 0)) { /* only type criterion specified on commandline optiont*/
 		criteria_flag =CR_TYPE;
-	}else if ((strlen(name)>0) && (type==' ')){
+	}else if ((strlen(name)>0) && (type==' ')){ /*only name criterion specified on commandline option*/
 		criteria_flag=CR_NAME;
 	}
 
+	/*check criteria*/
 	same_name = (criteria_flag==CR_NAME) && match_name(start_dir,name);
 	same_type = (criteria_flag==CR_TYPE) && match_type(start_dir,type);
 	same_all = (criteria_flag==CR_ALL) && match_name(start_dir,name) && match_type(start_dir,type);
 
+	/*Check criteria for current directory*/
 	if(same_name||same_type||same_all||(criteria_flag==CR_NONE)){		
-		find_results[*current_index] = start_dir;
+		find_results[*current_index] = start_dir; 
 		*current_index +=1;	
 		// add_item(current_index,start_dir);
 		free_start_dir_string = FALSE;
 	}
-	
+	/*Start traversing the file tree*/
 	parsedir(start_dir,name,type,find_results,buffersize, current_index, criteria_flag);
-	finalize_results(find_results,*current_index,free_start_dir_string);
+	finalize_results(find_results,*current_index,free_start_dir_string); /*soprt and print out results*/
 }
 
 /**
@@ -208,6 +222,10 @@ void add_item(int * current_index, char * item){
 	return;
 }
 
+/*
+	Sorts the buffer and dumps its content on the output console
+*/
+
 void finalize_results(char * find_results[],int current_index,int free_start_dir_string){
 	int i;
 	/* sort find_results */
@@ -220,6 +238,12 @@ void finalize_results(char * find_results[],int current_index,int free_start_dir
 	}
 }
 
+/* 
+	Lexicographically compares two string. 
+	Returns an integer greater than, equal to, or less than 0, 
+	when the string str1 is greater than,
+    equal to, or less than the string s2 respectively.
+*/
 int compare(const void* str1, const void* str2)
 {
     const char *str_a = (const char *)str1;
@@ -234,7 +258,7 @@ void parsedir(char * start_dir,char * name,const char type,char * find_results[]
 	struct dirent *direntp;		/* each entry	 */
 	int same_type, same_name, same_all, is_match, is_current_dir,is_parent_dir;
 	char * subpath, * back_slash = "/";
-	errno=0; //clear errno
+	errno=0; /* clear errno before system call */
 
 	if ((dir_ptr=opendir(start_dir))==NULL ) 
 		fprintf(stderr, "pfind: %s : %s\n",start_dir, strerror(errno)); //print to stderr
@@ -246,15 +270,16 @@ void parsedir(char * start_dir,char * name,const char type,char * find_results[]
 				is_current_dir=!strcmp(direntp->d_name,".");
 				is_parent_dir=!strcmp(direntp->d_name,"..");		
 
-				if(is_parent_dir || is_current_dir)
+				if(is_parent_dir || is_current_dir) /* skip "." and ".." entries*/
 					continue;
 				
+				/*create a string large enough to hold the current directory path and the name of the current dirent.d_name */
 				subpath = malloc(strlen(start_dir) + strlen(direntp->d_name) + 1);
-				strcpy(subpath,start_dir);
+				strcpy(subpath,start_dir); 
 				// if((char *)start_dir[strlen(start_dir)-1],back )
 				if(strcmp(start_dir+(strlen(start_dir)-1),back_slash)!=0)
-					strcat(subpath,back_slash); //add a directory delimiter 
-				strcat(subpath,direntp->d_name);	
+					strcat(subpath,back_slash); /*add a directory delimiter if none*/
+				strcat(subpath,direntp->d_name); /*form the complete sub directory or file path*/	
 
 				same_type = ((criteria_flag==CR_TYPE) && match_type(subpath,type));
 				same_name = ((criteria_flag==CR_NAME) && match_name(direntp->d_name,name));
@@ -266,7 +291,7 @@ void parsedir(char * start_dir,char * name,const char type,char * find_results[]
 					*current_index +=1;					
 				}
 
-				if(match_type(subpath,'d')){ //if this is a directory, traverse it
+				if(match_type(subpath,'d')){ //if this is a directory, traverse it now
 					parsedir(subpath,name,type,find_results,buffersize, current_index, criteria_flag);
 					// index++;
 				}
