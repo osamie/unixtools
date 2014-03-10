@@ -37,9 +37,16 @@
 #include	<termios.h>
 
 struct flaginfo { tcflag_t fl_value; char	*fl_name; };
+struct settingsinfo{int mode; char * name; };
 
-struct flaginfo input_flags[] = {
-		
+struct settingsinfo settings[] = {
+	{VERASE	,	"erase"},
+	{VKILL	,	"kill"},
+	{VINTR	,	"intr"},
+	{0		,	NULL}
+}; 
+
+struct flaginfo input_flags[] = {		
 		IGNBRK	,	"IGNBRK",
 		BRKINT	,	"BRKINT",
 		IGNPAR	,	"IGNPAR",
@@ -69,9 +76,11 @@ struct flaginfo output_flags[] = {
 		0	,	NULL};
 
 
+
 void showbaud(int thespeed);
 void show_flagset( int thevalue, struct flaginfo thebitnames[] );
 void show_some_flags( struct termios *ttyp );
+void show_erase(struct termios *ttyp);
 
 
 
@@ -88,17 +97,23 @@ int main(int argc, char * argv[])
 	{ 	
 		/*show info*/
 		showbaud(cfgetospeed( &ttyinfo)); /*get and display baud rate */
+		show_erase(&ttyinfo);
 		show_some_flags(&ttyinfo);
 
 	}
 
-	
-
-	
-
 	printf("\n");
+	return 0;
 }
 
+
+void show_erase(struct termios *ttyinfo){
+	printf("erase = {%d, Ctrl-%c}\n", ttyinfo->c_cc[VERASE], ttyinfo->c_cc[VERASE]);
+}
+
+void show_intr(struct termios *ttyp){
+
+}
 
 /*
  *	show the values of two of the flag sets_: c_iflag and c_lflag
