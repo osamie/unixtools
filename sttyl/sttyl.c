@@ -110,7 +110,8 @@ void show_erase(struct termios *ttyinfo){
 void show_other_settings(struct termios *ttyp, struct settingsinfo thesettings[]){
 	int i;
 	int index;
-	for ( i=0; (index=thesettings[i].cc_index) ; i++ ) {
+	for ( i=0; thesettings[i].name ; i++ ) {
+		index=thesettings[i].cc_index;
 		printf("%s = ^%c ; ",thesettings[i].name, ttyp->c_cc[index]-1+'A' );
 	}
 	printf("\n");
