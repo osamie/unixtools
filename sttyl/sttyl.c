@@ -35,6 +35,8 @@
 #include	<stdio.h>
 #include	<stdlib.h>
 #include	<termios.h>
+#include 	<string.h>
+#include	<fcntl.h>
 
 struct flaginfo { tcflag_t fl_value; char	*fl_name; };
 struct settingsinfo{int cc_index; char * name; };
@@ -81,11 +83,21 @@ int contains_name(struct settingsinfo thesettings[], char *name);
 int main(int argc, char * argv[])
 {	
 	struct	termios ttyinfo;	/* this struct holds tty info */
-
+	struct	termios tty_newinfo;
+	int i, terminalfd;
 	if ( tcgetattr( 0 , &ttyinfo ) == -1 ){   /* get terminal driver info */
 		perror( "cannot get params about stdin");
 		exit(1);
 	}
+
+
+	/* open terminal for user input */
+	terminalfd = open("/dev/tty", O_RDONLY);
+	if ( terminalfd == -1 ){
+		perror("/dev/tty");
+		exit(1); //exit with error
+	}
+
 
 	if (argc==1) /*only one commanline argument*/
 	{ 	
@@ -96,18 +108,21 @@ int main(int argc, char * argv[])
 	}
 	else if (argc>=2){
 		/*erase */
-		/*
-		for each i in argv {
-			if argv[i] is a reserved_word 
-				then setattr(argv[i],argv[i+1]);
+		
+		for (i=0;i<argc;i++){
+			if(contains_name(settings_table,argv[i])){
+				//then setattr(argv[i],argv[i+1]);
+				// printf("value=%s\n",argv[i]);
+				i++; //skip next value 
+				continue;
+			} 
+			else{
+
+				
+			}
 		}
-		*/
+		
 	}
-
-	printf("here\n");
-	// printf("contains value:%d \n", contains_name(&settings_table,"kill"));
-
-
 	return 0;
 }
 
