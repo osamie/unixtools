@@ -37,9 +37,9 @@
 #include	<termios.h>
 
 struct flaginfo { tcflag_t fl_value; char	*fl_name; };
-struct settingsinfo{int mode; char * name; };
+struct settingsinfo{int cc_index; char * name; };
 
-struct settingsinfo settings[] = {
+struct settingsinfo other_settings[] = {
 	{VERASE	,	"erase"},
 	{VKILL	,	"kill"},
 	{VINTR	,	"intr"},
@@ -50,21 +50,14 @@ struct flaginfo input_flags[] = {
 		IGNBRK	,	"IGNBRK",
 		BRKINT	,	"BRKINT",
 		IGNPAR	,	"IGNPAR",
-		/*PARMRK	,	"Mark parity errors",
-		INPCK	,	"Enable input parity check",
-		ISTRIP	,	"Strip character", */
 		INLCR	,	"INLCR",
-		/*IGNCR	,	"Ignore CR", */
 		ICRNL	,	"ICRNL",
 		IXON	,	"IXON",
-		/* _IXANY  ,	"enable any char to restart output",	
-		IXOFF   ,	"Enable start/stop input control",*/
 		0	,	NULL };
 
 struct flaginfo local_flags[] = {
 		ISIG	,	"ISIG",
 		ICANON	,	"ICANON",
-		/* _XCASE	,	"Canonical upper/lower appearance", */
 		ECHO	,	"ECHO",
 		ECHOE	,	"ECHOE",
 		ECHOK	,	"ECHOK",
@@ -81,7 +74,7 @@ void showbaud(int thespeed);
 void show_flagset( int thevalue, struct flaginfo thebitnames[] );
 void show_some_flags( struct termios *ttyp );
 void show_erase(struct termios *ttyp);
-
+void show_other_settings(struct termios *ttyp, struct settingsinfo thesettings[]);
 
 
 int main(int argc, char * argv[])
@@ -97,7 +90,7 @@ int main(int argc, char * argv[])
 	{ 	
 		/*show info*/
 		showbaud(cfgetospeed( &ttyinfo)); /*get and display baud rate */
-		show_erase(&ttyinfo);
+		show_other_settings(&ttyinfo, other_settings);
 		show_some_flags(&ttyinfo);
 
 	}
@@ -106,13 +99,21 @@ int main(int argc, char * argv[])
 	return 0;
 }
 
-
+/*
 void show_erase(struct termios *ttyinfo){
 	printf("erase = {%d, Ctrl-%c}\n", ttyinfo->c_cc[VERASE], ttyinfo->c_cc[VERASE]);
+	printf("kill  ascii %d, Ctrl-%c\n",
+			ttyinfo->c_cc[VKILL], ttyinfo->c_cc[VKILL]-1+'A');
 }
+*/
 
-void show_intr(struct termios *ttyp){
-
+void show_other_settings(struct termios *ttyp, struct settingsinfo thesettings[]){
+	int i;
+	int index;
+	for ( i=0; (index=thesettings[i].cc_index) ; i++ ) {
+		printf("%s = ^%c ; ",thesettings[i].name, ttyp->c_cc[index]-1+'A' );
+	}
+	printf("\n");
 }
 
 /*
@@ -138,8 +139,9 @@ void show_flagset( int thevalue, struct flaginfo thebitnames[] )
 		if (!(thevalue & thebitnames[i].fl_value)) 
 			printf("-"); /*place a '-'' in front to indicate off status*/
 		printf( "%s; ", thebitnames[i].fl_name);
-		if((i%2)!=0) printf("\n");
+		// if((i%2)!=0) printf("\n");
 	}
+	printf("\n");
 }
 
 
