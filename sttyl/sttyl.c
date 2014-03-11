@@ -39,7 +39,8 @@
 struct flaginfo { tcflag_t fl_value; char	*fl_name; };
 struct settingsinfo{int cc_index; char * name; };
 
-struct settingsinfo other_settings[] = {
+
+struct settingsinfo settings_table[] = {
 	{VERASE	,	"erase"},
 	{VKILL	,	"kill"},
 	{VINTR	,	"intr"},
@@ -75,7 +76,7 @@ void show_flagset( int thevalue, struct flaginfo thebitnames[] );
 void show_some_flags( struct termios *ttyp );
 void show_erase(struct termios *ttyp);
 void show_other_settings(struct termios *ttyp, struct settingsinfo thesettings[]);
-
+int contains_name(struct settingsinfo thesettings[], char *name);
 
 int main(int argc, char * argv[])
 {	
@@ -90,12 +91,23 @@ int main(int argc, char * argv[])
 	{ 	
 		/*show info*/
 		showbaud(cfgetospeed( &ttyinfo)); /*get and display baud rate */
-		show_other_settings(&ttyinfo, other_settings);
+		show_other_settings(&ttyinfo, settings_table);
 		show_some_flags(&ttyinfo);
-
+	}
+	else if (argc>=2){
+		/*erase */
+		/*
+		for each i in argv {
+			if argv[i] is a reserved_word 
+				then setattr(argv[i],argv[i+1]);
+		}
+		*/
 	}
 
-	printf("\n");
+	printf("here\n");
+	// printf("contains value:%d \n", contains_name(&settings_table,"kill"));
+
+
 	return 0;
 }
 
@@ -106,6 +118,18 @@ void show_erase(struct termios *ttyinfo){
 			ttyinfo->c_cc[VKILL], ttyinfo->c_cc[VKILL]-1+'A');
 }
 */
+
+int contains_name(struct settingsinfo thesettings[], char *name){
+	int i;
+	char * setting_name;
+
+	for(i=0;(setting_name=thesettings[i].name);i++){
+		if(!strcmp(setting_name,name)){
+			return 1;
+		}
+	}
+	return 0;
+}
 
 void show_other_settings(struct termios *ttyp, struct settingsinfo thesettings[]){
 	int i;
