@@ -1,0 +1,69 @@
+ ===============================
+ ||   	STTYL (STTY-LITE)	  ||
+ ===============================
+
+
+
+Author:	Osazuwa Omigie
+	 Date:	11-March-2014
+     Contains:	Design details for CSCI E-28 homework 3 submission.
+====================================================================
+
+=======
+PURPOSE
+=======
+This is a utility used to view and modify the terminal control settings 
+for your console. Its lets you get and set the driver settings
+associated with the standard input.
+
+
+=========
+INTERFACE
+=========
+The user interface to the program is the command line. Command line syntax is as follows:
+
+	sttyl [erase = <char>] [kill = <char>] {[[-]flag]}*
+
+	where <char> represents a character. 
+
+	flag: 
+		This is used to toggle on or off a setting. As denoted in the format above, multiple flags/settings can be specified. When the '-' is placed in front of a flag, the corresponding setting is turned off and on otherwise. 
+
+		Supported flags include:
+			icrnl 
+			onlcr
+			echo
+			echoe
+			olcuc
+			icanon
+			isig
+
+For example, 
+		$ sttyl kill=k erase=c -echo isig -icrnl
+
+
+==============
+DATA STRUCTURE
+============== 
+	
+	The 4 main table-like structures used in this program are 
+	settings_table, input_flags, local_flags, and output_flags. 
+	They are basically arrays of structs. The settings_table is 
+	an array of settingsinfo structs. While the other 3 tables 
+	were arrays of flaginfo structs. The settingsinfo struct has 
+	2 members: a string and an int. The flaginfo struct has also 
+	has 2 members: a string and a tcflag_t variable (defined in 
+	termios.h file).
+
+	The idea behind an array of structs is a method of implementing a table such that, each struct in an array index, represents an entry which maps a key to a value. For example, in the settings_table array, each entry maps the name of a setting to an interger which repsents the setting's index position in the termios.c_cc array. As seen later, this is useful when determing which settings to modify based on the commandline arguments.  
+
+
+=========
+ALGORITHM
+=========
+	
+
+
+=============
+PROGRAM FLOW
+=============

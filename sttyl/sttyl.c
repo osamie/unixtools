@@ -42,6 +42,11 @@ struct flaginfo { tcflag_t fl_value; char	*fl_name; };
 struct settingsinfo{int cc_index; char * name; };
 
 
+/* 	
+	Each entry/struct contains a tcflag_t property and a string property.
+	Where the tcflag_t property would be used as an index to identify the setting in 
+	the termios.c_cc array. And the name of the setting as the string property.
+	*/
 struct settingsinfo settings_table[] = {
 	{VERASE	,	"erase"},
 	{VKILL	,	"kill"},
@@ -50,26 +55,29 @@ struct settingsinfo settings_table[] = {
 }; 
 
 struct flaginfo input_flags[] = {		
-		IGNBRK	,	"IGNBRK",
-		BRKINT	,	"BRKINT",
-		IGNPAR	,	"IGNPAR",
-		INLCR	,	"INLCR",
-		ICRNL	,	"ICRNL",
-		IXON	,	"IXON",
-		0	,	NULL };
+		{IGNBRK	,	"IGNBRK"},
+		{BRKINT	,	"BRKINT"},
+		{IGNPAR	,	"IGNPAR"},
+		{INLCR	,	"INLCR"},
+		{ICRNL	,	"ICRNL"},
+		{IXON	,	"IXON"},
+		{0		,	NULL} 
+};
 
 struct flaginfo local_flags[] = {
-		ISIG	,	"ISIG",
-		ICANON	,	"ICANON",
-		ECHO	,	"ECHO",
-		ECHOE	,	"ECHOE",
-		ECHOK	,	"ECHOK",
-		0	,	NULL };
+		{ISIG	,	"ISIG"},
+		{ICANON	,	"ICANON"},
+		{ECHO	,	"ECHO"},
+		{ECHOE	,	"ECHOE"},
+		{ECHOK	,	"ECHOK"},
+		{0		,	NULL} 
+};
 
 struct flaginfo output_flags[] = {
-		OLCUC	,	"OLCUC", 
-		ONLCR	,	"ONLCR",
-		0	,	NULL};
+		{OLCUC	,	"OLCUC"}, 
+		{ONLCR	,	"ONLCR"},
+		{0		,	NULL}
+};
 
 
 
