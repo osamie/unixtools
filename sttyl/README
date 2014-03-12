@@ -61,7 +61,14 @@ DATA STRUCTURE
 =========
 ALGORITHM
 =========
-	
+	The program begins by iterating through each commanndline argument. For each argument,
+	it checks if it is a supported setting (e.g erase, kill) or if it is a flag. It determines the 
+	argument type by checking if it exists in the settings table or any of the flags table 
+	(local,output or input). 
+
+	When the argument type is determined, the appropriate bit is set on/off the appropriate bit or 
+	in the case of a conctrol character, the appropriate character is written in the termios struct's 
+	conctrol charater array. 	
 
 
 =============
