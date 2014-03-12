@@ -74,3 +74,11 @@ ALGORITHM
 =============
 PROGRAM FLOW
 =============
+	main:
+		- Gets the file descriptor, terminalfd, by calling open on the terminal device, "dev/tty". 
+		- The returned terminalfd is then passed in a tcgetattr system call which updates a termios stuct argument. 
+		- The updated termios stuct, ttyinfo, contains the current driver settings of the previously opened terminal. 
+		- ttyinfo is passed as a pointer argument in a process_args function call. 
+
+	process_args:
+		
