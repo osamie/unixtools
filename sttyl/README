@@ -47,15 +47,15 @@ DATA STRUCTURE
 ============== 
 	
 	The 4 main table-like structures used in this program are 
-	settings_table, input_flags, local_flags, and output_flags. 
-	They are basically arrays of structs. The settings_table is 
+	ccsettings_table, input_flags, local_flags, and output_flags. 
+	They are basically arrays of structs. The ccsettings_table is 
 	an array of settingsinfo structs. While the other 3 tables 
 	were arrays of flaginfo structs. The settingsinfo struct has 
 	2 members: a string and an int. The flaginfo struct has also 
 	has 2 members: a string and a tcflag_t variable (defined in 
 	termios.h file).
 
-	The idea behind an array of structs is a method of implementing a table such that, each struct in an array index, represents an entry which maps a key to a value. For example, in the settings_table array, each entry maps the name of a setting to an interger which repsents the setting's index position in the termios.c_cc array. As seen later, this is useful when determing which settings to modify based on the commandline arguments.  
+	The idea behind an array of structs is a method of implementing a table such that, each struct in an array index, represents an entry which maps a key to a value. For example, in the ccsettings_table array, each entry maps the name of a setting to an interger which repsents the setting's index position in the termios.c_cc array. As seen later, this is useful when determing which settings to modify based on the commandline arguments.  
 
 
 =========
@@ -78,7 +78,32 @@ PROGRAM FLOW
 		- Gets the file descriptor, terminalfd, by calling open on the terminal device, "dev/tty". 
 		- The returned terminalfd is then passed in a tcgetattr system call which updates a termios stuct argument. 
 		- The updated termios stuct, ttyinfo, contains the current driver settings of the previously opened terminal. 
-		- ttyinfo is passed as a pointer argument in a process_args function call. 
+		- pointer to ttyinfo, along with the initial commandline arguments are passed as arguments to process_args. 
+		- return 0.
 
 	process_args:
+		- Declares a new struct termios variable called new_settings
+		- Iterate through the commandline arguments. For each argument, determine its type by looking up the tables.Each table lookup is done by passing the table variable name and the search value to the table_lookup function.
+			- Store the return value of table_lookup in an int variable, table_index. 
+			- If the commandline argument is a cc name in the ccsettings table
+				Then the next commandline argument, newchar = argv[i+1], is the new control character. (if i+1 >= argc, then show usage and exit the program with error).
+				-  Set new_settings.c_cc[table_index] to newchar.
+			- Else if the commandline argument is in any of the flags table, 
+				- Determine if... 
+
+			- Else show usage and exit the program with error. 
+		- return 
+
+
+
+
+	table_lookup:
+		- FOR_LOOP: Iterate through the given array/table (argument 1), incrementing by 1 with each loop (initially at 0).   
+		-  For each struct/entry in the table, 
+		- If the entry->name is equal to the given name (argument 2), 
+			- RETURN the current index position. 
+		- Else return to FOR_LOOP.
+		- Return -1 at the end of the iteration, to indicate not found.  
+		
+
 		

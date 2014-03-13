@@ -87,23 +87,25 @@ void show_some_flags( struct termios *ttyp );
 void show_erase(struct termios *ttyp);
 void show_other_settings(struct termios *ttyp, struct settingsinfo thesettings[]);
 int contains_name(struct settingsinfo thesettings[], char *name);
+void process_args(struct termios * ttyinfo, int argc, char * argv[]);
 
 int main(int argc, char * argv[])
 {	
 	struct	termios ttyinfo;	/* this struct holds tty info */
 	struct	termios tty_newinfo;
 	int i, terminalfd;
-	if ( tcgetattr( 0 , &ttyinfo ) == -1 ){   /* get terminal driver info */
-		perror( "cannot get params about stdin");
-		exit(1);
-	}
-
+	
 
 	/* open terminal for user input */
 	terminalfd = open("/dev/tty", O_RDONLY);
 	if ( terminalfd == -1 ){
 		perror("/dev/tty");
 		exit(1); //exit with error
+	}
+
+	if ( tcgetattr( terminalfd , &ttyinfo ) == -1 ){   /* get terminal driver info */
+		perror( "cannot get params about stdin");
+		exit(1);
 	}
 
 
@@ -134,14 +136,14 @@ int main(int argc, char * argv[])
 	return 0;
 }
 
-/*
-void show_erase(struct termios *ttyinfo){
-	printf("erase = {%d, Ctrl-%c}\n", ttyinfo->c_cc[VERASE], ttyinfo->c_cc[VERASE]);
-	printf("kill  ascii %d, Ctrl-%c\n",
-			ttyinfo->c_cc[VKILL], ttyinfo->c_cc[VKILL]-1+'A');
-}
-*/
 
+void process_args(struct termios * ttyinfo,int argc, char * argv[]){
+
+}
+
+/*
+	This function does a table lookup on t
+**/
 int contains_name(struct settingsinfo thesettings[], char *name){
 	int i;
 	char * setting_name;
