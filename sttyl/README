@@ -21,12 +21,14 @@ INTERFACE
 =========
 The user interface to the program is the command line. Command line syntax is as follows:
 
-	sttyl [erase = <char>] [kill = <char>] {[[-]flag]}*
+	sttyl [erase <char>] [kill <char>] {[[-]flag]}*
 
 	where <char> represents a character. 
 
 	flag: 
-		This is used to toggle on or off a setting. As denoted in the format above, multiple flags/settings can be specified. When the '-' is placed in front of a flag, the corresponding setting is turned off and on otherwise. 
+		This is used to toggle on or off a setting. As denoted in the format above, multiple 
+		flags/settings can be specified. When the '-' is placed in front of a flag, the corresponding 
+		setting is turned off and on otherwise. 
 
 		Supported flags include:
 			icrnl 
@@ -67,27 +69,32 @@ ALGORITHM
 	determines the argument type by checking if it exists in the cc settings table or any of the
 	flags table (local,output or input). 
 
-	When the argument type is determined, the appropriate bit is set on/off OR in the case of a conctrol character, the appropriate character is written in the termios 
-	struct's c_cc array. 	
+	When the argument type is determined, the appropriate bit is set on/off OR in the case of a conctrol 
+	character, the appropriate character is written in the termios struct's c_cc array. 	
 
 
 =============
 PROGRAM FLOW
 =============
 	main:
-		- Get the file descriptor by calling system open on the terminal device, "dev/tty". Store the descriptor as a variable terminalfd. 
+		- Get the file descriptor by calling system open on the terminal device, "dev/tty". Store the 
+		  descriptor as a variable terminalfd. 
 		- Create a new termios struct point, ttyinfo. 
 		- Call tcgetattr, passing terminalfd and ttyinfo as arguments. 
-		- The updated termios stuct, ttyinfo, contains the current driver settings of the previously opened terminal. 
-		- The terminalfd int, along with the initial commandline arguments are passed as arguments to process_args. 
+		- The updated termios stuct, ttyinfo, contains the current driver settings of the previously opened 
+		   terminal. 
+		- The terminalfd int, along with the initial commandline arguments are passed as arguments to 
+		   process_args. 
 		- Return 0.
 
 	process_args:
 		- Declare a new struct termios variable called new_settings.  
-		- FOR_LOOP: Iterate through the commandline arguments. For each argument, determine its type by checking if it exists in the ccsettings_table OR any of the flag tables. Each table lookup is done by passing the table variable name and the search value to the 'table_lookup' function.
+		- FOR_LOOP: Iterate through the commandline arguments. For each argument, determine its type by checking
+		   if it exists in the ccsettings_table OR any of the flag tables. Each table lookup is done by passing the table variable name and the search value to the 'table_lookup' function.
 			- Store the return value of 'table_lookup' in an int variable, table_index. 
 			- If the commandline argument is a name in the ccsettings table
-				>	Then, the next commandline argument, newchar = argv[i+1], is the new control character. (if i+1 >= argc, then show usage and exit the program with error status).
+				>	Then, the next commandline argument, newchar = argv[i+1], is the new control 
+					character. (if i+1 >= argc, then show usage and exit the program with error status).
 				>	Set new_settings.c_cc[table_index] to newchar.
 				>	Skip the next commandline argument (i=+1) and continue to start of FOR_LOOP again.
 
