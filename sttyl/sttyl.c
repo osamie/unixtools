@@ -142,7 +142,8 @@ void process_args(struct termios * ttyinfo,int argc, char * argv[]){
 }
 
 /*
-	This function does a table lookup on t
+	This function does a table lookup on a given table. 
+	Returns the position in the array where the value was found.
 **/
 int contains_name(struct settingsinfo thesettings[], char *name){
 	int i;
@@ -153,7 +154,7 @@ int contains_name(struct settingsinfo thesettings[], char *name){
 			return 1;
 		}
 	}
-	return 0;
+	return -1;
 }
 
 void show_other_settings(struct termios *ttyp, struct settingsinfo thesettings[]){

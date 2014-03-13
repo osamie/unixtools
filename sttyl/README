@@ -12,9 +12,8 @@ Author:	Osazuwa Omigie
 =======
 PURPOSE
 =======
-This is a utility used to view and modify the terminal control settings 
-for your console. Its lets you get and set the driver settings
-associated with the standard input.
+This is a utility used to view and modify the terminal control settings for your console. 
+Its lets you get and set the driver settings associated with the standard input.
 
 
 =========
@@ -46,55 +45,60 @@ For example,
 DATA STRUCTURE
 ============== 
 	
-	The 4 main table-like structures used in this program are 
-	ccsettings_table, input_flags, local_flags, and output_flags. 
-	They are basically arrays of structs. The ccsettings_table is 
-	an array of settingsinfo structs. While the other 3 tables 
-	were arrays of flaginfo structs. The settingsinfo struct has 
-	2 members: a string and an int. The flaginfo struct has also 
-	has 2 members: a string and a tcflag_t variable (defined in 
-	termios.h file).
+	The 4 main table-like structures used in this program are ccsettings_table, input_flags,
+	local_flags, and output_flags. They are basically arrays of structs. The ccsettings_table
+	is an array of settingsinfo structs. While the other 3 tables are arrays of flaginfo 
+	structs. The settingsinfo struct has 2 members: a string and an int. The flaginfo struct
+	has also has 2 members: a string and a tcflag_t variable.
 
-	The idea behind an array of structs is a method of implementing a table such that, each struct in an array index, represents an entry which maps a key to a value. For example, in the ccsettings_table array, each entry maps the name of a setting to an interger which repsents the setting's index position in the termios.c_cc array. As seen later, this is useful when determing which settings to modify based on the commandline arguments.  
+	An array of structs is used in implementing a table design such that, each struct in an 
+	array index, represents an entry which maps a key to a value. For example, in the 
+	ccsettings_table array, each entry maps the name of a control character (cc) to an interger 
+	which repsents the control character's index position in the c_cc array of a termios 
+	struct. As shown later, this is useful when determing which settings to modify based on the 
+	commandline arguments.  
 
 
 =========
 ALGORITHM
 =========
-	The program begins by iterating through each commanndline argument. For each argument,
-	it checks if it is a supported setting (e.g erase, kill) or if it is a flag. It determines the 
-	argument type by checking if it exists in the settings table or any of the flags table 
-	(local,output or input). 
+	The program begins by iterating through each commandline argument. For each argument, 
+	it checks if it is a supported cc name (e.g erase, kill) or if it is a flag. It 
+	determines the argument type by checking if it exists in the cc settings table or any of the
+	flags table (local,output or input). 
 
-	When the argument type is determined, the appropriate bit is set on/off the appropriate bit or 
-	in the case of a conctrol character, the appropriate character is written in the termios struct's 
-	conctrol charater array. 	
+	When the argument type is determined, the appropriate bit is set on/off OR in the case of a conctrol character, the appropriate character is written in the termios 
+	struct's c_cc array. 	
 
 
 =============
 PROGRAM FLOW
 =============
 	main:
-		- Gets the file descriptor, terminalfd, by calling open on the terminal device, "dev/tty". 
-		- The returned terminalfd is then passed in a tcgetattr system call which updates a termios stuct argument. 
+		- Get the file descriptor by calling system open on the terminal device, "dev/tty". Store the descriptor as a variable terminalfd. 
+		- Create a new termios struct point, ttyinfo. 
+		- Call tcgetattr, passing terminalfd and ttyinfo as arguments. 
 		- The updated termios stuct, ttyinfo, contains the current driver settings of the previously opened terminal. 
-		- pointer to ttyinfo, along with the initial commandline arguments are passed as arguments to process_args. 
-		- return 0.
+		- The terminalfd int, along with the initial commandline arguments are passed as arguments to process_args. 
+		- Return 0.
 
 	process_args:
-		- Declares a new struct termios variable called new_settings
-		- Iterate through the commandline arguments. For each argument, determine its type by looking up the tables.Each table lookup is done by passing the table variable name and the search value to the table_lookup function.
-			- Store the return value of table_lookup in an int variable, table_index. 
-			- If the commandline argument is a cc name in the ccsettings table
-				Then the next commandline argument, newchar = argv[i+1], is the new control character. (if i+1 >= argc, then show usage and exit the program with error).
-				-  Set new_settings.c_cc[table_index] to newchar.
-			- Else if the commandline argument is in any of the flags table, 
-				- Determine if... 
+		- Declare a new struct termios variable called new_settings.  
+		- FOR_LOOP: Iterate through the commandline arguments. For each argument, determine its type by checking if it exists in the ccsettings_table OR any of the flag tables. Each table lookup is done by passing the table variable name and the search value to the 'table_lookup' function.
+			- Store the return value of 'table_lookup' in an int variable, table_index. 
+			- If the commandline argument is a name in the ccsettings table
+				>	Then, the next commandline argument, newchar = argv[i+1], is the new control character. (if i+1 >= argc, then show usage and exit the program with error status).
+				>	Set new_settings.c_cc[table_index] to newchar.
+				>	Skip the next commandline argument (i=+1) and continue to start of FOR_LOOP again.
 
+			- Else if the commandline argument is in a flag table, derive the bit mask from the specific table it was found. For example, if the commandline argument is found in the input_flags table, bit_mask = input_flags[table_index].fl_value. 
+			 	>	Then, toggle on or off the bit on the new_settings termios struct (e.g new_settings.c_lflag &= bit_mask).     
+			 	>	Continue to start of FOR_LOOP. 
 			- Else show usage and exit the program with error. 
-		- return 
 
-
+		- (FOR_LOOP ended) Write the new_settings to the terminal driver. 
+		
+		- Return. 
 
 
 	table_lookup:
@@ -104,6 +108,3 @@ PROGRAM FLOW
 			- RETURN the current index position. 
 		- Else return to FOR_LOOP.
 		- Return -1 at the end of the iteration, to indicate not found.  
-		
-
-		
