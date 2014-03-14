@@ -37,9 +37,21 @@
 #include	<termios.h>
 #include 	<string.h>
 #include	<fcntl.h>
+#include	<unistd.h>
 
-struct flaginfo { tcflag_t fl_value; char	*fl_name; };
-struct settingsinfo{int cc_index; char * name; };
+
+/* TABLE IDs */
+#define 	IFLAG_TABLE_ID			1
+#define 	OFLAG_TABLE_ID			2
+#define 	LFLAG_TABLE_ID			3
+#define		CCSETTINGS_TABLE_ID		4
+
+
+#define 	FALSE 		0
+#define		TRUE		1
+
+// struct flaginfo { tcflag_t fl_value; char * name; };
+struct settingsinfo{tcflag_t value; char * name; };
 
 
 /* 	
@@ -54,7 +66,7 @@ struct settingsinfo settings_table[] = {
 	{0		,	NULL}
 }; 
 
-struct flaginfo input_flags[] = {		
+struct settingsinfo input_flags[] = {		
 		{IGNBRK	,	"IGNBRK"},
 		{BRKINT	,	"BRKINT"},
 		{IGNPAR	,	"IGNPAR"},
@@ -64,7 +76,7 @@ struct flaginfo input_flags[] = {
 		{0		,	NULL} 
 };
 
-struct flaginfo local_flags[] = {
+struct settingsinfo local_flags[] = {
 		{ISIG	,	"ISIG"},
 		{ICANON	,	"ICANON"},
 		{ECHO	,	"ECHO"},
@@ -73,7 +85,7 @@ struct flaginfo local_flags[] = {
 		{0		,	NULL} 
 };
 
-struct flaginfo output_flags[] = {
+struct settingsinfo output_flags[] = {
 		{OLCUC	,	"OLCUC"}, 
 		{ONLCR	,	"ONLCR"},
 		{0		,	NULL}
@@ -82,76 +94,138 @@ struct flaginfo output_flags[] = {
 
 
 void showbaud(int thespeed);
-void show_flagset( int thevalue, struct flaginfo thebitnames[] );
+void show_flagset( int thevalue, struct settingsinfo thebitnames[] );
 void show_some_flags( struct termios *ttyp );
 void show_erase(struct termios *ttyp);
 void show_other_settings(struct termios *ttyp, struct settingsinfo thesettings[]);
-int contains_name(struct settingsinfo thesettings[], char *name);
+int table_lookup(struct settingsinfo thesettings[], char *name);
 void process_args(struct termios * ttyinfo, int argc, char * argv[]);
+int fl_table_lookup(char * cmdline_arg, struct termios * ttyp);
 
 int main(int argc, char * argv[])
 {	
 	struct	termios ttyinfo;	/* this struct holds tty info */
-	struct	termios tty_newinfo;
-	int i, terminalfd;
 	
-
-	/* open terminal for user input */
-	terminalfd = open("/dev/tty", O_RDONLY);
-	if ( terminalfd == -1 ){
-		perror("/dev/tty");
-		exit(1); //exit with error
-	}
-
-	if ( tcgetattr( terminalfd , &ttyinfo ) == -1 ){   /* get terminal driver info */
+	/* get settings for current std in */
+	if ( tcgetattr( STDIN_FILENO , &ttyinfo ) == -1 ){   
 		perror( "cannot get params about stdin");
 		exit(1);
 	}
 
+	process_args(&ttyinfo,argc, argv); /*process the commandline arguments*/
 
-	if (argc==1) /*only one commanline argument*/
-	{ 	
-		/*show info*/
-		showbaud(cfgetospeed( &ttyinfo)); /*get and display baud rate */
-		show_other_settings(&ttyinfo, settings_table);
-		show_some_flags(&ttyinfo);
-	}
-	else if (argc>=2){
-		/*erase */
-		
-		for (i=0;i<argc;i++){
-			if(contains_name(settings_table,argv[i])){
-				//then setattr(argv[i],argv[i+1]);
-				// printf("value=%s\n",argv[i]);
-				i++; //skip next value 
-				continue;
-			} 
-			else{
-
-				
-			}
-		}
-		
-	}
+	tcsetattr(0, TCSANOW, &ttyinfo);
 	return 0;
 }
 
 
-void process_args(struct termios * ttyinfo,int argc, char * argv[]){
+/*
+void toggle_flag(int tableId, int how, struct *ttyp){
+	static struct termios prevmode;
+	struct termios settings;
+	static int prev_stored = 0;
+	int rv;
 
+	if (how==0){
+		switch(tableId){
+			case IFLAG_TABLE:
+
+		}
+		ttyp.c_lflag &= ~ECHO;	
+		ttyp.c_lflag &= ~ICANON;  
+		rv = tcsetattr(fd, TCSANOW, &settings);
+	} 
+	else if ( how == 1 && prev_stored ==1 ){
+		tcsetattr(fd, TCSANOW, &prevmode);
+	}
+}*/
+
+
+void process_args(struct termios * ttyp,int argc, char * argv[]){
+	int i;
+	int table_index;
+	// int bit_mask; 
+	char * cmdline_arg;
+	char newchar;
+	
+	if (argc==1) /*only one commanline argument*/
+	{ 	
+		/*show info*/
+		showbaud(cfgetospeed(ttyp)); /*get and display baud rate */
+		show_other_settings(ttyp, settings_table);
+		show_some_flags(ttyp);
+	}
+	else if (argc>=2){		
+		for (i=1;i<argc;i++){
+			cmdline_arg = argv[i];		
+			if((table_index=table_lookup(settings_table,cmdline_arg)) >= 0 ){
+				if((i+1) >= argc) {
+					fprintf(stderr, "Expected a char after %s\n",cmdline_arg);
+					//show usage and exit 
+					exit(1); 
+				}
+				newchar = argv[i+1][0]; //set new char to the next argument, TODO: error check
+				ttyp->c_cc[settings_table[table_index].value] = newchar;
+				i++; //skip next value 
+				continue;
+			}else{ //check flag tables
+				if(fl_table_lookup(cmdline_arg,ttyp) == FALSE){
+					fprintf(stderr, "Invalid commandline argument %s\n",argv[i]);
+					exit(1);
+				}
+			}
+		}//end for loop
+	} //end else-if
 }
+
+
+int fl_table_lookup(char * cmdline_arg, struct termios * ttyp){
+	struct settingsinfo * table;
+	tcflag_t fl_value;
+	tcflag_t * flag;
+	tcflag_t turn_off, turn_on; 
+	int table_index;
+
+	if((table_index=table_lookup(input_flags,cmdline_arg)) >= 0 ){
+		table = input_flags;
+		flag = &ttyp->c_iflag;
+	}else if((table_index=table_lookup(output_flags,cmdline_arg)) >= 0 ){
+		table = output_flags;
+		flag = &ttyp->c_oflag;
+	}else if((table_index=table_lookup(local_flags,cmdline_arg)) >= 0 ){
+		table = local_flags;
+		flag = &ttyp->c_lflag;
+	}else{
+		return FALSE;
+	}
+
+	fl_value = table[table_index].value;
+	turn_on = ((*flag) & fl_value);
+	turn_off = ((*flag) & (~fl_value));
+
+	/*update the appropriate ttyp flag accordingly*/
+	*flag = (cmdline_arg[0]=='-')?turn_off:turn_on;
+
+	return TRUE; 
+}
+
+
 
 /*
 	This function does a table lookup on a given table. 
 	Returns the position in the array where the value was found.
 **/
-int contains_name(struct settingsinfo thesettings[], char *name){
-	int i;
+int table_lookup(struct settingsinfo thesettings[], char *name){
+	int i,start_index=0;
 	char * setting_name;
 
-	for(i=0;(setting_name=thesettings[i].name);i++){
-		if(!strcmp(setting_name,name)){
-			return 1;
+	if (name[0] == '-'){
+		start_index = 1;
+	}
+
+	for(i=start_index;(setting_name=thesettings[i].name);i++){
+		if(!strcmp(setting_name,name)){ //name found
+			return i;
 		}
 	}
 	return -1;
@@ -161,7 +235,7 @@ void show_other_settings(struct termios *ttyp, struct settingsinfo thesettings[]
 	int i;
 	int index;
 	for ( i=0; thesettings[i].name ; i++ ) {
-		index=thesettings[i].cc_index;
+		index=thesettings[i].value;
 		printf("%s = ^%c ; ",thesettings[i].name, ttyp->c_cc[index]-1+'A' );
 	}
 	printf("\n");
@@ -182,14 +256,14 @@ void show_some_flags( struct termios *ttyp )
 /*
  * Check each bit pattern and display descriptive title
  */
-void show_flagset( int thevalue, struct flaginfo thebitnames[] )
+void show_flagset( int thevalue, struct settingsinfo thebitnames[] )
 {
 	int	i;
-	for ( i=0; thebitnames[i].fl_value ; i++ ) {
-		// char * fl_name = thebitnames[i].fl_name;
-		if (!(thevalue & thebitnames[i].fl_value)) 
+	for ( i=0; thebitnames[i].value ; i++ ) {
+		// char * name = thebitnames[i].name;
+		if (!(thevalue & thebitnames[i].value)) 
 			printf("-"); /*place a '-'' in front to indicate off status*/
-		printf( "%s; ", thebitnames[i].fl_name);
+		printf( "%s; ", thebitnames[i].name);
 		// if((i%2)!=0) printf("\n");
 	}
 	printf("\n");
