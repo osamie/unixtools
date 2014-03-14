@@ -67,27 +67,27 @@ struct settingsinfo settings_table[] = {
 }; 
 
 struct settingsinfo input_flags[] = {		
-		{IGNBRK	,	"IGNBRK"},
-		{BRKINT	,	"BRKINT"},
-		{IGNPAR	,	"IGNPAR"},
-		{INLCR	,	"INLCR"},
-		{ICRNL	,	"ICRNL"},
-		{IXON	,	"IXON"},
+		{IGNBRK	,	"ignbrk"},
+		{BRKINT	,	"brkint"},
+		{IGNPAR	,	"ignpar"},
+		{INLCR	,	"inlcr"},
+		{ICRNL	,	"icrnl"},
+		{IXON	,	"ixon"},
 		{0		,	NULL} 
 };
 
 struct settingsinfo local_flags[] = {
-		{ISIG	,	"ISIG"},
-		{ICANON	,	"ICANON"},
-		{ECHO	,	"ECHO"},
-		{ECHOE	,	"ECHOE"},
-		{ECHOK	,	"ECHOK"},
+		{ISIG	,	"isig"},
+		{ICANON	,	"icanon"},
+		{ECHO	,	"echo"},
+		{ECHOE	,	"echoe"},
+		{ECHOK	,	"echok"},
 		{0		,	NULL} 
 };
 
 struct settingsinfo output_flags[] = {
-		{OLCUC	,	"OLCUC"}, 
-		{ONLCR	,	"ONLCR"},
+		{OLCUC	,	"olcuc"}, 
+		{ONLCR	,	"onlcr"},
 		{0		,	NULL}
 };
 
@@ -108,13 +108,17 @@ int main(int argc, char * argv[])
 	
 	/* get settings for current std in */
 	if ( tcgetattr( STDIN_FILENO , &ttyinfo ) == -1 ){   
-		perror( "cannot get params about stdin");
+		perror( "Could not get params about stdin");
 		exit(1);
 	}
 
 	process_args(&ttyinfo,argc, argv); /*process the commandline arguments*/
 
-	tcsetattr(0, TCSANOW, &ttyinfo);
+	if ( tcsetattr(STDIN_FILENO, TCSANOW, &ttyinfo) == -1 ){   
+		perror( "Could write new seetings to file");
+		exit(1);
+	}
+	
 	return 0;
 }
 
