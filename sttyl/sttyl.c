@@ -1,34 +1,42 @@
 /*
 * 
-* sttyl  (stty-lite)
-
+* 			sttyl  (stty-lite)
 * 
 *  Purpose: 
-*	   This is a utility used to view and modify the terminal control settings 
+*	   This is a unix commandline utility used to view and modify the terminal control settings 
 *	   for your console. In other words, stty allows you to determine how your 
 *	   current login session (for example) processes input and output, and to 
 *	   control these parameters.
 * 
-*  Arguments:
+*  Arguments (commandline):
+*		sttyl [erase <char>] [kill <char>] {[[-]flag]}*
+*
+*		where <char> represents a character. 
+*
+*		flag: 
+*			This is used to toggle on or off a setting. As denoted in the format above, 
+*			multiple flags/settings can be specified. When the '-' is placed in front of a 
+*			flag, the corresponding setting is turned off and on otherwise. 
+*
+*			Supported flags include:
+*				icrnl 
+*				onlcr
+*				echo
+*				echoe
+*				olcuc
+*				icanon
+*				isig
+*
+*		For example, 
+*				$ sttyl kill=k erase=c -echo isig -icrnl
 *	
-*	
-*		
-*		
-*		
-*	 
-*	 
+*
+*
 *   Author: Osazuwa Omigie	
 *   Date: March 9,2014.		
 *   CSCI-E28
 *   Harvard University		
 *		
- speed, intr, erase, and kill chars, 
-
- icrnl, onlcr, echo, echoe, olcuc, icanon, and isig
-
- local modes: ECHO, ECHOE, ISIG, ICANON
- input modes: ICRNL 
- output modes: OLCUC, ONLCR
 */
 
 
@@ -124,28 +132,6 @@ int main(int argc, char * argv[])
 }
 
 
-/*
-void toggle_flag(int tableId, int how, struct *ttyp){
-	static struct termios prevmode;
-	struct termios settings;
-	static int prev_stored = 0;
-	int rv;
-
-	if (how==0){
-		switch(tableId){
-			case IFLAG_TABLE:
-
-		}
-		ttyp.c_lflag &= ~ECHO;	
-		ttyp.c_lflag &= ~ICANON;  
-		rv = tcsetattr(fd, TCSANOW, &settings);
-	} 
-	else if ( how == 1 && prev_stored ==1 ){
-		tcsetattr(fd, TCSANOW, &prevmode);
-	}
-}*/
-
-
 void process_args(struct termios * ttyp,int argc, char * argv[]){
 	int i;
 	int table_index;
@@ -153,11 +139,10 @@ void process_args(struct termios * ttyp,int argc, char * argv[]){
 	char * cmdline_arg;
 	char newchar;
 	
-	if (argc==1) /*only one commanline argument*/
-	{ 	
+	if (argc==1){ 	
 		/*show info*/
 		showbaud(cfgetospeed(ttyp)); /*get and display baud rate */
-		show_other_settings(ttyp, settings_table);
+		show_other_settings(ttyp, settings_table); 
 		show_some_flags(ttyp);
 	}
 	else if (argc>=2){		
@@ -186,31 +171,38 @@ void process_args(struct termios * ttyp,int argc, char * argv[]){
 	} //end else-if
 }
 
+/*
+This is utility funtion for process_args that helps in looking up arguments
+on the flag tables. And if found, turns on or off the appropriate bit on the
+termios struct passed by reference.
+It also depends on the table_lookup function for table look ups. 
 
+Returns TRUE/1 if found or FALSE/0 otherwise.
+**/
 int fl_table_lookup(char * cmdline_arg, struct termios * ttyp){
 	struct settingsinfo * table;
-	tcflag_t fl_value;
-	tcflag_t * flag;
-	tcflag_t turn_off, turn_on; 
-	int table_index;
+	tcflag_t * flag; /* will hold a reference to the flag that should be modified*/
+	tcflag_t fl_value, turn_off, turn_on; 
+	int table_index; /* hold the index to the entry on the table*/
 
+	/* */
 	if((table_index=table_lookup(input_flags,cmdline_arg)) >= 0 ){
-		table = input_flags;
-		flag = &ttyp->c_iflag;
+		table = input_flags;	//keep a reference to the table
+		flag = &ttyp->c_iflag; //keep a reference to the flag
 	}else if((table_index=table_lookup(output_flags,cmdline_arg)) >= 0 ){
 		table = output_flags;
-		flag = &ttyp->c_oflag;
+		flag = &ttyp->c_oflag; 
 	}else if((table_index=table_lookup(local_flags,cmdline_arg)) >= 0 ){
 		table = local_flags;
-		flag = &ttyp->c_lflag;
+		flag = &ttyp->c_lflag; 
 	}else{
-		return FALSE;
+		return FALSE; /* argument name not found in any table*/
 	}
 
-	//found argument in a flag table
-	fl_value = table[table_index].value;
-	turn_on = ((*flag) | (fl_value));
-	turn_off = ((*flag) & (~fl_value));
+	/*argument has been found in a flag table*/	
+	fl_value = table[table_index].value;	/* Get the corresponing bit mask*/
+	turn_on = ((*flag) | (fl_value));		/* logic to turn on bit */
+	turn_off = ((*flag) & (~fl_value));		/* logic to turn off bit */
 
 	/*update the appropriate ttyp flag accordingly*/
 	*flag = (cmdline_arg[0]=='-')?turn_off:turn_on;
@@ -289,11 +281,9 @@ void show_flagset( int thevalue, struct settingsinfo thebitnames[] )
 {
 	int	i;
 	for ( i=0; thebitnames[i].value ; i++ ) {
-		// char * name = thebitnames[i].name;
 		if (!(thevalue & thebitnames[i].value)) 
 			printf("-"); /*place a '-'' in front to indicate off status*/
 		printf( "%s; ", thebitnames[i].name);
-		// if((i%2)!=0) printf("\n");
 	}
 	printf("\n");
 }
