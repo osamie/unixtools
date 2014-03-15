@@ -114,6 +114,7 @@ int main(int argc, char * argv[])
 
 	process_args(&ttyinfo,argc, argv); /*process the commandline arguments*/
 
+	// printf("Stored erase char is %c\n", ttyinfo.c_cc[VERASE]);
 	if ( tcsetattr(STDIN_FILENO, TCSANOW, &ttyinfo) == -1 ){   
 		perror( "Could write new seetings to file");
 		exit(1);
@@ -169,7 +170,10 @@ void process_args(struct termios * ttyp,int argc, char * argv[]){
 					exit(1); 
 				}
 				newchar = argv[i+1][0]; //set new char to the next argument, TODO: error check
+				// printf("the new char is %c\n",newchar);
+				printf("cc_index: %d ; erase_index: %d \n",settings_table[table_index].value, VERASE);
 				ttyp->c_cc[settings_table[table_index].value] = newchar;
+				printf("the new char is %c\n",ttyp->c_cc[settings_table[table_index].value]);
 				i++; //skip next value 
 				continue;
 			}else{ //check flag tables
@@ -236,11 +240,23 @@ int table_lookup(struct settingsinfo thesettings[], char *name){
 }
 
 void show_other_settings(struct termios *ttyp, struct settingsinfo thesettings[]){
-	int i;
-	int index;
+	int i,index;
+	char special_char;
+	char * name;
+
 	for ( i=0; thesettings[i].name ; i++ ) {
-		index=thesettings[i].value;
-		printf("%s = ^%c ; ",thesettings[i].name, ttyp->c_cc[index]-1+'A' );
+		index=thesettings[i].value; 		/*get the cc_index from the table*/
+		special_char = ttyp->c_cc[index]; 	/*get the control character */
+		name = thesettings[i].name;
+		// is_null_cc = (special_char == '\0')?TRUE:FALSE
+		// if(special_char == 127){
+		// 	printf("%s = ^?; ", special_char-1+'A');		
+		// }else{
+		// 	printf("%s = %c; ", name, special_char);	
+		// }
+		printf("%s = %c; ",name,special_char);
+		// printf("%s = %c; ",thesettings[i].name, 
+			// ((special_char == NULL)?(char)(special_char-1+'A'):((char)special_char)));
 	}
 	printf("\n");
 }
