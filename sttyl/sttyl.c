@@ -230,8 +230,6 @@ int table_lookup(struct settingsinfo thesettings[], char *name){
 	char * tmpname = malloc(sizeof(name)-1);
 
 	if (name[0] == '-'){
-		start_index = 1;
-
 		/* strip off '-' and store result in tmpname */
 		for(j=0;j<strlen(name);j++){
 			if(j==0)continue; /*dont copy the '-' character */
@@ -241,7 +239,7 @@ int table_lookup(struct settingsinfo thesettings[], char *name){
 		tmpname = name;
 	}
 
-	for(i=start_index;(setting_name=thesettings[i].name);i++){
+	for(i=0;(setting_name=thesettings[i].name);i++){
 		if(!strcmp(setting_name,tmpname)){ //name found
 			// printf("%s found in   \n");
 			return i;
