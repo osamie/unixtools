@@ -207,8 +207,9 @@ int fl_table_lookup(char * cmdline_arg, struct termios * ttyp){
 		return FALSE;
 	}
 
+	//found argument in a flag table
 	fl_value = table[table_index].value;
-	turn_on = ((*flag) & fl_value);
+	turn_on = ((*flag) | (fl_value));
 	turn_off = ((*flag) & (~fl_value));
 
 	/*update the appropriate ttyp flag accordingly*/
@@ -224,15 +225,25 @@ int fl_table_lookup(char * cmdline_arg, struct termios * ttyp){
 	Returns the position in the array where the value was found.
 **/
 int table_lookup(struct settingsinfo thesettings[], char *name){
-	int i,start_index=0;
+	int i,j,start_index=0;
 	char * setting_name;
+	char * tmpname = malloc(sizeof(name)-1);
 
 	if (name[0] == '-'){
 		start_index = 1;
+
+		/* strip off '-' and store result in tmpname */
+		for(j=0;j<strlen(name);j++){
+			if(j==0)continue; /*dont copy the '-' character */
+			tmpname[j-1] = name[j];
+		}
+	}else{
+		tmpname = name;
 	}
 
 	for(i=start_index;(setting_name=thesettings[i].name);i++){
-		if(!strcmp(setting_name,name)){ //name found
+		if(!strcmp(setting_name,tmpname)){ //name found
+			// printf("%s found in   \n");
 			return i;
 		}
 	}
