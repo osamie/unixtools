@@ -7,12 +7,10 @@
 #include	"alarmlib.h"
 
 /*
- *	bounce2d 1.0	
+ *	
+ *	Pong
  *
- *	bounce a character (default is *) around the screen
- *	defined by some parameters
- *
- *	user input:
+ *	User Input:
  *		 	s slow down x component, S: slow y component
  *		 	f speed up x component,  F: speed y component
  *			Q quit
