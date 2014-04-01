@@ -65,6 +65,7 @@ void set_up()
 
 	signal(SIGINT, SIG_IGN);	/* ignore SIGINT	*/
 	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol);
+	init_walls();
 	refresh();
 	
 	signal( SIGALRM, ball_move );
@@ -80,16 +81,13 @@ void init_walls(){
 	clear();
 
 	/* Draw top horizontal wall */
-	move(3,3); //position at left corner of wall
-	for(i=0;i<LINES;i++){
-
-	}
+	mvhline(3,3,'-',COLS-3);
 
 	/* Draw left vertical wall */
+	mvvline(3,3,'|',LINES-3);
 
 	/* Draw bottom horizontal wall */
-	move(win_y-3,3); //position at left corner of wall
-
+	mvhline(LINES-3,3,'-',COLS-3);
 }
 
 /* stop ticker and curses */
