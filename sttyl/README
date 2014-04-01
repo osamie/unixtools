@@ -26,9 +26,7 @@ The user interface to the program is the command line. Command line syntax is as
 	where <char> represents a character. 
 
 	flag: 
-		This is used to toggle on or off a setting. As denoted in the format above, multiple 
-		flags/settings can be specified. When the '-' is placed in front of a flag, the corresponding 
-		setting is turned off and on otherwise. 
+		This is used to toggle on or off a setting. As denoted in the format above, multiple flags/settings can be specified. When the '-' is placed in front of a flag, the corresponding setting is turned off and on otherwise. 
 
 		Supported flags include:
 			icrnl 
@@ -48,10 +46,9 @@ DATA STRUCTURE
 ============== 
 	
 	The 4 main table-like structures used in this program are ccsettings_table, input_flags,
-	local_flags, and output_flags. They are basically arrays of structs. The ccsettings_table
-	is an array of settingsinfo structs. While the other 3 tables are arrays of flaginfo 
-	structs. The settingsinfo struct has 2 members: a string and an int. The flaginfo struct
-	has also has 2 members: a string and a tcflag_t variable.
+	local_flags, and output_flags. They are basically arrays of structs. All 4 tables are 
+	arrays of the same type of struct, settingsinfo struct. This lets us have a dedicated 
+	function that performs the table lookups on all tables. The settingsinfo struct has 2 members: a string and a tcflag_t (an unsigned integer). 
 
 	An array of structs is used in implementing a table design such that, each struct in an 
 	array index, represents an entry which maps a key to a value. For example, in the 
@@ -77,29 +74,30 @@ ALGORITHM
 PROGRAM FLOW
 =============
 	main:
-		- Get the file descriptor by calling system open on the terminal device, "dev/tty". Store the 
-		  descriptor as a variable terminalfd. 
+		- Get the file descriptor by calling system open on the terminal device, "dev/tty". Store the descriptor as a variable terminalfd. 
 		- Create a new termios struct point, ttyinfo. 
 		- Call tcgetattr, passing terminalfd and ttyinfo as arguments. 
-		- The updated termios stuct, ttyinfo, contains the current driver settings of the previously opened 
-		   terminal. 
-		- The terminalfd int, along with the initial commandline arguments are passed as arguments to 
-		   process_args. 
+		- The updated termios stuct, ttyinfo, contains the current driver settings of the previously opened terminal. 
+		- The terminalfd int, along with the initial commandline arguments are passed as arguments to process_args. 
 		- Return 0.
 
 	process_args:
 		- Declare a new struct termios variable called new_settings.  
-		- FOR_LOOP: Iterate through the commandline arguments. For each argument, determine its type by checking
-		   if it exists in the ccsettings_table OR any of the flag tables. Each table lookup is done by passing the table variable name and the search value to the 'table_lookup' function.
+		- FOR_LOOP: Iterate through the commandline arguments. For each argument, determine its type by 
+		checking if it exists in the ccsettings_table OR any of the flag tables. Each table lookup is 
+		done by passing the table variable name and the search value to the 'table_lookup' function.
 			- Store the return value of 'table_lookup' in an int variable, table_index. 
 			- If the commandline argument is a name in the ccsettings table
 				>	Then, the next commandline argument, newchar = argv[i+1], is the new control 
-					character. (if i+1 >= argc, then show usage and exit the program with error status).
+				character. (if i+1 >= argc, then show usage and exit the program with error status).
 				>	Set new_settings.c_cc[table_index] to newchar.
 				>	Skip the next commandline argument (i=+1) and continue to start of FOR_LOOP again.
 
-			- Else if the commandline argument is in a flag table, derive the bit mask from the specific table it was found. For example, if the commandline argument is found in the input_flags table, bit_mask = input_flags[table_index].fl_value. 
-			 	>	Then, toggle on or off the bit on the new_settings termios struct (e.g new_settings.c_lflag &= bit_mask).     
+			- Else if the commandline argument is in a flag table, derive the bit mask from the specific 
+			table it was found. For example, if the commandline argument is found in the input_flags 
+			table, bit_mask = input_flags[table_index].fl_value. 
+			 	>	Then, toggle on or off the bit on the new_settings termios struct (e.g new_settings.
+			 	c_lflag &= bit_mask).     
 			 	>	Continue to start of FOR_LOOP. 
 			- Else show usage and exit the program with error. 
 
@@ -114,4 +112,18 @@ PROGRAM FLOW
 		- If the entry->name is equal to the given name (argument 2), 
 			- RETURN the current index position. 
 		- Else return to FOR_LOOP.
-		- Return -1 at the end of the iteration, to indicate not found.  
+		- Return -1 at the end of the iteration, to indicate not found. 
+
+
+====
+NOTE
+====
+How does the program determine which control flag (input,output or local) to toggle on or off
+a given mode (e.g echo, olcuc, isig)? 
+
+Using table lookups, when the program identifies which table a control mode belongs to, it keeps 3 references, namely;
+	- The table where the entry was found. 
+	- The index where the entry was found in the table and,
+	- The flag where the bit should be modified. 
+Upon succesful table lookups, these references are used determining which control flag to 
+be modified and what mask to be used. 

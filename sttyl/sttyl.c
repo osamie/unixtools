@@ -120,11 +120,11 @@ int main(int argc, char * argv[])
 		exit(1);
 	}
 
-	process_args(&ttyinfo,argc, argv); /*process the commandline arguments*/
+	process_args(&ttyinfo,argc, argv); /*modify tty info based on the commandline arguments*/
 
-	// printf("Stored erase char is %c\n", ttyinfo.c_cc[VERASE]);
+	/* write/strore modified stdin settings */
 	if ( tcsetattr(STDIN_FILENO, TCSANOW, &ttyinfo) == -1 ){   
-		perror( "Could write new seetings to file");
+		perror( "Could not write new settings to file");
 		exit(1);
 	}
 	
@@ -135,7 +135,6 @@ int main(int argc, char * argv[])
 void process_args(struct termios * ttyp,int argc, char * argv[]){
 	int i;
 	int table_index;
-	// int bit_mask; 
 	char * cmdline_arg;
 	char newchar;
 	
