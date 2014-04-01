@@ -24,6 +24,7 @@ struct ppball the_ball ;
 void set_up();
 void wrap_up();
 int  bounce_or_lose(struct ppball *);
+void init_walls();
 
 /** the main loop **/
 
@@ -68,6 +69,27 @@ void set_up()
 	
 	signal( SIGALRM, ball_move );
 	set_ticker( 1000 / TICKS_PER_SEC );	/* send millisecs per tick */
+}
+
+/*
+	
+*/
+void init_walls(){
+	int i; 
+	//ACS_HLINE ACS_VLINE
+	clear();
+
+	/* Draw top horizontal wall */
+	move(3,3); //position at left corner of wall
+	for(i=0;i<LINES;i++){
+
+	}
+
+	/* Draw left vertical wall */
+
+	/* Draw bottom horizontal wall */
+	move(win_y-3,3); //position at left corner of wall
+
 }
 
 /* stop ticker and curses */
