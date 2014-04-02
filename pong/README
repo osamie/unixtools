@@ -25,7 +25,7 @@ Pong is started on the commandline and does not require any arguments on startup
 ==============
 DATA STRUCTURE
 ============== 
-	
+Two datastructures are used here: pppaddle and ppball. The pppaddle is a struct which represents the paddle object object. It stores two position or coordinates. One position stores the current 	
 	
 
 

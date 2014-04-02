@@ -90,6 +90,8 @@ void init_walls(){
 
 	/* Draw bottom horizontal wall */
 	mvhline(LINES-PADDING,3,ACS_HLINE,(COLS-PADDING*2));
+
+	move(LINES-1, COLS-1);		/* park cursor	*/
 }
 
 /* stop ticker and curses */
