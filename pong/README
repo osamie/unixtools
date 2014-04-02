@@ -12,13 +12,14 @@ Author:	Osazuwa Omigie
 =======
 PURPOSE
 =======
-
+Techniques for multi-tasking are utilized in this one-person ping-pong game. Using signal and timer management, various events are operations are handled simultaneously during the game. The object of the game is to keep the ball in play as long as possible.
 
 
 =========
 INTERFACE
 =========
-
+Pong is started on the commandline and does not require any arguments on startup. 
+	The player moves the paddle up and down the screen, one row at a time, by pressing the 'k' and 'm' keys, respectively. Each press of the key moves the paddle one row.  
 
 
 ==============

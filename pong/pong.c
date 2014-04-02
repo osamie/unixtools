@@ -1,11 +1,3 @@
-#include	<stdio.h>
-#include	<curses.h>
-#include	<signal.h>
-#include	<unistd.h>
-#include	<stdlib.h>
-#include	"pong.h"
-#include	"alarmlib.h"
-
 /*
  *	
  *	Pong
@@ -19,6 +11,17 @@
  *	by ball_move
  */
 
+
+#include	<stdio.h>
+#include	<curses.h>
+#include	<signal.h>
+#include	<unistd.h>
+#include	<stdlib.h>
+#include	"pong.h"
+#include	"alarmlib.h"
+
+#define 	PADDING		3
+
 struct ppball the_ball ;
 
 void set_up();
@@ -31,7 +34,7 @@ void init_walls();
 int main()
 {
 	int	c;
-	void	set_up();
+	void set_up();
 
 	set_up();
 
@@ -49,7 +52,7 @@ int main()
 
 void set_up()
 {
-	void	ball_move(int);
+	void ball_move(int);
 
 	the_ball.y_pos = Y_INIT;
 	the_ball.x_pos = X_INIT;
@@ -64,7 +67,7 @@ void set_up()
 	cbreak();		/* turn off buffering	*/
 
 	signal(SIGINT, SIG_IGN);	/* ignore SIGINT	*/
-	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol);
+	// mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol);
 	init_walls();
 	refresh();
 	
@@ -73,21 +76,20 @@ void set_up()
 }
 
 /*
-	
+	Builds the walls 
 */
 void init_walls(){
-	int i; 
 	//ACS_HLINE ACS_VLINE
 	clear();
 
 	/* Draw top horizontal wall */
-	mvhline(3,3,'-',COLS-3);
+	mvhline(3,3,ACS_HLINE,COLS-(PADDING*2));
 
 	/* Draw left vertical wall */
-	mvvline(3,3,'|',LINES-3);
+	mvvline(4,3,ACS_VLINE,LINES-(PADDING*2));
 
 	/* Draw bottom horizontal wall */
-	mvhline(LINES-3,3,'-',COLS-3);
+	mvhline(LINES-PADDING,3,ACS_HLINE,(COLS-PADDING*2));
 }
 
 /* stop ticker and curses */
@@ -106,29 +108,29 @@ void ball_move(int s)
 	int	y_cur, x_cur, moved;
 
 	signal( SIGALRM , SIG_IGN );		/* dont get caught now 	*/
-	y_cur = the_ball.y_pos ;		/* old spot		*/
-	x_cur = the_ball.x_pos ;
-	moved = 0 ;
+	// y_cur = the_ball.y_pos ;		/* old spot		*/
+	// x_cur = the_ball.x_pos ;
+	// moved = 0 ;
 
-	if ( the_ball.y_delay > 0 && --the_ball.y_count == 0 ){
-		the_ball.y_pos += the_ball.y_dir ;	/* move	*/
-		the_ball.y_count = the_ball.y_delay  ;	/* reset*/
-		moved = 1;
-	}
+	// if ( the_ball.y_delay > 0 && --the_ball.y_count == 0 ){
+	// 	the_ball.y_pos += the_ball.y_dir ;	/* move	*/
+	// 	the_ball.y_count = the_ball.y_delay  ;	/* reset*/
+	// 	moved = 1;
+	// }
 
-	if ( the_ball.x_delay > 0 && --the_ball.x_count == 0 ){
-		the_ball.x_pos += the_ball.x_dir ;	/* move	*/
-		the_ball.x_count = the_ball.x_delay  ;	/* reset*/
-		moved = 1;
-	}
+	// if ( the_ball.x_delay > 0 && --the_ball.x_count == 0 ){
+	// 	the_ball.x_pos += the_ball.x_dir ;	/* move	*/
+	// 	the_ball.x_count = the_ball.x_delay  ;	/* reset*/
+	// 	moved = 1;
+	// }
 
-	if ( moved ){
-		mvaddch(y_cur, x_cur, BLANK);
-		mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol);
-		bounce_or_lose( &the_ball );
-		move(LINES-1, COLS-1);		/* park cursor	*/
-		refresh();
-	}
+	// if ( moved ){
+	// 	mvaddch(y_cur, x_cur, BLANK);
+	// 	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol);
+	// 	bounce_or_lose( &the_ball );
+	// 	move(LINES-1, COLS-1);		/* park cursor	*/
+	// 	refresh();
+	// }
 	signal(SIGALRM, ball_move);		/* re-enable handler	*/
 }
 
