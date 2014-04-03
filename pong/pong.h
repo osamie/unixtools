@@ -5,25 +5,36 @@
 
 #define	BLANK		' '
 #define	DFL_SYMBOL	'O'
-#define	TOP_ROW		5
-#define	BOT_ROW 	20
-#define	LEFT_EDGE	10
-#define	RIGHT_EDGE	70
-#define	X_INIT		10		/* starting col		*/
-#define	Y_INIT		10		/* starting row		*/
-#define	TICKS_PER_SEC	50		/* affects speed	*/
+#define PADDING		3
+#define	TOP_ROW		PADDING
+#define	BOT_ROW 	LINES-PADDING
+#define	LEFT_EDGE	PADDING
+#define	RIGHT_EDGE	COLS-PADDING
+#define	X_INIT		10		/* ball's starting col	*/
+#define	Y_INIT		10		/* ball's starting row	*/
+#define	TICKS_PER_SEC	60		/* affects speed	*/
 
-#define	X_DELAY		5
-#define	Y_DELAY		8
+#define	MAX_DELAY		5
+
+
+#define MAX_X		RIGHT_EDGE
+#define MAX_NUMY		BOT_ROW 
+
 
 /**
- **	the only object in town
+ **	ball object
  **/
 
 struct ppball {
-		int	x_pos, x_dir,
-			y_pos, y_dir,
-			y_delay, y_count,
+
+		/*The ball's position */ 
+		int	x_pos, y_pos;
+			
+		/*This is used as ball's movement direction: and is usully +1 or -1
+		to indicate increase or decrement in x or y coordinate */
+		int x_dir, y_dir;
+
+		int y_delay, y_count,
 			x_delay, x_count;
 		char	symbol ;
 

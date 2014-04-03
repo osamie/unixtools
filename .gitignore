@@ -5,3 +5,4 @@ sttyl/sttyl
 sttyl/*.sh
 pong/pong
 *5_Code*
+*.o
