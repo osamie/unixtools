@@ -72,17 +72,16 @@ void set_up()
 }
 
 void init_ball_pos(){
-	int x=X_INIT,y=Y_INIT;
+	int delay=MAX_DELAY;
 	srand(getpid()); //initialize random number generator
 
-	/* find random value for x and y that are within the court */
-	while ((x=rand() % RIGHT_EDGE) < PADDING) {}
-	while ((y=rand() % BOT_ROW) < PADDING) {}
-
-	the_ball.x_pos = x;
-	the_ball.y_pos = y;
-	the_ball.y_count = the_ball.y_delay = Y_DELAY ;
-	the_ball.x_count = the_ball.x_delay = X_DELAY ;
+	/* find random value for x_delay and y_delay greater than 0 */
+	while ((delay=rand() % MAX_DELAY) <= 0) {}
+	
+	the_ball.x_pos = X_INIT;
+	the_ball.y_pos = Y_INIT;
+	the_ball.y_count = the_ball.y_delay = delay ;
+	the_ball.x_count = the_ball.x_delay = delay ;
 	the_ball.y_dir = 1  ;
 	the_ball.x_dir = 1  ;
 	the_ball.symbol = DFL_SYMBOL ;
