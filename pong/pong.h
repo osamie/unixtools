@@ -22,7 +22,7 @@
 
 
 /**
- **	the only object in town
+ **	ball object
  **/
 
 struct ppball {

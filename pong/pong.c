@@ -18,10 +18,11 @@
 #include	<unistd.h>
 #include	<stdlib.h>
 #include	"pong.h"
+#include	"paddle.h"
 #include	"alarmlib.h"
 
 
-struct ppball the_ball ;
+struct ppball the_ball;
 
 void set_up();
 void wrap_up();
@@ -37,12 +38,15 @@ int main()
 	void set_up();
 
 	set_up();
+	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); //serve ball
 
 	while ( ( c = getch()) != 'Q' ){
-		if ( c == 'f' )	     the_ball.x_delay--;
-		else if ( c == 's' ) the_ball.x_delay++;
-		else if ( c == 'F' ) the_ball.y_delay--;
-		else if ( c == 'S' ) the_ball.y_delay++;
+		if (c=='k'){
+			paddle_up();
+		}
+		else if (c=='m'){
+			paddle_down();
+		}
 	}
 	wrap_up();
 	return 0;
@@ -61,7 +65,8 @@ void set_up()
 	
 	init_walls();
 	init_ball_pos();
-	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol);
+	paddle_init();
+	
 	signal(SIGINT, SIG_IGN);	/* ignore SIGINT	*/
 	
 	
@@ -85,7 +90,6 @@ void init_ball_pos(){
 	the_ball.y_dir = 1  ;
 	the_ball.x_dir = 1  ;
 	the_ball.symbol = DFL_SYMBOL ;
-
 }
 
 /*
