@@ -27,6 +27,7 @@ void set_up();
 void wrap_up();
 int  bounce_or_lose(struct ppball *);
 void init_walls();
+void init_ball_pos();
 
 /** the main loop **/
 
@@ -51,27 +52,41 @@ int main()
 
 void set_up()
 {
-	void ball_move(int);
+	void ball_move(int); 
 
-	the_ball.y_pos = Y_INIT;
-	the_ball.x_pos = X_INIT;
+	initscr();		/* turn on curses	*/
+	noecho();		/* turn off echo	*/
+	cbreak();		/* turn off buffering	*/
+
+	
+	init_walls();
+	init_ball_pos();
+	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol);
+	signal(SIGINT, SIG_IGN);	/* ignore SIGINT	*/
+	
+	
+	refresh();
+	
+	signal( SIGALRM, ball_move );
+	set_ticker( 1000 / TICKS_PER_SEC );	/* send millisecs per tick */
+}
+
+void init_ball_pos(){
+	int x=X_INIT,y=Y_INIT;
+	srand(getpid()); //initialize random number generator
+
+	/* find random value for x and y that are within the court */
+	while ((x=rand() % RIGHT_EDGE) < PADDING) {}
+	while ((y=rand() % BOT_ROW) < PADDING) {}
+
+	the_ball.x_pos = x;
+	the_ball.y_pos = y;
 	the_ball.y_count = the_ball.y_delay = Y_DELAY ;
 	the_ball.x_count = the_ball.x_delay = X_DELAY ;
 	the_ball.y_dir = 1  ;
 	the_ball.x_dir = 1  ;
 	the_ball.symbol = DFL_SYMBOL ;
 
-	initscr();		/* turn on curses	*/
-	noecho();		/* turn off echo	*/
-	cbreak();		/* turn off buffering	*/
-
-	signal(SIGINT, SIG_IGN);	/* ignore SIGINT	*/
-	// mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol);
-	init_walls();
-	refresh();
-	
-	signal( SIGALRM, ball_move );
-	set_ticker( 1000 / TICKS_PER_SEC );	/* send millisecs per tick */
 }
 
 /*

@@ -17,6 +17,11 @@
 #define	X_DELAY		6
 #define	Y_DELAY		6
 
+#define MAX_NUMX		RIGHT_EDGE
+#define MAX_NUMY		BOT_ROW 
+#define MIN_NUMX		LEFT_EDGE
+#define MIN_NUMY		TOP_ROW
+
 /**
  **	the only object in town
  **/
