@@ -34,7 +34,7 @@ void paddle_init(){
 }
 
 void paddle_up(){
-	int top_cur,bot_cur, moved;
+	int bot_cur, moved;
 
 	moved = 0;
 
@@ -54,7 +54,7 @@ void paddle_up(){
 }
 
 void paddle_down(){
-	int top_cur,bot_cur, moved;
+	int top_cur, moved;
 
 	moved = 0;
 
@@ -73,6 +73,20 @@ void paddle_down(){
 	
 }
 
-void paddle_contact(int y,int x){
+/**
+	Checks if the given coordinates are in contact with the paddle
+	@params int y, int x
+	@return Returns 0 if not in contact and 1 otherwise
+**/
+int paddle_contact(int y,int x){
+	int i;
+	if (x+1 == RIGHT_EDGE){
+		for (i=the_paddle.pad_top; i<=the_paddle.pad_bot; i++){
+			if (y == i){
+				return 1;
+			}
+		}
+	}
+	return 0;
 
 }

@@ -106,13 +106,10 @@ void init_walls(){
 	mvvline(TOP_ROW+1,LEFT_EDGE,ACS_VLINE,LINES-(PADDING*2));
 
 	/* Draw bottom horizontal wall */
-<<<<<<< HEAD
-	mvhline(LINES-PADDING,3,ACS_HLINE,(COLS-PADDING*2));
+	mvhline(BOT_ROW,LEFT_EDGE,ACS_HLINE,COLS-(PADDING*2));
 
 	move(LINES-1, COLS-1);		/* park cursor	*/
-=======
-	mvhline(BOT_ROW,LEFT_EDGE,ACS_HLINE,COLS-(PADDING*2));
->>>>>>> 04f61c28dc83d1de6d6fa21089aae7e1b3d6dd66
+
 }
 
 /* stop ticker and curses */

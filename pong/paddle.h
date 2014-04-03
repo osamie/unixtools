@@ -20,4 +20,4 @@ struct pppaddle {
 void paddle_init();
 void paddle_up();
 void paddle_down();
-void paddle_contact(int y,int x);
+int paddle_contact(int y,int x);
