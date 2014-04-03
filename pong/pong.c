@@ -172,7 +172,7 @@ int bounce_or_lose(struct ppball *bp)
 
 	if ( (bp->x_pos-1) == LEFT_EDGE )
 		bp->x_dir = 1 , return_val = 1 ;
-	else if ( (bp->x_pos+1) == RIGHT_EDGE )
+	else if ( (bp->x_pos+2) == RIGHT_EDGE )
 		bp->x_dir = -1 , return_val = 1;
 
 	return return_val;
