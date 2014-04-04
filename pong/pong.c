@@ -39,19 +39,10 @@ void ball_move(int);
 
 int main()
 {
-	balls_left = INIT_BALLS;
-	start_round();
-	wrap_up();
-	return 0;
-}
-
-void start_round(){
 	int c;
-	set_up();
-	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); //serve ball
-	refresh();
-	signal(SIGALRM, ball_move);		/* re-enable handler	*/
-
+	balls_left = INIT_BALLS;
+	int temp = balls_left;
+	start_round();
 	while ( ( c = getch()) != 'Q' || game_lose == FALSE){
 		if (c=='k'){
 			paddle_up();
@@ -59,8 +50,22 @@ void start_round(){
 		else if (c=='m'){
 			paddle_down();
 		}
+		// if (balls_left <= 0) game_lose == TRUE
+		if((temp - balls_left) == 1){ //lost a ball?
+			start_round(); //then restart round
+		}
+		temp = balls_left;
 	}
+	wrap_up();
+	return 0;
+}
 
+void start_round(){
+	set_up();
+	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); //serve ball
+	refresh();
+	signal(SIGALRM, ball_move);		/* re-enable handler	*/
+	if (balls_left <= 0) game_lose=TRUE;
 }
 
 /*	init ppball struct, signal handler, curses	*/
@@ -163,7 +168,6 @@ void ball_move(int s)
 		if (bounce_or_lose(&the_ball)==-1){
 			--balls_left;
 			signal(SIGALRM, ball_move);		/* re-enable handler	*/
-			start_round();
 		} 
 		move(LINES-1, COLS-1);		/* park cursor */
 		refresh();
