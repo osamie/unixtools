@@ -23,7 +23,7 @@
 #define TRUE	1
 #define FALSE	0
 
-#define INIT_BALLS	3
+#define INIT_BALLS	2
 
 
 /**

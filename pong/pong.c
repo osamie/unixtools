@@ -40,10 +40,10 @@ void ball_move(int);
 int main()
 {
 	int c;
-	balls_left = INIT_BALLS;
+	balls_left = INIT_BALLS-1; /*one ball currently in play*/
 	int temp = balls_left;
 	start_round();
-	while ( ( c = getch()) != 'Q' || game_lose == FALSE){
+	while ( ( c = getch()) != 'Q' && game_lose != TRUE){
 		if (c=='k'){
 			paddle_up();
 		}
@@ -51,7 +51,7 @@ int main()
 			paddle_down();
 		}
 		// if (balls_left <= 0) game_lose == TRUE
-		if((temp - balls_left) == 1){ //lost a ball?
+		if((temp - balls_left) >= 1){ //lost a ball?
 			start_round(); //then restart round
 		}
 		temp = balls_left;
@@ -141,7 +141,7 @@ void wrap_up()
 
 void ball_move(int s)
 {
-	int	y_cur, x_cur, moved =0, game_lose = 0;
+	int	y_cur, x_cur, moved =0;
 
 	signal( SIGALRM , SIG_IGN );		/* dont get caught now 	*/
 	y_cur = the_ball.y_pos ;		/* old spot		*/
