@@ -24,22 +24,33 @@
 
 struct ppball the_ball;
 static int game_lose;
+static int balls_left;
 
 void set_up();
 void wrap_up();
 int  bounce_or_lose(struct ppball *);
 void init_walls();
 void init_ball_pos();
+void start_round();
+void set_up();
+void ball_move(int); 
 
 /** the main loop **/
 
 int main()
 {
-	int	c;
-	void set_up();
+	balls_left = INIT_BALLS;
+	start_round();
+	wrap_up();
+	return 0;
+}
 
+void start_round(){
+	int c;
 	set_up();
 	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); //serve ball
+	refresh();
+	signal(SIGALRM, ball_move);		/* re-enable handler	*/
 
 	while ( ( c = getch()) != 'Q' || game_lose == FALSE){
 		if (c=='k'){
@@ -49,15 +60,13 @@ int main()
 			paddle_down();
 		}
 	}
-	wrap_up();
-	return 0;
+
 }
 
 /*	init ppball struct, signal handler, curses	*/
 
 void set_up()
 {
-	void ball_move(int); 
 
 	initscr();		/* turn on curses	*/
 	noecho();		/* turn off echo	*/
@@ -127,12 +136,11 @@ void wrap_up()
 
 void ball_move(int s)
 {
-	int	y_cur, x_cur, moved, game_lose;
+	int	y_cur, x_cur, moved =0, game_lose = 0;
 
 	signal( SIGALRM , SIG_IGN );		/* dont get caught now 	*/
 	y_cur = the_ball.y_pos ;		/* old spot		*/
 	x_cur = the_ball.x_pos ;
-	game_lose = moved = 0 ;
 
 	if ( the_ball.y_delay > 0 && --the_ball.y_count == 0 ){
 		the_ball.y_pos += the_ball.y_dir ;	/* move	*/
@@ -153,13 +161,14 @@ void ball_move(int s)
 
 		/* check for collision or game lose */
 		if (bounce_or_lose(&the_ball)==-1){
-			game_lose = TRUE;
+			--balls_left;
+			signal(SIGALRM, ball_move);		/* re-enable handler	*/
+			start_round();
 		} 
 		move(LINES-1, COLS-1);		/* park cursor */
 		refresh();
 	}
 	signal(SIGALRM, ball_move);		/* re-enable handler	*/
-	
 }
 
 /* bounce_or_lose: if ball hits walls, change its direction
