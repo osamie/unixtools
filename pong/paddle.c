@@ -80,7 +80,7 @@ void paddle_down(){
 **/
 int paddle_contact(int y,int x){
 	int i;
-	if (x+1 == RIGHT_EDGE){
+	if (x+2 == RIGHT_EDGE){
 		for (i=the_paddle.pad_top; i<=the_paddle.pad_bot; i++){
 			if (y == i){
 				return 1;

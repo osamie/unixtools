@@ -23,6 +23,7 @@
 
 
 struct ppball the_ball;
+static int game_lose;
 
 void set_up();
 void wrap_up();
@@ -40,7 +41,7 @@ int main()
 	set_up();
 	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); //serve ball
 
-	while ( ( c = getch()) != 'Q' ){
+	while ( ( c = getch()) != 'Q' || game_lose == FALSE){
 		if (c=='k'){
 			paddle_up();
 		}
@@ -120,30 +121,29 @@ void wrap_up()
 	endwin();		/* put back to normal	*/
 }
 
-/* SIGARLM handler: decr directional counters, move when they hit 0	*/
-/* note: may have too much going on in this handler			*/
+/* SIGARLM handler: decr directional counters, move when they hit 0	
+ note: may have too much going on in this handler			
+*/
 
 void ball_move(int s)
 {
-	int	y_cur, x_cur, moved;
+	int	y_cur, x_cur, moved, game_lose;
 
 	signal( SIGALRM , SIG_IGN );		/* dont get caught now 	*/
 	y_cur = the_ball.y_pos ;		/* old spot		*/
 	x_cur = the_ball.x_pos ;
-	moved = 0 ;
+	game_lose = moved = 0 ;
 
 	if ( the_ball.y_delay > 0 && --the_ball.y_count == 0 ){
 		the_ball.y_pos += the_ball.y_dir ;	/* move	*/
 		the_ball.y_count = the_ball.y_delay  ;	/* reset*/
 		moved = 1;
 	}
-
 	if ( the_ball.x_delay > 0 && --the_ball.x_count == 0 ){
 		the_ball.x_pos += the_ball.x_dir ;	/* move	*/
 		the_ball.x_count = the_ball.x_delay  ;	/* reset*/
 		moved = 1;
 	}
-
 	if ( moved ){ 
 		/* erase ball from previous location */
 		mvaddch(y_cur, x_cur, BLANK); 
@@ -152,32 +152,46 @@ void ball_move(int s)
 		mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); 
 
 		/* check for collision or game lose */
-		bounce_or_lose( &the_ball ); 
-
+		if (bounce_or_lose(&the_ball)==-1){
+			game_lose = TRUE;
+		} 
 		move(LINES-1, COLS-1);		/* park cursor */
 		refresh();
 	}
 	signal(SIGALRM, ball_move);		/* re-enable handler	*/
+	
 }
 
 /* bounce_or_lose: if ball hits walls, change its direction
  *   args: address to ppball
- *   rets: 1 if a bounce happened, 0 if not
+ *   @return: 0 for no contact, 1 for a bounce, or -1 for a lose
  */
 int bounce_or_lose(struct ppball *bp)
 {
 	int	return_val = 0 ;
 
-	if ( (bp->y_pos-1) == TOP_ROW )
-		bp->y_dir = 1 , return_val = 1 ;
-	else if ( (bp->y_pos+1) == BOT_ROW )
-		bp->y_dir = -1 , return_val = 1;
-
-	if ( (bp->x_pos-1) == LEFT_EDGE )
-		bp->x_dir = 1 , return_val = 1 ;
-	else if ( (bp->x_pos+2) == RIGHT_EDGE )
-		bp->x_dir = -1 , return_val = 1;
-
-	return return_val;
+	if ( (bp->y_pos-1) == TOP_ROW ){
+		//ball bounces off top wall 
+		bp->y_dir = 1; //change direction
+		return_val = 1 ; 
+	}else if ( (bp->y_pos+1) == BOT_ROW ){
+		//ball bounces off bottom wall
+		bp->y_dir = -1; //change direction
+		return_val = 1;
+	}
+	if ( (bp->x_pos-1) == LEFT_EDGE ){
+		//ball bounces off left wall
+		bp->x_dir = 1;	//change direction
+		return_val = 1 ;
+	}else if ( (bp->x_pos+2) == RIGHT_EDGE ){
+		if (paddle_contact(bp->y_pos,bp->x_pos)){
+			//ball bounces off paddle
+			bp->x_dir = -1; //change direction
+			return_val = 1;
+		}else{
+			return_val = -1;
+		}		
+	}
+	return return_val;	
 }
 
