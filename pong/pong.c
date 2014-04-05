@@ -15,7 +15,7 @@
 #include	"paddle.h"
 
 static struct ppball the_ball;
-static int game_lose;
+// static int game_lose;
 static int balls_left;
 
 void set_up();
@@ -26,7 +26,8 @@ void init_ball_pos();
 void start_round();
 void set_up();
 void ball_move(int); 
-void print_header();
+void print_headers();
+void update_left_header(int ballnum);
 
 /** the main loop **/
 
@@ -35,7 +36,8 @@ int main()
 	int c;
 	balls_left = INIT_BALLS-1; /*one ball currently in play*/
 	int temp = balls_left;
-	start_round();
+	set_up();
+	start_round(); //serves the balls and updates headers
 	while ( ( c = getch()) != 'Q' && balls_left >= 0){
 		if (c=='k'){
 			paddle_up();
@@ -43,9 +45,8 @@ int main()
 		else if (c=='m'){
 			paddle_down();
 		}
-		// if (balls_left <= 0) game_lose == TRUE
 		if((temp - balls_left) >= 1){ //lost a ball?
-			start_round(); //then restart round
+			start_round(); //restart round
 		}
 		temp = balls_left;
 	}
@@ -54,12 +55,13 @@ int main()
 }
 
 void start_round(){
-	set_up();
-	print_header();
+	// if (balls_left < 0) game_lose=TRUE;
+	init_ball_pos();
+	update_left_header(balls_left);
 	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); //serve ball
 	refresh();
 	signal(SIGALRM, ball_move);		/* re-enable handler	*/
-	if (balls_left < 0) game_lose=TRUE;
+	
 }
 
 /*	init ppball struct, signal handler, curses	*/
@@ -70,22 +72,21 @@ void set_up()
 	initscr();		/* turn on curses	*/
 	noecho();		/* turn off echo	*/
 	cbreak();		/* turn off buffering	*/
-
-	
 	init_walls();
-	init_ball_pos();
 	paddle_init();
-	
+	print_headers();
+
 	signal(SIGINT, SIG_IGN);	/* ignore SIGINT	*/
-	
-	
 	refresh();
-	
 	signal( SIGALRM, ball_move );
 	set_ticker( 1000 / TICKS_PER_SEC );	/* send millisecs per tick */
 }
 
-void print_header(){
+void print_headers(){
+	update_left_header(balls_left);
+}
+
+void update_left_header(int ballnum){
 	char char_array[20];
 	int i,j;
 
@@ -98,7 +99,6 @@ void print_header(){
 	for(i=LEFT_EDGE,j=0;j<13;i++,j++){
 		mvaddch(TOP_ROW-2,i,char_array[j]);
 	}
-
 }
 
 void init_ball_pos(){
@@ -140,7 +140,6 @@ void init_walls(){
 /* stop ticker and curses */
 void wrap_up()
 {
-
 	set_ticker( 0 );
 	endwin();		/* put back to normal	*/
 }
@@ -174,14 +173,14 @@ void ball_move(int s)
 		/* draw the ball on the new location */
 		mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); 
 
+		move(LINES-1, COLS-1);		/* park cursor */
+
 		/* check for collision or game lose */
 		if (bounce_or_lose(&the_ball)==-1){
-			--balls_left; 
-				// < 0) wrap_up();
-			// signal(SIGALRM, ball_move);		/* re-enable handler	*/
+			--balls_left;
 		} 
 		//TODO: if bounce set random speed
-		move(LINES-1, COLS-1);		/* park cursor */
+		
 		refresh();
 	}
 	signal(SIGALRM, ball_move);		/* re-enable handler	*/
