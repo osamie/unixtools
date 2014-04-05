@@ -29,6 +29,7 @@ void ball_move(int);
 void print_headers();
 void update_left_header(int ballnum);
 void update_right_header();
+static void change_ball_speed();
 
 /** the main loop **/
 
@@ -126,19 +127,21 @@ void update_right_header(){
 	}
 }
 void init_ball_pos(){
-	int delay=MAX_DELAY;
 	srand(getpid()); //initialize random number generator
-
-	/* find random value for x_delay and y_delay greater than 0 */
-	while ((delay=rand() % MAX_DELAY) <= 0) {}
-	
+	change_ball_speed();
 	the_ball.x_pos = X_INIT;
 	the_ball.y_pos = Y_INIT;
-	the_ball.y_count = the_ball.y_delay = delay ;
-	the_ball.x_count = the_ball.x_delay = delay ;
 	the_ball.y_dir = 1  ;
 	the_ball.x_dir = 1  ;
 	the_ball.symbol = DFL_SYMBOL ;
+}
+
+static void change_ball_speed(){
+	int delay=MAX_DELAY;
+	/* find random value for x_delay and y_delay greater than 0 */
+	while ((delay=rand() % MAX_DELAY) <= 0) {}
+	the_ball.y_count = the_ball.y_delay = delay ;
+	the_ball.x_count = the_ball.x_delay = delay ;
 }
 
 /*
@@ -168,14 +171,13 @@ void wrap_up()
 	endwin();		/* put back to normal	*/
 }
 
-/* SIGARLM handler: decr directional counters, move when they hit 0	
- note: may have too much going on in this handler			
+/* 
+	SIGARLM handler: decr directional counters, move when they hit 0			
 */
 
 void ball_move(int s)
 {
 	int	y_cur, x_cur, moved =0;
-
 	signal( SIGALRM , SIG_IGN );		/* dont get caught now 	*/
 	y_cur = the_ball.y_pos ;		/* old spot		*/
 	x_cur = the_ball.x_pos ;
@@ -200,11 +202,8 @@ void ball_move(int s)
 		move(LINES-1, COLS-1);		/* park cursor */
 
 		/* check for collision or game lose */
-		if (bounce_or_lose(&the_ball)==-1){
-			update_left_header(--balls_left);
-		}
+		if (bounce_or_lose(&the_ball)==-1) update_left_header(--balls_left);
 
-		//TODO: if bounce set random speed
 		
 		refresh();
 	}
@@ -237,6 +236,7 @@ int bounce_or_lose(struct ppball *bp)
 			//ball bounces off paddle
 			bp->x_dir = -1; //change direction
 			return_val = 1;
+			change_ball_speed();
 		}else{
 			return_val = -1;
 		}		
