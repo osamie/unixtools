@@ -28,12 +28,6 @@
 #define	MAX_DELAY		5
 
 
-#define MAX_X			RIGHT_EDGE
-#define MAX_NUMY		BOT_ROW 
-
-#define TRUE	1
-#define FALSE	0
-
 #define INIT_BALLS	2
 
 

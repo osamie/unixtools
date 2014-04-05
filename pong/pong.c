@@ -28,6 +28,7 @@ void set_up();
 void ball_move(int); 
 void print_headers();
 void update_left_header(int ballnum);
+void update_right_header();
 
 /** the main loop **/
 
@@ -84,23 +85,46 @@ void set_up()
 
 void print_headers(){
 	update_left_header(balls_left);
+	update_right_header();
 }
 
+/**
+	Updates the balls left 
+**/
 void update_left_header(int ballnum){
-	char char_array[20];
-	int i,j;
+	int i,j,header_len = 14;
+	char char_array[header_len];
+
+	if(ballnum<0) return; //no need to update after game over.
 
 	// char * str = "BALLS LEFT";
 	char ball_num = (char) balls_left;
 
-	sprintf(char_array,"BALLS LEFT: %d",ball_num);
+	snprintf(char_array,header_len,"BALLS LEFT: %d",ball_num);
 
-	//write on teh screen
-	for(i=LEFT_EDGE,j=0;j<13;i++,j++){
+	//write on the screen
+	for(i=LEFT_EDGE,j=0;j<header_len-1;i++,j++){
 		mvaddch(TOP_ROW-2,i,char_array[j]);
 	}
 }
 
+/**
+	Updates game clock
+**/
+void update_right_header(){
+	int header_len = 18;
+	char char_array[header_len];
+	memset(char_array, '\0', header_len);
+	int i,j,startingX=RIGHT_EDGE - header_len;
+	char * time = "00:00"; 
+
+	sprintf(char_array,"TOTAL TIME: %s",time);
+
+	//write on the screen
+	for(i=startingX,j=0;j<header_len-1;i++,j++){
+		mvaddch(TOP_ROW-2,i,char_array[j]);
+	}
+}
 void init_ball_pos(){
 	int delay=MAX_DELAY;
 	srand(getpid()); //initialize random number generator
@@ -177,8 +201,9 @@ void ball_move(int s)
 
 		/* check for collision or game lose */
 		if (bounce_or_lose(&the_ball)==-1){
-			--balls_left;
-		} 
+			update_left_header(--balls_left);
+		}
+
 		//TODO: if bounce set random speed
 		
 		refresh();
