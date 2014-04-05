@@ -3,6 +3,17 @@
  **	some parameters
  **/
 
+
+#include	<stdio.h>
+#include	<curses.h>
+#include	<signal.h>
+#include	<unistd.h>
+#include	<stdlib.h>
+#include	<string.h>
+#include	"alarmlib.h"
+
+
+
 #define	BLANK		' '
 #define	DFL_SYMBOL	'O'
 #define PADDING		3

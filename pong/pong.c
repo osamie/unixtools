@@ -11,18 +11,10 @@
  *	by ball_move
  */
 
-
-#include	<stdio.h>
-#include	<curses.h>
-#include	<signal.h>
-#include	<unistd.h>
-#include	<stdlib.h>
 #include	"pong.h"
 #include	"paddle.h"
-#include	"alarmlib.h"
 
-
-struct ppball the_ball;
+static struct ppball the_ball;
 static int game_lose;
 static int balls_left;
 
@@ -34,6 +26,7 @@ void init_ball_pos();
 void start_round();
 void set_up();
 void ball_move(int); 
+void print_header();
 
 /** the main loop **/
 
@@ -43,7 +36,7 @@ int main()
 	balls_left = INIT_BALLS-1; /*one ball currently in play*/
 	int temp = balls_left;
 	start_round();
-	while ( ( c = getch()) != 'Q' && game_lose != TRUE){
+	while ( ( c = getch()) != 'Q' && balls_left >= 0){
 		if (c=='k'){
 			paddle_up();
 		}
@@ -62,10 +55,11 @@ int main()
 
 void start_round(){
 	set_up();
+	print_header();
 	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); //serve ball
 	refresh();
 	signal(SIGALRM, ball_move);		/* re-enable handler	*/
-	if (balls_left <= 0) game_lose=TRUE;
+	if (balls_left < 0) game_lose=TRUE;
 }
 
 /*	init ppball struct, signal handler, curses	*/
@@ -89,6 +83,22 @@ void set_up()
 	
 	signal( SIGALRM, ball_move );
 	set_ticker( 1000 / TICKS_PER_SEC );	/* send millisecs per tick */
+}
+
+void print_header(){
+	char char_array[20];
+	int i,j;
+
+	// char * str = "BALLS LEFT";
+	char ball_num = (char) balls_left;
+
+	sprintf(char_array,"BALLS LEFT: %d",ball_num);
+
+	//write on teh screen
+	for(i=LEFT_EDGE,j=0;j<13;i++,j++){
+		mvaddch(TOP_ROW-2,i,char_array[j]);
+	}
+
 }
 
 void init_ball_pos(){
@@ -166,9 +176,11 @@ void ball_move(int s)
 
 		/* check for collision or game lose */
 		if (bounce_or_lose(&the_ball)==-1){
-			--balls_left;
-			signal(SIGALRM, ball_move);		/* re-enable handler	*/
+			--balls_left; 
+				// < 0) wrap_up();
+			// signal(SIGALRM, ball_move);		/* re-enable handler	*/
 		} 
+		//TODO: if bounce set random speed
 		move(LINES-1, COLS-1);		/* park cursor */
 		refresh();
 	}

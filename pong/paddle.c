@@ -12,14 +12,10 @@
  */
 
 
-#include	<stdio.h>
-#include	<curses.h>
-#include	<signal.h>
-#include	<unistd.h>
-#include	<stdlib.h>
-#include	"pong.h"
+
 #include	"paddle.h"
-#include	"alarmlib.h"
+#include	"pong.h"
+
 
 struct pppaddle the_paddle;
 

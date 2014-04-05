@@ -4,7 +4,13 @@
  *	
  */
 
-
+#include	<stdio.h>
+#include	<curses.h>
+#include	<signal.h>
+#include	<unistd.h>
+#include	<stdlib.h>
+// #include	"pong.h"
+#include	"alarmlib.h"
 
 #define		PAD_SYMBOL	'#'
 #define 	START_TOP	PADDING+3
