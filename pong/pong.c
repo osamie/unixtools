@@ -18,6 +18,7 @@
 static struct ppball the_ball;
 // static int game_lose;
 static int balls_left;
+static int ball_moved;
 
 void set_up();
 void wrap_up();
@@ -25,12 +26,12 @@ int  bounce_or_lose(struct ppball *);
 void init_walls();
 void init_ball_pos();
 void start_round();
-// void set_up(timer_t * tid);
-void ball_move(int); 
+void sigarlm_handler(); 
 void print_headers();
 void update_left_header(int ballnum);
 void update_right_header();
 static void change_ball_speed();
+static void move_ball();
 
 /** the main loop **/
 
@@ -38,17 +39,18 @@ int main()
 {
 	int c;
 	balls_left = INIT_BALLS-1; /*one ball currently in play*/
+	ball_moved = 1;
 	int temp = balls_left;
-	// timer_t tid = 0; 
 	set_up();
 	start_round(); //serves the balls and updates headers
-	while ( ( c = getch()) != 'Q' && balls_left >= 0){
+	while ( (c = getch()) != 'Q'  && balls_left >= 0){
 		if (c=='k'){
 			paddle_up();
 		}
 		else if (c=='m'){
 			paddle_down();
 		}
+
 		if((temp - balls_left) >= 1){ //lost a ball?
 			start_round(); //restart round
 		}
@@ -65,7 +67,7 @@ void start_round(){
 	update_left_header(balls_left);
 	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); //serve ball
 	refresh();
-	signal(SIGALRM, ball_move);		/* re-enable handler	*/
+	signal(SIGALRM, sigarlm_handler);		/* re-enable handler	*/
 	
 }
 
@@ -73,7 +75,6 @@ void start_round(){
 
 void set_up()
 {
-
 	initscr();		/* turn on curses	*/
 	noecho();		/* turn off echo	*/
 	cbreak();		/* turn off buffering	*/
@@ -84,13 +85,7 @@ void set_up()
 
 	signal(SIGINT, SIG_IGN);	/* ignore SIGINT	*/
 	refresh();
-	signal( SIGALRM, ball_move );
-
-	// struct sigevent evp = { { (int)0 }, SIGALRM };
- //    if ((timer_create(CLOCK_REALTIME, &evp, tid)) < 0) {
- //        perror("error with timer_create");
- //        abort();
- //    }
+	signal( SIGALRM, sigarlm_handler );
 	set_ticker( 1000 / 60 );	/* send millisecs per tick....60 ticks/second */
 }
 
@@ -135,6 +130,7 @@ void update_right_header(){
 		mvaddch(TOP_ROW-2,i,char_array[j]);
 	}
 }
+
 void init_ball_pos(){
 	srand(getpid()); //initialize random number generator
 	change_ball_speed();
@@ -169,7 +165,6 @@ void init_walls(){
 	mvhline(BOT_ROW,LEFT_EDGE,ACS_HLINE,COLS-(PADDING*2));
 
 	move(LINES-1, COLS-1);		/* park cursor	*/
-
 }
 
 /* stop ticker and curses */
@@ -178,44 +173,48 @@ void wrap_up(){
 	endwin();		/* put back to normal	*/
 }
 
+
+void move_ball(){
+	int	y_cur, x_cur;
+	y_cur = the_ball.y_pos ;		/* old spot		*/
+	x_cur = the_ball.x_pos ;
+	the_ball.y_pos += the_ball.y_dir ;	/* move	*/
+	the_ball.x_pos += the_ball.x_dir ;	/* move	*/
+	the_ball.count = the_ball.delay  ;	/* reset*/
+
+	/* erase ball from previous location */
+	mvaddch(y_cur, x_cur, BLANK); 
+
+	/* draw the ball on the new location */
+	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); 
+
+	move(LINES-1, COLS-1);		/* park cursor */
+
+	/* check for collision or game lose */
+	if (bounce_or_lose(&the_ball)==-1) {
+		update_left_header(--balls_left);
+		clock_pause();
+	}
+	refresh();	
+}
+
 /* 
 	SIGARLM handler: decr directional counters, move when they hit 0			
 */
 
-void ball_move(int s)
+void sigarlm_handler(int s)
 {
-	int	y_cur, x_cur, moved =0, update_clock=0, should_move;
 	signal( SIGALRM , SIG_IGN );		/* dont get caught now 	*/
-	y_cur = the_ball.y_pos ;		/* old spot		*/
-	x_cur = the_ball.x_pos ;
-	should_move = ( the_ball.delay > 0 && --the_ball.count == 0); 
+	
+	ball_moved = ( the_ball.delay > 0 && --the_ball.count == 0); 
 	clock_tick();
 	update_right_header();
 
-	if (should_move){
-		the_ball.y_pos += the_ball.y_dir ;	/* move	*/
-		the_ball.x_pos += the_ball.x_dir ;	/* move	*/
-		the_ball.count = the_ball.delay  ;	/* reset*/
-		moved = 1;
+	if (ball_moved){
+		move_ball();
 	}
 
-	if ( moved ){ 
-		/* erase ball from previous location */
-		mvaddch(y_cur, x_cur, BLANK); 
-
-		/* draw the ball on the new location */
-		mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); 
-
-		move(LINES-1, COLS-1);		/* park cursor */
-
-		/* check for collision or game lose */
-		if (bounce_or_lose(&the_ball)==-1) {
-			update_left_header(--balls_left);
-			clock_pause();
-		}
-		refresh();
-	}
-	signal(SIGALRM, ball_move);		/* re-enable handler	*/
+	signal(SIGALRM, sigarlm_handler);		/* re-enable handler	*/
 }
 
 /* bounce_or_lose: if ball hits walls, change its direction
