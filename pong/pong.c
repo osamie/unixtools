@@ -60,6 +60,7 @@ int main()
 
 void start_round(){
 	// if (balls_left < 0) game_lose=TRUE;
+	clock_resume();
 	init_ball_pos();
 	update_left_header(balls_left);
 	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); //serve ball
