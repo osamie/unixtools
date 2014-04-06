@@ -55,8 +55,13 @@ int main()
 	return 0;
 }
 
+/**
+	Starting a new round: Initializes the ball's position, updates the headers and 
+	serves the ball, starting a new round. 
+	@params		none
+	@return   	void
+**/
 void start_round(){
-	// if (balls_left < 0) game_lose=TRUE;
 	clock_resume();
 	init_ball_pos();
 	update_left_header(balls_left);
@@ -67,11 +72,10 @@ void start_round(){
 }
 
 /*	
-Initializes ppball struct, signal handler, curses	
-@param	void
-@return void
+	Initializes ppball struct, signal handler, curses	
+	@param		void
+	@return 	void
 */
-
 void set_up()
 {
 	initscr();		/* turn on curses	*/
@@ -161,7 +165,6 @@ void init_ball_pos(){
 
 	 @params none
 	 @return void
-
 */
 static void change_ball_speed(){
 	int delay=MAX_DELAY;
@@ -175,7 +178,6 @@ static void change_ball_speed(){
 
 	@params none
 	@return void
-
 */
 void init_walls(){
 	//ACS_HLINE ACS_VLINE
