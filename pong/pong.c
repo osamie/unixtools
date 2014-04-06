@@ -90,7 +90,7 @@ void set_up()
  //        perror("error with timer_create");
  //        abort();
  //    }
-	set_ticker( 1000 / TICKS_PER_SEC );	/* send millisecs per tick */
+	set_ticker( 1000 / 60 );	/* send millisecs per tick....60 ticks/second */
 }
 
 void print_headers(){
@@ -122,7 +122,7 @@ void update_left_header(int ballnum){
 	Updates game clock
 **/
 void update_right_header(){
-	int header_len = 18;
+	int header_len = 17;
 	char char_array[header_len];
 	memset(char_array, '\0', header_len);
 	int i,j,startingX=RIGHT_EDGE - header_len;
@@ -148,8 +148,6 @@ static void change_ball_speed(){
 	int delay=MAX_DELAY;
 	/* find random value for x_delay and y_delay greater than 0 */
 	while ((delay=rand() % MAX_DELAY) <= 0) {}
-	// the_ball.y_count = the_ball.y_delay = delay ;
-	// the_ball.x_count = the_ball.x_delay = delay ;
 	the_ball.count = the_ball.delay = delay;
 }
 
@@ -176,7 +174,6 @@ void init_walls(){
 /* stop ticker and curses */
 void wrap_up(){
 	set_ticker(0);
-    // timer_delete(tid);
 	endwin();		/* put back to normal	*/
 }
 
@@ -191,6 +188,8 @@ void ball_move(int s)
 	y_cur = the_ball.y_pos ;		/* old spot		*/
 	x_cur = the_ball.x_pos ;
 	should_move = ( the_ball.delay > 0 && --the_ball.count == 0); 
+	clock_tick();
+	update_right_header();
 
 	if (should_move){
 		the_ball.y_pos += the_ball.y_dir ;	/* move	*/
@@ -198,7 +197,6 @@ void ball_move(int s)
 		the_ball.count = the_ball.delay  ;	/* reset*/
 		moved = 1;
 	}
-
 
 	if ( moved ){ 
 		/* erase ball from previous location */
@@ -210,9 +208,10 @@ void ball_move(int s)
 		move(LINES-1, COLS-1);		/* park cursor */
 
 		/* check for collision or game lose */
-		if (bounce_or_lose(&the_ball)==-1) update_left_header(--balls_left);
-
-		
+		if (bounce_or_lose(&the_ball)==-1) {
+			update_left_header(--balls_left);
+			clock_pause();
+		}
 		refresh();
 	}
 	signal(SIGALRM, ball_move);		/* re-enable handler	*/
