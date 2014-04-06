@@ -25,30 +25,43 @@ Pong is started on the commandline and does not require any arguments on startup
 ==============
 DATA STRUCTURE
 ============== 
-Some game components such as the paddle, pong ball and the game clock timer were modelled as "objects" of their own. The objects consists of structs and associated functions that let you perform operations on the structs.
-For example, the paddle object consists of a struct ppppadle which 
-holds the position-related properties of the paddle. The struct 
-members are pad_top ( the top row of the paddle),pad_bot (the botom 
-row of the paddle), pad_col (the paddle's column) and pad_char (the 
-symbol been drawn on the screen for the paddle). 
-The clock timer object consists of a clocktimer struct which holds the 
-minutes, seconds, ticks and pause/resume state of the clock.
-The pong ball object is also represented as a struct which holds 
-updated information about the pong ball such as the balls current x 
-and y cooridinates, the current x and y direction, the delay (for 
-movement speed), as well as the ball's symbol on the screen.
+	Some game components such as the paddle, pong ball and the game clock 
+	timer were modelled as "objects" of their own. The objects consists of 
+	structs and associated functions that let you perform operations on the 
+	structs.
+	For example, the paddle object consists of a struct ppppadle which 
+	holds the position-related properties of the paddle. The struct 
+	members are pad_top ( the top row of the paddle),pad_bot (the botom 
+	row of the paddle), pad_col (the paddle's column) and pad_char (the 
+	symbol been drawn on the screen for the paddle). 
+	The clock timer object consists of a clocktimer struct which holds the 
+	minutes, seconds, ticks and pause/resume state of the clock.
+	The pong ball object is also represented as a struct which holds 
+	updated information about the pong ball such as the balls current x 
+	and y cooridinates, the current x and y direction, the delay (for 
+	movement speed), as well as the ball's symbol on the screen.
 
 
 =========
 ALGORITHM
 =========
-		
+	The program begins in the main function by initializing curses, the court walls, paddle, clocktimer as well as the balls left and timer headers. It then sets the sigarlm_handler function as the handler for. After signal initailazations and all,
+
+	The program listens to user keyboard input through a blocking getch() function call. And depending on the input, quits, move paddle up or move paddle down. If in the process of processing a user input, sigalrm is raised, the sigarlm_handler function is then executed. The sigalrm_handler is responsible for the game's clocktimer ticks and ball movement, with the clocktimer ticks been handled first. 
+	To ensure quick execution of the sigalrm_handler, updating the clock and ball movement are not expensive operations; the getchar() call is also never initiated from the signal handler. More details is provided in the program flow below.
 
 
 =============
 PROGRAM FLOW
 =============
-	
+	Main:
+
+	sigarlm_handler: 
+
+	bounce_or_lose:
+
+	paddle_contact:
+
 
 ====
 NOTE

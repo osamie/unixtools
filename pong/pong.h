@@ -22,7 +22,6 @@
 #define	RIGHT_EDGE	COLS-PADDING
 #define	X_INIT		10		/* ball's starting col	*/
 #define	Y_INIT		10		/* ball's starting row	*/
-// #define	TICKS_PER_SEC	60		/* affects speed	*/
 
 #define	MAX_DELAY		4
 
