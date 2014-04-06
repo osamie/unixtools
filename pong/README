@@ -25,7 +25,16 @@ Pong is started on the commandline and does not require any arguments on startup
 ==============
 DATA STRUCTURE
 ============== 
-Two datastructures are used here: pppaddle and ppball. The pppaddle is a struct which represents the paddle object object. It stores two position or coordinates. One position stores the current 	
+Some game components such as the paddle, pong ball and the game clock timer were modelled as "objects" of their own. The objects consists of structs and associated functions that let you perform operations on the structs.
+For example, the paddle object consists of a struct ppppadle which holds the position-related properties of the paddle. The struct members are pad_top ( the top row of the paddle),pad_bot (the botom row of the paddle), pad_col (the paddle's column) and pad_char (the symbol been drawn on the screen for the paddle). 
+The clock timer 
+
+
+Two datastructures are used here: 
+
+
+
+pppaddle and ppball. The pppaddle is a struct which represents the paddle object object. It stores two position or coordinates. One position stores the current 	
 	
 
 

@@ -31,7 +31,7 @@
 
 
 /**
- **	ball object
+ **	Ball object
  **/
 
 struct ppball {
@@ -48,3 +48,15 @@ struct ppball {
 		char	symbol ;
 
 	} ;
+
+
+void set_up();
+void wrap_up();
+int  bounce_or_lose(struct ppball *);
+void init_walls();
+void init_ball_pos();
+void start_round();
+void sigarlm_handler(); 
+void print_headers();
+void update_left_header(int ballnum);
+void update_right_header();
