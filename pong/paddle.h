@@ -1,15 +1,18 @@
 /*
  *	
  *	Paddle.c header file
+ *
  *	
+ *   Author: Osazuwa Omigie	
+ *   Date: April 8,2014.		
+ *   CSCI-E28
+ *   Harvard University	
  */
-
 #include	<stdio.h>
 #include	<curses.h>
 #include	<signal.h>
 #include	<unistd.h>
 #include	<stdlib.h>
-// #include	"pong.h"
 #include	"alarmlib.h"
 
 #define		PAD_SYMBOL	'#'

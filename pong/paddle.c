@@ -1,14 +1,16 @@
 /*
  *	
- *	Pong
+ *	 Paddle.c
  *
- *	User Input:
- *		 	s slow down x component, S: slow y component
- *		 	f speed up x component,  F: speed y component
- *			Q quit
+ *	
+ *	 Paddle object for pong game
+ *	
+ *	
  *
- *	blocks on read, but timer tick sets SIGALRM which are caught
- *	by ball_move
+ *   Author: Osazuwa Omigie	
+ *   Date: April 8,2014.		
+ *   CSCI-E28
+ *   Harvard University	
  */
 
 
@@ -20,6 +22,11 @@
 struct pppaddle the_paddle;
 
 
+/*
+	Initialize the paddle's properties
+	@params 	none
+	@return 	void
+*/
 void paddle_init(){
 	the_paddle.pad_top = START_TOP;
 	the_paddle.pad_bot = the_paddle.pad_top + PAD_LEN;
@@ -29,6 +36,11 @@ void paddle_init(){
 	mvvline(the_paddle.pad_top,the_paddle.pad_col,the_paddle.pad_char,PAD_LEN);
 }
 
+/*
+	Moves the paddle up one row. 
+	@params		none
+	@return 	void
+*/
 void paddle_up(){
 	int bot_cur, moved;
 
@@ -45,10 +57,14 @@ void paddle_up(){
 	if (moved){
 		mvaddch(the_paddle.pad_top, the_paddle.pad_col, the_paddle.pad_char);
 		mvaddch(bot_cur, the_paddle.pad_col, BLANK);
-	}
-	
+	}	
 }
 
+/*
+	Moves the paddle down one row. 
+	@params 	none
+	@return 	void
+*/
 void paddle_down(){
 	int top_cur, moved;
 
@@ -69,11 +85,13 @@ void paddle_down(){
 	
 }
 
-/**
-	Checks if the given coordinates are in contact with the paddle
-	@params int y, int x
-	@return Returns 0 if not in contact and 1 otherwise
-**/
+/*
+	Checks if a given coordinate (usually the ball's) is in contact 
+	with the paddle.
+	@params		y: a given row position,
+				x: a given column posiiton.
+	@return		1 if in contact or 0 otherwise
+*/
 int paddle_contact(int y,int x){
 	int i;
 	if (x+2 == RIGHT_EDGE){
