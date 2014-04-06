@@ -13,6 +13,7 @@
 
 #include	"pong.h"
 #include	"paddle.h"
+#include	"clocktimer.h"
 
 static struct ppball the_ball;
 // static int game_lose;
@@ -24,7 +25,7 @@ int  bounce_or_lose(struct ppball *);
 void init_walls();
 void init_ball_pos();
 void start_round();
-void set_up();
+// void set_up(timer_t * tid);
 void ball_move(int); 
 void print_headers();
 void update_left_header(int ballnum);
@@ -38,6 +39,7 @@ int main()
 	int c;
 	balls_left = INIT_BALLS-1; /*one ball currently in play*/
 	int temp = balls_left;
+	// timer_t tid = 0; 
 	set_up();
 	start_round(); //serves the balls and updates headers
 	while ( ( c = getch()) != 'Q' && balls_left >= 0){
@@ -76,11 +78,18 @@ void set_up()
 	cbreak();		/* turn off buffering	*/
 	init_walls();
 	paddle_init();
+	clock_init();
 	print_headers();
 
 	signal(SIGINT, SIG_IGN);	/* ignore SIGINT	*/
 	refresh();
 	signal( SIGALRM, ball_move );
+
+	// struct sigevent evp = { { (int)0 }, SIGALRM };
+ //    if ((timer_create(CLOCK_REALTIME, &evp, tid)) < 0) {
+ //        perror("error with timer_create");
+ //        abort();
+ //    }
 	set_ticker( 1000 / TICKS_PER_SEC );	/* send millisecs per tick */
 }
 
@@ -117,9 +126,8 @@ void update_right_header(){
 	char char_array[header_len];
 	memset(char_array, '\0', header_len);
 	int i,j,startingX=RIGHT_EDGE - header_len;
-	char * time = "00:00"; 
-
-	sprintf(char_array,"TOTAL TIME: %s",time);
+	// char time[6];
+	get_time(char_array);
 
 	//write on the screen
 	for(i=startingX,j=0;j<header_len-1;i++,j++){
@@ -140,8 +148,9 @@ static void change_ball_speed(){
 	int delay=MAX_DELAY;
 	/* find random value for x_delay and y_delay greater than 0 */
 	while ((delay=rand() % MAX_DELAY) <= 0) {}
-	the_ball.y_count = the_ball.y_delay = delay ;
-	the_ball.x_count = the_ball.x_delay = delay ;
+	// the_ball.y_count = the_ball.y_delay = delay ;
+	// the_ball.x_count = the_ball.x_delay = delay ;
+	the_ball.count = the_ball.delay = delay;
 }
 
 /*
@@ -165,9 +174,9 @@ void init_walls(){
 }
 
 /* stop ticker and curses */
-void wrap_up()
-{
-	set_ticker( 0 );
+void wrap_up(){
+	set_ticker(0);
+    // timer_delete(tid);
 	endwin();		/* put back to normal	*/
 }
 
@@ -177,21 +186,20 @@ void wrap_up()
 
 void ball_move(int s)
 {
-	int	y_cur, x_cur, moved =0;
+	int	y_cur, x_cur, moved =0, update_clock=0, should_move;
 	signal( SIGALRM , SIG_IGN );		/* dont get caught now 	*/
 	y_cur = the_ball.y_pos ;		/* old spot		*/
 	x_cur = the_ball.x_pos ;
+	should_move = ( the_ball.delay > 0 && --the_ball.count == 0); 
 
-	if ( the_ball.y_delay > 0 && --the_ball.y_count == 0 ){
+	if (should_move){
 		the_ball.y_pos += the_ball.y_dir ;	/* move	*/
-		the_ball.y_count = the_ball.y_delay  ;	/* reset*/
-		moved = 1;
-	}
-	if ( the_ball.x_delay > 0 && --the_ball.x_count == 0 ){
 		the_ball.x_pos += the_ball.x_dir ;	/* move	*/
-		the_ball.x_count = the_ball.x_delay  ;	/* reset*/
+		the_ball.count = the_ball.delay  ;	/* reset*/
 		moved = 1;
 	}
+
+
 	if ( moved ){ 
 		/* erase ball from previous location */
 		mvaddch(y_cur, x_cur, BLANK); 
