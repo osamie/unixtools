@@ -47,22 +47,83 @@ ALGORITHM
 =========
 	The program begins in the main function by initializing curses, the court walls, paddle, clocktimer as well as the balls left and timer headers. It then sets the sigarlm_handler function as the handler for. After signal initailazations and all,
 
-	The program listens to user keyboard input through a blocking getch() function call. And depending on the input, quits, move paddle up or move paddle down. If in the process of processing a user input, sigalrm is raised, the sigarlm_handler function is then executed. The sigalrm_handler is responsible for the game's clocktimer ticks and ball movement, with the clocktimer ticks been handled first. 
-	To ensure quick execution of the sigalrm_handler, updating the clock and ball movement are not expensive operations; the getchar() call is also never initiated from the signal handler. More details is provided in the program flow below.
+	The program listens to user keyboard input through a blocking getch() function 
+	call. And depending on the input, quits, move paddle up or move paddle down. If in 
+	the process of processing a user input, sigalrm is raised, the sigarlm_handler 
+	function is then executed. The sigalrm_handler is responsible for the game's 
+	clocktimer ticks and ball movement, with the clocktimer ticks been handled first. 
+	To ensure quick execution of the sigalrm_handler, updating the clock and ball 
+	movement are not expensive operations; the getchar() call is also never initiated 
+	from the signal handler. More details is provided in the program flow below.
 
 
 =============
 PROGRAM FLOW
 =============
-	Main:
-
-	sigarlm_handler: 
+	main:
+		- Setup the ball object, signal handler (sigalrm_handler function) and curses.
+		- Start the round by serving the ball.
+		- Block waiting for a user keyboard input. 
+		- LOOP: While the entered keyboard input is not 'Q' and the balls left is greater than or equal to zero, process the input in the following way:
+			- If the input is 'k', call paddle_up function to move the paddle up one row. 
+			- If the input is 'm', call paddle_down function to move the paddle down one row.   
+			- Back to LOOP again. 
+		- If the entered keyboard input is equal to 'Q' or the balls left is less than zero, then wrap_up the game. 
+		- return 0;
+	
+	sigalarm_handler:
+		- Disable sigalarms: Ignore any incoming sigalrm signals
+		- Decrement the ball counter
+		- Set the ball_moved flag to 1 IF the ball counter is equal to zero and If the 
+		ball's delay value is greater than zero; or 0 otherwise.
+		- Send a clock tick to the clock object (clock_tick()) and update the clock output
+		- If the ball_moved flag is set, move ball 
+		- Enable sigalarms: Set back sigalarm_handler as the handler for SIGALAM signals.  
 
 	bounce_or_lose:
-
+		- Initialize a variable called return_val to 0.
+		- If the row ontop the ball's current position is a wall (i.e equals TOP_ROW),
+			 > Change the ball's y_dir property to 1
+			 > Set return_val to 1, to indicate a ball bounce.  
+		- Else If the row below the ball's current position is a wall(i.e equals BOT_ROW) then,
+			> Change the ball's y_dir property to -1 
+			> Set return_val to 1, to indicate a ball bounce.
+		- Else If the column to the left of the ball's position is a wall (i.e equals LEFT_EDGE) then, 
+			> Change the ball's x_dir property to 1;
+			> Set return_val to -1
+		- Else If the column to the right of the ball is a wall (i.e equals RIGHT_EDGE) then set return_val to -1 (indicating a lose)
+		- Else If the column to the right of the ball is the paddle then,
+			> Change the ball's x_dir property to -1.
+			> Set return_val to 1.
+			> set the ball's speed to a random number.       
+	
 	paddle_contact:
+		- For Loop: i iterator from top row of the paddle to the bottom row of the paddle.
+			> if the given y coordinate equals i, then return TRUE/1.
+		- END For Loop
+		- return FALSE/0;
+ 
+	paddle_up:
+		- If the row above the paddle not the TOP_ROW or top wall then,
+			> store the last row of the paddle (pad_bot) in a local variable called 'bot_cur'. 
+			> move the paddle up by reducing the row number of the paddle top (i.e pad_top--).
+			> reduce the row number of the paddle bottom by one (i.e pad_bottom--).
+			> move the cursor to the new top of the paddle (pad_top) and write the paddle symbol, '#'.
+			> move the cursor to the 'previous' bottom of the paddle (bot_cur) and write BLANK (i.e ' ').    
+
+	paddle_down:
+		- IF the row below the paddle not the BOT_ROW or bottom wall then,
+            > store the first row of the paddle (pad_top) in a local variable called 'top_cur'.
+            > move the paddle down by increasing the row number of the paddle bottom (i.e pad_top++).
+            > Increase the row number of the paddle bottom by one (i.e pad_bottom++).
+            > move the cursor to the new bottom of the paddle (pad_top) and write the paddle symbol, '#'.
+            > move the cursor to the 'previous' top of the paddle (bot_cur) and write BLANK (i.e ' ').
 
 
 ====
 NOTE
 ====
+There is a race condition between the ball movement, game clock ticks and user input 
+keys. In order to solve this problem, all three activities should trigger an event 
+which is stored and attended to in order of prority. That is, all events should be 
+processed, but with clock ticks as top priority followed by user input and then ball movements.  

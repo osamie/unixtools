@@ -223,7 +223,7 @@ void move_ball(){
 
 	/* erase ball from previous location */
 	mvaddch(y_cur, x_cur, BLANK); 
-
+	
 	/* draw the ball on the new location */
 	mvaddch(the_ball.y_pos, the_ball.x_pos, the_ball.symbol); 
 
@@ -277,20 +277,27 @@ int bounce_or_lose(struct ppball *bp)
 		bp->y_dir = -1; //change direction
 		return_val = 1;
 	}
+
 	if ( (bp->x_pos-1) == LEFT_EDGE ){
 		//ball bounces off left wall
 		bp->x_dir = 1;	//change direction
 		return_val = 1 ;
-	}else if ( (bp->x_pos+2) == RIGHT_EDGE ){
-		if (paddle_contact(bp->y_pos,bp->x_pos)){
-			//ball bounces off paddle
-			bp->x_dir = -1; //change direction
-			return_val = 1;
-			change_ball_speed();
-		}else{
-			return_val = -1;
-		}		
+	}else if (paddle_contact(bp->y_pos,bp->x_pos)){
+		//ball bounces off paddle
+		bp->x_dir = -1; //change direction
+		return_val = 1;
+		change_ball_speed();
+	}else if ((bp->x_pos+1) == RIGHT_EDGE ){
+		//no paddle contact: ball lose
+		return_val = -1; 
 	}
+		// (bp->x_pos+2) == RIGHT_EDGE ){
+		// if (paddle_contact(bp->y_pos,bp->x_pos)){
+		// 	//ball bounces off paddle
+			
+		// }else{
+		// 	return_val = -1;
+		// }		
 	return return_val;	
 }
 
